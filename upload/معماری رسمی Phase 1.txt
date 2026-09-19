@@ -1,0 +1,487 @@
+ѕёнё«р. «нд дШ е **ќнбн гег** «”  ж »«нѕ «“ егнд «б«д ѕ— гЏг«—н YFG »еЭЏдж«д нШ «’б »дн«ѕн Ћ»  ‘жѕ.
+
+YFG д»«нѕ ѕ— –ед г«  »ѕнб ‘жѕ »е:
+
+> ЂAI Software Factory »—«н ”«ќ  Web Appї
+
+»бШе »«нѕ  »ѕнб ‘жѕ »е:
+
+> **Universal Software Engineering Factory Ч Ш«—ќ«де гедѕ”н д—гЭ«Ё“«— Ндѕ”Шжнн**
+
+нЏдн «д”«д ЁёЎ **еѕЁ° дн«“гдѕн° гЌѕжѕн  ж ќ—жћн гж—ѕдў—** —« г‘ќ’ гнЭШдѕ ж YFG »— «”«” ¬д  Џннд гнЭШдѕ Ше Не джЏ гЌ’жб д—гЭ«Ё“«—н »«нѕ ”«ќ е ‘жѕ.
+
+---
+
+# гЏг«—н Бн‘де«ѕн
+
+```text
+                         ?? HUMAN
+                            ?
+              Product Goal / Requirements
+                            ?
+                            ?
+                    ?? YFG PLANNING
+                            ?
+                 Product & Platform Analysis
+                            ?
+                            ?
+                 PLATFORM STRATEGY
+                            ?
+        ???????????????????????????????????????????
+        ?           ?        ?        ?           ?
+      Web        Windows    macOS   Android      iOS
+        ?           ?        ?        ?           ?
+        ?           ?        ?        ?           ?
+    Web Agent   Desktop   Desktop   Mobile     Mobile
+                 Agent     Agent     Agent       Agent
+        ?           ?        ?        ?           ?
+        ???????????????????????????????????????????
+                            ?
+                    Shared Architecture
+                            ?
+                    Shared Domain Logic
+                            ?
+                    Shared APIs / DB
+                            ?
+                            ?
+                  Independent Verification
+                            ?
+                            ?
+                       Human Approval
+                            ?
+                            ?
+                     Release Factory
+```
+
+## нЏдн Platform ќжѕ‘ »«нѕ нШ  ’гнг гедѕ”н »«‘ѕ
+
+гЋб«р «д”«д »Ржнѕ:
+
+> ЂнШ ”н” г гѕн—н  Ё—ж‘ »—«н ‘—Ш  гнЭќж«ег Ше Ш«—гдѕ«д «“ Windows «” Ё«ѕе Шддѕ° гѕн—«д «“ Web° ж дн—же«н Ё—ж‘ «“ Android.ї
+
+YFG д»«нѕ гћ»ж— ‘жѕ еге Нн“ —« Web Шдѕ.
+
+»«нѕ » ж«дѕ »е «нд д нће »—”ѕ:
+
+```text
+Product
+?
+??? Web Application
+?
+??? Windows Desktop Application
+?
+??? Android Application
+?
+??? Backend/API
+?
+??? Database
+?
+??? Shared Services
+```
+
+ж е—Шѕ«г  ж”Ў Agentе«н  ќ’’н ”«ќ е ж г” ёб Verify ‘ждѕ.
+
+---
+
+# Ќ н гегЭ —: Cross-Platform д»«нѕ «ћ»«—н »«‘ѕ
+
+YFG д»«нѕ егн‘е »Ржнѕ:
+
+> ЂнШ Шѕ »—«н еге Platformе«.ї
+
+Р«ен »е —нд —«е «нд «”  Ше:
+
+```text
+Business Logic
+       ?
+       ??? Shared
+       ?
+       ??? Platform-specific
+       ?
+       ??? Native
+```
+
+гЋб«р:
+
+### Web
+
+```text
+React / Angular / Vue / Blazor / ...
+```
+
+### Windows
+
+```text
+.NET
+WPF
+WinUI
+.NET MAUI
+Native
+```
+
+### macOS
+
+```text
+.NET / MAUI
+Swift / SwiftUI
+Native macOS
+```
+
+### Android
+
+```text
+Kotlin
+Java
+.NET MAUI
+Flutter
+```
+
+### iOS
+
+```text
+Swift / SwiftUI
+.NET MAUI
+Flutter
+```
+
+### Linux
+
+```text
+.NET
+GTK
+Qt
+Electron
+etc.
+```
+
+### Backend
+
+```text
+ASP.NET Core
+Node.js
+Python
+Java
+Go
+...
+```
+
+YFG д»«нѕ »е нШ Technology Stack ёЁб ‘жѕ.
+
+---
+
+# нШ гЁежг гег ћѕнѕ »«нѕ ж«—ѕ YFG ‘жѕ
+
+## Platform Profile
+
+»—«н е— Б—жОе YFG »«нѕ Нн“н ‘»не «нд ѕ«‘ е »«‘нг:
+
+```text
+PROJECT
+   ?
+   ?
+PLATFORM PROFILE
+   ?
+   ??? Target Platforms
+   ??? Architecture
+   ??? Technology Constraints
+   ??? Runtime Requirements
+   ??? Hardware Requirements
+   ??? OS Versions
+   ??? Distribution Method
+   ??? Security Requirements
+   ??? UI/UX Requirements
+   ??? Performance Requirements
+```
+
+гЋб«р:
+
+```text
+PLATFORM PROFILE
+
+Web
+? Chrome
+? Edge
+? Firefox
+
+Windows
+? Windows 10
+? Windows 11
+? x64
+? ARM64
+
+macOS
+? Apple Silicon
+? Intel
+
+Android
+? Android 10+
+? ARM64
+
+iOS
+? iOS 16+
+```
+
+«б» е «нд ЁёЎ гЋ«б «” Ї «д ќ«» ж«ёЏн —« Requirements ж Project Constraints  Џннд гнЭШддѕ.
+
+---
+
+# Agent Architecture ег »«нѕ  џнн— Шдѕ
+
+д»«нѕ ЁёЎ ѕ«‘ е »«‘нг:
+
+```text
+Frontend Agent
+Backend Agent
+Database Agent
+```
+
+»бШе:
+
+```text
+                    YFG
+                     ?
+              Product Architecture
+                     ?
+                     ?
+             Platform Architect
+                     ?
+       ?????????????????????????????
+       ?             ?             ?
+       ?             ?             ?
+   Web Stack     Desktop Stack   Mobile Stack
+       ?             ?             ?
+       ?             ?             ?
+   Web Agents    Windows Agent   Android Agent
+                  macOS Agent    iOS Agent
+```
+
+ж нШ Agent гег ѕнР—:
+
+## Platform Architecture Agent
+
+«нд Agent »«нѕ ё»б «“ ‘—жЏ Implementation г‘ќ’ Шдѕ:
+
+* Web б«“г «” њ
+* Desktop б«“г «” њ
+* Mobile б«“г «” њ
+* Native б«“г «” њ
+* Cross-platform гд«”» «” њ
+* Не ё”г Эе«нн Shared »«‘дѕњ
+* Не ё”г Эе«нн Platform-specific »«‘дѕњ
+* Backend г‘ —Ш »«‘ѕ н« Ндѕ ”—жн”њ
+* Offline capability б«“г «” њ
+* Local database б«“г «” њ
+* Hardware integration б«“г «” њ
+* Notification б«“г «” њ
+* File system access б«“г «” њ
+* Camera/GPS/Bluetooth б«“г «” њ
+* GPU б«“г «” њ
+* Deployment НРжде ќж«еѕ »жѕњ
+
+---
+
+# нШ дШ е »”н«— гег ѕнР—
+
+**Build Ш—ѕд ЁёЎ нШ »ќ‘ Ш«— «” .**
+
+YFG »«нѕ » ж«дѕ Шб Н—ќе Platform —« гѕн—н  Шдѕ:
+
+```text
+Requirement
+ ?
+Architecture
+ ?
+Implementation
+ ?
+Build
+ ?
+Test
+ ?
+Verification
+ ?
+Packaging
+ ?
+Signing
+ ?
+Distribution
+ ?
+Installation
+ ?
+Runtime Verification
+ ?
+Monitoring
+ ?
+Update
+ ?
+Rollback
+```
+
+гЋб«р »—«н Windows:
+
+```text
+Source
+ ?
+Build
+ ?
+Unit Tests
+ ?
+Integration Tests
+ ?
+Security
+ ?
+Package
+ ?
+Installer
+ ?
+Code Signing
+ ?
+Release
+```
+
+»—«н Android:
+
+```text
+Source
+ ?
+Build
+ ?
+Test
+ ?
+APK/AAB
+ ?
+Signing
+ ?
+Security
+ ?
+Release
+```
+
+»—«н macOS:
+
+```text
+Build
+ ?
+Test
+ ?
+App Bundle
+ ?
+Signing
+ ?
+Notarization
+ ?
+Distribution
+```
+
+нЏдн **Release Engineering »«нѕ Platform-Aware »«‘ѕ.**
+
+---
+
+# ж «нд гж÷жЏ »« «нѕе ё»бн  ж Ш«гб«р ћж— ѕ—гнЭ¬нѕ
+
+ ж РЁ н:
+
+> Agentе« Бн‘де«ѕ гнЭѕедѕ° Agent ѕнР—н »——”н ж  —Шн» гнЭШдѕ° »Џѕ »е г—Ќбе »Џѕ гнЭ—жѕ.
+
+Ќ«б« «нд —« »—«н Platform ег ѕ«—нг:
+
+```text
+                 PRODUCT REQUIREMENT
+                         ?
+                         ?
+                PLATFORM ANALYSIS
+                         ?
+          ???????????????????????????????
+          ?              ?              ?
+        Web           Windows         Android
+          ?              ?              ?
+      Solution A      Solution B     Solution C
+          ?              ?              ?
+          ???????????????????????????????
+                         ?
+                 ARCHITECT REVIEW
+                         ?
+                         ?
+               INDEPENDENT VERIFY
+                         ?
+                         ?
+                    HUMAN APPROVAL
+                         ?
+                         ?
+                    IMPLEMENTATION
+```
+
+---
+
+# нШ «’б ћѕнѕ »—«н YFG
+
+»е дў—г «нд —« »«нѕ —”г«р »е «’жб гЏг«—н «÷«Ёе Шднг:
+
+> **Platform Independence**
+>
+> YFG д»«нѕ ќ—жћн д—гЭ«Ё“«— —« »е нШ джЏ Platform гЌѕжѕ Шдѕ. джЏ Platform° Technology Stack ж гЏг«—н де«нн »«нѕ »— «”«” Product Requirements° Business Goals° Technical Constraints° User Needs ж Deployment Requirements  Џннд ‘жѕ.
+
+Ё«—”н:
+
+> **«” ёб«б «“ Platform**
+>
+> YFG д»«нѕ ќ—жћн д—гЭ«Ё“«— —« »е нШ Platform ќ«’° «“ ћгбе Web° гЌѕжѕ Шдѕ. джЏ Platform° Ёд«ж—н° гЏг«—н ж —ж‘ «” ё—«— »«нѕ »— «”«” дн«“гдѕнЭе«н гЌ’жб° «еѕ«Ё Ш”»ЭжШ«—° гЌѕжѕн Эе«н Ёдн° дн«“ Ш«—»—«д ж «б“«г«  «” ё—«—  Џннд ‘жѕ.
+
+---
+
+## ж Ќ н нШ «’б ёжнЭ —:
+
+### Platform is an Engineering Decision
+
+нЏдн:
+
+> **Platform ќжѕ‘ нШ  ’гнг гедѕ”н ё«»б —ѕн«»н «” .**
+
+гЋб«р:
+
+```text
+REQ-001
+   ?
+   ?
+ADR-007
+   ?
+   ??? Web
+   ??? Windows
+   ??? Android
+   ?
+   ?
+ARCH-014
+   ?
+   ?
+Implementation
+```
+
+ѕ— д нће »Џѕ«р гнЭ ж«днг »Б—”нг:
+
+> Н—« «нд д—гЭ«Ё“«— Windows ѕ«—ѕ жбн Linux дѕ«—ѕњ
+
+YFG »«нѕ » ж«дѕ ћж«» »ѕеѕ:
+
+```text
+Requirement
+? Platform Analysis
+? Architecture Decision
+? ADR
+? Human Approval
+? Implementation
+```
+
+«нд ѕёнё«р »« **Traceability** Ше ё»б«р »—«н YFG  Џ—нЁ Ш—ѕнг ег«едР «” .
+
+---
+
+### »д«»—«нд  Џ—нЁ YFG —« Шгн ёжнЭ — гнЭШднг:
+
+**YFG = Human-Governed, Verification-Driven, Traceable, Multi-Platform AI Software Engineering Factory**
+
+ж Ё«—”н:
+
+> **YFG нШ Ш«—ќ«де гедѕ”н д—гЭ«Ё“«— Ндѕ”Шжнн г» дн »— еж‘ г’джЏн°  Ќ  Ќ«Шгн  «д”«д° г» дн »— —«” нЭ¬“г«нн ж Ш«гб«р ё«»б —ѕн«»н «”  Ше еѕЁ ж дн«“гдѕнЭе«н гЌ’жб —« »е д—гЭ«Ё“«— «Џ »«—”дћнЭ‘ѕе° «гд° г” дѕ° ё«»б «” ё—«— ж ё«»б дРеѕ«—н »—«н Platformе«н гд«”»  »ѕнб гнЭШдѕ.**
+
+ж дШ е Шбнѕн «нд «”  Ше **Web ЁёЎ нШн «“ Target Platformе«” ° де Target Platform Бн‘ЭЁ—÷.**
+
+«нд  џнн— гЏг«—н гегн «”  ж »«нѕ «“ **Phase 1** ж«—ѕ Foundation ‘жѕ° Нжд —жн Agentе«° Architecture° Toolchain° Build System° Testing° Release° Deployment ж Ќ н гѕб ѕ«ѕе YFG «Ћ— гнЭР–«—ѕ.

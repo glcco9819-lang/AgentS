@@ -1,0 +1,6879 @@
+ÍÊãÇğ. ÈÇ ÊæÌå Èå ÊãÇã ãæÇÑÏí ˜å ÊÇ ÇíäÌÇ ÈÑÇí **YFG Designer** æ ÓÓ **YFG AI Software Factory** ÊÚÑíİ ˜ÑÏíã¡ ãÚãÇÑí ÑÇ ÈÇíÏ ÇÒ Çíå ÈÇÒØÑÇÍí ˜äíãº ÈåæäåÇí ˜å ÇÒ åãÇä ÇÈÊÏÇ **ÏæÒÈÇäå¡ Agent-Based¡ Verification-Driven¡ Human-Governed¡ Traceable æ ŞÇÈá ÊæÓÚå** ÈÇÔÏ.
+
+ÏÑ ÇÏÇãå¡ äÓÎåÇí ÑÇ ÇÑÇÆå ãí˜äã ˜å ãíÊæÇäíã Âä ÑÇ ÈåÚäæÇä **YFG AI Software Factory — Final Target Architecture** ãÈäÇ ŞÑÇÑ Ïåíã.
+
+# YFG AI Software Factory
+
+## ˜ÇÑÎÇäå åæÔ ãÕäæÚí ãåäÏÓí äÑãÇİÒÇÑ YFG
+
+### Final Target Architecture — ãÚãÇÑí äåÇíí åÏİ
+
+**English:** Human-Governed, Verification-Driven, Traceable AI Engineering Platform
+
+**İÇÑÓí:** áÊİÑã ãåäÏÓí äÑãÇİÒÇÑ ãÈÊäí ÈÑ åæÔ ãÕäæÚí¡ ÊÍÊ ÍÇ˜ãíÊ ÇäÓÇä¡ ãÈÊäí ÈÑ ÑÇÓÊíÂÒãÇíí æ ˜ÇãáÇğ ŞÇÈá ÑÏíÇÈí
+
+---
+
+# 1. Vision — ÔãÇäÏÇÒ
+
+YFG AI Software Factory í˜ áÊİÑã åæÔãäÏ ÈÑÇí ÊÈÏíá ÇíÏå Çæáíå ÇäÓÇä Èå í˜ ãÍÕæá äÑãÇİÒÇÑí æÇŞÚí¡ ŞÇÈá ÊÓÊ¡ ãÓÊäÏ¡ Çãä¡ ŞÇÈá äÕÈ¡ ŞÇÈá äåÏÇÑí æ ŞÇÈá ÊæÓÚå ÇÓÊ.
+
+åÏİ ÓíÓÊã Çíä äíÓÊ ˜å ÕÑİÇğ äÏ Agent åæÔ ãÕäæÚí ÑÇ ÏÑ ˜äÇÑ í˜ÏíÑ ŞÑÇÑ ÏåÏ.
+
+åÏİ¡ ÇíÌÇÏ í˜ **AI Engineering Organization — ÓÇÒãÇä ãåäÏÓí äÑãÇİÒÇÑ ãÈÊäí ÈÑ åæÔ ãÕäæÚí** ÇÓÊ ˜å AgentåÇí ÊÎÕÕí ÈÊæÇääÏ ÈÇ í˜ÏíÑ ˜ÇÑ ˜ääÏ¡ ÇãÇ ÊãÇã ÎÑæÌíåÇí ãåã ÂäåÇ ÊÍÊ ˜äÊÑá¡ ÑÇÓÊíÂÒãÇíí¡ ËÈÊ ÓæÇÈŞ æ ÊÃííÏ ŞÑÇÑ íÑÏ.
+
+---
+
+# 2. Human Role — äŞÔ ÇäÓÇä
+
+ÇäÓÇä ÏÑ ãÑ˜Ò ÊÕãíãíÑí ŞÑÇÑ ÏÇÑÏ.
+
+### Human Product Owner — ãÇá˜ ãÍÕæá ÇäÓÇäí
+
+æÑæÏíåÇí ÇÕáí ÊæÓØ ÇäÓÇä ÊÚííä ãíÔæÏ:
+
+1. **Product Idea — ÇíÏå ãÍÕæá**
+2. **Product Goal — åÏİ ãÍÕæá**
+3. **Target Market — ÈÇÒÇÑ åÏİ**
+4. **Feature Priorities — ÇæáæíÊ Çã˜ÇäÇÊ**
+5. **Business Constraints — ãÍÏæÏíÊåÇí ˜ÓÈæ˜ÇÑ**
+6. **Technical Constraints — ãÍÏæÏíÊåÇí İäí**
+7. **Final Decisions — ÊÕãíãÇÊ äåÇíí**
+
+AgentåÇ ãÓÆæá ÊÍáíá¡ ØÑÇÍí¡ ÇÌÑÇ¡ ÈÑÑÓí¡ ÊÓÊ¡ ãÓÊäÏÓÇÒí æ íÔäåÇÏ åÓÊäÏ.
+
+ÇãÇ ÊÕãíãÇÊ ÍÓÇÓ ØÈŞ **Human Approval Policy — ÓíÇÓÊ ÊÃííÏ ÇäÓÇäí** Èå ÇäÓÇä ÇÑÌÇÚ ãíÔæäÏ.
+
+---
+
+# 3. Architecture Principles — ÇÕæá ãÚãÇÑí
+
+## Principle 01 — No Agent Output Is Trusted by Default
+
+### åí ÎÑæÌí Agent ÈåÕæÑÊ íÔİÑÖ ŞÇÈá ÇÚÊãÇÏ äíÓÊ.
+
+Every material Agent output must pass an independent verification gate before it can become an input to the next controlled stage.
+
+### ÊÑÌãå:
+
+åÑ ÎÑæÌí ãåã Agent ÈÇíÏ íÔ ÇÒ ÊÈÏíá ÔÏä Èå æÑæÏí ãÑÍáå ˜äÊÑáÔÏå ÈÚÏí¡ ÇÒ í˜ **Independent Verification Gate — ÏÑæÇÒå ÑÇÓÊíÂÒãÇíí ãÓÊŞá** ÚÈæÑ ˜äÏ.
+
+---
+
+## Principle 02 — Independent Verification
+
+### ÑÇÓÊíÂÒãÇíí ãÓÊŞá
+
+Agent ÊæáíÏ˜ääÏå äÈÇíÏ ÊäåÇ ãÑÌÚ ÊÃííÏ ÎÑæÌí ÎæÏÔ ÈÇÔÏ.
+
+```text
+Work Agent
+ÚÇãá ÇäÌÇãÏåäÏå
+      ?
+Artifact
+ÎÑæÌí
+      ?
+Independent Verification
+ÑÇÓÊíÂÒãÇíí ãÓÊŞá
+      ?
+Quality Gate
+ÏÑæÇÒå ˜íİíÊ
+```
+
+---
+
+## Principle 03 — Human Governance
+
+### ÍÇ˜ãíÊ ÇäÓÇäí
+
+ÏÑ äŞÇØ ÍÓÇÓ¡ ÓíÓÊã ÈÏæä ÊÃííÏ ÇäÓÇä ÇÌÇÒå ÚÈæÑ äÏÇÑÏ.
+
+```text
+AI Recommendation
+        ?
+Verification
+        ?
+Human Approval
+        ?
+Execution
+```
+
+---
+
+## Principle 04 — Full Traceability
+
+### ŞÇÈáíÊ ÑÏíÇÈí ˜Çãá
+
+åÑ Requirement¡ Design¡ Code¡ Test¡ Decision æ Release ÈÇíÏ ŞÇÈá ÑÏíÇÈí ÈÇÔÏ.
+
+```text
+Idea
+ ?
+Requirement
+ ?
+Architecture
+ ?
+Database
+ ?
+API
+ ?
+Code
+ ?
+Test
+ ?
+Security
+ ?
+Documentation
+ ?
+Release
+```
+
+---
+
+## Principle 05 — Reversible Execution
+
+### ÇÌÑÇí ŞÇÈá ÈÇÒÔÊ
+
+åÑ ÊÛííÑ ãåã ÈÇíÏ ÏÇÑÇí Çã˜Çä:
+
+**Versioning — äÓÎåÈäÏí**
+
+**Rollback — ÈÇÒÔÊ**
+
+**Recovery — ÈÇÒíÇÈí**
+
+ÈÇÔÏ.
+
+---
+
+## Principle 06 — Least Privilege
+
+### ÍÏÇŞá ÓØÍ ÏÓÊÑÓí
+
+åÑ Agent İŞØ ãÌæÒåÇíí ÑÇ ÏÑíÇİÊ ãí˜äÏ ˜å ÈÑÇí ÇäÌÇã æÙíİå ÎæÏ äíÇÒ ÏÇÑÏ.
+
+---
+
+# 4. Core Platform — åÓÊå ÇÕáí áÊİÑã
+
+Çíä ÇÌÒÇ ÇÒ Çæáíä äÓÎå ÈÇíÏ ÏÑ åÓÊå YFG æÌæÏ ÏÇÔÊå ÈÇÔäÏ:
+
+| English             | İÇÑÓí                |
+| ------------------- | -------------------- |
+| Agent Orchestrator  | åãÇåä˜ääÏå AgentåÇ |
+| Workflow Engine     | ãæÊæÑ ÑÏÔ˜ÇÑ       |
+| Task Management     | ãÏíÑíÊ æÙÇíİ         |
+| Verification Engine | ãæÊæÑ ÑÇÓÊíÂÒãÇíí   |
+| Quality Gate Engine | ãæÊæÑ ÏÑæÇÒå ˜íİíÊ   |
+| Git Integration     | í˜ÇÑåÓÇÒí Git     |
+| Sandbox             | ãÍíØ ÇÌÑÇí ÇíÒæáå    |
+| Test Environment    | ãÍíØ ÂÒãæä           |
+| Artifact Management | ãÏíÑíÊ ÎÑæÌíåÇ      |
+| Traceability Engine | ãæÊæÑ ÑÏíÇÈí         |
+| Audit Log           | ËÈÊ ÓæÇÈŞ ÍÓÇÈÑÓí    |
+| Approval Engine     | ãæÊæÑ ÊÃííÏ          |
+| Rollback Engine     | ãæÊæÑ ÈÇÒÔÊ         |
+| Policy Engine       | ãæÊæÑ ÓíÇÓÊåÇ       |
+| Security Layer      | áÇíå ÇãäíÊ           |
+| Memory / Knowledge  | ÍÇİÙå æ ÏÇäÔ         |
+| Document Management | ãÏíÑíÊ ÇÓäÇÏ         |
+| Reporting           | ÒÇÑÔÏåí            |
+
+---
+
+# 5. High-Level Architecture — ãÚãÇÑí ÓØÍ ÈÇáÇ
+
+```text
+                         ????????????????????????????
+                         ?       HUMAN USER          ?
+                         ?        ˜ÇÑÈÑ ÇäÓÇäí       ?
+                         ?    Product Owner / Admin  ?
+                         ????????????????????????????
+                                      ?
+                                      ?
+                         ????????????????????????????
+                         ?   YFG CONTROL CENTER     ?
+                         ?      ãÑ˜Ò ˜äÊÑá YFG      ?
+                         ????????????????????????????
+                                      ?
+                                      ?
+                         ????????????????????????????
+                         ?    AI ORCHESTRATOR       ?
+                         ?    åãÇåä˜ääÏå AgentåÇ  ?
+                         ????????????????????????????
+                                      ?
+             ???????????????????????????????????????????????????
+             ?                        ?                        ?
+             ?                        ?                        ?
+       Product Agents           Architecture Agents      Engineering Agents
+       AgentåÇí ãÍÕæá            AgentåÇí ãÚãÇÑí          AgentåÇí ãåäÏÓí
+             ?                        ?                        ?
+             ???????????????????????????????????????????????????
+                                      ?
+                                      ?
+                         ????????????????????????????
+                         ?   VERIFICATION LAYER     ?
+                         ?      áÇíå ÑÇÓÊíÂÒãÇíí   ?
+                         ????????????????????????????
+                                      ?
+                                      ?
+                         ????????????????????????????
+                         ?      QUALITY GATES        ?
+                         ?       ÏÑæÇÒååÇí ˜íİíÊ    ?
+                         ????????????????????????????
+                                      ?
+                            ?????????????????????
+                            ?                   ?
+                           PASS                FAIL
+                            ?                   ?
+                            ?                   ?
+                       NEXT STAGE            REWORK
+                                            ÇÕáÇÍ ãÌÏÏ
+```
+
+---
+
+# 6. Agent Organization — ÓÇÒãÇä AgentåÇ
+
+YFG ÇÒ AgentåÇí ÊÎÕÕí ÊÔ˜íá ãíÔæÏ.
+
+## 6.1 Product Domain — ÍæÒå ãÍÕæá
+
+### Product Manager Agent
+
+### ÚÇãá ãÏíÑíÊ ãÍÕæá
+
+æÙÇíİ:
+
+* Product Vision — ÔãÇäÏÇÒ ãÍÕæá
+* Product Scope — ãÍÏæÏå ãÍÕæá
+* Market Definition — ÊÚÑíİ ÈÇÒÇÑ
+* Feature Prioritization — ÇæáæíÊÈäÏí Çã˜ÇäÇÊ
+* Product Roadmap — äŞÔå ÑÇå ãÍÕæá
+* Release Planning — ÈÑäÇãåÑíÒí ÇäÊÔÇÑ
+
+---
+
+## 6.2 Business Analysis Domain — ÍæÒå ÊÍáíá ˜ÓÈæ˜ÇÑ
+
+### Business Analyst Agent
+
+### ÚÇãá ÊÍáíá ˜ÓÈæ˜ÇÑ
+
+æÙÇíİ:
+
+* Requirement Analysis — ÊÍáíá äíÇÒãäÏí
+* Business Process — İÑÂíäÏ ˜ÓÈæ˜ÇÑ
+* Business Rules — ŞæÇäíä ˜ÓÈæ˜ÇÑ
+* Use Cases — ãæÇÑÏ ˜ÇÑÈÑÏ
+* Actors — ÈÇÒíÑÇä
+* Workflow — ÑÏÔ˜ÇÑ
+* Exception Handling — ãÏíÑíÊ ÔÑÇíØ ÇÓÊËäÇ
+
+---
+
+## 6.3 Architecture Domain — ÍæÒå ãÚãÇÑí
+
+### Solution Architect Agent
+
+### ÚÇãá ãÚãÇÑí ÑÇå˜ÇÑ
+
+æÙÇíİ:
+
+* System Architecture — ãÚãÇÑí ÓíÓÊã
+* Module Architecture — ãÚãÇÑí ãÇæáåÇ
+* Service Architecture — ãÚãÇÑí ÓÑæíÓåÇ
+* API Architecture — ãÚãÇÑí API
+* Integration Architecture — ãÚãÇÑí í˜ÇÑåÓÇÒí
+* Security Architecture — ãÚãÇÑí ÇãäíÊ
+* Deployment Architecture — ãÚãÇÑí ÇÓÊŞÑÇÑ
+
+---
+
+# 7. Data Architecture — ãÚãÇÑí ÏÇÏå
+
+### Database Architect Agent
+
+### ÚÇãá ãÚãÇÑí ÇíÇå ÏÇÏå
+
+æÙÇíİ:
+
+```text
+Domain Model
+ãÏá ÏÇãäå
+      ?
+ERD
+äãæÏÇÑ ãæÌæÏíÊ-ÑÇÈØå
+      ?
+Tables
+ÌÏÇæá
+      ?
+Relationships
+ÑæÇÈØ
+      ?
+Indexes
+ÇíäÏ˜ÓåÇ
+      ?
+Constraints
+ãÍÏæÏíÊåÇ
+      ?
+Migration
+ãåÇÌÑÊ
+```
+
+ÈÑÇí ÑæååÇí ERP¡ SQL Server ãíÊæÇäÏ ÈåÚäæÇä í˜í ÇÒ Target DatabaseåÇí ÇÕáí ÊÚÑíİ ÔæÏ.
+
+---
+
+# 8. Engineering Agents — AgentåÇí ãåäÏÓí
+
+## Backend Agent
+
+### ÚÇãá ÊæÓÚå Backend
+
+æÙÇíİ:
+
+* API
+* Business Logic
+* Services
+* Validation
+* Authentication
+* Authorization
+* Integration
+
+---
+
+## Frontend Agent
+
+### ÚÇãá ÊæÓÚå Frontend
+
+æÙÇíİ:
+
+* UI
+* UX Implementation
+* Forms
+* Dashboards
+* Reports
+* RTL
+* LTR
+* Localization
+
+---
+
+## Database Development Agent
+
+### ÚÇãá ÊæÓÚå ÇíÇå ÏÇÏå
+
+æÙÇíİ:
+
+* SQL
+* Migration
+* Stored Procedures
+* Views
+* Functions
+* Index Optimization
+
+---
+
+## Integration Agent
+
+### ÚÇãá í˜ÇÑåÓÇÒí
+
+æÙíİå ÈÑÑÓí ÇÑÊÈÇØ:
+
+```text
+Frontend
+   ?
+API
+   ?
+Backend
+   ?
+Database
+   ?
+External Systems
+```
+
+---
+
+# 9. Verification Layer — áÇíå ÑÇÓÊíÂÒãÇíí
+
+Çíä í˜í ÇÒ ãåãÊÑíä ÈÎÔåÇí YFG ÇÓÊ.
+
+åÑ Agent ãåã í˜ İÑÂíäÏ ãÓÊŞá Verification ÏÇÑÏ.
+
+```text
+Developer Agent
+      ?
+Developer Artifact
+      ?
+Code Verification Agent
+      ?
+Quality Gate
+```
+
+### ÇäæÇÚ Verification
+
+* Requirement Verification — ÑÇÓÊíÂÒãÇíí äíÇÒãäÏí
+* Architecture Verification — ÑÇÓÊíÂÒãÇíí ãÚãÇÑí
+* Database Verification — ÑÇÓÊíÂÒãÇíí ÇíÇå ÏÇÏå
+* Code Verification — ÑÇÓÊíÂÒãÇíí ˜Ï
+* API Verification — ÑÇÓÊíÂÒãÇíí API
+* UI Verification — ÑÇÓÊíÂÒãÇíí ÑÇÈØ ˜ÇÑÈÑí
+* Security Verification — ÑÇÓÊíÂÒãÇíí ÇãäíÊ
+* Documentation Verification — ÑÇÓÊíÂÒãÇíí ãÓÊäÏÇÊ
+
+---
+
+# 10. Quality Gate — ÏÑæÇÒå ˜íİíÊ
+
+åÑ ãÑÍáå ÈÇíÏ Gate ÏÇÔÊå ÈÇÔÏ.
+
+```text
+WORK
+ ?
+VERIFY
+ ?
+QUALITY GATE
+ ??? PASS ? NEXT
+ ??? FAIL ? REWORK
+```
+
+### PASS — ÊÃííÏ
+
+ÎÑæÌí ãíÊæÇäÏ Èå ãÑÍáå ÈÚÏ ãäÊŞá ÔæÏ.
+
+### FAIL — ÑÏ
+
+ÎÑæÌí Èå Agent ãÑÈæØå ÈÇÒÑÏÇäÏå ãíÔæÏ.
+
+---
+
+# 11. Rework Loop — ÑÎå ÇÕáÇÍ ãÌÏÏ
+
+```text
+Agent
+ ?
+Artifact
+ ?
+Verification
+ ?
+FAIL
+ ?
+Failure Analysis
+ ?
+Feedback
+ ?
+Rework
+ ?
+Verification
+ ?
+PASS
+ ?
+Next Stage
+```
+
+ÈÑÇí ÌáæíÑí ÇÒ Loop ÈíäåÇíÊ:
+
+```text
+Max Attempts
+ÍÏÇ˜ËÑ ÊÚÏÇÏ ÊáÇÔ
+```
+
+ÊÚÑíİ ãíÔæÏ.
+
+ãËáÇğ:
+
+```text
+Attempt 1 ? FAIL
+Attempt 2 ? FAIL
+Attempt 3 ? FAIL
+       ?
+Human Escalation
+ÇÑÌÇÚ Èå ÇäÓÇä
+```
+
+---
+
+# 12. Human Approval Gate — ÏÑæÇÒå ÊÃííÏ ÇäÓÇäí
+
+ÏÑ äŞÇØ ÍÓÇÓ:
+
+```text
+AI
+ ?
+Verification
+ ?
+Quality Gate
+ ?
+Human Approval
+ ?
+Continue
+```
+
+äãæäå GateåÇ:
+
+* Product Scope Approval — ÊÃííÏ ãÍÏæÏå ãÍÕæá
+* Architecture Approval — ÊÃííÏ ãÚãÇÑí
+* Major Database Change Approval — ÊÃííÏ ÊÛííÑ ÚãÏå ÇíÇå ÏÇÏå
+* Security Approval — ÊÃííÏ ÇãäíÊ
+* Release Approval — ÊÃííÏ ÇäÊÔÇÑ
+* Production Deployment Approval — ÊÃííÏ ÇÓÊŞÑÇÑ ÏÑ Production
+
+---
+
+# 13. Git & Version Control — ˜äÊÑá äÓÎå
+
+Git ÇÒ ÇÈÊÏÇ ÌÒæ Core Platform ÇÓÊ.
+
+åÑ Agent ÈÇíÏ Ñæí ãÍíØ ˜äÊÑáÔÏå ˜ÇÑ ˜äÏ.
+
+```text
+Main
+ ?
+ ??? Feature Branch
+ ?
+ ??? Bug Fix Branch
+ ?
+ ??? Experiment Branch
+```
+
+İÑÂíäÏ:
+
+```text
+Task
+ ?
+Branch
+ ?
+Agent Work
+ ?
+Commit
+ ?
+Build
+ ?
+Test
+ ?
+Verification
+ ?
+Review
+ ?
+Approval
+ ?
+Merge
+```
+
+---
+
+# 14. Sandbox — ãÍíØ ÇíÒæáå Agent
+
+åÑ Agent ÈÇíÏ ãÍíØ ÇÌÑÇí ˜äÊÑáÔÏå ÏÇÔÊå ÈÇÔÏ.
+
+```text
+Agent Sandbox
+?
+??? Source Code
+??? Dependencies
+??? Temporary Files
+??? Test Data
+??? Build Tools
+??? Test Runtime
+```
+
+ÏÓÊÑÓí ãÓÊŞíã Agent Èå ãäÇÈÚ ÍÓÇÓ ããäæÚ íÇ ãÍÏæÏ ÇÓÊ.
+
+ãËáÇğ:
+
+```text
+Production Database       ?
+Production Secrets        ?
+Production Deployment     ?
+```
+
+ãÑ ÇÒ ØÑíŞ Policy æ Approval ãÔÎÕ.
+
+---
+
+# 15. Test Environment — ãÍíØ ÂÒãæä
+
+ÍÏÇŞá ãÍíØåÇ:
+
+```text
+Development
+ÊæÓÚå
+   ?
+Test
+ÂÒãæä
+   ?
+Staging
+íÔÊæáíÏ
+   ?
+Production
+ãÍíØ ÚãáíÇÊí
+```
+
+AgentåÇ ÚãÏÊÇğ ÏÑ Development æ Test İÚÇáíÊ ãí˜ääÏ.
+
+---
+
+# 16. Artifact Management — ãÏíÑíÊ ÎÑæÌíåÇ
+
+åÑ ÎÑæÌí ãåã ÈåÚäæÇä Artifact ËÈÊ ãíÔæÏ.
+
+äãæäå:
+
+```text
+IDEA-001
+REQ-001
+ARCH-001
+DB-001
+API-001
+CODE-001
+TEST-001
+SEC-001
+DOC-001
+REL-001
+```
+
+ArtifactåÇ Version ÏÇÑäÏ.
+
+---
+
+# 17. Traceability — ŞÇÈáíÊ ÑÏíÇÈí
+
+ÑÇÈØå ˜Çãá:
+
+```text
+IDEA
+ ?
+REQUIREMENT
+ ?
+ARCHITECTURE
+ ?
+DATABASE
+ ?
+API
+ ?
+CODE
+ ?
+TEST
+ ?
+SECURITY
+ ?
+DOCUMENTATION
+ ?
+RELEASE
+```
+
+ÈäÇÈÑÇíä ÓíÓÊã ÈÇíÏ ÈÊæÇäÏ ÇÓÎ ÏåÏ:
+
+> Çíä ˜Ï ÈÑ ÇÓÇÓ ˜ÏÇã äíÇÒãäÏí ÇíÌÇÏ ÔÏå ÇÓÊ¿
+
+æ åãäíä:
+
+> Çíä Requirement ÏÑ ˜ÏÇã ŞÓãÊ ÓíÓÊã íÇÏåÓÇÒí ÔÏå ÇÓÊ¿
+
+---
+
+# 18. Audit Log — ËÈÊ ÓæÇÈŞ ÍÓÇÈÑÓí
+
+ÊãÇã İÚÇáíÊåÇí ãåã ËÈÊ ãíÔæäÏ.
+
+ãËáÇğ:
+
+```text
+Timestamp
+ÒãÇä
+
+Actor
+ÚÇãá
+
+Agent
+Agent ÇÌÑÇ˜ääÏå
+
+Action
+ÚãáíÇÊ
+
+Artifact
+ÎÑæÌí
+
+Version
+äÓÎå
+
+Decision
+ÊÕãíã
+
+Verification Result
+äÊíÌå ÑÇÓÊíÂÒãÇíí
+
+Approval
+ÊÃííÏ
+
+Reason
+Ïáíá
+```
+
+---
+
+# 19. Rollback & Recovery — ÈÇÒÔÊ æ ÈÇÒíÇÈí
+
+ÊãÇã ÊÛííÑÇÊ ãåã ÈÇíÏ ŞÇÈá ÈÇÒÔÊ ÈÇÔäÏ.
+
+```text
+Release 1.0
+     ?
+Release 1.1
+     ?
+Release 1.2
+     ?
+Incident
+     ?
+Rollback
+     ?
+Release 1.1
+```
+
+---
+
+# 20. Security Architecture — ãÚãÇÑí ÇãäíÊ
+
+ÇãäíÊ ÈÇíÏ ÏÑ ÊãÇã ãÑÇÍá æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### Security Agent
+
+ÈÑÑÓí:
+
+* Authentication — ÇÍÑÇÒ åæíÊ
+* Authorization — ãÌæÒÏåí
+* RBAC — ˜äÊÑá ÏÓÊÑÓí ãÈÊäí ÈÑ äŞÔ
+* Secret Management — ãÏíÑíÊ ÇÓÑÇÑ
+* API Security — ÇãäíÊ API
+* Data Protection — ÍİÇÙÊ ÏÇÏå
+* Dependency Security — ÇãäíÊ æÇÈÓÊíåÇ
+* Vulnerability Detection — ÊÔÎíÕ ÂÓíÈĞíÑí
+* Tenant Isolation — ÌÏÇÓÇÒí TenantåÇ
+
+---
+
+# 21. QA Architecture — ãÚãÇÑí ÊÖãíä ˜íİíÊ
+
+QA İŞØ ÏÑ ÇíÇä Ñæå ÇäÌÇã äãíÔæÏ.
+
+Èá˜å:
+
+```text
+Requirement QA
+      ?
+Architecture QA
+      ?
+Database QA
+      ?
+Code QA
+      ?
+Integration QA
+      ?
+Security QA
+      ?
+Release QA
+```
+
+---
+
+# 22. Bug Management — ãÏíÑíÊ ÎØÇ
+
+```text
+Bug Detected
+ÊÔÎíÕ ÎØÇ
+      ?
+Classification
+ÏÓÊåÈäÏí
+      ?
+Root Cause Analysis
+ÊÍáíá ÚáÊ ÑíÔåÇí
+      ?
+Fix
+ÇÕáÇÍ
+      ?
+Regression Test
+ÂÒãæä ÈÇÒÔÊí
+      ?
+Verification
+ÑÇÓÊíÂÒãÇíí
+```
+
+---
+
+# 23. Documentation Agent — ÚÇãá ãÓÊäÏÓÇÒí
+
+ÓíÓÊã ÈÇíÏ ÈÊæÇäÏ ÈåÕæÑÊ ÎæÏ˜ÇÑ ÊæáíÏ ˜äÏ:
+
+* Architecture Document — ãÓÊäÏ ãÚãÇÑí
+* Technical Documentation — ãÓÊäÏ İäí
+* API Documentation — ãÓÊäÏ API
+* Database Documentation — ãÓÊäÏ ÇíÇå ÏÇÏå
+* Installation Guide — ÑÇåäãÇí äÕÈ
+* Administration Guide — ÑÇåäãÇí ãÏíÑíÊ
+* User Manual — ÑÇåäãÇí ˜ÇÑÈÑ
+* Release Notes — íÇÏÏÇÔÊ ÇäÊÔÇÑ
+* Troubleshooting Guide — ÑÇåäãÇí ÑİÚ ÇÔ˜Çá
+
+---
+
+# 24. Training Agent — ÚÇãá ÂãæÒÔ
+
+ÈÑÇí åÑ äŞÔ:
+
+```text
+Accountant
+ÍÓÇÈÏÇÑ
+
+Sales User
+˜ÇÑÈÑ İÑæÔ
+
+Warehouse User
+˜ÇÑÈÑ ÇäÈÇÑ
+
+Administrator
+ãÏíÑ ÓíÓÊã
+
+Manager
+ãÏíÑ
+```
+
+ÂãæÒÔ ÊæáíÏ ãíÔæÏ.
+
+ÓÇÎÊÇÑ:
+
+```text
+Goal
+åÏİ
+ ?
+Prerequisites
+íÔäíÇÒ
+ ?
+Steps
+ãÑÇÍá
+ ?
+Example
+ãËÇá
+ ?
+Common Errors
+ÎØÇåÇí ÑÇíÌ
+ ?
+Practice
+ÊãÑíä
+```
+
+---
+
+# 25. Catalog Agent — ÚÇãá ÊæáíÏ ˜ÇÊÇáæ
+
+Agent ãíÊæÇäÏ ÇÒ Product Model æ Documentation:
+
+* Product Catalog — ˜ÇÊÇáæ ãÍÕæá
+* Module Catalog — ˜ÇÊÇáæ ãÇæáåÇ
+* Feature Catalog — ˜ÇÊÇáæ Çã˜ÇäÇÊ
+* Technical Catalog — ˜ÇÊÇáæ İäí
+* User Catalog — ÑÇåäãÇí ŞÇÈáíÊåÇí ˜ÇÑÈÑ
+
+ÊæáíÏ ˜äÏ.
+
+---
+
+# 26. Deployment Agent — ÚÇãá ÇÓÊŞÑÇÑ
+
+İÑÂíäÏ:
+
+```text
+Build
+ ?
+Package
+ ?
+Environment Validation
+ ?
+Deployment Verification
+ ?
+Human Approval
+ ?
+Deployment
+```
+
+---
+
+# 27. Monitoring Agent — ÚÇãá ÇíÔ
+
+ÈÚÏ ÇÒ Release:
+
+```text
+Application
+ ?
+Monitoring
+ ?
+Logs
+ ?
+Metrics
+ ?
+Errors
+ ?
+Incident Detection
+```
+
+ãæÇÑÏ ŞÇÈá ÇíÔ:
+
+* CPU
+* RAM
+* Database
+* API
+* Response Time
+* Errors
+* Availability
+* Security Events
+
+---
+
+# 28. Incident Agent — ÚÇãá ãÏíÑíÊ ÑÎÏÇÏ
+
+```text
+Incident
+ ?
+Detection
+ ?
+Analysis
+ ?
+Root Cause
+ ?
+Impact Assessment
+ ?
+Fix Proposal
+ ?
+Verification
+ ?
+Human Approval
+ ?
+Deployment
+```
+
+---
+
+# 29. Agent Permission Model — ãÏá ãÌæÒ Agent
+
+åÑ Agent ÏÇÑÇí:
+
+```text
+Agent Identity
+åæíÊ Agent
+
+Role
+äŞÔ
+
+Permissions
+ãÌæÒåÇ
+
+Tools
+ÇÈÒÇÑåÇ
+
+Resources
+ãäÇÈÚ
+
+Memory
+ÍÇİÙå
+
+Policies
+ÓíÇÓÊåÇ
+
+Approval Level
+ÓØÍ ÊÃííÏ
+```
+
+ÇÓÊ.
+
+ãËáÇğ:
+
+| ÚãáíÇÊ               | Developer Agent |
+| -------------------- | --------------- |
+| Read Source          | ãÌÇÒ            |
+| Write Source         | ãÌÇÒ            |
+| Run Build            | ãÌÇÒ            |
+| Run Test             | ãÌÇÒ            |
+| Create Branch        | ãÌÇÒ            |
+| Commit               | ãÌÇÒ            |
+| Merge Main           | ãÍÏæÏ           |
+| Production Deploy    | ÛíÑãÌÇÒ         |
+| Delete Production DB | ÛíÑãÌÇÒ         |
+
+---
+
+# 30. AI Orchestrator — åãÇåä˜ääÏå ãÑ˜Òí
+
+Orchestrator ãÛÒ ÚãáíÇÊí ÓíÓÊã ÇÓÊ.
+
+æÙÇíİ:
+
+* Task Assignment — ÊÎÕíÕ æÙíİå
+* Agent Selection — ÇäÊÎÇÈ Agent
+* Workflow Control — ˜äÊÑá ÑÏÔ˜ÇÑ
+* Dependency Management — ãÏíÑíÊ æÇÈÓÊí
+* Verification Routing — åÏÇíÊ ÑÇÓÊíÂÒãÇíí
+* Retry — ÊáÇÔ ãÌÏÏ
+* Escalation — ÇÑÌÇÚ
+* Approval Management — ãÏíÑíÊ ÊÃííÏ
+* Context Management — ãÏíÑíÊ Òãíäå
+
+---
+
+# 31. Workflow äãæäå ˜Çãá
+
+ÈÑÇí í˜ ŞÇÈáíÊ ÌÏíÏ:
+
+```text
+Human
+ ?
+Product Manager Agent
+ ?
+Product Verification
+ ?
+BA Agent
+ ?
+BA Verification
+ ?
+Architecture Agent
+ ?
+Architecture Verification
+ ?
+Human Approval
+ ?
+Database Agent
+ ?
+Database Verification
+ ?
+Backend Agent
+ ?
+Code Verification
+ ?
+Frontend Agent
+ ?
+UI Verification
+ ?
+Integration Agent
+ ?
+Integration Verification
+ ?
+QA Agent
+ ?
+Security Agent
+ ?
+Documentation Agent
+ ?
+Release Verification
+ ?
+Human Approval
+ ?
+Deployment Agent
+ ?
+Production Verification
+ ?
+Monitoring
+```
+
+---
+
+# 32. Failure Flow — ãÓíÑ Ô˜ÓÊ
+
+ÏÑ åÑ ãÑÍáå:
+
+```text
+Agent
+ ?
+Verification
+ ?
+FAIL
+ ?
+Failure Analysis
+ ?
+Feedback
+ ?
+Rework
+ ?
+Verification
+```
+
+ÇÑ:
+
+```text
+MAX ATTEMPTS EXCEEDED
+```
+
+ÂäÇå:
+
+```text
+Human Escalation
+ÇÑÌÇÚ Èå ÇäÓÇä
+```
+
+---
+
+# 33. YFG Bilingual Architecture — ãÚãÇÑí ÏæÒÈÇäå
+
+YFG ÈÇíÏ ÇÒ ÇÈÊÏÇ **Persian + English Native Architecture** ÏÇÔÊå ÈÇÔÏ.
+
+íÚäí ÒÈÇä İŞØ ÊÑÌãå UI äíÓÊ.
+
+ÈÇíÏ ÔÇãá:
+
+* UI Localization — ÈæãíÓÇÒí ÑÇÈØ
+* RTL/LTR — ÑÇÓÊÈå/ÈåÑÇÓÊ
+* Metadata Localization — ÈæãíÓÇÒí Metadata
+* Entity Display Names — äÇã äãÇíÔí ãæÌæÏíÊåÇ
+* Validation Messages — íÇãåÇí ÇÚÊÈÇÑÓäÌí
+* Error Messages — íÇãåÇí ÎØÇ
+* Documentation — ãÓÊäÏÇÊ
+* Reports — ÒÇÑÔåÇ
+* Help / Tooltip — ÑÇåäãÇ
+* Generated Documentation — ãÓÊäÏÇÊ ÊæáíÏÔÏå
+
+ÈÇÔÏ.
+
+ÇãÇ IdentityåÇí ÏÇÎáí äÈÇíÏ ÈÇ ÊÛííÑ ÒÈÇä ÊÛííÑ ˜ääÏ.
+
+ãËáÇğ:
+
+```text
+EntityId
+RequirementId
+API
+Database Object
+Permission
+Relationship
+ArtifactId
+```
+
+ËÇÈÊ ãíãÇääÏ.
+
+äãæäå:
+
+```text
+Higher Layer
+áÇíå ÈÇáÇÊÑ
+
+Lower Layer
+áÇíå ÇííäÊÑ
+```
+
+---
+
+# 34. Knowledge & Memory — ÏÇäÔ æ ÍÇİÙå
+
+YFG ÈÇíÏ ÏÇäÔ Ñæå ÑÇ äåÏÇÑí ˜äÏ:
+
+```text
+Project Knowledge
+       ?
+       ??? Requirements
+       ??? Architecture
+       ??? Decisions
+       ??? Code
+       ??? Tests
+       ??? Documentation
+       ??? Policies
+       ??? History
+```
+
+Agent ÌÏíÏ ÈÇíÏ ŞÈá ÇÒ ÇäÌÇã ˜ÇÑ¡ Context ãÑÈæØ Èå Ñæå ÑÇ ÏÑíÇİÊ ˜äÏ.
+
+---
+
+# 35. Decision Records — ËÈÊ ÊÕãíãÇÊ
+
+ÊÕãíãÇÊ ãåã ÈÇíÏ ÈåÕæÑÊ ÑÓãí ËÈÊ ÔæäÏ.
+
+ãËáÇğ:
+
+```text
+ADR-001
+
+Decision:
+Use SQL Server
+
+Reason:
+Enterprise ERP requirement
+
+Status:
+Approved
+
+Approved By:
+Human Product Owner
+```
+
+Çíä ÇØáÇÚÇÊ ÈÚÏÇğ ÈÑÇí AgentåÇ ŞÇÈá ÇÓÊİÇÏå ÎæÇåÏ ÈæÏ.
+
+---
+
+# 36. Project State — æÖÚíÊ Ñæå
+
+YFG ÈÇíÏ åãíÔå ÈÏÇäÏ:
+
+```text
+Current Stage
+ãÑÍáå İÚáí
+
+Current Version
+äÓÎå İÚáí
+
+Current Artifact
+ÎÑæÌí İÚáí
+
+Pending Verification
+ãæÇÑÏ ÏÑ ÇäÊÙÇÑ ÑÇÓÊíÂÒãÇíí
+
+Pending Approval
+ãæÇÑÏ ÏÑ ÇäÊÙÇÑ ÊÃííÏ
+
+Failed Tasks
+æÙÇíİ äÇãæİŞ
+
+Blocked Tasks
+æÙÇíİ ãÓÏæÏ
+
+Release Status
+æÖÚíÊ ÇäÊÔÇÑ
+```
+
+---
+
+# 37. Project Lifecycle — ÑÎå ÚãÑ Ñæå
+
+```text
+IDEA
+ÇíÏå
+ ?
+DISCOVERY
+˜Ôİ æ ÈÑÑÓí
+ ?
+REQUIREMENTS
+äíÇÒãäÏíåÇ
+ ?
+ARCHITECTURE
+ãÚãÇÑí
+ ?
+DESIGN
+ØÑÇÍí
+ ?
+IMPLEMENTATION
+íÇÏåÓÇÒí
+ ?
+VERIFICATION
+ÑÇÓÊíÂÒãÇíí
+ ?
+TESTING
+ÂÒãæä
+ ?
+SECURITY
+ÇãäíÊ
+ ?
+DOCUMENTATION
+ãÓÊäÏÓÇÒí
+ ?
+RELEASE
+ÇäÊÔÇÑ
+ ?
+DEPLOYMENT
+ÇÓÊŞÑÇÑ
+ ?
+MONITORING
+ÇíÔ
+ ?
+MAINTENANCE
+äåÏÇÑí
+ ?
+EVOLUTION
+ÊæÓÚå äÓÎååÇí ÈÚÏí
+```
+
+---
+
+# 38. Core Architecture Layers — áÇíååÇí ãÚãÇÑí ÇÕáí
+
+ãÚãÇÑí äåÇíí YFG ÑÇ ãíÊæÇä ÏÑ 10 áÇíå ÇÕáí ÊÚÑíİ ˜ÑÏ:
+
+```text
+Layer 01
+Human & Governance
+ÇäÓÇä æ ÍÇ˜ãíÊ
+
+Layer 02
+Control Center
+ãÑ˜Ò ˜äÊÑá
+
+Layer 03
+Orchestration
+åãÇåäÓÇÒí AgentåÇ
+
+Layer 04
+Agent Intelligence
+åæÔ AgentåÇ
+
+Layer 05
+Verification & Quality
+ÑÇÓÊíÂÒãÇíí æ ˜íİíÊ
+
+Layer 06
+Engineering Environment
+ãÍíØ ãåäÏÓí
+
+Layer 07
+Artifacts & Traceability
+ÎÑæÌíåÇ æ ÑÏíÇÈí
+
+Layer 08
+Security & Governance
+ÇãäíÊ æ ÍÇ˜ãíÊ
+
+Layer 09
+Deployment & Operations
+ÇÓÊŞÑÇÑ æ ÚãáíÇÊ
+
+Layer 10
+Knowledge & Documentation
+ÏÇäÔ æ ãÓÊäÏÇÊ
+```
+
+---
+
+# 39. Final Architecture Model — ãÏá äåÇíí
+
+```text
+???????????????????????????????????????????????????????????????
+?                    HUMAN GOVERNANCE                         ?
+?                  ÍÇ˜ãíÊ æ ÊÕãíãíÑí ÇäÓÇäí                ?
+???????????????????????????????????????????????????????????????
+                             ?
+                             ?
+???????????????????????????????????????????????????????????????
+?                     YFG CONTROL CENTER                      ?
+?                         ãÑ˜Ò ˜äÊÑá YFG                      ?
+???????????????????????????????????????????????????????????????
+                             ?
+                             ?
+???????????????????????????????????????????????????????????????
+?                    AI ORCHESTRATOR                          ?
+?                 åãÇåä˜ääÏå ãÑ˜Òí AgentåÇ                 ?
+???????????????????????????????????????????????????????????????
+                             ?
+              ???????????????????????????????
+              ?              ?              ?
+         PRODUCT         BUSINESS       ARCHITECTURE
+          AGENTS          AGENTS           AGENTS
+              ?              ?              ?
+              ???????????????????????????????
+                             ?
+                    ENGINEERING AGENTS
+                             ?
+              ???????????????????????????????
+              ?              ?              ?
+           BACKEND        FRONTEND       DATABASE
+              ?              ?              ?
+              ???????????????????????????????
+                             ?
+                    INTEGRATION AGENT
+                             ?
+                             ?
+                 INDEPENDENT VERIFICATION
+                       ÑÇÓÊíÂÒãÇíí ãÓÊŞá
+                             ?
+                             ?
+                      QUALITY GATE
+                       ÏÑæÇÒå ˜íİíÊ
+                       ?          ?
+                     PASS        FAIL
+                       ?          ?
+                       ?          ?
+                       ?        REWORK
+                       ?          ?
+                       ?          ????????
+                       ?                 ?
+                       ???????????????????
+                             ?
+                             ?
+                           QA
+                             ?
+                             ?
+                         SECURITY
+                             ?
+                             ?
+                       CODE REVIEW
+                             ?
+                             ?
+                      DOCUMENTATION
+                             ?
+                             ?
+                         TRAINING
+                             ?
+                             ?
+                    RELEASE VERIFICATION
+                             ?
+                             ?
+                    HUMAN APPROVAL GATE
+                             ?
+                         APPROVED
+                             ?
+                             ?
+                       DEPLOYMENT
+                             ?
+                             ?
+                        MONITORING
+                             ?
+                             ?
+                       INCIDENT AI
+                             ?
+                             ?
+                     HUMAN DECISION
+```
+
+---
+
+# 40. Core Governance Loop — ÍáŞå ÍÇ˜ãíÊ ÇÕáí
+
+ŞÇäæä ÈäíÇÏí ˜á ÓíÓÊã:
+
+```text
+CREATE
+ ?
+VERIFY
+ ?
+VALIDATE
+ ?
+APPROVE
+ ?
+EXECUTE
+ ?
+AUDIT
+ ?
+MONITOR
+ ?
+ROLLBACK / IMPROVE
+```
+
+íÇ Èå İÇÑÓí:
+
+```text
+ÇíÌÇÏ
+ ?
+ÑÇÓÊíÂÒãÇíí
+ ?
+ÇÚÊÈÇÑÓäÌí
+ ?
+ÊÃííÏ
+ ?
+ÇÌÑÇ
+ ?
+ËÈÊ ÓæÇÈŞ
+ ?
+ÇíÔ
+ ?
+ÈÇÒÔÊ íÇ ÈåÈæÏ
+```
+
+---
+
+# 41. YFG Core Rules — ŞæÇäíä Çíå YFG
+
+### Rule 01
+
+**No Agent Output Is Trusted by Default.**
+
+åí ÎÑæÌí Agent ÈåÕæÑÊ íÔİÑÖ ŞÇÈá ÇÚÊãÇÏ äíÓÊ.
+
+### Rule 02
+
+**No Material Artifact Moves Forward Without Verification.**
+
+åí Artifact ãåãí ÈÏæä ÑÇÓÊíÂÒãÇíí Èå ãÑÍáå ÈÚÏ ãäÊŞá äãíÔæÏ.
+
+### Rule 03
+
+**Failed Work Must Enter a Controlled Rework Loop.**
+
+˜ÇÑ ÑÏÔÏå ÈÇíÏ æÇÑÏ ÑÎå ÇÕáÇÍ ˜äÊÑáÔÏå ÔæÏ.
+
+### Rule 04
+
+**Critical Actions Require Human Approval.**
+
+ÚãáíÇÊ ÍÓÇÓ äíÇÒãäÏ ÊÃííÏ ÇäÓÇäí ÇÓÊ.
+
+### Rule 05
+
+**Every Material Change Must Be Traceable.**
+
+åÑ ÊÛííÑ ãåã ÈÇíÏ ŞÇÈá ÑÏíÇÈí ÈÇÔÏ.
+
+### Rule 06
+
+**Every Material Change Must Be Reversible.**
+
+åÑ ÊÛííÑ ãåã ÈÇíÏ ŞÇÈá ÈÇÒÔÊ ÈÇÔÏ.
+
+### Rule 07
+
+**Agents Operate Under Least Privilege.**
+
+AgentåÇ ÈÇ ÍÏÇŞá ÓØÍ ÏÓÊÑÓí İÚÇáíÊ ãí˜ääÏ.
+
+### Rule 08
+
+**Production Is Never the Default Workspace.**
+
+Production åÑÒ ãÍíØ íÔİÑÖ ˜ÇÑ Agent äíÓÊ.
+
+### Rule 09
+
+**Verification Must Be Independent From Generation.**
+
+ÑÇÓÊíÂÒãÇíí ÈÇíÏ ÇÒ ÊæáíÏ ãÓÊŞá ÈÇÔÏ.
+
+### Rule 10
+
+**Human Authority Cannot Be Bypassed.**
+
+åí Agent íÇ İÑÂíäÏí ãÌÇÒ Èå ÏæÑ ÒÏä ÇÎÊíÇÑ ÇäÓÇäí äíÓÊ.
+
+---
+
+# 42. Final Definition — ÊÚÑíİ äåÇíí
+
+## YFG AI Software Factory
+
+**English:**
+
+> A Human-Governed, Verification-Driven, Traceable AI Software Engineering Platform that transforms human product intent into validated, secure, documented, deployable, and maintainable software through coordinated specialized AI agents.
+
+**İÇÑÓí:**
+
+> **áÊİÑã ãåäÏÓí äÑãÇİÒÇÑ ãÈÊäí ÈÑ åæÔ ãÕäæÚí YFG¡ í˜ áÊİÑã ÊÍÊ ÍÇ˜ãíÊ ÇäÓÇä¡ ãÈÊäí ÈÑ ÑÇÓÊíÂÒãÇíí æ ˜ÇãáÇğ ŞÇÈá ÑÏíÇÈí ÇÓÊ ˜å åÏİ æ ÎæÇÓÊå ãÍÕæá ÇÑÇÆåÔÏå ÊæÓØ ÇäÓÇä ÑÇ ÇÒ ØÑíŞ åãÇåäí ãÌãæÚåÇí ÇÒ AgentåÇí ÊÎÕÕí åæÔ ãÕäæÚí Èå äÑãÇİÒÇÑí ÇÚÊÈÇÑÓäÌíÔÏå¡ Çãä¡ ãÓÊäÏ¡ ŞÇÈá ÇÓÊŞÑÇÑ æ ŞÇÈá äåÏÇÑí ÊÈÏíá ãí˜äÏ.**
+
+---
+
+# 43. Final Strategic Position — ÌÇíÇå ÑÇåÈÑÏí
+
+YFG ÏÑ Çíä ãÚãÇÑí ÏíÑ İŞØ:
+
+**AI Agent Platform — áÊİÑã AgentåÇí åæÔ ãÕäæÚí**
+
+äíÓÊ.
+
+æ İŞØ:
+
+**Software Generator — ÊæáíÏ˜ääÏå äÑãÇİÒÇÑ**
+
+åã äíÓÊ.
+
+Èá˜å:
+
+# **AI Engineering Organization**
+
+## **ÓÇÒãÇä ãåäÏÓí äÑãÇİÒÇÑ ãÈÊäí ÈÑ åæÔ ãÕäæÚí**
+
+ÇÓÊ.
+
+ÈÇ Óå ÇÕá ÈäíÇÏíä:
+
+```text
+HUMAN GOVERNANCE
+ÍÇ˜ãíÊ ÇäÓÇä
+
++
+INDEPENDENT VERIFICATION
+ÑÇÓÊíÂÒãÇíí ãÓÊŞá
+
++
+FULL TRACEABILITY
+ÑÏíÇÈí ˜Çãá
+```
+
+æ åÓÊå ÛíÑŞÇÈá ÍĞİ:
+
+```text
+Git
++
+Sandbox
++
+Test Environment
++
+Artifact / Traceability
++
+Audit Log
++
+Rollback
++
+Human Approval Gate
++
+Verification
++
+Quality Gates
++
+Orchestration
+```
+
+˜å ÈÇíÏ ÇÒ **äÓÎå ÕİÑ YFG** æÌæÏ ÏÇÔÊå ÈÇÔÏ¡ äå Çíä˜å ÏÑ äÓÎååÇí ÂíäÏå Èå ÓíÓÊã ÇÖÇİå ÔæÏ.
+
+
+
+Èáå. **Agent Contract — ŞÑÇÑÏÇÏ Agent** ÈÇíÏ í˜í ÇÒ ÇÌÒÇí Core Architecture ÈÇÔÏº æä ÈÏæä ŞÑÇÑÏÇÏ¡ Orchestrator ÏŞíŞÇğ äãíÏÇäÏ åÑ Agent å íÒí ÏÑíÇİÊ ãí˜äÏ¡ å íÒí ÈÇíÏ ÊÍæíá ÏåÏ¡ å ÇÎÊíÇÑÇÊí ÏÇÑÏ¡ å ãÍÏæÏíÊåÇíí ÏÇÑÏ æ å ÒãÇäí ÎÑæÌí Çæ ãÚÊÈÑ ãÍÓæÈ ãíÔæÏ.
+
+Èå ãÚãÇÑí äåÇíí¡ í˜ áÇíå æ ãİåæã ÌÏíÏ ÇÖÇİå ãí˜äíã:
+
+# Agent Contract Layer — áÇíå ŞÑÇÑÏÇÏ AgentåÇ
+
+### ÊÚÑíİ
+
+> **Every Agent must operate under an explicit, machine-readable, versioned contract that defines its role, inputs, outputs, tools, permissions, constraints, acceptance criteria, verification requirements, and escalation rules.**
+
+### ÊÑÌãå:
+
+> **åÑ Agent ÈÇíÏ ÊÍÊ í˜ ŞÑÇÑÏÇÏ ÕÑíÍ¡ äÓÎåÈäÏíÔÏå æ ŞÇÈá ÑÏÇÒÔ ÊæÓØ ãÇÔíä İÚÇáíÊ ˜äÏ ˜å äŞÔ¡ æÑæÏíåÇ¡ ÎÑæÌíåÇ¡ ÇÈÒÇÑåÇ¡ ãÌæÒåÇ¡ ãÍÏæÏíÊåÇ¡ ãÚíÇÑåÇí ĞíÑÔ¡ ÇáÒÇãÇÊ ÑÇÓÊíÂÒãÇíí æ ŞæÇäíä ÇÑÌÇÚ Âä ÑÇ ãÔÎÕ ãí˜äÏ.**
+
+---
+
+# ÌÇíÇå Agent Contract ÏÑ ãÚãÇÑí
+
+ãÚãÇÑí Èå Çíä Ô˜á Ê˜ãíá ãíÔæÏ:
+
+```text
+                         HUMAN
+                           ?
+                           ?
+                  HUMAN GOVERNANCE
+                  ÍÇ˜ãíÊ ÇäÓÇäí
+                           ?
+                           ?
+                  YFG CONTROL CENTER
+                  ãÑ˜Ò ˜äÊÑá YFG
+                           ?
+                           ?
+                  AI ORCHESTRATOR
+                  åãÇåä˜ääÏå AgentåÇ
+                           ?
+                           ?
+                ??????????????????????
+                ? AGENT CONTRACT     ?
+                ? ŞÑÇÑÏÇÏ Agent      ?
+                ??????????????????????
+                          ?
+                          ?
+                     WORK AGENT
+                    ÚÇãá ÇÌÑÇ˜ääÏå
+                          ?
+                          ?
+                      ARTIFACT
+                   ÎÑæÌí ŞÇÈá ÑÏíÇÈí
+                          ?
+                          ?
+              INDEPENDENT VERIFICATION
+                  ÑÇÓÊíÂÒãÇíí ãÓÊŞá
+                          ?
+                          ?
+                    QUALITY GATE
+                    ÏÑæÇÒå ˜íİíÊ
+                    ?          ?
+                  PASS        FAIL
+                    ?          ?
+                    ?          ?
+                NEXT AGENT   REWORK
+```
+
+íÚäí **ŞÈá ÇÒ Çíä˜å Agent ˜ÇÑí ÑÇ ÔÑæÚ ˜äÏ¡ Contract Âä ÈÇíÏ ãÔÎÕ ÈÇÔÏ.**
+
+---
+
+# Agent Contract — ŞÑÇÑÏÇÏ ÇÓÊÇäÏÇÑÏ Agent
+
+åÑ Agent ÏÑ YFG ÈÇíÏ ÍÏÇŞá Çíä ãÔÎÕÇÊ ÑÇ ÏÇÔÊå ÈÇÔÏ:
+
+| English                | İÇÑÓí                      |
+| ---------------------- | -------------------------- |
+| Agent ID               | ÔäÇÓå Agent                |
+| Agent Name             | äÇã Agent                  |
+| Agent Type             | äæÚ Agent                  |
+| Version                | äÓÎå ŞÑÇÑÏÇÏ               |
+| Role                   | äŞÔ                        |
+| Mission                | ãÃãæÑíÊ                    |
+| Scope                  | ãÍÏæÏå İÚÇáíÊ              |
+| Inputs                 | æÑæÏíåÇ                   |
+| Outputs                | ÎÑæÌíåÇ                   |
+| Required Artifacts     | ÎÑæÌíåÇí ÇáÒÇãí           |
+| Tools                  | ÇÈÒÇÑåÇí ãÌÇÒ              |
+| Permissions            | ãÌæÒåÇ                     |
+| Resources              | ãäÇÈÚ ãÌÇÒ                 |
+| Constraints            | ãÍÏæÏíÊåÇ                 |
+| Policies               | ÓíÇÓÊåÇí ÍÇ˜ã             |
+| Acceptance Criteria    | ãÚíÇÑåÇí ĞíÑÔ             |
+| Verification Rules     | ŞæÇäíä ÑÇÓÊíÂÒãÇíí        |
+| Quality Gates          | ÏÑæÇÒååÇí ˜íİíÊ           |
+| Retry Policy           | ÓíÇÓÊ ÊáÇÔ ãÌÏÏ            |
+| Escalation Rules       | ŞæÇäíä ÇÑÌÇÚ               |
+| Human Approval         | ÇáÒÇãÇÊ ÊÃííÏ ÇäÓÇäí       |
+| Security Requirements  | ÇáÒÇãÇÊ ÇãäíÊí             |
+| Audit Requirements     | ÇáÒÇãÇÊ ËÈÊ ÓæÇÈŞ          |
+| Rollback Policy        | ÓíÇÓÊ ÈÇÒÔÊ               |
+| Dependencies           | æÇÈÓÊíåÇ                 |
+| Failure Conditions     | ÔÑÇíØ Ô˜ÓÊ                 |
+| SLA / Limits           | ãÍÏæÏíÊ ÒãÇäí æ ãäÇÈÚ      |
+| Knowledge Requirements | ÏÇäÔ ãæÑÏäíÇÒ              |
+| Handoff Rules          | ŞæÇäíä ÊÍæíá Èå Agent ÈÚÏí |
+
+---
+
+# 1. Agent Identity — åæíÊ Agent
+
+åÑ Agent ÈÇíÏ åæíÊ ÛíÑŞÇÈá ÇÈåÇã ÏÇÔÊå ÈÇÔÏ.
+
+ãËáÇğ:
+
+```text
+Agent ID:
+YFG-BE-001
+
+Name:
+Backend Development Agent
+
+Version:
+1.0.0
+
+Contract Version:
+1.0.0
+```
+
+ÈäÇÈÑÇíä ÏÑ Audit Log ãÔÎÕ ÇÓÊ ÏŞíŞÇğ ˜ÏÇã äÓÎå Agent ˜ÇÑ ÑÇ ÇäÌÇã ÏÇÏå ÇÓÊ.
+
+---
+
+# 2. Role — äŞÔ
+
+ŞÑÇÑÏÇÏ ãÔÎÕ ãí˜äÏ Agent **å äŞÔí ÏÇÑÏ**.
+
+ãËáÇğ:
+
+> Backend Development Agent ãÓÆæá íÇÏåÓÇÒí ÓÑæíÓåÇí Backend ãØÇÈŞ Requirement æ Architecture ÊÃííÏÔÏå ÇÓÊ.
+
+Agent ÇÌÇÒå äÏÇÑÏ ÎæÏÔ äŞÔ Architect ÑÇ ÈÑ ÚåÏå ÈíÑÏ.
+
+---
+
+# 3. Scope — ãÍÏæÏå
+
+ÈÇíÏ ÏŞíŞÇğ ãÔÎÕ ÔæÏ Agent å ˜ÇÑí **ãíÊæÇäÏ** æ å ˜ÇÑí **äãíÊæÇäÏ** ÇäÌÇã ÏåÏ.
+
+ãËáÇğ Backend Agent:
+
+```text
+Allowed:
+? Create API
+? Modify Backend Code
+? Create Unit Tests
+? Run Build
+? Run Tests
+
+Not Allowed:
+? Modify Product Requirements
+? Change Architecture
+? Modify Production Database
+? Deploy Production
+? Approve Own Work
+```
+
+---
+
+# 4. Inputs — æÑæÏíåÇ
+
+Agent İŞØ æÑæÏíåÇí ÊÚÑíİÔÏå ÏÑ Contract ÑÇ ÏÑíÇİÊ ãí˜äÏ.
+
+ãËáÇğ Backend Agent:
+
+```text
+Required Inputs:
+
+REQ Artifact
+Architecture Artifact
+API Specification
+Database Contract
+Coding Standards
+Security Policies
+```
+
+---
+
+# 5. Outputs — ÎÑæÌíåÇ
+
+Contract ãÔÎÕ ãí˜äÏ å íÒí ÈÇíÏ ÊÍæíá ÔæÏ.
+
+ãËáÇğ:
+
+```text
+Required Outputs:
+
+Source Code
+API Implementation
+Unit Tests
+Build Result
+Technical Notes
+Change Summary
+```
+
+---
+
+# 6. Acceptance Criteria — ãÚíÇÑ ĞíÑÔ
+
+Çíä ŞÓãÊ ÈÓíÇÑ ãåã ÇÓÊ.
+
+Agent äãíÊæÇäÏ ÈæíÏ:
+
+> ˜ÇÑ ÇäÌÇã ÔÏ.
+
+ÈÇíÏ ËÇÈÊ ˜äÏ ãÚíÇÑåÇí ĞíÑÔ ÑÇ ÈÑÂæÑÏå ˜ÑÏå ÇÓÊ.
+
+ãËáÇğ:
+
+```text
+AC-001
+API must return HTTP 201 on successful creation.
+
+AC-002
+Unauthorized users must receive HTTP 401/403.
+
+AC-003
+Invalid customer must be rejected.
+
+AC-004
+Unit tests must pass.
+
+AC-005
+Build must complete successfully.
+```
+
+---
+
+# 7. Verification Contract — ŞÑÇÑÏÇÏ ÑÇÓÊíÂÒãÇíí
+
+Contract åÑ Agent ÈÇíÏ ãÔÎÕ ˜äÏ:
+
+> å ˜Óí æ æäå ÎÑæÌí ãä ÑÇ ÈÑÑÓí ãí˜äÏ¿
+
+ãËáÇğ:
+
+```text
+Producer:
+Backend Agent
+
+Verifier:
+Independent Code Verification Agent
+
+Additional Verifiers:
+QA Agent
+Security Agent
+
+Required Gate:
+Code Quality Gate
+```
+
+ÈäÇÈÑÇíä:
+
+```text
+Backend Agent
+      ?
+Code Verification
+      ?
+QA
+      ?
+Security
+      ?
+Quality Gate
+```
+
+---
+
+# 8. Self-Approval ããäæÚ
+
+í˜ ŞÇäæä ãåã:
+
+> **An Agent Cannot Be the Sole Approver of Its Own Material Output.**
+
+### ÊÑÌãå:
+
+> **í˜ Agent äãíÊæÇäÏ ÊäåÇ ÊÃííÏ˜ääÏå ÎÑæÌí ãåã ÎæÏÔ ÈÇÔÏ.**
+
+ãã˜ä ÇÓÊ Agent ÊÓÊ ÏÇÎáí ÇäÌÇã ÏåÏ¡ ÇãÇ ÊÃííÏ äåÇíí ÈÇíÏ ÊæÓØ İÑÂíäÏ ãÓÊŞá ÇäÌÇã ÔæÏ.
+
+---
+
+# 9. Tools — ÇÈÒÇÑåÇí ãÌÇÒ
+
+ŞÑÇÑÏÇÏ ãÔÎÕ ãí˜äÏ Agent å ÇÈÒÇÑåÇíí ãíÊæÇäÏ ÇÓÊİÇÏå ˜äÏ.
+
+ãËáÇğ:
+
+```text
+Backend Agent:
+
+? Git
+? IDE/Code Tools
+? Compiler
+? Test Runner
+? Static Analyzer
+
+? Production Shell
+? Production Database
+? Secret Store
+```
+
+---
+
+# 10. Permissions — ãÌæÒåÇ
+
+Çíä ŞÓãÊ ãÓÊŞíãÇğ Èå Security æÕá ãíÔæÏ.
+
+ãËáÇğ:
+
+```text
+Repository:
+READ     ?
+WRITE    ?
+DELETE   ãÍÏæÏ
+
+Database:
+DEV      ?
+TEST     ?
+STAGING  ãÍÏæÏ
+PROD     ?
+
+Deployment:
+DEV      ?
+TEST     ?
+STAGING  ãÍÏæÏ
+PROD     ?
+```
+
+---
+
+# 11. Constraints — ãÍÏæÏíÊåÇ
+
+Agent ÈÇíÏ ÈÏÇäÏ å ŞæÇäíäí ÛíÑŞÇÈá äŞÖ åÓÊäÏ.
+
+ãËáÇğ:
+
+```text
+Must use:
+.NET
+SQL Server
+REST API
+
+Must follow:
+YFG Naming Convention
+YFG Security Policy
+YFG Architecture Rules
+YFG Database Standards
+```
+
+---
+
+# 12. Failure Conditions — ÔÑÇíØ Ô˜ÓÊ
+
+Contract ÈÇíÏ ãÔÎÕ ˜äÏ å ÒãÇäí ˜ÇÑ Ô˜ÓÊÎæÑÏå ãÍÓæÈ ãíÔæÏ.
+
+ãËáÇğ:
+
+```text
+Build Failed
+OR
+Required Test Failed
+OR
+Security Violation
+OR
+Requirement Coverage < 100%
+OR
+Architecture Violation
+```
+
+---
+
+# 13. Retry Policy — ÓíÇÓÊ ÊáÇÔ ãÌÏÏ
+
+ãËáÇğ:
+
+```text
+Maximum Attempts: 3
+```
+
+ÑÎå:
+
+```text
+Attempt 1
+   ?
+FAIL
+   ?
+Feedback
+   ?
+Attempt 2
+   ?
+FAIL
+   ?
+Feedback
+   ?
+Attempt 3
+   ?
+FAIL
+   ?
+Human Escalation
+```
+
+---
+
+# 14. Escalation Rules — ŞæÇäíä ÇÑÌÇÚ
+
+Agent ÈÇíÏ ÈÏÇäÏ å ÒãÇäí äÈÇíÏ ÎæÏÔ ÊÕãíã ÈíÑÏ.
+
+ãËáÇğ:
+
+```text
+Architecture Conflict
+        ?
+Escalate to Architect Agent
+
+Requirement Conflict
+        ?
+Escalate to BA Agent
+
+Security Critical Issue
+        ?
+Escalate to Security Agent
+
+Repeated Failure
+        ?
+Escalate to Human
+```
+
+---
+
+# 15. Human Approval Policy — ÓíÇÓÊ ÊÃííÏ ÇäÓÇäí
+
+Contract ãíÊæÇäÏ ÓØÍ ÊÃííÏ áÇÒã ÑÇ ãÔÎÕ ˜äÏ:
+
+```text
+Approval Level 0
+ÎæÏ˜ÇÑ
+
+Approval Level 1
+ÈÑÑÓí Agent ÏíÑ
+
+Approval Level 2
+ÊÃííÏ Human
+
+Approval Level 3
+ÊÃííÏ ÕÑíÍ Human + ˜äÊÑá ãÖÇÚİ
+```
+
+ãËáÇğ Production Deployment:
+
+```text
+Approval Level 3
+```
+
+---
+
+# 16. Handoff Contract — ŞÑÇÑÏÇÏ ÊÍæíá
+
+Agent äÈÇíÏ İŞØ ÈæíÏ:
+
+> Done.
+
+Èá˜å ÈÇíÏ í˜ **Handoff Package — ÈÓÊå ÊÍæíá** ÊæáíÏ ˜äÏ.
+
+ãËáÇğ:
+
+```text
+Handoff Package
+
+Artifact ID
+Version
+Task ID
+Requirements Covered
+Files Changed
+Tests Executed
+Test Results
+Known Issues
+Security Results
+Dependencies
+Verification Status
+Rollback Information
+```
+
+ÓÓ Agent ÈÚÏí Çíä ÈÓÊå ÑÇ ÏÑíÇİÊ ãí˜äÏ.
+
+---
+
+# 17. Contract Example — äãæäå ŞÑÇÑÏÇÏ
+
+ãËáÇğ ŞÑÇÑÏÇÏ Backend Development Agent:
+
+```text
+Agent ID:
+YFG-BACKEND-001
+
+Agent Name:
+Backend Development Agent
+
+Role:
+Backend Developer
+
+Mission:
+Implement approved backend requirements.
+
+Inputs:
+- Approved Requirements
+- Approved Architecture
+- API Contract
+- Database Contract
+- Coding Standards
+
+Outputs:
+- Source Code
+- Unit Tests
+- Build Result
+- Change Summary
+
+Allowed Tools:
+- Git
+- Compiler
+- Test Runner
+- Static Analyzer
+
+Allowed Environments:
+- Development
+- Test
+
+Forbidden:
+- Production Deployment
+- Production Database Access
+- Requirement Modification
+- Architecture Approval
+- Self-Approval
+
+Acceptance Criteria:
+- Build Successful
+- Tests Passed
+- Requirements Covered
+- Security Rules Satisfied
+- Coding Standards Satisfied
+
+Verification:
+- Independent Code Verification
+- QA Verification
+- Security Verification
+
+Max Attempts:
+3
+
+Escalation:
+After 3 failed attempts ? Human Approval
+
+Rollback:
+Git Revert / Previous Valid Artifact
+
+Audit:
+All actions must be logged.
+```
+
+---
+
+# 18. ŞÑÇÑÏÇÏ Agent ŞÇÈá ÊÛííÑ ÇÓÊ¡ ÇãÇ ÎæÏÓÑÇäå äå
+
+Çíä ä˜Êå ãåã ÇÓÊ.
+
+Agent äÈÇíÏ ÈÊæÇäÏ Contract ÎæÏÔ ÑÇ ÊÛííÑ ÏåÏ.
+
+```text
+Agent
+  ?
+  ?
+Change Own Contract
+```
+
+Èá˜å:
+
+```text
+Human / Governance
+       ?
+Contract Change Proposal
+       ?
+Contract Verification
+       ?
+Human Approval
+       ?
+New Contract Version
+       ?
+Activation
+```
+
+ãËáÇğ:
+
+```text
+Contract v1.0
+      ?
+Change Request
+      ?
+Verification
+      ?
+Human Approval
+      ?
+Contract v1.1
+```
+
+---
+
+# 19. Contract Registry — ãÎÒä ŞÑÇÑÏÇÏåÇ
+
+ÏÑ Core Platform ÈÇíÏ í˜:
+
+## **Agent Contract Registry — ãÎÒä ŞÑÇÑÏÇÏ AgentåÇ**
+
+ÏÇÔÊå ÈÇÔíã.
+
+```text
+Agent Contract Registry
+?
+??? Product Manager Agent
+??? Business Analyst Agent
+??? Architect Agent
+??? Database Agent
+??? Backend Agent
+??? Frontend Agent
+??? Integration Agent
+??? QA Agent
+??? Security Agent
+??? Documentation Agent
+??? Training Agent
+??? Deployment Agent
+??? Monitoring Agent
+```
+
+åÑ ŞÑÇÑÏÇÏ:
+
+```text
+ID
+Version
+Status
+Owner
+Permissions
+Policies
+Verification
+History
+```
+
+ÏÇÑÏ.
+
+---
+
+# 20. Contract + Verification + Artifact
+
+Óå ãİåæã ÈÇíÏ ˜ÇãáÇğ Èå åã ãÊÕá ÈÇÔäÏ:
+
+```text
+AGENT CONTRACT
+      ?
+      ?
+AGENT EXECUTION
+      ?
+      ?
+ARTIFACT
+      ?
+      ?
+VERIFICATION
+      ?
+      ?
+QUALITY GATE
+      ?
+ ???????????
+ ?         ?
+PASS      FAIL
+ ?         ?
+ ?         ?
+HANDOFF   REWORK
+```
+
+Çíä í˜í ÇÒ ãåãÊÑíä ŞÓãÊåÇí ãÚãÇÑí YFG ÎæÇåÏ ÈæÏ.
+
+---
+
+# 21. ãÚãÇÑí äåÇíí Ó ÇÒ ÇÖÇİå ÔÏä Agent Contracts
+
+```text
+?????????????????????????????????????????????????????????????????
+?                    HUMAN GOVERNANCE                           ?
+?                     ÍÇ˜ãíÊ ÇäÓÇäí                            ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?                    YFG CONTROL CENTER                         ?
+?                       ãÑ˜Ò ˜äÊÑá YFG                          ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?                    AI ORCHESTRATOR                            ?
+?                 åãÇåä˜ääÏå ãÑ˜Òí AgentåÇ                   ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?                  AGENT CONTRACT REGISTRY                      ?
+?                    ãÎÒä ŞÑÇÑÏÇÏ AgentåÇ                       ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?                    SPECIALIZED AGENTS                         ?
+?                     AgentåÇí ÊÎÕÕí                            ?
+?                                                               ?
+? Product ? BA ? Architect ? DB ? Backend ? Frontend ? QA      ?
+? Security ? DevOps ? Documentation ? Training ? Deployment    ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?                  SANDBOX / EXECUTION                          ?
+?                    ãÍíØ ÇÌÑÇí ÇíÒæáå                          ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?                    ARTIFACT ENGINE                            ?
+?                 ãæÊæÑ ãÏíÑíÊ ÎÑæÌíåÇ                         ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?              INDEPENDENT VERIFICATION LAYER                   ?
+?                    áÇíå ÑÇÓÊíÂÒãÇíí ãÓÊŞá                    ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?                    QUALITY GATE ENGINE                        ?
+?                     ãæÊæÑ ÏÑæÇÒå ˜íİíÊ                        ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                       ???????????????????
+                       ?                 ?
+                     PASS              FAIL
+                       ?                 ?
+                       ?                 ?
+                 HANDOFF             REWORK
+                 ÊÍæíá ãÑÍáå ÈÚÏ     ÇÕáÇÍ ãÌÏÏ
+                       ?                 ?
+                       ?                 ?????????
+                       ?                         ?
+                NEXT CONTROLLED STAGE            ?
+                                                 ?
+                       ???????????????????????????
+                       ?
+                       ?
+                VERIFICATION AGAIN
+```
+
+---
+
+## äÊíÌå ãåã
+
+ÈÇ ÇÖÇİå ˜ÑÏä **Agent Contract Layer**¡ ãÚãÇÑí YFG ÇÒ í˜ ÓíÓÊã «AgentåÇí åæÔãäÏ ˜å ÈÇ åã ˜ÇÑ ãí˜ääÏ» Èå í˜ ÓíÓÊã ÈÓíÇÑ ÓÇÎÊÇÑíÇİÊåÊÑ ÊÈÏíá ãíÔæÏ:
+
+**Agent + Contract + Permission + Sandbox + Artifact + Verification + Quality Gate + Audit + Human Approval**
+
+Çíä íÚäí åÑ Agent ŞÈá ÇÒ ÔÑæÚ ˜ÇÑ ãíÏÇäÏ:
+
+> **ãä å ˜Óí åÓÊã¿ å ˜ÇÑí ÈÇíÏ ÇäÌÇã Ïåã¿ å íÒí ÏÑíÇİÊ ãí˜äã¿ å íÒí ÈÇíÏ ÊÍæíá ÈÏåã¿ ÈÇ å ÇÈÒÇÑåÇíí¿ ÈÇ å ãÍÏæÏíÊåÇíí¿ å ˜Óí ˜ÇÑ ãÑÇ ÈÑÑÓí ãí˜äÏ¿ ãÚíÇÑ ŞÈæáí íÓÊ¿ ÇÑ Ô˜ÓÊ ÎæÑÏã å ÇÊİÇŞí ãíÇİÊÏ¿ æ å ÒãÇäí ÈÇíÏ ãæÖæÚ ÑÇ Èå ÇäÓÇä ÇÑÌÇÚ Ïåã¿**
+
+Çíä ÈÎÔ ÑÇ ÈÇíÏ ÈåÚäæÇä **Core Architecture Component** ÏÑ ãÚãÇÑí äåÇíí YFG ËÈÊ ˜äíã¡ äå í˜ ŞÇÈáíÊ İÑÚí.
+
+
+Èáå. ÈÇ ÊæÌå Èå ãÚãÇÑí äåÇíí ˜å ÊËÈíÊ ˜ÑÏíã¡ ãÑÍáå ÈÚÏ ÈÇíÏ **Phase-Based Architecture — ãÚãÇÑí İÇÒÈäÏíÔÏå** ÈÇÔÏº íÚäí ãÔÎÕ ˜äíã YFG ÇÒ å äÓÎåÇí ÔÑæÚ ãíÔæÏ¡ ÏÑ åÑ İÇÒ ÏŞíŞÇğ å ÇÌÒÇíí ÓÇÎÊå ãíÔæäÏ¡ å íÒåÇíí äÈÇíÏ Èå İÇÒ ÈÚÏ ãäÊŞá ÔæäÏ¡ æ Gate åÑ İÇÒ íÓÊ.
+
+íÔäåÇÏ ãä Çíä ÇÓÊ ˜å İÇÒåÇ ÑÇ ÈÑ ÇÓÇÓ **ŞÇÈáíÊ ÚãáíÇÊí æÇŞÚí** ÊÚÑíİ ˜äíã¡ äå ÕÑİÇğ ÈÑ ÇÓÇÓ ÊÚÏÇÏ ãÇæáåÇ.
+
+# YFG AI Software Factory
+
+## Phase-Based Architecture — ãÚãÇÑí İÇÒÈäÏíÔÏå
+
+### äÓÎå Çíå ãÚãÇÑí: V1.0
+
+---
+
+# 1. åÏİ İÇÒÈäÏí
+
+åÏİ Çíä İÇÒÈäÏí¡ ÊÈÏíá ãÚãÇÑí äåÇíí YFG Èå í˜ ãÓíÑ ÇÌÑÇíí ˜äÊÑáÔÏå ÇÓÊ.
+
+åÑ Phase ÈÇíÏ:
+
+* ŞÇÈáíÊ ãÔÎÕí ÇíÌÇÏ ˜äÏ.
+* ArtifactåÇí ãÔÎÕí ÊæáíÏ ˜äÏ.
+* Verification ãÓÊŞá ÏÇÔÊå ÈÇÔÏ.
+* Quality Gate ÏÇÔÊå ÈÇÔÏ.
+* ÏÑ äŞÇØ ÍÓÇÓ Human Approval ÏÇÔÊå ÈÇÔÏ.
+* ŞÇÈá Rollback ÈÇÔÏ.
+* ÎÑæÌí Âä ÈÑÇí Phase ÈÚÏí ŞÇÈá ÇÓÊİÇÏå ÈÇÔÏ.
+
+ÇÕá ãåã:
+
+> **Phase ÈÚÏí äÈÇíÏ ÕÑİÇğ Èå Ïáíá Ê˜ãíá ˜ÏäæíÓí Phase ŞÈáí ÔÑæÚ ÔæÏº Èá˜å ÈÇíÏ GateåÇí ãÚãÇÑí¡ ˜íİíÊ æ ÍÇ˜ãíÊ Phase ŞÈáí ÈÇ ãæİŞíÊ ÚÈæÑ ˜ÑÏå ÈÇÔäÏ.**
+
+---
+
+# 2. ãÏá ˜áí İÇÒåÇ
+
+YFG ÑÇ ãíÊæÇä ÏÑ **12 İÇÒ ÇÕáí** íÇÏåÓÇÒí ˜ÑÏ:
+
+```text
+PHASE 0
+Foundation & Governance
+ÈäíÇä æ ÍÇ˜ãíÊ
+        ?
+PHASE 1
+YFG Core Platform
+åÓÊå áÊİÑã
+        ?
+PHASE 2
+Agent Contract & Registry
+ŞÑÇÑÏÇÏ æ Registry AgentåÇ
+        ?
+PHASE 3
+Orchestration & Workflow
+åãÇåäÓÇÒí æ ÑÏÔ˜ÇÑ
+        ?
+PHASE 4
+Verification & Quality Gates
+ÑÇÓÊíÂÒãÇíí æ ÏÑæÇÒååÇí ˜íİíÊ
+        ?
+PHASE 5
+Engineering Environment
+ãÍíØ ãåäÏÓí
+        ?
+PHASE 6
+Project Intelligence & Traceability
+åæÔ Ñæå æ ÑÏíÇÈí
+        ?
+PHASE 7
+AI Engineering Agents
+AgentåÇí ãåäÏÓí
+        ?
+PHASE 8
+QA / Security / Release
+˜íİíÊ¡ ÇãäíÊ æ ÇäÊÔÇÑ
+        ?
+PHASE 9
+Deployment & Operations
+ÇÓÊŞÑÇÑ æ ÚãáíÇÊ
+        ?
+PHASE 10
+Knowledge / Documentation / Training
+ÏÇäÔ¡ ãÓÊäÏÇÊ æ ÂãæÒÔ
+        ?
+PHASE 11
+AI Software Factory
+˜ÇÑÎÇäå ˜Çãá äÑãÇİÒÇÑ
+```
+
+---
+
+# 3. Phase 0 — Foundation & Governance
+
+## İÇÒ ÕİÑ — ÈäíÇä æ ÍÇ˜ãíÊ
+
+### åÏİ
+
+ÇíÌÇÏ ÒíÑÓÇÎÊ ãİåæãí æ ÍÇ˜ãíÊí YFG ŞÈá ÇÒ æÑæÏ Èå AgentåÇí æÇŞÚí.
+
+ÏÑ Çíä Phase åäæÒ åÏİ ÇÕáí «ÊæáíÏ äÑãÇİÒÇÑ» äíÓÊ.
+
+åÏİ:
+
+> ÓÇÎÊ ŞæÇäíä¡ ãÏáåÇ æ ŞÑÇÑÏÇÏåÇíí ˜å ˜á ˜ÇÑÎÇäå ÂíäÏå ÈÑ ÇÓÇÓ ÂäåÇ ˜ÇÑ ÎæÇåÏ ˜ÑÏ.
+
+---
+
+## ÇÌÒÇí Phase 0
+
+### 0.1 Product Model
+
+ãÏá ãÍÕæá
+
+### 0.2 Project Model
+
+ãÏá Ñæå
+
+### 0.3 Requirement Model
+
+ãÏá äíÇÒãäÏí
+
+### 0.4 Artifact Model
+
+ãÏá ÎÑæÌí
+
+### 0.5 Version Model
+
+ãÏá äÓÎå
+
+### 0.6 Decision Model
+
+ãÏá ÊÕãíã
+
+### 0.7 Approval Model
+
+ãÏá ÊÃííÏ
+
+### 0.8 Audit Model
+
+ãÏá ÍÓÇÈÑÓí
+
+### 0.9 Policy Model
+
+ãÏá ÓíÇÓÊ
+
+### 0.10 Security Model
+
+ãÏá ÇãäíÊ
+
+---
+
+## ÎÑæÌí Phase 0
+
+```text
+Product
+Project
+Requirement
+Artifact
+Version
+Decision
+Approval
+Policy
+Audit
+Security
+```
+
+---
+
+## Gate 0
+
+### Foundation Gate
+
+ÈÇíÏ ãÔÎÕ ÈÇÔÏ:
+
+* å íÒí Project ÇÓÊ¿
+* å íÒí Artifact ÇÓÊ¿
+* å íÒí Requirement ÇÓÊ¿
+* å íÒí Decision ÇÓÊ¿
+* å ˜Óí Approval ãíÏåÏ¿
+* å íÒí äíÇÒãäÏ Verification ÇÓÊ¿
+* å íÒí ŞÇÈá Rollback ÇÓÊ¿
+
+---
+
+# 4. Phase 1 — YFG Core Platform
+
+## İÇÒ í˜ — åÓÊå áÊİÑã YFG
+
+### åÏİ
+
+ÓÇÎÊ ÍÏÇŞá Runtime æÇŞÚí YFG.
+
+---
+
+## ÇÌÒÇí ÇÕáí
+
+### Control Center
+
+ãÑ˜Ò ˜äÊÑá
+
+### Project Management
+
+ãÏíÑíÊ Ñæå
+
+### Task Management
+
+ãÏíÑíÊ æÙÇíİ
+
+### Artifact Management
+
+ãÏíÑíÊ ÎÑæÌíåÇ
+
+### Version Management
+
+ãÏíÑíÊ äÓÎååÇ
+
+### Audit Log
+
+ËÈÊ ÑæíÏÇÏåÇ
+
+### Approval Engine
+
+ãæÊæÑ ÊÃííÏ
+
+### Policy Engine
+
+ãæÊæÑ ÓíÇÓÊ
+
+### Notification Engine
+
+ãæÊæÑ ÇÚáÇä
+
+---
+
+## Architecture
+
+```text
+Human
+  ?
+Control Center
+  ?
+Project
+  ?
+Task
+  ?
+Artifact
+  ?
+Approval
+  ?
+Audit
+```
+
+---
+
+## Gate 1
+
+YFG ÈÇíÏ ÈÊæÇäÏ:
+
+1. Project ÇíÌÇÏ ˜äÏ.
+2. Task ÇíÌÇÏ ˜äÏ.
+3. Artifact ËÈÊ ˜äÏ.
+4. Version ËÈÊ ˜äÏ.
+5. Approval ËÈÊ ˜äÏ.
+6. Audit ÇíÌÇÏ ˜äÏ.
+7. æÖÚíÊ Project ÑÇ äåÏÇÑí ˜äÏ.
+
+---
+
+# 5. Phase 2 — Agent Contract & Registry
+
+## İÇÒ Ïæ — ŞÑÇÑÏÇÏ æ Registry AgentåÇ
+
+Çíä Phase í˜í ÇÒ ãåãÊÑíä ãÑÇÍá ãÚãÇÑí ÇÓÊ.
+
+### åÏİ
+
+ŞÈá ÇÒ Çíä˜å AgentåÇí ãÊÚÏÏ æÇÑÏ ÓíÓÊã ÔæäÏ¡ ÈÇíÏ ãÔÎÕ ÔæÏ:
+
+> åÑ Agent ÏŞíŞÇğ å ˜Óí ÇÓÊ æ å ÇÌÇÒåÇí ÏÇÑÏ¿
+
+---
+
+# Agent Contract Layer
+
+åÑ Agent ÏÇÑÇí Contract ÎæÇåÏ ÈæÏ.
+
+```text
+Agent
+ ?
+Contract
+ ?
+Role
+ ?
+Scope
+ ?
+Tools
+ ?
+Permissions
+ ?
+Inputs
+ ?
+Outputs
+ ?
+Verification
+ ?
+Quality Gate
+ ?
+Escalation
+```
+
+---
+
+## Agent Registry
+
+ãÎÒä ãÑ˜Òí AgentåÇ:
+
+```text
+Agent ID
+Agent Name
+Agent Type
+Version
+Contract Version
+Role
+Status
+Permissions
+Tools
+Capabilities
+```
+
+---
+
+## Agent Contract
+
+ÍÏÇŞá:
+
+```text
+Identity
+Role
+Mission
+Scope
+Inputs
+Outputs
+Tools
+Permissions
+Constraints
+Policies
+Acceptance Criteria
+Verification Rules
+Quality Gates
+Retry Policy
+Escalation Rules
+Human Approval
+Security Requirements
+Audit Requirements
+Rollback Policy
+Dependencies
+Failure Conditions
+SLA
+Knowledge Requirements
+Handoff Rules
+```
+
+---
+
+## Gate 2
+
+ŞÈá ÇÒ ÚÈæÑ:
+
+* Agent ÈÇíÏ Identity ÏÇÔÊå ÈÇÔÏ.
+* Contract ÏÇÔÊå ÈÇÔÏ.
+* Permission ÏÇÔÊå ÈÇÔÏ.
+* Tool Scope ÏÇÔÊå ÈÇÔÏ.
+* Verification Rule ÏÇÔÊå ÈÇÔÏ.
+* Escalation Rule ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+# 6. Phase 3 — Orchestration & Workflow
+
+## İÇÒ Óå — åãÇåäÓÇÒí æ ÑÏÔ˜ÇÑ
+
+### åÏİ
+
+YFG ÇÒ í˜ ÓíÓÊã ãÏíÑíÊ Agent Èå í˜ ÓíÓÊã **Agent Organization** ÊÈÏíá ÔæÏ.
+
+---
+
+## ÇÌÒÇí ÇÕáí
+
+### Agent Orchestrator
+
+åãÇåä˜ääÏå AgentåÇ
+
+### Workflow Engine
+
+ãæÊæÑ ÑÏÔ˜ÇÑ
+
+### Task Scheduler
+
+ÒãÇäÈäÏí æÙÇíİ
+
+### Dependency Manager
+
+ãÏíÑíÊ æÇÈÓÊí
+
+### Context Manager
+
+ãÏíÑíÊ Òãíäå
+
+### Handoff Manager
+
+ãÏíÑíÊ ÊÍæíá Èíä AgentåÇ
+
+---
+
+## Workflow
+
+```text
+Task
+ ?
+Orchestrator
+ ?
+Select Agent
+ ?
+Load Contract
+ ?
+Load Context
+ ?
+Execute
+ ?
+Handoff
+```
+
+---
+
+## Gate 3
+
+ÓíÓÊã ÈÇíÏ ÈÊæÇäÏ:
+
+```text
+Task
+ ?
+Agent Selection
+ ?
+Execution
+ ?
+Handoff
+```
+
+ÑÇ ÈÏæä ÏÎÇáÊ ÏÓÊí ÈÑÇí ãÑÇÍá ÚÇÏí ÇäÌÇã ÏåÏ.
+
+ÇãÇ:
+
+> Human Authority åãäÇä ŞÇÈá ÏæÑ ÒÏä äíÓÊ.
+
+---
+
+# 7. Phase 4 — Verification & Quality Gates
+
+## İÇÒ åÇÑ — ÑÇÓÊíÂÒãÇíí æ ÏÑæÇÒååÇí ˜íİíÊ
+
+Çíä Phase åÓÊå ÇÚÊãÇÏ YFG ÇÓÊ.
+
+### åÏİ
+
+ÊÈÏíá YFG ÇÒ:
+
+**Agent Execution Platform**
+
+Èå:
+
+**Verification-Driven AI Engineering Platform**
+
+---
+
+# Verification Engine
+
+```text
+Artifact
+ ?
+Verification Rule
+ ?
+Independent Verifier
+ ?
+Verification Result
+ ?
+Quality Gate
+```
+
+---
+
+## Verification Types
+
+### Requirement Verification
+
+ÑÇÓÊíÂÒãÇíí äíÇÒãäÏí
+
+### Architecture Verification
+
+ÑÇÓÊíÂÒãÇíí ãÚãÇÑí
+
+### Database Verification
+
+ÑÇÓÊíÂÒãÇíí ÇíÇå ÏÇÏå
+
+### Code Verification
+
+ÑÇÓÊíÂÒãÇíí ˜Ï
+
+### API Verification
+
+ÑÇÓÊíÂÒãÇíí API
+
+### UI Verification
+
+ÑÇÓÊíÂÒãÇíí UI
+
+### Security Verification
+
+ÑÇÓÊíÂÒãÇíí ÇãäíÊ
+
+### Documentation Verification
+
+ÑÇÓÊíÂÒãÇíí ãÓÊäÏÇÊ
+
+---
+
+# Rework Engine
+
+```text
+FAIL
+ ?
+Failure Analysis
+ ?
+Feedback
+ ?
+Rework
+ ?
+Verification
+```
+
+---
+
+# Escalation
+
+```text
+Attempt 1
+ ?
+FAIL
+ ?
+Attempt 2
+ ?
+FAIL
+ ?
+Attempt 3
+ ?
+FAIL
+ ?
+Human Escalation
+```
+
+ÊÚÏÇÏ ÊáÇÔ ÈÇíÏ ÏÑ Contract ŞÇÈá ÊäÙíã ÈÇÔÏ.
+
+---
+
+## Gate 4
+
+åí Artifact ãåãí äÈÇíÏ ÈÊæÇäÏ ÈÏæä Verification æÇÑÏ ãÑÍáå ÈÚÏ ÔæÏ.
+
+Çíä Phase ÈÇíÏ í˜í ÇÒ **Hard Architectural Gates** ÓíÓÊã ÈÇÔÏ.
+
+---
+
+# 8. Phase 5 — Engineering Environment
+
+## İÇÒ äÌ — ãÍíØ ãåäÏÓí
+
+### åÏİ
+
+ÇíÌÇÏ ãÍíØí ˜å Agent ÈÊæÇäÏ æÇŞÚÇğ äÑãÇİÒÇÑ ÊæáíÏ ˜äÏ.
+
+---
+
+## ÇÌÒÇ
+
+### Git Integration
+
+˜äÊÑá äÓÎå
+
+### Repository Manager
+
+ãÏíÑíÊ Repository
+
+### Branch Management
+
+ãÏíÑíÊ Branch
+
+### Sandbox
+
+ãÍíØ ÇíÒæáå
+
+### Build Environment
+
+ãÍíØ Build
+
+### Test Environment
+
+ãÍíØ Test
+
+### Dependency Manager
+
+ãÏíÑíÊ æÇÈÓÊí
+
+---
+
+# Environment Architecture
+
+```text
+Agent
+ ?
+Sandbox
+ ?
+Repository
+ ?
+Branch
+ ?
+Build
+ ?
+Test
+```
+
+---
+
+# Environment Isolation
+
+```text
+Development
+     ?
+Test
+     ?
+Staging
+     ?
+Production
+```
+
+Production äÈÇíÏ Workspace íÔİÑÖ Agent ÈÇÔÏ.
+
+---
+
+## Gate 5
+
+Agent ÈÇíÏ ÈÊæÇäÏ:
+
+```text
+Create Branch
+Write Code
+Commit
+Build
+Test
+Return Artifact
+```
+
+ÇãÇ:
+
+```text
+Direct Production Access
+```
+
+äÈÇíÏ ÈåÕæÑÊ íÔİÑÖ æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+# 9. Phase 6 — Project Intelligence & Traceability
+
+## İÇÒ ÔÔ — åæÔ Ñæå æ ŞÇÈáíÊ ÑÏíÇÈí
+
+Çíä Phase åãÇä íÒí ÇÓÊ ˜å YFG ÑÇ ÇÒ í˜ Agent Orchestrator ÓÇÏå ÌÏÇ ãí˜äÏ.
+
+---
+
+# Project Intelligence
+
+YFG ÈÇíÏ ÓÇÎÊÇÑ Ñæå ÑÇ ÈİåãÏ:
+
+```text
+Project
+ ??? Requirements
+ ??? Architecture
+ ??? Database
+ ??? APIs
+ ??? Source Code
+ ??? Tests
+ ??? Security
+ ??? Documentation
+ ??? Releases
+```
+
+---
+
+# Dependency Graph
+
+```text
+Requirement
+      ?
+Architecture
+      ?
+Module
+      ?
+API
+      ?
+Code
+      ?
+Test
+```
+
+---
+
+# Traceability Engine
+
+ÈÇíÏ ÈÊæÇäÏ ÇÓÎ ÏåÏ:
+
+### ÓÄÇá 1
+
+> Çíä Requirement ˜ÌÇ íÇÏåÓÇÒí ÔÏå¿
+
+### ÓÄÇá 2
+
+> Çíä Code ÈÑ ÇÓÇÓ ˜ÏÇã Requirement ÇíÌÇÏ ÔÏå¿
+
+### ÓÄÇá 3
+
+> ˜ÏÇã Test Çíä Requirement ÑÇ æÔÔ ãíÏåÏ¿
+
+### ÓÄÇá 4
+
+> Çíä Bug å ArtifactåÇíí ÑÇ ÊÍÊ ÊÃËíÑ ŞÑÇÑ ãíÏåÏ¿
+
+### ÓÄÇá 5
+
+> Çíä Release ÔÇãá å ÊÛííÑÇÊí ÇÓÊ¿
+
+---
+
+# Project State Engine
+
+```text
+Current Stage
+Current Version
+Current Artifact
+Pending Verification
+Pending Approval
+Failed Tasks
+Blocked Tasks
+Release Status
+```
+
+---
+
+## Gate 6
+
+YFG ÈÇíÏ ÈÊæÇäÏ í˜ Project ÑÇ ÈåÕæÑÊ ÓÇÎÊÇÑíÇİÊå ÊÍáíá æ Navigate ˜äÏ.
+
+---
+
+# 10. Phase 7 — AI Engineering Agents
+
+## İÇÒ åİÊ — AgentåÇí ãåäÏÓí äÑãÇİÒÇÑ
+
+Ç˜äæä AgentåÇí ÊÎÕÕí æÇŞÚí æÇÑÏ ÓíÓÊã ãíÔæäÏ.
+
+---
+
+# Product Agents
+
+### Product Manager Agent
+
+ãÏíÑíÊ ãÍÕæá
+
+### Business Analyst Agent
+
+ÊÍáíá ˜ÓÈæ˜ÇÑ
+
+---
+
+# Architecture Agents
+
+### Solution Architect Agent
+
+ãÚãÇÑ ÑÇå˜ÇÑ
+
+### Database Architect Agent
+
+ãÚãÇÑ ÇíÇå ÏÇÏå
+
+---
+
+# Development Agents
+
+### Backend Agent
+
+ÊæÓÚå Backend
+
+### Frontend Agent
+
+ÊæÓÚå Frontend
+
+### Database Development Agent
+
+ÊæÓÚå Database
+
+### Integration Agent
+
+í˜ÇÑåÓÇÒí
+
+---
+
+# Quality Agents
+
+### QA Agent
+
+ÊÖãíä ˜íİíÊ
+
+### Code Review Agent
+
+ÈÇÒÈíäí ˜Ï
+
+### Security Agent
+
+ÇãäíÊ
+
+### Bug Hunter Agent
+
+˜Ôİ ÎØÇ
+
+---
+
+# Support Agents
+
+### Documentation Agent
+
+ãÓÊäÏÓÇÒí
+
+### Training Agent
+
+ÂãæÒÔ
+
+### Catalog Agent
+
+˜ÇÊÇáæ
+
+---
+
+# Orchestration
+
+```text
+Human
+ ?
+Product Manager
+ ?
+BA
+ ?
+Architect
+ ?
+Database
+ ?
+Backend
+ ?
+Frontend
+ ?
+Integration
+ ?
+QA
+ ?
+Security
+ ?
+Documentation
+```
+
+åÑ ãÑÍáå:
+
+```text
+Generate
+ ?
+Verify
+ ?
+Gate
+ ?
+Next
+```
+
+---
+
+## Gate 7
+
+ÍÏÇŞá í˜ **End-to-End Software Delivery Flow** ÈÇíÏ ÈÏæä ÏÎÇáÊ ÏÓÊí Èíä ÊãÇã ãÑÇÍá ÇÕáí ÇÌÑÇ ÔæÏ.
+
+---
+
+# 11. Phase 8 — QA / Security / Release
+
+## İÇÒ åÔÊ — ˜íİíÊ¡ ÇãäíÊ æ ÇäÊÔÇÑ
+
+ÏÑ Çíä Phase¡ ÓíÓÊã ÇÒ ÊæáíÏ ÕÑİ Èå **Release Engineering** ÊÈÏíá ãíÔæÏ.
+
+---
+
+## QA
+
+```text
+Requirement QA
+ ?
+Architecture QA
+ ?
+Database QA
+ ?
+Code QA
+ ?
+Integration QA
+```
+
+---
+
+## Security
+
+```text
+Authentication
+Authorization
+RBAC
+Secrets
+Dependencies
+Vulnerabilities
+API Security
+Data Protection
+```
+
+---
+
+## Release
+
+```text
+Build
+ ?
+Test
+ ?
+Security
+ ?
+Review
+ ?
+Release Verification
+ ?
+Human Approval
+ ?
+Release
+```
+
+---
+
+## Gate 8
+
+åí Release ãåãí ÈÏæä:
+
+```text
+QA
++
+Security
++
+Verification
++
+Human Approval
+```
+
+ãäÊÔÑ äãíÔæÏ.
+
+---
+
+# 12. Phase 9 — Deployment & Operations
+
+## İÇÒ äå — ÇÓÊŞÑÇÑ æ ÚãáíÇÊ
+
+### åÏİ
+
+YFG ÈÊæÇäÏ ãÍÕæá ÓÇÎÊåÔÏå ÑÇ ÈÇ ˜äÊÑá ˜Çãá æÇÑÏ ãÍíØ æÇŞÚí ˜äÏ.
+
+---
+
+# Deployment Agent
+
+```text
+Package
+ ?
+Environment Validation
+ ?
+Deployment Plan
+ ?
+Verification
+ ?
+Human Approval
+ ?
+Deployment
+```
+
+---
+
+# Monitoring Agent
+
+ÇíÔ:
+
+```text
+CPU
+RAM
+Database
+API
+Latency
+Errors
+Availability
+Security Events
+```
+
+---
+
+# Incident Agent
+
+```text
+Incident
+ ?
+Detection
+ ?
+Analysis
+ ?
+Root Cause
+ ?
+Impact
+ ?
+Fix
+ ?
+Verification
+ ?
+Approval
+ ?
+Deployment
+```
+
+---
+
+# Rollback
+
+```text
+Release 1.2
+ ?
+Incident
+ ?
+Rollback
+ ?
+Release 1.1
+```
+
+---
+
+## Gate 9
+
+YFG ÈÇíÏ ÈÊæÇäÏ:
+
+* Deploy
+* Verify
+* Monitor
+* Detect Incident
+* Prepare Recovery
+* Rollback
+
+ÑÇ ÏÑ í˜ ÑÎå ˜äÊÑáÔÏå ÇäÌÇã ÏåÏ.
+
+---
+
+# 13. Phase 10 — Knowledge / Documentation / Training
+
+## İÇÒ Ïå — ÏÇäÔ¡ ãÓÊäÏÇÊ æ ÂãæÒÔ
+
+### åÏİ
+
+ÊÈÏíá ÎÑæÌíåÇí İäí YFG Èå ÏÇäÔ ŞÇÈá ÇÓÊİÇÏå ÈÑÇí ÇäÓÇä.
+
+---
+
+# Documentation
+
+```text
+Architecture Document
+Technical Documentation
+API Documentation
+Database Documentation
+Installation Guide
+Administration Guide
+User Manual
+Release Notes
+Troubleshooting Guide
+```
+
+---
+
+# Training
+
+```text
+Goal
+ ?
+Prerequisites
+ ?
+Steps
+ ?
+Example
+ ?
+Common Errors
+ ?
+Practice
+```
+
+---
+
+# Catalog
+
+```text
+Product Catalog
+Module Catalog
+Feature Catalog
+Technical Catalog
+User Catalog
+```
+
+---
+
+## Gate 10
+
+åÑ Release ÈÇíÏ Documentation æ Training ãÊäÇÓÈ ÈÇ ÊÛííÑÇÊ ÎæÏ ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+# 14. Phase 11 — AI Software Factory
+
+## İÇÒ íÇÒÏå — ˜ÇÑÎÇäå ˜Çãá äÑãÇİÒÇÑ
+
+ÏÑ Çíä ãÑÍáå ÊãÇã ÇÌÒÇí YFG Èå í˜ ÓíÓÊã í˜ÇÑå ÊÈÏíá ãíÔæäÏ.
+
+---
+
+# End-to-End Factory
+
+```text
+HUMAN IDEA
+     ?
+PRODUCT
+     ?
+REQUIREMENTS
+     ?
+ARCHITECTURE
+     ?
+DESIGN
+     ?
+DATABASE
+     ?
+BACKEND
+     ?
+FRONTEND
+     ?
+INTEGRATION
+     ?
+TEST
+     ?
+SECURITY
+     ?
+DOCUMENTATION
+     ?
+RELEASE
+     ?
+DEPLOYMENT
+     ?
+MONITORING
+     ?
+INCIDENT
+     ?
+MAINTENANCE
+     ?
+EVOLUTION
+```
+
+ÏÑ ÊãÇã ãÓíÑ:
+
+```text
+CONTRACT
++
+VERIFICATION
++
+QUALITY GATE
++
+TRACEABILITY
++
+AUDIT
++
+HUMAN GOVERNANCE
+```
+
+İÚÇá åÓÊäÏ.
+
+---
+
+# 15. Phase Dependency Map
+
+## äŞÔå æÇÈÓÊí İÇÒåÇ
+
+```text
+P0 Foundation
+       ?
+       ?
+P1 Core Platform
+       ?
+       ?
+P2 Agent Contracts
+       ?
+       ?
+P3 Orchestration
+       ?
+       ?
+P4 Verification
+       ?
+       ?
+P5 Engineering Environment
+       ?
+       ?
+P6 Project Intelligence
+       ?
+       ?
+P7 Engineering Agents
+       ?
+       ?
+P8 QA / Security / Release
+       ?
+       ?
+P9 Deployment / Operations
+       ?
+       ?
+P10 Knowledge / Documentation
+       ?
+       ?
+P11 AI Software Factory
+```
+
+---
+
+# 16. MVP Boundary
+
+## ãÑÒ MVP
+
+ÈÑÇí Çíä˜å Ñæå ÈíÔ ÇÒ ÍÏ ÈÒÑ äÔæÏ¡ Çæáíä äÓÎå ÚãáíÇÊí äÈÇíÏ ÊãÇã PhaseåÇ ÑÇ íÇÏåÓÇÒí ˜äÏ.
+
+### MVP æÇŞÚí YFG:
+
+```text
+P0
++
+P1
++
+P2
++
+P3
++
+P4
++
+P5
++
+P6
+```
+
+íÚäí:
+
+```text
+Foundation
+Core
+Agent Contracts
+Orchestration
+Verification
+Engineering Environment
+Project Intelligence
+```
+
+---
+
+# 17. MVP ÚãáíÇÊí
+
+Ó ÇÒ MVP¡ ÈÇíÏ í˜ ÓäÇÑíæí æÇŞÚí ŞÇÈá ÇÌÑÇ ÏÇÔÊå ÈÇÔíã:
+
+```text
+Human
+ ?
+Create Project
+ ?
+Create Requirement
+ ?
+Assign Agent
+ ?
+Agent Contract
+ ?
+Agent Execution
+ ?
+Artifact
+ ?
+Independent Verification
+ ?
+Quality Gate
+ ?
+Git Commit
+ ?
+Traceability
+ ?
+Audit
+```
+
+ÇÑ Verification Ô˜ÓÊ ÎæÑÏ:
+
+```text
+FAIL
+ ?
+Feedback
+ ?
+Rework
+ ?
+Verification
+```
+
+ÇÑ äÏ ÈÇÑ Ô˜ÓÊ ÎæÑÏ:
+
+```text
+Human Escalation
+```
+
+---
+
+# 18. V1 — Çæáíä äÓÎå æÇŞÚí ˜ÇÑÎÇäå
+
+Ó ÇÒ MVP:
+
+```text
+MVP
+ ?
+P7 Engineering Agents
+ ?
+P8 QA / Security / Release
+ ?
+P9 Deployment
+```
+
+ÏÑ Çíä äŞØå YFG ŞÇÏÑ ÎæÇåÏ ÈæÏ í˜ ãÍÕæá äÑãÇİÒÇÑí æÇŞÚí ÑÇ ÇÒ Requirement ÊÇ Release åÏÇíÊ ˜äÏ.
+
+---
+
+# 19. V2 — Factory Intelligence
+
+ÈÚÏ ÇÒ Ê˜ãíá V1:
+
+### Advanced Project Intelligence
+
+### Deep Code Indexing
+
+### Dependency Graph
+
+### Semantic Code Analysis
+
+### Architecture Drift Detection
+
+### Requirement Coverage Analysis
+
+### Automated Impact Analysis
+
+### Intelligent Bug Localization
+
+### Automated Refactoring
+
+### Technical Debt Analysis
+
+---
+
+# 20. V3 — Autonomous Engineering
+
+ÏÑ V3 ÓØÍ ÇÊæãÇÓíæä ÇİÒÇíÔ ãííÇÈÏ.
+
+ÇãÇ ÇÕá ÈäíÇÏíä ÊÛííÑ äãí˜äÏ:
+
+```text
+More Autonomy
+?
+Less Governance
+```
+
+Èá˜å:
+
+```text
+More Autonomy
++
+More Verification
++
+More Traceability
++
+More Policy Control
+```
+
+---
+
+# 21. Human Approval Matrix
+
+## ãÇÊÑíÓ ÊÃííÏ ÇäÓÇäí
+
+| ÚãáíÇÊ                |      Agent | Verification |                            Human |
+| --------------------- | ---------: | -----------: | -------------------------------: |
+| Requirement Draft     |          ? |            ? |                         Optional |
+| Architecture Draft    |          ? |            ? |                     **Required** |
+| Major DB Change       |          ? |            ? |                     **Required** |
+| Code Generation       |          ? |            ? |                         Optional |
+| Security Finding      |          ? |            ? |            Required for critical |
+| Release               |          ? |            ? |                     **Required** |
+| Production Deployment |          ? |            ? |                     **Required** |
+| Rollback              |          ? |            ? | Policy-based / Critical approval |
+| Agent Contract Change | ? Proposal |            ? |                     **Required** |
+
+---
+
+# 22. Phase Gate Model
+
+åÑ Phase ÇÒ Çíä ÑÎå ÚÈæÑ ãí˜äÏ:
+
+```text
+PHASE START
+     ?
+DESIGN
+     ?
+IMPLEMENTATION
+     ?
+VERIFICATION
+     ?
+QUALITY GATE
+     ?
+ ??????????
+ ?        ?
+PASS     FAIL
+ ?        ?
+ ?        ?
+NEXT    REWORK
+          ?
+          ???? VERIFICATION
+```
+
+ÏÑ äŞÇØ ÍÓÇÓ:
+
+```text
+Quality Gate
+      ?
+Human Approval
+      ?
+Next Phase
+```
+
+---
+
+# 23. Phase Completion Criteria
+
+## ãÚíÇÑ Ê˜ãíá åÑ İÇÒ
+
+í˜ Phase ÒãÇäí Complete ÇÓÊ ˜å:
+
+### 1. Functional Completion
+
+ŞÇÈáíÊåÇí ÊÚÑíİÔÏå ÇÌÑÇ ÔæäÏ.
+
+### 2. Verification Completion
+
+Verification ÇäÌÇã ÔÏå ÈÇÔÏ.
+
+### 3. Quality Completion
+
+Quality Gate PASS ÈÇÔÏ.
+
+### 4. Security Completion
+
+ÑíÓ˜åÇí ÊÚÑíİÔÏå ÈÑÑÓí ÔÏå ÈÇÔäÏ.
+
+### 5. Traceability Completion
+
+ArtifactåÇ ŞÇÈá ÑÏíÇÈí ÈÇÔäÏ.
+
+### 6. Documentation Completion
+
+ãÓÊäÏÇÊ áÇÒã ÇíÌÇÏ ÔÏå ÈÇÔäÏ.
+
+### 7. Audit Completion
+
+ÑæíÏÇÏåÇí ãåã ËÈÊ ÔÏå ÈÇÔäÏ.
+
+### 8. Rollback Readiness
+
+Çã˜Çä ÈÇÒÔÊ æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### 9. Human Approval
+
+ÏÑ ÕæÑÊ äíÇÒ Approval ÇäÌÇã ÔÏå ÈÇÔÏ.
+
+---
+
+# 24. äÓÎåÈäÏí íÔäåÇÏí YFG
+
+```text
+YFG 0.1
+Foundation
+
+YFG 0.2
+Core Platform
+
+YFG 0.3
+Agent Contracts
+
+YFG 0.4
+Orchestration
+
+YFG 0.5
+Verification
+
+YFG 0.6
+Engineering Environment
+
+YFG 0.7
+Project Intelligence
+
+YFG 0.8
+Engineering Agents
+
+YFG 0.9
+QA / Security
+
+YFG 1.0
+AI Software Factory MVP
+
+YFG 1.1
+Deployment & Operations
+
+YFG 1.2
+Knowledge & Documentation
+
+YFG 2.0
+Advanced Project Intelligence
+
+YFG 3.0
+Autonomous Engineering
+```
+
+---
+
+# 25. ãåãÊÑíä ÊÕãíã ãÚãÇÑí
+
+İÇÒåÇí YFG äÈÇíÏ İŞØ Èå Ô˜á:
+
+```text
+Version 1
+Version 2
+Version 3
+```
+
+ÓÇÎÊå ÔæäÏ.
+
+Èá˜å åÑ äÓÎå ÈÇíÏ í˜ **Capability** ÌÏíÏ ÇíÌÇÏ ˜äÏ.
+
+ãËáÇğ:
+
+```text
+V0.1 ? YFG understands projects
+V0.2 ? YFG manages agents
+V0.3 ? YFG controls agent contracts
+V0.4 ? YFG orchestrates agents
+V0.5 ? YFG verifies agents
+V0.6 ? YFG executes engineering work
+V0.7 ? YFG understands project structure
+V0.8 ? YFG develops software
+V0.9 ? YFG validates software
+V1.0 ? YFG operates as an AI Software Factory
+```
+
+---
+
+# 26. Final Phase Architecture
+
+ãÏá äåÇíí:
+
+```text
+                 HUMAN
+                   ?
+                   ?
+        ????????????????????????
+        ? P0 GOVERNANCE        ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P1 CORE PLATFORM     ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P2 AGENT CONTRACTS   ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P3 ORCHESTRATION     ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P4 VERIFICATION      ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P5 ENGINEERING ENV   ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P6 PROJECT INTELL.   ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P7 AI ENGINEERING    ?
+        ?       AGENTS         ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P8 QA / SECURITY     ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P9 DEPLOY / OPS      ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P10 KNOWLEDGE        ?
+        ? DOCUMENTATION        ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P11 AI SOFTWARE      ?
+        ?      FACTORY         ?
+        ????????????????????????
+```
+
+---
+
+# 27. ãÚãÇÑí äåÇíí İÇÒÈäÏíÔÏå ÏÑ í˜ Ìãáå
+
+> **YFG ÇÈÊÏÇ ÈÇíÏ «ŞÇÈá ˜äÊÑá» ÔæÏ¡ ÓÓ «ŞÇÈá ÇÑ˜ÓÊÑÇÓíæä»¡ ÓÓ «ŞÇÈá ÑÇÓÊíÂÒãÇíí»¡ ÓÓ «ŞÇÈá ÇÌÑÇ ÏÑ ãÍíØ ãåäÏÓí»¡ ÓÓ «ŞÇÈá ÏÑ˜ ÇÒ Ñæå»¡ æ ÏÑ äåÇíÊ «ŞÇÈá ÊæáíÏ ˜Çãá äÑãÇİÒÇÑ».**
+
+Èå åãíä Ïáíá ÊÑÊíÈ ÇÕáí İÇÒåÇ ÈÇíÏ ÍİÙ ÔæÏ:
+
+**Governance ? Core ? Contracts ? Orchestration ? Verification ? Engineering ? Intelligence ? Agents ? QA/Security ? Operations ? Knowledge ? Factory**
+
+æ ãåãÊÑ ÇÒ åãå:
+
+> **Verification æ Governance äÈÇíÏ ÈÚÏ ÇÒ ÓÇÎÊ AgentåÇ ÇÖÇİå ÔæäÏº Çíä Ïæ ÈÇíÏ ŞÈá ÇÒ æÑæÏ AgentåÇí ŞÏÑÊãäÏ Èå ÓíÓÊã æÌæÏ ÏÇÔÊå ÈÇÔäÏ.**
+
+
+ÍÊãÇğ. ãä ÓÇÎÊÇÑ İÚáí ÑÇ ÍİÙ ãí˜äã æ ÈÑÇí **åÑ ?? İÇÒ** Óå ÈÎÔ ÇÌÑÇíí ÇÖÇİå ãí˜äã: **Deliverables¡ Acceptance Criteria æ Phase Exit Gate**. Çíä äÓÎå ÑÇ ãíÊæÇäíã ÈåÚäæÇä **Baseline ÇÌÑÇíí İÇÒÈäÏí YFG** ãÈäÇ ŞÑÇÑ Ïåíã.
+
+# YFG AI Software Factory
+
+## Phase-Based Architecture — ãÚãÇÑí İÇÒÈäÏíÔÏå
+
+### Deliverables & Acceptance Criteria — ÎÑæÌíåÇí ŞÇÈá ÊÍæíá æ ãÚíÇÑåÇí ĞíÑÔ
+
+**Architecture Baseline:** V1.0
+**Execution Model:** Phase-Gated / Verification-Driven / Human-Governed
+
+---
+
+# 1. Phase Governance Model — ãÏá ÍÇ˜ãíÊ İÇÒåÇ
+
+åÑ Phase ÈÇíÏ ÏÇÑÇí ÑÎå ÒíÑ ÈÇÔÏ:
+
+```text
+PHASE START
+    ?
+Planning
+    ?
+Architecture / Design
+    ?
+Implementation
+    ?
+Verification
+    ?
+Acceptance Testing
+    ?
+Quality Gate
+    ?
+Human Approval
+    ?
+PHASE EXIT
+    ?
+Next Phase
+```
+
+ÏÑ ÕæÑÊ Ô˜ÓÊ:
+
+```text
+Verification
+     ?
+FAIL
+     ?
+Failure Analysis
+     ?
+Rework
+     ?
+Verification Again
+```
+
+æ ÏÑ ÕæÑÊ ÚÈæÑ ÇÒ ÍÏÇ˜ËÑ ÊáÇÔ:
+
+```text
+MAX RETRIES
+     ?
+Human Escalation
+```
+
+---
+
+# 2. ÇÓÊÇäÏÇÑÏ Deliverable åÑ Phase
+
+åÑ Phase ÍÏÇŞá ÈÇíÏ Çíä ÏÓÊå ÎÑæÌíåÇ ÑÇ ÏÇÔÊå ÈÇÔÏ:
+
+| äæÚ ÎÑæÌí    | English             | İÇÑÓí              |
+| ------------ | ------------------- | ------------------ |
+| ãÚãÇÑí       | Architecture        | ãÚãÇÑí             |
+| ØÑÇÍí        | Design              | ØÑÇÍí              |
+| äÑãÇİÒÇÑ    | Software            | äÑãÇİÒÇÑ          |
+| ÏÇÏå         | Data / Schema       | ÏÇÏå / Schema      |
+| ÊÓÊ          | Test Evidence       | ÔæÇåÏ ÂÒãæä        |
+| ÑÇÓÊíÂÒãÇíí | Verification Report | ÒÇÑÔ ÑÇÓÊíÂÒãÇíí |
+| ãÓÊäÏÇÊ      | Documentation       | ãÓÊäÏÇÊ            |
+| ÑÏíÇÈí       | Traceability        | ÑÏíÇÈí             |
+| ÇãäíÊ        | Security Evidence   | ÔæÇåÏ ÇãäíÊí       |
+| ÍÓÇÈÑÓí      | Audit Evidence      | ÔæÇåÏ ÍÓÇÈÑÓí      |
+| ÊÃííÏ        | Approval Record     | ËÈÊ ÊÃííÏ          |
+
+---
+
+# 3. Phase 0 — Foundation & Governance
+
+## İÇÒ ÕİÑ — ÈäíÇä æ ÍÇ˜ãíÊ
+
+### åÏİ
+
+ÊÚÑíİ ãÏá ÈäíÇÏí YFG ŞÈá ÇÒ æÑæÏ AgentåÇí æÇŞÚí.
+
+---
+
+## Deliverables — ÎÑæÌíåÇí ŞÇÈá ÊÍæíá
+
+### D0.1 — Product Model
+
+ãÏá ãÍÕæá
+
+### D0.2 — Project Model
+
+ãÏá Ñæå
+
+### D0.3 — Requirement Model
+
+ãÏá äíÇÒãäÏí
+
+### D0.4 — Artifact Model
+
+ãÏá Artifact
+
+### D0.5 — Version Model
+
+ãÏá äÓÎå
+
+### D0.6 — Decision Model
+
+ãÏá ÊÕãíã
+
+### D0.7 — Approval Model
+
+ãÏá ÊÃííÏ
+
+### D0.8 — Policy Model
+
+ãÏá ÓíÇÓÊ
+
+### D0.9 — Audit Model
+
+ãÏá ÍÓÇÈÑÓí
+
+### D0.10 — Security Model
+
+ãÏá ÇãäíÊ
+
+### D0.11 — Governance Rules
+
+ŞæÇäíä ÍÇ˜ãíÊ
+
+### D0.12 — Phase Governance Specification
+
+ãÔÎÕÇÊ ÍÇ˜ãíÊ İÇÒåÇ
+
+### D0.13 — Bilingual Terminology Dictionary
+
+æÇåäÇãå ÑÓãí English / İÇÑÓí
+
+### D0.14 — Architecture Baseline
+
+Baseline ãÚãÇÑí
+
+---
+
+## Acceptance Criteria — ãÚíÇÑåÇí ĞíÑÔ
+
+Phase 0 ÒãÇäí ĞíÑİÊå ãíÔæÏ ˜å:
+
+* [ ] Product ÈåÕæÑÊ ÑÓãí ãÏá ÔÏå ÈÇÔÏ.
+* [ ] Project ÏÇÑÇí Lifecycle ãÔÎÕ ÈÇÔÏ.
+* [ ] Requirement ÏÇÑÇí Identity æ Version ÈÇÔÏ.
+* [ ] Artifact ÏÇÑÇí Identity æ Version ÈÇÔÏ.
+* [ ] Decision ŞÇÈá ËÈÊ æ ÑÏíÇÈí ÈÇÔÏ.
+* [ ] Approval ÏÇÑÇí Actor æ Timestamp ÈÇÔÏ.
+* [ ] Policy ŞÇÈá ÊÚÑíİ æ ÇÚãÇá ÈÇÔÏ.
+* [ ] Audit Event ÏÇÑÇí Schema ãÔÎÕ ÈÇÔÏ.
+* [ ] Security Model ÊÚÑíİ ÔÏå ÈÇÔÏ.
+* [ ] Bilingual Model ãÔÎÕ ÔÏå ÈÇÔÏ.
+* [ ] Internal IdentityåÇ ãÓÊŞá ÇÒ ÒÈÇä ÈÇÔäÏ.
+* [ ] Rollback Policy ÊÚÑíİ ÔÏå ÈÇÔÏ.
+* [ ] Human Approval äŞÇØ ÍÓÇÓ ãÔÎÕ ÔÏå ÈÇÔÏ.
+
+---
+
+## Phase Exit Gate — ÏÑæÇÒå ÎÑæÌ
+
+```text
+Foundation Review
+       ?
+Governance Verification
+       ?
+Architecture Review
+       ?
+Human Approval
+       ?
+PASS
+```
+
+**ÎÑæÌí äåÇíí:** `YFG-FOUNDATION-BASELINE`
+
+---
+
+# 4. Phase 1 — YFG Core Platform
+
+## İÇÒ í˜ — åÓÊå áÊİÑã
+
+### åÏİ
+
+ÓÇÎÊ Runtime Çíå YFG.
+
+---
+
+## Deliverables
+
+### D1.1 — YFG Control Center
+
+ãÑ˜Ò ˜äÊÑá YFG
+
+### D1.2 — Project Management Module
+
+ãÇæá ãÏíÑíÊ Ñæå
+
+### D1.3 — Task Management Module
+
+ãÏíÑíÊ æÙÇíİ
+
+### D1.4 — Artifact Management
+
+ãÏíÑíÊ Artifact
+
+### D1.5 — Version Management
+
+ãÏíÑíÊ äÓÎå
+
+### D1.6 — Approval Engine
+
+ãæÊæÑ ÊÃííÏ
+
+### D1.7 — Policy Engine
+
+ãæÊæÑ ÓíÇÓÊ
+
+### D1.8 — Audit Log
+
+ÓíÓÊã Audit
+
+### D1.9 — Notification Engine
+
+ãæÊæÑ ÇÚáÇä
+
+### D1.10 — Project State Engine
+
+ãæÊæÑ æÖÚíÊ Ñæå
+
+### D1.11 — Core Database Schema
+
+Schema ÇíÇå ÏÇÏå åÓÊå
+
+### D1.12 — Core API
+
+API åÓÊå
+
+### D1.13 — Core Test Suite
+
+ãÌãæÚå ÊÓÊ åÓÊå
+
+### D1.14 — Installation / Startup Package
+
+ÈÓÊå äÕÈ æ ÑÇåÇäÏÇÒí
+
+---
+
+## Acceptance Criteria
+
+* [ ] ÇíÌÇÏ Project ãæİŞ ÈÇÔÏ.
+* [ ] ÇíÌÇÏ Task ãæİŞ ÈÇÔÏ.
+* [ ] Artifact ŞÇÈá ËÈÊ ÈÇÔÏ.
+* [ ] Version ŞÇÈá ÇíÌÇÏ ÈÇÔÏ.
+* [ ] Approval ŞÇÈá ËÈÊ ÈÇÔÏ.
+* [ ] Audit Event ÈåÕæÑÊ ÎæÏ˜ÇÑ ËÈÊ ÔæÏ.
+* [ ] Project State ŞÇÈá ãÔÇåÏå ÈÇÔÏ.
+* [ ] APIåÇí Core ÊÓÊ ÔÏå ÈÇÔäÏ.
+* [ ] ÏÇÏååÇ Persistent ÈÇÔäÏ.
+* [ ] ÎØÇåÇí ãåã Audit ÔæäÏ.
+* [ ] Authentication Çíå İÚÇá ÈÇÔÏ.
+* [ ] Backup / Restore Çæáíå ÊÓÊ ÔÏå ÈÇÔÏ.
+
+---
+
+## Phase Exit Gate
+
+**Core Platform Acceptance Test**
+
+ÈÇíÏ í˜ Project æÇŞÚí ÇíÌÇÏ æ ÊÇ ËÈÊ Artifact åÏÇíÊ ÔæÏ.
+
+```text
+Create Project
+ ?
+Create Task
+ ?
+Create Artifact
+ ?
+Create Version
+ ?
+Approval
+ ?
+Audit
+```
+
+**ÎÑæÌí äåÇíí:** `YFG-CORE-V0.2`
+
+---
+
+# 5. Phase 2 — Agent Contract & Registry
+
+## İÇÒ Ïæ — ŞÑÇÑÏÇÏ æ Registry AgentåÇ
+
+### åÏİ
+
+ÊÚÑíİ åæíÊ¡ ŞÇÈáíÊ æ ÍÏæÏ İÚÇáíÊ AgentåÇ.
+
+---
+
+## Deliverables
+
+### D2.1 — Agent Registry
+
+ãÎÒä AgentåÇ
+
+### D2.2 — Agent Identity Model
+
+ãÏá åæíÊ Agent
+
+### D2.3 — Agent Contract Schema
+
+Schema ŞÑÇÑÏÇÏ Agent
+
+### D2.4 — Contract Versioning
+
+äÓÎåÈäÏí ŞÑÇÑÏÇÏ
+
+### D2.5 — Capability Model
+
+ãÏá ŞÇÈáíÊåÇ
+
+### D2.6 — Permission Model
+
+ãÏá ãÌæÒ
+
+### D2.7 — Tool Registry
+
+Registry ÇÈÒÇÑåÇ
+
+### D2.8 — Resource Policy
+
+ÓíÇÓÊ ãäÇÈÚ
+
+### D2.9 — Verification Rules
+
+ŞæÇäíä Verification
+
+### D2.10 — Retry Policy
+
+ÓíÇÓÊ Retry
+
+### D2.11 — Escalation Policy
+
+ÓíÇÓÊ Escalation
+
+### D2.12 — Handoff Package Schema
+
+Schema ÈÓÊå ÊÍæíá
+
+### D2.13 — Agent Contract Validator
+
+ÇÚÊÈÇÑÓäÌ ŞÑÇÑÏÇÏ
+
+### D2.14 — Initial Agent Contracts
+
+ŞÑÇÑÏÇÏ AgentåÇí Çæáíå
+
+---
+
+## Acceptance Criteria
+
+åÑ Agent ËÈÊÔÏå ÈÇíÏ:
+
+* [ ] Agent ID ÏÇÔÊå ÈÇÔÏ.
+* [ ] Version ÏÇÔÊå ÈÇÔÏ.
+* [ ] Contract Version ÏÇÔÊå ÈÇÔÏ.
+* [ ] Role ÏÇÔÊå ÈÇÔÏ.
+* [ ] Scope ÏÇÔÊå ÈÇÔÏ.
+* [ ] Input ÊÚÑíİ ÔÏå ÈÇÔÏ.
+* [ ] Output ÊÚÑíİ ÔÏå ÈÇÔÏ.
+* [ ] Tools ãÔÎÕ ÈÇÔÏ.
+* [ ] Permissions ãÔÎÕ ÈÇÔÏ.
+* [ ] Verification Rule ÏÇÔÊå ÈÇÔÏ.
+* [ ] Retry Policy ÏÇÔÊå ÈÇÔÏ.
+* [ ] Escalation Rule ÏÇÔÊå ÈÇÔÏ.
+* [ ] Audit Requirement ÏÇÔÊå ÈÇÔÏ.
+* [ ] Security Requirement ÏÇÔÊå ÈÇÔÏ.
+
+åãäíä:
+
+* [ ] Agent äÊæÇäÏ Contract ÎæÏÔ ÑÇ ÊÛííÑ ÏåÏ.
+* [ ] Agent äÊæÇäÏ ÊäåÇ ÊÃííÏ˜ääÏå ÎÑæÌí ãåã ÎæÏÔ ÈÇÔÏ.
+* [ ] Contract Versioning ÚãáíÇÊí ÈÇÔÏ.
+
+---
+
+## Phase Exit Gate
+
+```text
+Agent Registration
+ ?
+Contract Validation
+ ?
+Permission Validation
+ ?
+Security Validation
+ ?
+Human Governance Review
+ ?
+PASS
+```
+
+**ÎÑæÌí äåÇíí:** `YFG-AGENT-CONTRACT-BASELINE`
+
+---
+
+# 6. Phase 3 — Orchestration & Workflow
+
+## İÇÒ Óå — åãÇåäÓÇÒí æ ÑÏÔ˜ÇÑ
+
+### åÏİ
+
+ÊÈÏíá AgentåÇí ãÓÊŞá Èå í˜ ÓÇÒãÇä åãÇåäÔÏå.
+
+---
+
+## Deliverables
+
+### D3.1 — Agent Orchestrator
+
+åãÇåä˜ääÏå AgentåÇ
+
+### D3.2 — Workflow Engine
+
+ãæÊæÑ Workflow
+
+### D3.3 — Task Scheduler
+
+ÒãÇäÈäÏí æÙÇíİ
+
+### D3.4 — Dependency Manager
+
+ãÏíÑíÊ æÇÈÓÊí
+
+### D3.5 — Context Manager
+
+ãÏíÑíÊ Context
+
+### D3.6 — Handoff Manager
+
+ãÏíÑíÊ Handoff
+
+### D3.7 — Agent Selection Engine
+
+ÇäÊÎÇÈ Agent
+
+### D3.8 — Workflow Definition Model
+
+ãÏá ÊÚÑíİ Workflow
+
+### D3.9 — Workflow State Machine
+
+ãÇÔíä æÖÚíÊ Workflow
+
+### D3.10 — Execution History
+
+ÊÇÑíÎå ÇÌÑÇí Workflow
+
+### D3.11 — Failure Routing
+
+åÏÇíÊ Ô˜ÓÊ
+
+### D3.12 — Escalation Routing
+
+åÏÇíÊ ÇÑÌÇÚ
+
+---
+
+## Acceptance Criteria
+
+* [ ] Task Èå Agent ãäÇÓÈ ÊÎÕíÕ ÏÇÏå ÔæÏ.
+* [ ] Contract Agent ŞÈá ÇÒ ÇÌÑÇ Load ÔæÏ.
+* [ ] Context ãæÑÏäíÇÒ Agent ÊÃãíä ÔæÏ.
+* [ ] Agent ÈÊæÇäÏ Task ÑÇ ÇÌÑÇ ˜äÏ.
+* [ ] Handoff ÓÇÎÊÇÑíÇİÊå ÇäÌÇã ÔæÏ.
+* [ ] Workflow State ËÈÊ ÔæÏ.
+* [ ] Failure ŞÇÈá ÊÔÎíÕ ÈÇÔÏ.
+* [ ] Retry ØÈŞ Contract ÇäÌÇã ÔæÏ.
+* [ ] Escalation ÇÌÑÇ ÔæÏ.
+* [ ] åí Agent äÊæÇäÏ Workflow Policy ÑÇ ÏæÑ ÈÒäÏ.
+
+---
+
+## Phase Exit Gate
+
+ÓäÇÑíæí ÒíÑ ÈÇíÏ ÈÏæä ÏÎÇáÊ ÏÓÊí ÏÑ ãÑÇÍá ÚÇÏí ÇÌÑÇ ÔæÏ:
+
+```text
+Task
+ ?
+Agent Selection
+ ?
+Contract
+ ?
+Context
+ ?
+Execution
+ ?
+Artifact
+ ?
+Handoff
+```
+
+**ÎÑæÌí äåÇíí:** `YFG-ORCHESTRATION-V0.4`
+
+---
+
+# 7. Phase 4 — Verification & Quality Gates
+
+## İÇÒ åÇÑ — ÑÇÓÊíÂÒãÇíí æ ÏÑæÇÒååÇí ˜íİíÊ
+
+### åÏİ
+
+ÇíÌÇÏ áÇíå ÇÚÊãÇÏ ãÓÊŞá.
+
+---
+
+## Deliverables
+
+### D4.1 — Verification Engine
+
+ãæÊæÑ ÑÇÓÊíÂÒãÇíí
+
+### D4.2 — Verification Rule Engine
+
+ãæÊæÑ ŞæÇäíä Verification
+
+### D4.3 — Independent Verifier Model
+
+ãÏá Verifier ãÓÊŞá
+
+### D4.4 — Quality Gate Engine
+
+ãæÊæÑ Quality Gate
+
+### D4.5 — Rework Engine
+
+ãæÊæÑ ÇÕáÇÍ ãÌÏÏ
+
+### D4.6 — Failure Analysis Model
+
+ãÏá ÊÍáíá Ô˜ÓÊ
+
+### D4.7 — Verification Report
+
+ÒÇÑÔ Verification
+
+### D4.8 — Verification Evidence Store
+
+ãÎÒä ÔæÇåÏ
+
+### D4.9 — Escalation Engine
+
+ãæÊæÑ ÇÑÌÇÚ
+
+### D4.10 — Verification Dashboard
+
+ÏÇÔÈæÑÏ Verification
+
+---
+
+## Acceptance Criteria
+
+* [ ] Artifact ŞÇÈá Verification ÈÇÔÏ.
+* [ ] Verifier ãÓÊŞá ÇÒ Generator ÈÇÔÏ.
+* [ ] Verification Result ËÈÊ ÔæÏ.
+* [ ] PASS/FAIL ÇÓÊÇäÏÇÑÏ æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+* [ ] Quality Gate ŞÇÈá ÇÌÑÇ ÈÇÔÏ.
+* [ ] FAIL ÈÇÚË Rework ÔæÏ.
+* [ ] Retry ãÍÏæÏ æ Policy-driven ÈÇÔÏ.
+* [ ] Ô˜ÓÊåÇí Ê˜ÑÇÑí Èå Human Escalation ÈÑÓäÏ.
+* [ ] Verification Evidence ĞÎíÑå ÔæÏ.
+* [ ] Artifact ãåã ÈÏæä PASS äÊæÇäÏ ÚÈæÑ ˜äÏ.
+
+---
+
+## Hard Gate
+
+Çíä ŞÇäæä ÈÇíÏ ÏÑ Runtime enforce ÔæÏ:
+
+> **No Material Artifact Moves Forward Without Verification.**
+
+---
+
+## Phase Exit Gate
+
+ÈÇíÏ í˜ Test Ô˜ÓÊ æÇŞÚí ÇÌÑÇ ÔæÏ:
+
+```text
+Agent
+ ?
+Artifact
+ ?
+Verification
+ ?
+FAIL
+ ?
+Rework
+ ?
+Verification
+ ?
+PASS
+ ?
+Next Stage
+```
+
+**ÎÑæÌí äåÇíí:** `YFG-VERIFICATION-BASELINE`
+
+---
+
+# 8. Phase 5 — Engineering Environment
+
+## İÇÒ äÌ — ãÍíØ ãåäÏÓí
+
+### åÏİ
+
+ÇíÌÇÏ ãÍíØ Çãä ÈÑÇí ÇÌÑÇí æÇŞÚí İÚÇáíÊåÇí Software Engineering.
+
+---
+
+## Deliverables
+
+### D5.1 — Git Integration
+
+ÇÊÕÇá Git
+
+### D5.2 — Repository Management
+
+ãÏíÑíÊ Repository
+
+### D5.3 — Branch Management
+
+ãÏíÑíÊ Branch
+
+### D5.4 — Sandbox
+
+ãÍíØ ÇíÒæáå
+
+### D5.5 — Build Environment
+
+ãÍíØ Build
+
+### D5.6 — Test Environment
+
+ãÍíØ Test
+
+### D5.7 — Dependency Management
+
+ãÏíÑíÊ æÇÈÓÊí
+
+### D5.8 — Environment Configuration
+
+ãÏíÑíÊ ãÍíØåÇ
+
+### D5.9 — Secret Boundary
+
+ãÑÒÈäÏí SecretåÇ
+
+### D5.10 — Workspace Manager
+
+ãÏíÑíÊ Workspace
+
+### D5.11 — Build Pipeline
+
+Pipeline ÓÇÎÊ
+
+### D5.12 — Test Pipeline
+
+Pipeline ÂÒãæä
+
+---
+
+## Acceptance Criteria
+
+Agent ÈÇíÏ ÈÊæÇäÏ:
+
+* [ ] Repository ÑÇ ÏÑíÇİÊ ˜äÏ.
+* [ ] Branch ÇíÌÇÏ ˜äÏ.
+* [ ] Source ÑÇ ÊÛííÑ ÏåÏ.
+* [ ] Build ÇÌÑÇ ˜äÏ.
+* [ ] Test ÇÌÑÇ ˜äÏ.
+* [ ] Commit ÇíÌÇÏ ˜äÏ.
+* [ ] Artifact ÊæáíÏ ˜äÏ.
+* [ ] äÊíÌå Build ÑÇ ÒÇÑÔ ˜äÏ.
+* [ ] äÊíÌå Test ÑÇ ÒÇÑÔ ˜äÏ.
+
+ÇãÇ:
+
+* [ ] ÏÓÊÑÓí ãÓÊŞíã Èå Production äÏÇÔÊå ÈÇÔÏ.
+* [ ] SecretåÇí Production ÑÇ ãÔÇåÏå ä˜äÏ.
+* [ ] ÈÏæä Approval äÊæÇäÏ Production Deploy ˜äÏ.
+
+---
+
+## Phase Exit Gate
+
+```text
+Agent
+ ?
+Sandbox
+ ?
+Repository
+ ?
+Branch
+ ?
+Code Change
+ ?
+Build
+ ?
+Test
+ ?
+Commit
+ ?
+Artifact
+```
+
+**ÎÑæÌí äåÇíí:** `YFG-ENGINEERING-ENV-V0.6`
+
+---
+
+# 9. Phase 6 — Project Intelligence & Traceability
+
+## İÇÒ ÔÔ — åæÔ Ñæå æ ÑÏíÇÈí
+
+### åÏİ
+
+YFG ÈÇíÏ Project ÑÇ ÕÑİÇğ ÈåÚäæÇä ãÌãæÚå İÇíáåÇ äÈíäÏº Èá˜å ÓÇÎÊÇÑ æ ÇÑÊÈÇØÇÊ Âä ÑÇ ÈİåãÏ.
+
+---
+
+## Deliverables
+
+### D6.1 — Project Intelligence Engine
+
+ãæÊæÑ åæÔ Ñæå
+
+### D6.2 — Project Structure Index
+
+Index ÓÇÎÊÇÑ Ñæå
+
+### D6.3 — Requirement Index
+
+Index äíÇÒãäÏí
+
+### D6.4 — Architecture Index
+
+Index ãÚãÇÑí
+
+### D6.5 — Code Index
+
+Index ˜Ï
+
+### D6.6 — API Index
+
+Index API
+
+### D6.7 — Database Index
+
+Index ÇíÇå ÏÇÏå
+
+### D6.8 — Test Index
+
+Index ÊÓÊ
+
+### D6.9 — Dependency Graph
+
+ÑÇİ æÇÈÓÊí
+
+### D6.10 — Traceability Engine
+
+ãæÊæÑ ÑÏíÇÈí
+
+### D6.11 — Impact Analysis
+
+ÊÍáíá ÇËÑ ÊÛííÑ
+
+### D6.12 — Project State Engine
+
+ãæÊæÑ æÖÚíÊ Ñæå
+
+### D6.13 — Architecture Map
+
+äŞÔå ãÚãÇÑí Ñæå
+
+---
+
+## Acceptance Criteria
+
+YFG ÈÇíÏ ÈÊæÇäÏ ÇÓÎ ÏåÏ:
+
+* [ ] Çíä Requirement ˜ÌÇ íÇÏåÓÇÒí ÔÏå¿
+* [ ] Çíä Code ãÑÈæØ Èå ˜ÏÇã Requirement ÇÓÊ¿
+* [ ] ˜ÏÇã Test Çíä Requirement ÑÇ æÔÔ ãíÏåÏ¿
+* [ ] Çíä API Èå ˜ÏÇã Module ÊÚáŞ ÏÇÑÏ¿
+* [ ] Çíä Module å Dependencies ÏÇÑÏ¿
+* [ ] ÊÛííÑ Çíä Component å ÈÎÔåÇíí ÑÇ ÊÍÊ ÊÃËíÑ ŞÑÇÑ ãíÏåÏ¿
+* [ ] Çíä Release ÔÇãá å ÊÛííÑÇÊí ÇÓÊ¿
+
+åãäíä:
+
+* [ ] Dependency Graph ÊæáíÏ ÔæÏ.
+* [ ] ArtifactåÇ ŞÇÈá Navigate ÈÇÔäÏ.
+* [ ] Traceability Ô˜ÓÊåÔÏå ŞÇÈá ÔäÇÓÇíí ÈÇÔÏ.
+
+---
+
+## Phase Exit Gate
+
+ÓäÇÑíæí ÒíÑ ÈÇíÏ ŞÇÈá ÇÌÑÇ ÈÇÔÏ:
+
+```text
+Requirement
+ ?
+Architecture
+ ?
+Code
+ ?
+Test
+ ?
+Release
+```
+
+æ YFG ÈÇíÏ ÈÊæÇäÏ ˜á ãÓíÑ ÑÇ Trace ˜äÏ.
+
+**ÎÑæÌí äåÇíí:** `YFG-PROJECT-INTELLIGENCE-V0.7`
+
+---
+
+# 10. Phase 7 — AI Engineering Agents
+
+## İÇÒ åİÊ — AgentåÇí ãåäÏÓí äÑãÇİÒÇÑ
+
+### åÏİ
+
+æÑæÏ AgentåÇí ÊÎÕÕí æÇŞÚí Èå Software Delivery.
+
+---
+
+## Deliverables
+
+### Product Agents
+
+* D7.1 — Product Manager Agent
+* D7.2 — Business Analyst Agent
+
+### Architecture Agents
+
+* D7.3 — Solution Architect Agent
+* D7.4 — Database Architect Agent
+
+### Development Agents
+
+* D7.5 — Backend Agent
+* D7.6 — Frontend Agent
+* D7.7 — Database Development Agent
+* D7.8 — Integration Agent
+
+### Quality Agents
+
+* D7.9 — QA Agent
+* D7.10 — Code Review Agent
+* D7.11 — Security Agent
+* D7.12 — Bug Hunter Agent
+
+### Support Agents
+
+* D7.13 — Documentation Agent
+* D7.14 — Training Agent
+* D7.15 — Catalog Agent
+
+---
+
+## Acceptance Criteria
+
+åÑ Agent ÈÇíÏ:
+
+* [ ] Contract ãÚÊÈÑ ÏÇÔÊå ÈÇÔÏ.
+* [ ] Permission ãÍÏæÏ ÏÇÔÊå ÈÇÔÏ.
+* [ ] ToolåÇí ãÔÎÕ ÏÇÔÊå ÈÇÔÏ.
+* [ ] Input/Output Schema ÏÇÔÊå ÈÇÔÏ.
+* [ ] Acceptance Criteria ÏÇÔÊå ÈÇÔÏ.
+* [ ] Verification ãÓÊŞá ÏÇÔÊå ÈÇÔÏ.
+* [ ] Handoff Package ÊæáíÏ ˜äÏ.
+* [ ] Audit ÔæÏ.
+* [ ] Failure ŞÇÈá ãÏíÑíÊ ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+## End-to-End Acceptance Test
+
+í˜ Feature æÇŞÚí ÈÇíÏ ÇÒ Çíä ãÓíÑ ÚÈæÑ ˜äÏ:
+
+```text
+Human
+ ?
+Product Manager
+ ?
+BA
+ ?
+Architect
+ ?
+Database
+ ?
+Backend
+ ?
+Frontend
+ ?
+Integration
+ ?
+QA
+ ?
+Security
+ ?
+Documentation
+```
+
+ÏÑ åÑ ãÑÍáå:
+
+```text
+Generate
+ ?
+Verify
+ ?
+Quality Gate
+ ?
+Next
+```
+
+---
+
+## Phase Exit Gate
+
+ÍÏÇŞá í˜ Feature æÇŞÚí ÈÇíÏ ÇÒ Requirement ÊÇ Release Candidate ÊæÓØ AgentåÇ ÊæáíÏ ÔæÏ.
+
+**ÎÑæÌí äåÇíí:** `YFG-ENGINEERING-AGENTS-V0.8`
+
+---
+
+# 11. Phase 8 — QA / Security / Release
+
+## İÇÒ åÔÊ — ÊÖãíä ˜íİíÊ¡ ÇãäíÊ æ ÇäÊÔÇÑ
+
+### åÏİ
+
+ÇíÌÇÏ Release Engineering æÇŞÚí.
+
+---
+
+## Deliverables
+
+### D8.1 — QA Engine
+
+ãæÊæÑ QA
+
+### D8.2 — Test Management
+
+ãÏíÑíÊ ÊÓÊ
+
+### D8.3 — Regression Testing
+
+ÊÓÊ ÈÇÒÔÊí
+
+### D8.4 — Code Review Pipeline
+
+Pipeline ÈÇÒÈíäí ˜Ï
+
+### D8.5 — Security Verification
+
+Verification ÇãäíÊ
+
+### D8.6 — Dependency Security
+
+ÈÑÑÓí ÇãäíÊ æÇÈÓÊí
+
+### D8.7 — Vulnerability Detection
+
+ÊÔÎíÕ ÂÓíÈĞíÑí
+
+### D8.8 — Release Candidate Builder
+
+ÓÇÒäÏå Release Candidate
+
+### D8.9 — Release Verification
+
+Verification ÇäÊÔÇÑ
+
+### D8.10 — Release Approval
+
+ÊÃííÏ ÇäÊÔÇÑ
+
+### D8.11 — Release Notes
+
+íÇÏÏÇÔÊ ÇäÊÔÇÑ
+
+---
+
+## Acceptance Criteria
+
+Release Candidate ÈÇíÏ:
+
+* [ ] Build ãæİŞ ÏÇÔÊå ÈÇÔÏ.
+* [ ] ÊÓÊåÇí ÖÑæÑí ÑÇ Pass ˜äÏ.
+* [ ] Regression Test ÑÇ Pass ˜äÏ.
+* [ ] Code Review ÑÇ ÔÊ ÓÑ ĞÇÔÊå ÈÇÔÏ.
+* [ ] Security Verification ÑÇ ÔÊ ÓÑ ĞÇÔÊå ÈÇÔÏ.
+* [ ] Critical Vulnerability Íá íÇ ÈåÕæÑÊ ÑÓãí ãÏíÑíÊ ÔÏå ÈÇÔÏ.
+* [ ] Traceability ˜Çãá ÏÇÔÊå ÈÇÔÏ.
+* [ ] Release Notes ÏÇÔÊå ÈÇÔÏ.
+* [ ] Rollback Plan ÏÇÔÊå ÈÇÔÏ.
+* [ ] Human Approval ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+## Phase Exit Gate
+
+```text
+Build
+ ?
+Test
+ ?
+Regression
+ ?
+Security
+ ?
+Review
+ ?
+Release Verification
+ ?
+Human Approval
+ ?
+RELEASE
+```
+
+**ÎÑæÌí äåÇíí:** `YFG-RELEASE-BASELINE-V0.9`
+
+---
+
+# 12. Phase 9 — Deployment & Operations
+
+## İÇÒ äå — ÇÓÊŞÑÇÑ æ ÚãáíÇÊ
+
+### åÏİ
+
+ÇÓÊŞÑÇÑ ˜äÊÑáÔÏå æ ãÏíÑíÊ ãÍÕæá ÏÑ ãÍíØ ÚãáíÇÊí.
+
+---
+
+## Deliverables
+
+### D9.1 — Deployment Engine
+
+ãæÊæÑ ÇÓÊŞÑÇÑ
+
+### D9.2 — Deployment Agent
+
+Agent ÇÓÊŞÑÇÑ
+
+### D9.3 — Environment Validation
+
+ÇÚÊÈÇÑÓäÌí ãÍíØ
+
+### D9.4 — Deployment Plan
+
+ÈÑäÇãå ÇÓÊŞÑÇÑ
+
+### D9.5 — Monitoring Engine
+
+ãæÊæÑ ÇíÔ
+
+### D9.6 — Metrics Collection
+
+ÌãÚÂæÑí Metrics
+
+### D9.7 — Log Management
+
+ãÏíÑíÊ Log
+
+### D9.8 — Incident Detection
+
+ÊÔÎíÕ ÑÎÏÇÏ
+
+### D9.9 — Incident Agent
+
+Agent ÑÎÏÇÏ
+
+### D9.10 — Recovery Engine
+
+ãæÊæÑ ÈÇÒíÇÈí
+
+### D9.11 — Rollback Engine
+
+ãæÊæÑ Rollback
+
+### D9.12 — Production Verification
+
+Verification ãÍíØ ÚãáíÇÊí
+
+---
+
+## Acceptance Criteria
+
+YFG ÈÇíÏ ÈÊæÇäÏ:
+
+* [ ] Deployment Plan ÊæáíÏ ˜äÏ.
+* [ ] Environment ÑÇ Validate ˜äÏ.
+* [ ] Deployment ÇäÌÇã ÏåÏ.
+* [ ] Deployment ÑÇ Verify ˜äÏ.
+* [ ] Metrics ÏÑíÇİÊ ˜äÏ.
+* [ ] Error ÑÇ ÊÔÎíÕ ÏåÏ.
+* [ ] Incident ÇíÌÇÏ ˜äÏ.
+* [ ] Root Cause Analysis ÑÇ ÂÛÇÒ ˜äÏ.
+* [ ] Recovery Plan ÇíÌÇÏ ˜äÏ.
+* [ ] Rollback ÇÌÑÇ íÇ ÂãÇÏå ˜äÏ.
+* [ ] Production State ÑÇ ËÈÊ ˜äÏ.
+
+---
+
+## Phase Exit Gate
+
+```text
+Release
+ ?
+Deployment
+ ?
+Production Verification
+ ?
+Monitoring
+ ?
+Incident Simulation
+ ?
+Recovery / Rollback Test
+ ?
+PASS
+```
+
+**ÎÑæÌí äåÇíí:** `YFG-OPERATIONS-V1.1`
+
+---
+
+# 13. Phase 10 — Knowledge / Documentation / Training
+
+## İÇÒ Ïå — ÏÇäÔ¡ ãÓÊäÏÇÊ æ ÂãæÒÔ
+
+### åÏİ
+
+ÊÈÏíá ÎÑæÌíåÇí ãåäÏÓí Èå ÏÇäÔ ŞÇÈá ÇÓÊİÇÏå æ ŞÇÈá äåÏÇÑí.
+
+---
+
+## Deliverables
+
+### D10.1 — Documentation Engine
+
+ãæÊæÑ ãÓÊäÏÓÇÒí
+
+### D10.2 — Architecture Documentation
+
+ãÓÊäÏ ãÚãÇÑí
+
+### D10.3 — Technical Documentation
+
+ãÓÊäÏ İäí
+
+### D10.4 — API Documentation
+
+ãÓÊäÏ API
+
+### D10.5 — Database Documentation
+
+ãÓÊäÏ Database
+
+### D10.6 — Installation Guide
+
+ÑÇåäãÇí äÕÈ
+
+### D10.7 — Administration Guide
+
+ÑÇåäãÇí ãÏíÑíÊ
+
+### D10.8 — User Manual
+
+ÑÇåäãÇí ˜ÇÑÈÑ
+
+### D10.9 — Release Notes
+
+íÇÏÏÇÔÊ ÇäÊÔÇÑ
+
+### D10.10 — Troubleshooting Guide
+
+ÑÇåäãÇí ÑİÚ ÇÔ˜Çá
+
+### D10.11 — Training Engine
+
+ãæÊæÑ ÂãæÒÔ
+
+### D10.12 — Product Catalog
+
+˜ÇÊÇáæ ãÍÕæá
+
+### D10.13 — Module Catalog
+
+˜ÇÊÇáæ ãÇæáåÇ
+
+### D10.14 — Feature Catalog
+
+˜ÇÊÇáæ Çã˜ÇäÇÊ
+
+---
+
+## Acceptance Criteria
+
+* [ ] Documentation ÇÒ ArtifactåÇí æÇŞÚí ÊæáíÏ ÔæÏ.
+* [ ] Documentation ÈÇ Version ãÍÕæá åãÇåä ÈÇÔÏ.
+* [ ] API Documentation ÈÇ API æÇŞÚí ãäØÈŞ ÈÇÔÏ.
+* [ ] Database Documentation ÈÇ Schema æÇŞÚí ãäØÈŞ ÈÇÔÏ.
+* [ ] User Manual ŞÇÈá ÇÓÊİÇÏå ÈÇÔÏ.
+* [ ] Training ÈÑÇí äŞÔåÇí ÊÚÑíİÔÏå æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+* [ ] Catalog ÈÇ ŞÇÈáíÊåÇí æÇŞÚí ãäØÈŞ ÈÇÔÏ.
+* [ ] Documentation Verification ÇäÌÇã ÔæÏ.
+* [ ] äÓÎå İÇÑÓí æ ÇäáíÓí ÏÑ ÕæÑÊ İÚÇá ÈæÏä Localization ÊæáíÏ ÔæÏ.
+
+---
+
+## Phase Exit Gate
+
+í˜ Release ÈÇíÏ ÈÊæÇäÏ ÈåÕæÑÊ ÎæÏ˜ÇÑ íÇ äíãåÎæÏ˜ÇÑ:
+
+```text
+Release
+ ?
+Documentation
+ ?
+Training
+ ?
+Catalog
+ ?
+Verification
+ ?
+Publication
+```
+
+ÑÇ Øí ˜äÏ.
+
+**ÎÑæÌí äåÇíí:** `YFG-KNOWLEDGE-V1.2`
+
+---
+
+# 14. Phase 11 — AI Software Factory
+
+## İÇÒ íÇÒÏå — ˜ÇÑÎÇäå ˜Çãá äÑãÇİÒÇÑ
+
+### åÏİ
+
+í˜ÇÑåÓÇÒí ÊãÇã ŞÇÈáíÊåÇ ÏÑ í˜ Software Factory æÇŞÚí.
+
+---
+
+## Deliverables
+
+### D11.1 — End-to-End Factory Workflow
+
+ÑÏÔ˜ÇÑ ˜Çãá ˜ÇÑÎÇäå
+
+### D11.2 — Multi-Agent Delivery Pipeline
+
+Pipeline äÏAgentí
+
+### D11.3 — Automated Verification Pipeline
+
+Pipeline ÑÇÓÊíÂÒãÇíí
+
+### D11.4 — Automated Quality Gates
+
+ÏÑæÇÒååÇí ˜íİíÊ ÎæÏ˜ÇÑ
+
+### D11.5 — Human Approval Framework
+
+ÇÑæÈ ÊÃííÏ ÇäÓÇäí
+
+### D11.6 — Full Traceability
+
+ÑÏíÇÈí ˜Çãá
+
+### D11.7 — Full Audit
+
+ÍÓÇÈÑÓí ˜Çãá
+
+### D11.8 — Release Automation
+
+ÇÊæãÇÓíæä ÇäÊÔÇÑ
+
+### D11.9 — Deployment Automation
+
+ÇÊæãÇÓíæä ÇÓÊŞÑÇÑ
+
+### D11.10 — Monitoring & Incident Loop
+
+ÑÎå ÇíÔ æ ÑÎÏÇÏ
+
+### D11.11 — Knowledge Feedback Loop
+
+ÑÎå ÈÇÒÔÊ ÏÇäÔ
+
+### D11.12 — Factory Dashboard
+
+ÏÇÔÈæÑÏ ˜ÇÑÎÇäå
+
+### D11.13 — Factory Health Dashboard
+
+ÏÇÔÈæÑÏ ÓáÇãÊ ˜ÇÑÎÇäå
+
+### D11.14 — Governance Dashboard
+
+ÏÇÔÈæÑÏ ÍÇ˜ãíÊ
+
+---
+
+# 15. Final End-to-End Acceptance Test
+
+## ÂÒãæä ĞíÑÔ äåÇíí ˜ÇÑÎÇäå
+
+í˜ Project æÇŞÚí ÈÇíÏ ÈÊæÇäÏ ÇÒ:
+
+```text
+IDEA
+ ?
+PRODUCT
+ ?
+REQUIREMENT
+ ?
+ARCHITECTURE
+ ?
+DATABASE
+ ?
+BACKEND
+ ?
+FRONTEND
+ ?
+INTEGRATION
+ ?
+TEST
+ ?
+SECURITY
+ ?
+DOCUMENTATION
+ ?
+RELEASE
+ ?
+DEPLOYMENT
+ ?
+MONITORING
+```
+
+ÚÈæÑ ˜äÏ.
+
+æ ÏÑ ÊãÇã ãÓíÑ:
+
+```text
+Agent Contract
+      +
+Verification
+      +
+Quality Gate
+      +
+Traceability
+      +
+Audit
+      +
+Security
+      +
+Human Governance
+```
+
+İÚÇá ÈÇÔÏ.
+
+---
+
+## Factory Acceptance Criteria
+
+YFG ÒãÇäí Èå **AI Software Factory** ÊÈÏíá ÔÏå ÇÓÊ ˜å:
+
+* [ ] Human ÈÊæÇäÏ Product ÑÇ ÊÚÑíİ ˜äÏ.
+* [ ] Requirement ÊæáíÏ æ ãÏíÑíÊ ÔæÏ.
+* [ ] Agent ãäÇÓÈ ÇäÊÎÇÈ ÔæÏ.
+* [ ] Agent Contract ŞÈá ÇÒ ÇÌÑÇ ÇÚãÇá ÔæÏ.
+* [ ] Agent ÈÊæÇäÏ æÙíİå ÑÇ ÇÌÑÇ ˜äÏ.
+* [ ] Artifact ÊæáíÏ ÔæÏ.
+* [ ] Artifact ãÓÊŞá Verify ÔæÏ.
+* [ ] Quality Gate ÇÌÑÇ ÔæÏ.
+* [ ] Ô˜ÓÊ æÇÑÏ Rework ÔæÏ.
+* [ ] Ô˜ÓÊ Ê˜ÑÇÑí Èå Human Escalation ÈÑÓÏ.
+* [ ] ÊÛííÑÇÊ ÏÑ Git ËÈÊ ÔæäÏ.
+* [ ] Traceability ÈÑŞÑÇÑ ÈÇÔÏ.
+* [ ] QA ÇäÌÇã ÔæÏ.
+* [ ] Security ÈÑÑÓí ÔæÏ.
+* [ ] Release ÇíÌÇÏ ÔæÏ.
+* [ ] Human Approval ÏÑ äŞÇØ áÇÒã ÇäÌÇã ÔæÏ.
+* [ ] Deployment ˜äÊÑáÔÏå ÇäÌÇã ÔæÏ.
+* [ ] Production Verification ÇäÌÇã ÔæÏ.
+* [ ] Monitoring İÚÇá ÈÇÔÏ.
+* [ ] Incident ŞÇÈá ãÏíÑíÊ ÈÇÔÏ.
+* [ ] Rollback ŞÇÈá ÇäÌÇã ÈÇÔÏ.
+* [ ] Documentation ÊæáíÏ ÔæÏ.
+* [ ] Training ÊæáíÏ ÔæÏ.
+* [ ] ÊãÇã İÚÇáíÊåÇí ãåã Audit ÔæäÏ.
+
+---
+
+# 16. Phase Exit Matrix — ãÇÊÑíÓ ÎÑæÌ İÇÒåÇ
+
+| Phase | ÎÑæÌí ÇÕáí              | ãÚíÇÑ ÎÑæÌ                                   |
+| ----- | ----------------------- | -------------------------------------------- |
+| P0    | Governance Baseline     | ãÏáåÇ æ ŞæÇäíä ÊÃííÏ ÔÏå                    |
+| P1    | Core Platform           | Project/Task/Artifact/Approval/Audit ÚãáíÇÊí |
+| P2    | Agent Contracts         | AgentåÇ Contract ãÚÊÈÑ ÏÇÑäÏ                 |
+| P3    | Orchestration           | Task ? Agent ? Handoff ÚãáíÇÊí               |
+| P4    | Verification            | Artifact ÈÏæä Verification ÚÈæÑ äãí˜äÏ      |
+| P5    | Engineering Environment | Agent ŞÇÏÑ Èå Build/Test/Commit ÇÓÊ          |
+| P6    | Project Intelligence    | Requirement ? Code ? Test ŞÇÈá Trace ÇÓÊ     |
+| P7    | Engineering Agents      | Feature æÇŞÚí ÊæÓØ AgentåÇ ÊæáíÏ ãíÔæÏ      |
+| P8    | Release Engineering     | Release ÇÒ QA/Security/Approval ÚÈæÑ ãí˜äÏ  |
+| P9    | Operations              | Deploy/Monitor/Incident/Rollback ÚãáíÇÊí     |
+| P10   | Knowledge               | Documentation/Training/Catalog ÊæáíÏ ãíÔæÏ  |
+| P11   | AI Software Factory     | ÑÎå End-to-End ˜Çãá ÇÌÑÇ ãíÔæÏ             |
+
+---
+
+# 17. Global Acceptance Criteria
+
+## ãÚíÇÑåÇí ĞíÑÔ ÓÑÇÓÑí YFG
+
+ÕÑİäÙÑ ÇÒ Phase¡ äÌ ÔÑØ ÛíÑŞÇÈá ãĞÇ˜Ñå åÓÊäÏ:
+
+### GAC-01 — Governance
+
+```text
+Human Authority Cannot Be Bypassed
+```
+
+### GAC-02 — Verification
+
+```text
+No Material Artifact
+?
+Without Independent Verification
+```
+
+### GAC-03 — Traceability
+
+```text
+Every Material Change
+?
+Must Be Traceable
+```
+
+### GAC-04 — Reversibility
+
+```text
+Every Material Change
+?
+Must Be Reversible
+```
+
+### GAC-05 — Least Privilege
+
+```text
+Every Agent
+?
+Minimum Required Permission
+```
+
+---
+
+# 18. Phase Quality Scorecard
+
+## ˜ÇÑÊ ÇÑÒíÇÈí ˜íİíÊ İÇÒ
+
+ÈÑÇí åÑ Phase í˜ Scorecard ÏÇÎáí ÇíÌÇÏ ãíÔæÏ.
+
+```text
+Functional Completion
+        +
+Verification
+        +
+Quality
+        +
+Security
+        +
+Traceability
+        +
+Documentation
+        +
+Audit
+        +
+Rollback
+        +
+Human Approval
+```
+
+ÇãÇ:
+
+> **ŞÈæáí Phase ÈÑ ÇÓÇÓ ãíÇäíä ÇãÊíÇÒ äíÓÊ.**
+
+ÈÑÎí ãæÇÑÏ **Hard Gate** åÓÊäÏ.
+
+ãËáÇğ:
+
+```text
+Verification Failure
+        ?
+PHASE CANNOT PASS
+```
+
+íÇ:
+
+```text
+Critical Security Failure
+        ?
+PHASE CANNOT PASS
+```
+
+íÇ:
+
+```text
+Required Human Approval Missing
+        ?
+PHASE CANNOT PASS
+```
+
+---
+
+# 19. Hard Gates — ÏÑæÇÒååÇí ÛíÑŞÇÈá ÚÈæÑ
+
+Çíä ãæÇÑÏ ÏÑ ˜á YFG Hard Gate åÓÊäÏ:
+
+### HG-01
+
+No Contract ? No Agent Execution
+
+### HG-02
+
+No Verification ? No Material Handoff
+
+### HG-03
+
+Verification FAIL ? No Next Stage
+
+### HG-04
+
+Critical Security Failure ? No Release
+
+### HG-05
+
+Required Human Approval Missing ? No Progress
+
+### HG-06
+
+No Traceability ? No Release
+
+### HG-07
+
+No Rollback Strategy ? No Critical Deployment
+
+### HG-08
+
+Production Access Without Policy ? Forbidden
+
+---
+
+# 20. Final Phase Roadmap
+
+```text
+P0
+Foundation & Governance
+        ?
+        ?
+P1
+Core Platform
+        ?
+        ?
+P2
+Agent Contracts
+        ?
+        ?
+P3
+Orchestration
+        ?
+        ?
+P4
+Verification
+        ?
+        ?
+P5
+Engineering Environment
+        ?
+        ?
+P6
+Project Intelligence
+        ?
+        ?
+P7
+AI Engineering Agents
+        ?
+        ?
+P8
+QA / Security / Release
+        ?
+        ?
+P9
+Deployment / Operations
+        ?
+        ?
+P10
+Knowledge / Documentation
+        ?
+        ?
+P11
+AI Software Factory
+```
+
+---
+
+# 21. äÓÎåÈäÏí ÇÌÑÇíí íÔäåÇÏí
+
+```text
+YFG 0.1  ? Foundation
+YFG 0.2  ? Core Platform
+YFG 0.3  ? Agent Contracts
+YFG 0.4  ? Orchestration
+YFG 0.5  ? Verification
+YFG 0.6  ? Engineering Environment
+YFG 0.7  ? Project Intelligence
+YFG 0.8  ? Engineering Agents
+YFG 0.9  ? QA / Security / Release
+YFG 1.0  ? AI Software Factory MVP
+YFG 1.1  ? Deployment & Operations
+YFG 1.2  ? Knowledge & Documentation
+YFG 2.0  ? Advanced Project Intelligence
+YFG 3.0  ? Autonomous Engineering
+```
+
+---
+
+# 22. MVP Boundary — ãÑÒ MVP
+
+MVP æÇŞÚí:
+
+```text
+P0
++
+P1
++
+P2
++
+P3
++
+P4
++
+P5
++
+P6
+```
+
+ÈäÇÈÑÇíä MVP ÈÇíÏ ÈÊæÇäÏ:
+
+```text
+Human
+ ?
+Project
+ ?
+Requirement
+ ?
+Task
+ ?
+Agent Contract
+ ?
+Agent Execution
+ ?
+Artifact
+ ?
+Independent Verification
+ ?
+Quality Gate
+ ?
+Git
+ ?
+Traceability
+ ?
+Audit
+```
+
+ÑÇ ÇÌÑÇ ˜äÏ.
+
+Çíä íÚäí MVP åäæÒ ÇáÒÇãÇğ «˜ÇÑÎÇäå ˜Çãá ÊæáíÏ äÑãÇİÒÇÑ» äíÓÊº Èá˜å **ÒíÑÓÇÎÊ ˜äÊÑáÔÏåÇí ÇÓÊ ˜å ˜ÇÑÎÇäå æÇŞÚí Ñæí Âä ÓÇÎÊå ãíÔæÏ.**
+
+---
+
+# 23. V1 — Çæáíä Factory ÚãáíÇÊí
+
+V1:
+
+```text
+MVP
++
+P7 Engineering Agents
++
+P8 QA/Security/Release
++
+P9 Deployment
+```
+
+ÏÑ Çíä ãÑÍáå YFG ÈÑÇí Çæáíä ÈÇÑ ãíÊæÇäÏ í˜ ãÍÕæá äÑãÇİÒÇÑí æÇŞÚí ÑÇ ÇÒ Requirement ÊÇ Deployment åÏÇíÊ ˜äÏ.
+
+---
+
+# 24. V2 — Factory Intelligence
+
+Ó ÇÒ V1:
+
+```text
+Deep Code Indexing
+Dependency Graph
+Semantic Code Analysis
+Architecture Drift Detection
+Requirement Coverage
+Impact Analysis
+Intelligent Bug Localization
+Automated Refactoring
+Technical Debt Analysis
+```
+
+---
+
+# 25. V3 — Autonomous Engineering
+
+ÏÑ V3 ÓØÍ ÇÓÊŞáÇá AgentåÇ ÇİÒÇíÔ ãííÇÈÏ.
+
+ÇãÇ:
+
+```text
+More Autonomy
+        ?
+Less Governance
+```
+
+Èá˜å:
+
+```text
+More Autonomy
++
+More Verification
++
+More Traceability
++
+More Policy Control
++
+More Human Governance
+```
+
+---
+
+# 26. Final Definition
+
+> **YFG AI Software Factory is a Human-Governed, Verification-Driven, Traceable AI Software Engineering Platform that transforms human product intent into validated, secure, documented, deployable, and maintainable software through coordinated specialized AI agents.**
+
+### ÊÚÑíİ İÇÑÓí
+
+> **YFG AI Software Factory í˜ áÊİÑã ãåäÏÓí äÑãÇİÒÇÑ ãÈÊäí ÈÑ åæÔ ãÕäæÚí¡ ÊÍÊ ÍÇ˜ãíÊ ÇäÓÇä¡ ãÈÊäí ÈÑ ÑÇÓÊíÂÒãÇíí æ ˜ÇãáÇğ ŞÇÈá ÑÏíÇÈí ÇÓÊ ˜å åÏİ æ ÎæÇÓÊå ãÍÕæá ÇÑÇÆåÔÏå ÊæÓØ ÇäÓÇä ÑÇ ÇÒ ØÑíŞ åãÇåäí AgentåÇí ÊÎÕÕí Èå äÑãÇİÒÇÑí ÇÚÊÈÇÑÓäÌíÔÏå¡ Çãä¡ ãÓÊäÏ¡ ŞÇÈá ÇÓÊŞÑÇÑ æ ŞÇÈá äåÏÇÑí ÊÈÏíá ãí˜äÏ.**
+
+---
+
+# 27. Final Architecture Rule
+
+˜á İÇÒÈäÏí YFG ÈÑ Çíä ÒäÌíÑå ÈäÇ ãíÔæÏ:
+
+```text
+DEFINE
+ÊÚÑíİ
+ ?
+DESIGN
+ØÑÇÍí
+ ?
+BUILD
+ÓÇÎÊ
+ ?
+VERIFY
+ÑÇÓÊíÂÒãÇíí
+ ?
+ACCEPT
+ĞíÑÔ
+ ?
+APPROVE
+ÊÃííÏ
+ ?
+RELEASE
+ÇäÊÔÇÑ
+ ?
+DEPLOY
+ÇÓÊŞÑÇÑ
+ ?
+MONITOR
+ÇíÔ
+ ?
+LEARN
+íÇÏíÑí
+ ?
+IMPROVE
+ÈåÈæÏ
+```
+
+æ ÏÑ ÊãÇã Çíä ãÓíÑ:
+
+```text
+AGENT CONTRACT
+        +
+INDEPENDENT VERIFICATION
+        +
+QUALITY GATE
+        +
+TRACEABILITY
+        +
+AUDIT
+        +
+ROLLBACK
+        +
+HUMAN GOVERNANCE
+```
+
+ÌÒÁ ÌÏÇííäÇĞíÑ ãÚãÇÑí YFG ÇÓÊ.
+
+Çíä äÓÎå ÍÇáÇ ÇÒ äÙÑ ãÚãÇÑí¡ **Phase ? Deliverable ? Acceptance Criteria ? Verification ? Exit Gate** ÑÇ Èå åã ãÊÕá ãí˜äÏ æ ãíÊæÇäÏ ãÈäÇí ØÑÇÍí Backlog æ ÇÌÑÇí æÇŞÚí YFG ŞÑÇÑ ÈíÑÏ.
+
+
+Èáå¡ ÇãÇ ÏÑ ãÚãÇÑí İÚáí **ÈåÕæÑÊ ÕÑíÍ æ ãÓÊŞá Èå ÇäÏÇÒåÇí ˜å ÈÇíÏ¡ ÊÚÑíİ äÔÏå ÇÓÊ**. íÒí ˜å ÊÇ ÇáÇä ÏÇÔÊíã ÈíÔÊÑ Ñæí «ÊæáíÏ¡ ÑÇÓÊíÂÒãÇíí æ ÊÍæíá äÑãÇİÒÇÑ» ãÊãÑ˜Ò ÈæÏ.
+
+ÈÑÇí YFG ÈÇíÏ í˜ ŞÇÈáíÊ ãÓÊŞá ÇÖÇİå ˜äíã:
+
+### Project Preview & Presentation — íÔäãÇíÔ æ ÇÑÇÆå Ñæå
+
+Çíä ÈÎÔ ÈÇíÏ ÇÒ åãÇä ãÑÇÍá Çæáíå æÇÑÏ ãÚãÇÑí ÔæÏ æ İŞØ ãÎÕæÕ äÓÎå äåÇíí äÈÇÔÏ.
+
+```text
+Human Idea
+   ?
+Requirements
+   ?
+Architecture
+   ?
+Design
+   ?
+????????????????????????????????????????
+? Project Preview & Presentation       ?
+? íÔäãÇíÔ æ ÇÑÇÆå Ñæå              ?
+????????????????????????????????????????
+? • UI Preview                         ?
+? • Screen Flow                        ?
+? • Interactive Prototype              ?
+? • Architecture Visualization         ?
+? • Database Visualization             ?
+? • Workflow Visualization             ?
+? • User Journey                       ?
+? • Dashboard Preview                 ?
+? • Generated Demo                     ?
+? • Feature Simulation                ?
+? • Project Walkthrough               ?
+????????????????????????????????????????
+   ?
+Human Review
+   ?
+Approval / Change Request
+   ?
+Implementation
+```
+
+### íÒí ˜å ãä ÈÑÇí YFG íÔäåÇÏ ãí˜äã
+
+Çíä ŞÇÈáíÊ ÑÇ Èå í˜ **Preview Engine — ãæÊæÑ íÔäãÇíÔ** ÊÈÏíá ˜äíã¡ äå ÕÑİÇğ í˜ ÕİÍå äãÇíÔ.
+
+ÈÇíÏ ÈÊæÇäÏ ãËáÇğ ÈÚÏ ÇÒ ÊÍáíá í˜ Ñæå¡ ŞÈá ÇÒ Çíä˜å ˜ÏäæíÓí ˜Çãá ÇäÌÇã ÔæÏ¡ Èå ÇäÓÇä äÔÇä ÏåÏ:
+
+* ÓÇÎÊÇÑ ˜áí äÑãÇİÒÇÑ
+* ÕİÍÇÊ æ İÑãåÇ
+* ãäæåÇ
+* Dashboard
+* ÑÏÔ ˜ÇÑ ˜ÇÑÈÑÇä
+* ÇÑÊÈÇØ ãÇæáåÇ
+* ãÚãÇÑí ÓíÓÊã
+* EntityåÇ æ ÑæÇÈØ
+* APIåÇ
+* WorkflowåÇ
+* äŞÔåÇ æ PermissionåÇ
+* äãæäå ÏÇÏå
+* ãÓíÑ ÇäÌÇã í˜ ÚãáíÇÊ
+* äÓÎå Çæáíå ŞÇÈá ˜áí˜ ÇÒ UI
+* ÊİÇæÊ äÓÎå İÚáí æ äÓÎå íÔäåÇÏí
+
+ÍÊí ÈåÊÑ ÇÒ Âä:
+
+### Interactive Project Preview — íÔäãÇíÔ ÊÚÇãáí Ñæå
+
+ãËáÇğ ÇäÓÇä ÈæíÏ:
+
+> «ÓíÓÊã İÑæÔ í˜ ERP ÑÇ ØÑÇÍí ˜ä.»
+
+YFG ÇÈÊÏÇ **äÓÎå ŞÇÈá ãÔÇåÏå æ ŞÇÈá ˜áí˜** ÊæáíÏ ˜äÏ:
+
+```text
+ERP
+??? Dashboard
+??? Customers
+??? Products
+??? Sales
+?   ??? Quotation
+?   ??? Sales Order
+?   ??? Invoice
+?   ??? Returns
+??? Inventory
+??? Accounting
+??? Reports
+```
+
+ÓÓ ˜ÇÑÈÑ ÈÊæÇäÏ ÏÑ Preview æÇÑÏ ÔæÏ:
+
+```text
+Dashboard
+   ?
+Customers
+   ?
+Customer Detail
+   ?
+Create Order
+   ?
+Select Product
+   ?
+Confirm Order
+   ?
+Invoice
+```
+
+æ ŞÈá ÇÒ Çíä˜å YFG æÇÑÏ Implementation ÔæÏ¡ ÇäÓÇä ÈæíÏ:
+
+> Çíä ÈÎÔ ÏÑÓÊ ÇÓÊ.
+
+íÇ:
+
+> İÑæÔ ÈÇíÏ ŞÈá ÇÒ ÇäÈÇÑ ŞÑÇÑ ÈíÑÏ.
+
+íÇ:
+
+> Çíä İÑã ÑÇ ÊÛííÑ ÈÏå.
+
+æ Çíä ÊÛííÑ ÈÇíÏ ÏæÈÇÑå æÇÑÏ ÑÎå ˜äÊÑáÔÏå ÔæÏ:
+
+```text
+Preview
+ ?
+Human Feedback
+ ?
+Change Request
+ ?
+Impact Analysis
+ ?
+Update Design
+ ?
+Preview Again
+ ?
+Verification
+ ?
+Human Approval
+ ?
+Implementation
+```
+
+### í˜ ä˜Êå ÈÓíÇÑ ãåã
+
+Çíä Preview äÈÇíÏ İŞØ í˜ **Mockup** ÈÇÔÏ.
+
+ÈåÊÑ ÇÓÊ Óå ÓØÍ ÏÇÔÊå ÈÇÔíã:
+
+| ÓØÍ | äÇã                                   | ˜ÇÑÈÑÏ                                   |
+| --- | ------------------------------------- | ---------------------------------------- |
+| P1  | Static Preview — íÔäãÇíÔ ÇíÓÊÇ      | äãÇíÔ UI æ ãÚãÇÑí                        |
+| P2  | Interactive Prototype — äãæäå ÊÚÇãáí  | ˜áí˜ æ ÍÑ˜Ê Èíä ÕİÍÇÊ                    |
+| P3  | Executable Preview — íÔäãÇíÔ ÇÌÑÇíí | ÇÌÑÇí æÇŞÚí ÈÎÔ ÊæáíÏÔÏå ÈÇ ÏÇÏå ÂÒãÇíÔí |
+
+æ ÏÑ ãÑÇÍá ÈÚÏ:
+
+**Digital Twin / Project Simulation — ÔÈíåÓÇÒí Ñæå**
+
+íÚäí YFG ÈÊæÇäÏ ŞÈá ÇÒ Deployment æÇŞÚí¡ ÑİÊÇÑ ÈÎÔåÇíí ÇÒ ÓíÓÊã ÑÇ ÏÑ ãÍíØ Sandbox ÔÈíåÓÇÒí ˜äÏ.
+
+---
+
+### ÌÇíÇå Âä ÏÑ ãÚãÇÑí
+
+ãä íÔäåÇÏ ãí˜äã í˜ **Preview & Presentation Layer** ãÓÊŞá Èå ãÚãÇÑí ÇÖÇİå ˜äíã æ åãäíä Âä ÑÇ ÏÑ äÏ Phase æÇÑÏ ˜äíã:
+
+```text
+P0 Foundation
+    ?
+P1 Core
+    ?
+P2 Agent Contracts
+    ?
+P3 Orchestration
+    ?
+P4 Verification
+    ?
+P5 Engineering Environment
+    ?
+P6 Project Intelligence
+    ?
+P7 Engineering Agents
+    ?
+P8 QA / Security / Release
+    ?
+P9 Operations
+    ?
+P10 Knowledge
+    ?
+P11 AI Software Factory
+```
+
+ÇãÇ Preview ÈÇíÏ **ÇÒ P1 ÔÑæÚ ÔæÏ** æ ÏÑ ÊãÇã ãÑÇÍá ÑÔÏ ˜äÏ.
+
+íÚäí:
+
+```text
+P1 ? Basic Project Preview
+P3 ? Workflow Preview
+P5 ? Executable Sandbox Preview
+P6 ? Architecture/Dependency Preview
+P7 ? AI-generated UI Preview
+P8 ? Release Candidate Preview
+P9 ? Production-like Preview
+P11 ? Full Interactive Project Presentation
+```
+
+Çíä ãæÖæÚ ÈÑÇí YFG ÈÓíÇÑ ãåã ÇÓÊ¡ æä åÏİ İŞØ Çíä äíÓÊ ˜å **AgentåÇ äÑãÇİÒÇÑ ÈÓÇÒäÏ**º ÇäÓÇä ÈÇíÏ ÈÊæÇäÏ ÏÑ Øæá ãÓíÑ **Âäå YFG ÏÑ ÍÇá ÓÇÎÊä ÇÓÊ ÈÈíäÏ¡ ÈÇ Âä ÊÚÇãá ˜äÏ¡ ÈÇÒÎæÑÏ ÈÏåÏ æ ŞÈá ÇÒ ÊÕãíãåÇí ãåã Âä ÑÇ ÈÑÑÓí ˜äÏ.**
+
+ÈäÇÈÑÇíä ãä Çíä ŞÇÈáíÊ ÑÇ ÌÒæ **Core Architecture** ŞÑÇÑ ãíÏåã¡ äå í˜ Feature ÌÇäÈí.
+
+
+ÍÊãÇğ. ÏÑ äÓÎå ÈÚÏí¡ ÈÑÇí **åÑ ?? İÇÒ** Óå ÈÎÔ ÑÓãí ÇÖÇİå ãí˜äíã:
+
+1. **Deliverables — ÎÑæÌíåÇí ŞÇÈá ÊÍæíá**
+2. **Acceptance Criteria — ãÚíÇÑåÇí ĞíÑÔ**
+3. **Phase Exit Gate — ÏÑæÇÒå ÎÑæÌ ÇÒ İÇÒ**
+
+Çíä ˜ÇÑ ÈÇÚË ãíÔæÏ İÇÒÈäÏí YFG ÇÒ í˜ Roadmap ãİåæãí Èå í˜ **Execution Baseline — ãÈäÇí ÇÌÑÇíí ŞÇÈá ÇäÏÇÒåíÑí** ÊÈÏíá ÔæÏ.
+
+
+Èáå. Çíä Óå ŞÇÈáíÊ ÈÇíÏ ÏÑ ãÚãÇÑí YFG **ÌÒæ Core Platform** ÈÇÔäÏ¡ äå Çã˜ÇäÇÊ ÌÇäÈí. ãÎÕæÕÇğ æä åÏİ YFG Çíä ÇÓÊ ˜å ÇÒ ØÑÇÍí ÊÇ ÇÌÑÇí æÇŞÚí äÑãÇİÒÇÑ ÑÇ ˜äÊÑá ˜äÏ.
+
+ãä ÓÇÎÊÇÑ ÑÇ ÇíäØæÑ Ê˜ãíá ãí˜äã:
+
+## 1. Local Development Integration — ÇÊÕÇá Èå ÇÈÒÇÑåÇí ÊæÓÚå ãÍáí
+
+YFG ÈÇíÏ ÈÊæÇäÏ Èå äÑãÇİÒÇÑåÇí ÈÑäÇãåäæíÓí äÕÈÔÏå Ñæí ÓíÓÊã/ÓÑæÑ ãÊÕá ÔæÏ.
+
+äãæäååÇ:
+
+* Visual Studio
+* VS Code
+* JetBrains Rider
+* IntelliJ IDEA
+* PyCharm
+* WebStorm
+* Android Studio
+* Eclipse
+* ÓÇíÑ IDEåÇ
+
+æ åãäíä ÇÈÒÇÑåÇí ÎØ İÑãÇä:
+
+* Git
+* GitHub/GitLab/Bitbucket
+* .NET SDK
+* Node.js / npm
+* Python
+* Java / JDK
+* Docker
+* Kubernetes
+* PowerShell
+* Bash
+* Build tools
+* Test runners
+
+ÇãÇ ÇÊÕÇá äÈÇíÏ ÕÑİÇğ «ÈÇÒ ˜ÑÏä IDE» ÈÇÔÏ.
+
+YFG ÈÇíÏ ÈÊæÇäÏ:
+
+```text
+YFG
+ ?
+Project Workspace
+ ?
+Repository
+ ?
+Local Development Environment
+ ?
+IDE / CLI Tools
+ ?
+Build
+ ?
+Test
+ ?
+Artifact
+ ?
+Verification
+ ?
+YFG
+```
+
+íÚäí YFG ÊÈÏíá ÔæÏ Èå **Control Plane** æ ÇÈÒÇÑåÇí ÊæÓÚå ãÍáí Èå **Execution Tools**.
+
+---
+
+# 2. Database Connectivity — ÇÊÕÇá Èå ÇäæÇÚ ÇíÇå ÏÇÏå
+
+í˜ **Database Connectivity Layer — áÇíå ÇÊÕÇá ÇíÇå ÏÇÏå** áÇÒã ÏÇÑíã.
+
+ÍÏÇŞá ãÚãÇÑí ÈÇíÏ ÈÑÇí ÇíäåÇ ÂãÇÏå ÈÇÔÏ:
+
+### Relational
+
+* Microsoft SQL Server
+* PostgreSQL
+* MySQL
+* MariaDB
+* Oracle Database
+* SQLite
+
+### NoSQL
+
+* MongoDB
+* Redis
+* Elasticsearch / OpenSearch
+* Cassandra
+
+### Cloud / Enterprise
+
+* Azure SQL
+* Amazon RDS
+* Google Cloud SQL
+* ÓÇíÑ Database ServiceåÇ
+
+æ ãÚãÇÑí ÈÇíÏ Driver/Provider ãÍæÑ ÈÇÔÏ:
+
+```text
+YFG Database Gateway
+        ?
+Provider / Adapter
+   ??? SQL Server
+   ??? PostgreSQL
+   ??? MySQL
+   ??? Oracle
+   ??? MongoDB
+   ??? Redis
+   ??? ...
+```
+
+### ŞÇÈáíÊåÇí ãåã
+
+YFG ÈÇíÏ ÈÊæÇäÏ¡ ÈÇ ãÌæÒ ãäÇÓÈ:
+
+* ÇÊÕÇá ÑÇ ÊÓÊ ˜äÏ
+* Schema ÑÇ ÈÎæÇäÏ
+* TableåÇ ÑÇ ÔäÇÓÇíí ˜äÏ
+* ColumnåÇ ÑÇ ÈÎæÇäÏ
+* PK/FK ÑÇ ÊÔÎíÕ ÏåÏ
+* IndexåÇ ÑÇ ÔäÇÓÇíí ˜äÏ
+* ViewåÇ ÑÇ ÈÎæÇäÏ
+* Stored ProcedureåÇ ÑÇ ÔäÇÓÇíí ˜äÏ
+* Dependency Graph ÈÓÇÒÏ
+* Migration ÊæáíÏ
+
+ÏŞíŞÇğ. Çíä Óå ãæÑÏ ÑÇ ÈÇíÏ ÏÑ YFG ÈåÕæÑÊ **í˜ ÒíÑÓÇÎÊ í˜ÇÑå ÈÑÇí ÇÊÕÇá¡ ÊæÓÚå¡ ÇÌÑÇ æ íÔäãÇíÔ** ÊÚÑíİ ˜äíãº äå İŞØ äÏ Connector ÓÇÏå.
+
+### 1. Local Development & Runtime Integration — ÇÊÕÇá æ ˜ÇÑ ÈÇ ãÍíØ ÊæÓÚå ãÍáí
+
+YFG ÈÇíÏ ÈÊæÇäÏ Ñæí ÓíÓÊã ÊæÓÚåÏåäÏå ÈÇ Stack æÇŞÚí ˜ÇÑ ˜äÏ¡ ãËáÇğ:
+
+* **C# / .NET**
+* **ASP.NET Core**
+* **Entity Framework Core**
+* **Blazor**
+* **ASP.NET Core Web API**
+* **React / Angular / Vue**
+* **Node.js / TypeScript**
+* **Python**
+* **Java / Spring**
+* æ ÓÇíÑ StackåÇ
+
+æ ÈÇ ÇÈÒÇÑåÇíí ãËá:
+
+* Visual Studio
+* VS Code
+* JetBrains Rider
+* .NET SDK
+* Node.js / npm
+* Git
+* Docker
+* PowerShell / Terminal
+* Build/Test tools
+
+˜ÇÑ ˜äÏ.
+
+íÚäí YFG ÈÊæÇäÏ:
+
+```text
+YFG
+ ?
+ ??? Create Project
+ ??? Open Project
+ ??? Inspect Project
+ ??? Analyze Code
+ ??? Create/Edit Files
+ ??? Manage Dependencies
+ ??? Build
+ ??? Run
+ ??? Debug/Test
+ ??? Git Commit
+ ??? Collect Results
+```
+
+ãËáÇğ ÈÑÇí í˜ Ñæå:
+
+```text
+YFG
+ ?
+ASP.NET Core Project
+ ?
+Solution / .sln
+ ?
+Projects
+ ??? ERP.Web
+ ??? ERP.API
+ ??? ERP.Application
+ ??? ERP.Domain
+ ??? ERP.Infrastructure
+ ??? ERP.Tests
+ ?
+Build
+ ?
+Test
+ ?
+Run
+ ?
+Web Preview
+```
+
+ä˜Êå ãåã: YFG äÈÇíÏ Èå í˜ IDE ÎÇÕ æÇÈÓÊå ÈÇÔÏ. í˜ **Local Development Adapter Layer** ÏÇÔÊå ÈÇÔíã ÊÇ IDE æ ÇÈÒÇÑ ŞÇÈá ÊÚæíÖ ÈÇÔäÏ.
+
+---
+
+# 2. Database Integration Layer — áÇíå ÇÊÕÇá Èå ÇíÇååÇí ÏÇÏå
+
+YFG ÈÇíÏ ÈÊæÇäÏ ÈÇ DatabaseåÇí ãÎÊáİ ˜ÇÑ ˜äÏ:
+
+### Relational
+
+* SQL Server
+* PostgreSQL
+* MySQL
+* MariaDB
+* Oracle
+* SQLite
+
+### NoSQL
+
+* MongoDB
+* Redis
+* Elasticsearch / OpenSearch
+* Cassandra æ ÓÇíÑ ãæÇÑÏ ÏÑ ÕæÑÊ äíÇÒ
+
+ãÚãÇÑí:
+
+```text
+             YFG Database Gateway
+                     ?
+        ???????????????????????????
+        ?            ?            ?
+    SQL Server   PostgreSQL    MySQL
+        ?            ?            ?
+      Oracle       SQLite      MongoDB
+```
+
+YFG ÈÊæÇäÏ ÈÇ ÊæÌå Èå Permission:
+
+* Connect
+* Test Connection
+* Read Schema
+* Analyze Tables
+* Analyze Columns
+* PK / FK
+* Index
+* View
+* Procedure
+* Trigger
+* Constraint
+* Migration
+* Seed Data
+* Query
+* Database Documentation
+* Dependency Analysis
+
+ÑÇ ÇäÌÇã ÏåÏ.
+
+æ ÈÓíÇÑ ãåã:
+
+**Database Agent äÈÇíÏ ãÓÊŞíãÇğ ÈÏæä ˜äÊÑá Èå Production Database ÏÓÊÑÓí ÏÇÔÊå ÈÇÔÏ.**
+
+ÏÓÊÑÓí ÈÇíÏ ÇÒ:
+
+```text
+Agent
+ ?
+Agent Contract
+ ?
+Permission
+ ?
+Database Gateway
+ ?
+Environment Policy
+ ?
+Database
+```
+
+ÚÈæÑ ˜äÏ.
+
+---
+
+# 3. Web Preview Engine — ãæÊæÑ íÔäãÇíÔ ÊÍÊ æÈ
+
+Çíä ãæÑÏ ÈÇíÏ í˜í ÇÒ ŞÇÈáíÊåÇí ÇÕáí YFG ÈÇÔÏ.
+
+YFG ÈÇíÏ ÈÊæÇäÏ Ñæå ÊæáíÏÔÏå ÑÇ ÏÑ í˜ ãÍíØ Web Preview ÇÌÑÇ æ äãÇíÔ ÏåÏ.
+
+ãËáÇğ:
+
+```text
+                    YFG
+                     ?
+              Project Preview
+                     ?
+          ???????????????????????
+          ?                     ?
+     Static Preview       Executable Preview
+                                ?
+                         Sandbox Environment
+                                ?
+                         ASP.NET Core
+                                ?
+                            Browser
+```
+
+˜ÇÑÈÑ ÏÑ ÎæÏ YFG ÈÊæÇäÏ ãËáÇğ:
+
+**Run Preview**
+
+ÑÇ ÈÒäÏ æ äÑãÇİÒÇÑ ÊæáíÏÔÏå ÑÇ ÏÑ Browser ÈÈíäÏ.
+
+---
+
+# 4. Preview äÈÇíÏ İŞØ Screenshot ÈÇÔÏ
+
+Óå ÓØÍ íÔäåÇÏ ãí˜äã:
+
+### Level 1 — Design Preview
+
+äãÇíÔ:
+
+* ÕİÍÇÊ
+* İÑãåÇ
+* ãäæ
+* Dashboard
+* Navigation
+* Workflow
+* ãÚãÇÑí
+
+### Level 2 — Interactive Preview
+
+˜ÇÑÈÑ ÈÊæÇäÏ æÇŞÚÇğ:
+
+* ˜áí˜ ˜äÏ
+* İÑã ÈÇÒ ˜äÏ
+* ÏÇÏå ÂÒãÇíÔí æÇÑÏ ˜äÏ
+* Workflow ÑÇ Øí ˜äÏ
+* Dashboard ÈÈíäÏ
+* Login ÑÇ ÇãÊÍÇä ˜äÏ
+
+### Level 3 — Executable Preview
+
+ÇÌÑÇí æÇŞÚí Ñæå ÏÑ Sandbox:
+
+```text
+Source Code
+    ?
+Build
+    ?
+Test
+    ?
+Sandbox
+    ?
+ASP.NET Core Runtime
+    ?
+Web Server
+    ?
+Browser Preview
+```
+
+Çíä ÈÎÔ ÈÑÇí YFG ÈÓíÇÑ ãåã ÇÓÊ.
+
+---
+
+# 5. ÇÑÊÈÇØ Óå ŞÇÈáíÊ
+
+ÏÑ äåÇíÊ ãÚãÇÑí ÈÇíÏ Èå Çíä Ô˜á ÈÇÔÏ:
+
+```text
+                  ???????????????????????
+                  ?        YFG          ?
+                  ?   AI Software       ?
+                  ?      Factory        ?
+                  ???????????????????????
+                             ?
+          ???????????????????????????????????????
+          ?                  ?                  ?
+          ?                  ?                  ?
+ Local Development     Database Gateway    Web Preview
+ Integration           Integration         Engine
+          ?                  ?                  ?
+          ?                  ?                  ?
+ ??????????????????   ?????????????????   ?????????????????
+ ? C#             ?   ? SQL Server    ?   ? Browser       ?
+ ? ASP.NET Core   ?   ? PostgreSQL    ?   ? Interactive   ?
+ ? EF Core        ?   ? MySQL         ?   ? Preview       ?
+ ? React          ?   ? Oracle        ?   ? Sandbox       ?
+ ? Node.js        ?   ? MongoDB       ?   ? Runtime       ?
+ ? Python         ?   ? Redis         ?   ? Test Data     ?
+ ??????????????????   ?????????????????   ?????????????????
+```
+
+## 6. ÌÇíÇå ÏÑ ãÚãÇÑí YFG
+
+ãä Çíä ÑÇ Èå ãÚãÇÑí ÇÕáí ÇÖÇİå ãí˜äã:
+
+### **Engineering Connectivity & Preview Layer**
+
+### **áÇíå ÇÊÕÇá ãåäÏÓí æ íÔäãÇíÔ**
+
+ÈÇ ÒíÑÓíÓÊãåÇí:
+
+1. **Local Development Connector**
+
+   * ÇÊÕÇá Èå ãÍíØ ÊæÓÚå ãÍáí
+
+2. **IDE Integration**
+
+   * ÇÊÕÇá Èå IDEåÇ
+
+3. **Runtime Integration**
+
+   * ÇÌÑÇí .NET / Node / Python æ ÓÇíÑ RuntimeåÇ
+
+4. **Source Code Workspace**
+
+   * ãÏíÑíÊ Workspace æ Source Code
+
+5. **Database Connectivity Gateway**
+
+   * ÇÊÕÇá ÇÓÊÇäÏÇÑÏ Èå DatabaseåÇ
+
+6. **Database Schema Intelligence**
+
+   * ÊÍáíá ÓÇÎÊÇÑ Database
+
+7. **Build & Test Integration**
+
+   * Build æ Test æÇŞÚí
+
+8. **Sandbox Runtime**
+
+   * ÇÌÑÇí ÇíÒæáå
+
+9. **Web Preview Engine**
+
+   * íÔäãÇíÔ ÊÍÊ æÈ
+
+10. **Interactive Preview**
+
+    * ÊÚÇãá æÇŞÚí ÈÇ äÑãÇİÒÇÑ
+
+11. **Preview Data Manager**
+
+    * ÏÇÏå ÂÒãÇíÔí
+
+12. **Environment Manager**
+
+    * Development / Test / Preview / Staging
+
+13. **Port & Service Manager**
+
+    * ãÏíÑíÊ ÓÑæíÓåÇ æ PortåÇ
+
+14. **Preview Security Boundary**
+
+    * ÌáæíÑí ÇÒ ÏÓÊÑÓí Preview Èå ãäÇÈÚ ÍÓÇÓ
+
+---
+
+## 7. í˜ ŞÇÈáíÊ ÈÓíÇÑ ãåã ÏíÑ
+
+Èå äÙÑã ÈÇíÏ ÇÒ åãíä ÇÈÊÏÇ íÒí ÑÇ åã ÇÖÇİå ˜äíã:
+
+### **Project Workspace Manager — ãÏíÑ Workspace Ñæå**
+
+ÊÇ YFG ÈÊæÇäÏ Ñæå æÇŞÚí ÑÇ Ñæí ÓíÓÊã ãÏíÑíÊ ˜äÏ:
+
+```text
+YFG Project
+?
+??? Source
+??? Solution
+??? Database
+??? Tests
+??? Documentation
+??? Configuration
+??? Docker
+??? Artifacts
+??? Logs
+??? Preview
+??? Git
+```
+
+ÏÑ äÊíÌå YFG İŞØ í˜ **AI Chat + Agent System** äÎæÇåÏ ÈæÏ.
+
+Èá˜å ãíÊæÇäÏ ÊÈÏíá ÔæÏ Èå:
+
+> **AI Engineering Control Center**
+
+˜å ÇÒ ÏÇÎá Âä ÈÊæÇä Ñæå ÑÇ **ØÑÇÍí ˜ÑÏ ? ˜Ï ÊæáíÏ ˜ÑÏ ? Ñæí ãÍíØ ãÍáí ˜ÇÑ ˜ÑÏ ? Database ÑÇ ãÊÕá ˜ÑÏ ? Build ˜ÑÏ ? Test ˜ÑÏ ? ÇÌÑÇ ˜ÑÏ ? ÏÑ Browser ÏíÏ ? ÊÛííÑ ÏÇÏ ? Verify ˜ÑÏ ? Commit ˜ÑÏ ? Release ˜ÑÏ.**
+
+æ åãå Çíä ãÑÇÍá åãäÇä ÊÍÊ åãÇä ÇÕæá ÇÕáí YFG ÈÇŞí ãíãÇääÏ:
+
+**Contract ? Permission ? Sandbox ? Execution ? Artifact ? Independent Verification ? Quality Gate ? Human Approval ? Traceability ? Rollback**.
+
+
+
+å ÈÑäÇãå ÈÑÇí ÇÑÊÈÇÊ ÈÇ  åæÔ ãÕäæÚí åÇ Èå ØæÑí ˜å ÈÊæÇäã Èå åæÔ ãÕäæÚí 
+İæáÏÑ 
+æ
+İÇíá 
+ãÚÑİí ˜äã æ åæÔ ãÕäæÚí Ñæí Ñæå ÏÑ åãÇä İæáÏÑ ˜ÇÑ ˜äÏ 
+
+Thought Process
+ÈÇÔå! ãíÎæÇã íå ÏÓÊíÇÑ åæÔ ãÕäæÚí ÈÑÇí ˜ÇÑ Ñæí Ñæå ÈÑÇÊ ÈÓÇÒã — íÚäí íå Çáí˜íÔä Ê ˜å ãíÊæäí ÈåÔ í˜ İæáÏÑ (Ñæå) æ İÇíáåÇ Ñæ ãÚÑİí ˜äí æ AI åãæäÌÇ Ñæí İÇíáåÇ ˜ÇÑ ˜äå (ÈÎæäå¡ ÈÓÇÒå¡ æíÑÇíÔ ˜äå).
+
+Çæá ÈĞÇÑ ãÍíØ Ñæå æ ÇÈÒÇÑåÇí ãæÌæÏ Ñæ ÈÑÑÓí ˜äã:
+
+ÇÈÒÇÑåÇ ÂãÇÏåÓÊ (react-markdown æ zustand æ sonner ÇÒ ŞÈá äÕÈ åÓÊä). ÍÇáÇ ÈŞíå ÓÇÎÊÇÑ Ñæå æ æÖÚíÊ dev server Ñæ ˜ ãí˜äã:
+
+ÓÑæÑ ÏÑ ÍÇá ÇÌÑÇÓÊ (æÑÊ 3000 İÚÇá). ÍÇáÇ ÈÑäÇãå ˜ÇÑ Ñæ ÊäÙíã ãí˜äã:
+
+ÚÇáí — db.ts ãæÌæÏ ÇÓÊ. ÍÇáÇ ÒíÑÓÇÎÊ ãÔÊÑ˜ Ñæ ãíÓÇÒã (ÇÓ˜íãÇí ÏíÊÇÈíÓ + ŞÑÇÑÏÇÏ ÊÇíåÇí ãÔÊÑ˜ Èíä È˜ÇäÏ æ İÑÇäÊÇäÏ):
+
+ÒíÑÓÇÎÊ ÂãÇÏå ÔÏ. ÍÇáÇ worklog ãÔÊÑ˜ Ñæ ãíÓÇÒã æ Ïæ ÇíÌäÊ ÊÎÕÕí Ñæ Èå ÕæÑÊ ãæÇÒí ÈÑÇí È˜ÇäÏ æ İÑÇäÊÇäÏ ÇÌÑÇ ãí˜äã:
+
+ÍÇáÇ Ïæ ÇíÌäÊ Ñæ ãæÇÒí ÇÌÑÇ ãí˜äã — í˜í È˜ÇäÏ (API + åæÔ ãÕäæÚí + ÚãáíÇÊ İÇíá) æ í˜í İÑÇäÊÇäÏ (ÑÇÈØ ˜ÇÑÈÑí İÇÑÓí RTL):
+
+åÑ Ïæ ÇíÌäÊ ˜ÇÑÔæä Ñæ Êãæã ˜ÑÏä — È˜ÇäÏ (? İÇíá API + ˜ÊÇÈÎÇäååÇí AI æ İÇíáÓíÓÊã) æ İÑÇäÊÇäÏ (˜á ÑÇÈØ ˜ÇÑÈÑí İÇÑÓí RTL). ÍÇáÇ ãÑÍáå í˜ÇÑåÓÇÒí: áíäÊ¡ ÈÑÑÓí áÇ ÓÑæÑ æ ˜ Óíã˜Ôí:
+
+äÏ ÎØÇí áíäÊ ÏÑ workspace-dialog.tsx åÓÊ. ÈĞÇÑ ÎÑæÌí ˜Çãá æ İÇíá Ñæ ÈÈíäã:
+
+Óå ÎØÇ ãÑÈæØ Èå Çáæí setState ÏÇÎá useEffect ÇÓÊ æ í˜ åÔÏÇÑ İæäÊ. Çæá İÇíáåÇí ˜áíÏí İÑÇäÊ Ñæ ÈÑÑÓí ãí˜äã ÈÚÏ ÇÕáÇÍ ãí˜äã:
+
+ÇÓÊæÑ æ åÏÑ ÏÑÓÊ åÓÊäÏ. ÍÇáÇ Óå ÎØÇí áíäÊ æ í˜ åÔÏÇÑ Ñæ ÇÕáÇÍ ãí˜äã:
+
+ÍÇáÇ åÔÏÇÑ İæäÊ Ñæ ÏÑ layout ÑİÚ æ áíäÊ Ñæ ÏæÈÇÑå ÇÌÑÇ ãí˜äã:
+
+áíäÊ Ç˜ ÔÏ ? æ ÓÑæÑ ÈÏæä ÎØÇ ˜ÇãÇíá ãí˜äå. ÍÇáÇ ŞÈá ÇÒ ÊÓÊ ãÑæÑÑ¡ äÏ İÇíá äãæäå ÏÑ workspace ãíÓÇÒã ÊÇ ÇÓ˜ÑæáÈÇÑ æ ÊÓÊåÇ æÇŞÚí ÈÇÔä¡ ÈÚÏ ÇÒ Agent Browser ÈÑÇí ÊÓÊ end-to-end ÇÓÊİÇÏå ãí˜äã:
+
+ÍÇáÇ ÊÓÊ ˜Çãá ãÑæÑÑ Ñæ ÔÑæÚ ãí˜äã — Çæá ÏÓ˜ÊÇ:
+
+Ç ÈåÏÑÓÊí ÑäÏÑ ÔÏå — ÑÇÈØ İÇÑÓí RTL ÈÇ İÇíáÇ˜ÓáæÑÑ (æÔå demo-app ÏíÏå ãíÔå)¡ Ê æ ÍÇáÊ ÑÓÔ/˜ÏäæíÓí. ÍÇáÇ ãÓíÑ ØáÇíí Ñæ ÊÓÊ ãí˜äã:
+
+ÏÑÎÊ İÇíáåÇ ÈåÏÑÓÊí lazy-load ãíÔå. ÍÇáÇ İÇíá utils.js Ñæ ÇäÊÎÇÈ ãí˜äã æ íå íÇã ÏÑ ÍÇáÊ ÑÓÔ ãíİÑÓÊã:
+
+ÚÇáí! ÍÇáÊ ÑÓÔ ˜ÇÑ ãí˜äå — AI İÇíá ÇäÊÎÇÈÔÏå Ñæ ÎæäÏ æ ÏÑÓÊ ÌæÇÈ ÏÇÏ (ÊÇÈÚ greet Ñæ ÊÔÎíÕ ÏÇÏ). ÍÇáÇ ÍÇáÊ ˜ÏäæíÓí Ñæ ÊÓÊ ãí˜äã — ãåãÊÑíä ŞÇÈáíÊ: ÓÇÎÊä İÇíá ÊæÓØ AI:
+
+AI İÊ İÇíá Ñæ ÓÇÎÊå — ÈĞÇÑ æÇŞÚÇğ Ñæí ÏíÓ˜ æ ÏÑ ÇÓÎ API ÈÑÑÓí ˜äã:
+
+İÇíá Ñæí ÏíÓ˜ ÓÇÎÊå äÔÏå! ÈÇíÏ ÈÈíäã AI ÏŞíŞÇğ í ÈÑÑÏæäÏå æ ÇÑÓ ˜Ï ÑÇ Ô˜ÓÊ ÎæÑÏå:
+
+ãÔ˜á íÏÇ ÔÏ: ˜áí˜ Ñæí «˜ÏäæíÓí» ËÈÊ äÔÏå — ÏÑÎæÇÓÊ åãäÇä ÈÇ ÍÇáÊ «ÑÓÔ» ÑİÊå (Èå åãíä Ïáíá Èáæ˜ İÇíá ÍĞİ ÔÏ æ ÇÚãÇá äÔÏ). ÈĞÇÑ íÇÏåÓÇÒí ToggleGroup Ñæ ÈÈíäã:
+
+˜Ï ToggleGroup ÏÑÓÊ Èå äÙÑ ãíÑÓå — ÇÍÊãÇáÇğ ˜áí˜ ãä Ñæí ÑİÑäÓ ŞÏíãí ÎæÑÏå. ÈĞÇÑ ÈÇ snapshot ÊÇÒå ãÓÊŞíãÇğ ÊÓÊ ˜äã:
+
+˜áí˜ æÇŞÚí Ñæí toggle Úãá äãí˜äå — Ó í˜ ÈÇ æÇŞÚíå! ÈĞÇÑ ˜ÇãæääÊ toggle-group æ DOM æÇŞÚí Ñæ ÈÑÑÓí ˜äã:
+
+˜ÇãæääÊ ÇÓÊÇäÏÇÑÏ æ Ñæí Ï˜ãå åã åí ÇáãÇä ÏíåÇí äíÓÊ. ÈĞÇÑ ÈÇ ÌÇæÇÇÓ˜ÑíÊ ãÓÊŞíã ˜áí˜ ˜äã æ æÖÚíÊ aria Ñæ ÈÑÑÓí ˜äã:
+
+˜áí˜ ÍÊí ÈÇ JS åã state Ñæ ÚæÖ äãí˜äå¡ æáí data-state ÂíÊã Çæá «on» ÇÓÊ — íÚäí ÑÇÏí˜Çá İ˜Ñ ãí˜äå ÍÇáÊ ÑÓÔ İÚÇáå. ÈĞÇÑ ÎØÇåÇí ˜äÓæá ãÑæÑÑ Ñæ ˜ ˜äã:
+
+íÏÇ ÔÏ! ?? ÎØÇí ˜äÓæá: Unknown event handler property "onCheckedChange". It will be ignored.
+
+ÇíÌäÊ İÑÇäÊÇäÏ ÇÒ onCheckedChange ÇÓÊİÇÏå ˜ÑÏå ÏÑ ÍÇáí ˜å API ÑÇÏí˜Çá ToggleGroup onValueChange ÇÓÊ. ÇÕáÇÍÔ ãí˜äã:
+
+ÍÇáÇ ÕÈÑ ãí˜äã HMR ÇÚãÇá ÈÔå æ ÏæÈÇÑå ÊÓÊ ÍÇáÊ ˜ÏäæíÓí Ñæ ÇäÌÇã ãíÏã:
+
+toggle ÏÑÓÊ ÔÏ (˜ÏäæíÓí: true). ÍÇáÇ íÇã ÓÇÎÊ İÇíá Ñæ ÏæÈÇÑå ãíİÑÓÊã:
+
+İÇíá åäæÒ ÓÇÎÊå äÔÏå — ÈĞÇÑ æÖÚíÊ íÇãåÇ æ áÇ Ñæ ÈÑÑÓí ˜äã:
+
+í src/calculator.js ÏÑ íÇã ÙÇåÑ ÔÏå æ explorer åã refresh ÔÏå! æáí ÈĞÇÑ ÏæÈÇÑå ÏíÓ˜ Ñæ ˜ ˜äã:
+
+ÑíÔå ãÔ˜á ãÔÎÕ ÔÏ: İÇíá ÓÇÎÊå ÔÏå æáí ÏÑ /home/z/workspace/src/calculator.js — æä workspace åãäÇä Ñæí æÔå æÇáÏ ÈæÏ äå demo-app. Çíä ÑİÊÇÑ ÏÑÓÊö ØÑÇÍí ÇÓÊ¡ æáí UX ÈåÊÑ ãíÎæÇÏ: íå Ï˜ãå ÓÑíÚ «ÊäÙíã ÈåÚäæÇä Ñæå» Ñæí æÔååÇ ÇÖÇİå ãí˜äã. Çæá ÈĞÇÑ Ç˜ÓáæÑÑ Ñæ ÈÈíäã:
+
+Ç˜ÓáæÑÑ ÎæÈå. ÍÇáÇ Ï˜ãå ÓÑíÚ «ÊäÙíã ÈåÚäæÇä æÔå Ñæå» Ñæ Èå ÑÏíİ æÔååÇ ÇÖÇİå ãí˜äã ÊÇ «ãÚÑİí İæáÏÑ» ÈÏæä ÈÇÒ ˜ÑÏä ÏíÇáæ ãã˜ä ÈÇÔå:
+
+ÍÇáÇ İÇíá ÓÑÑÏÇä ÊÓÊ ŞÈáí Ñæ Ç˜ ãí˜äã¡ ÕİÍå Ñæ ÑİÑÔ ãí˜äã æ ãÓíÑ ØáÇíí ˜Çãá Ñæ ÈÇ workspace ÏÑÓÊ ÊÓÊ ãí˜äã:
+
+Ï˜ãå ÌÏíÏ ÙÇåÑ ÔÏ æ ÍÇáÊ ˜ÏäæíÓí åã ÈÚÏ ÇÒ reload ÍİÙ ÔÏå (persist ˜ÇÑ ãí˜äå). ÍÇáÇ demo-app Ñæ ÈåÚäæÇä Ñæå ÊäÙíã ãí˜äã:
+
+workspace ÚæÖ ÔÏ — ÍÇáÇ ãÍÊæÇí demo-app ÏÑ ÑíÔå Ç˜ÓáæÑÑå. íÇã ÓÇÎÊ İÇíá Ñæ ÏÑ ÍÇáÊ ˜ÏäæíÓí ãíİÑÓÊã:
+
+?? ÚÇáí! İÇíá calculator.js ÈÇ ˜ÇãäÊåÇí İÇÑÓí ÏŞíŞÇğ ÏÑ ãÓíÑ ÏÑÓÊ ÓÇÎÊå ÔÏ. ÍÇáÇ í İÇíá ÓÇÎÊåÔÏå Ñæ ˜áí˜ ãí˜äã ÊÇ äãÇíÔÑ İÇíá ÈÇÒ ÈÔå:
+
+Ïæ ãÔ˜á: (?) äãÇíÔÑ İÇíá ÈåÕæÑÊ Sheet ãæÈÇíá ÈÇÒ ÔÏå äå äá ÏÓ˜ÊÇ¡ (?) ãÍÊæÇ ÎÇáíå — æä path í äÓÈí ÇÓÊ (src/calculator.js) æ API ãÓíÑ ãØáŞ ãíÎæÇÏ. ÈĞÇÑ page.tsx æ viewer Ñæ ÈÈíäã:
+
+åÑ Ïæ ÈÇ ÊÃííÏ ÔÏ. ÇÕáÇÍ ãí˜äã:
+
+openViewer ÈÇíÏ ãÓíÑåÇí äÓÈí Ñæ Èå workspace ÇÖÇİå ˜äå
+Sheet ãæÈÇíá ÈÇíÏ İŞØ ÒíÑ 1024px ÑäÏÑ ÈÔå (ÇáÇä Ñæí ÏÓ˜ÊÇ åã ÈÇÒ ãíÔå)
+ÍÇáÇ reload æ ÊÓÊ ÏæÈÇÑå í İÇíá:
+
+ÈÚÏ ÇÒ reload İÊæí İÚÇá ÈÇÒíÇÈí äãíÔå — íå ÈåÈæÏ: ÏÑ boot ÂÎÑíä İÊæ åã ÈÇÒ ÈÔå:
+
+íÇãåÇ ÈÚÏ ÇÒ ÑİÑÔ ÈÇÒíÇÈí ÔÏäÏ æ í åÓÊ. ÍÇáÇ ˜áí˜Ô ãí˜äã:
+
+äãÇíÔÑ ÏÓ˜ÊÇ (complementary) ÈÇÒ ÔÏ æ Ï˜ãååÇ İÚÇáå! ÈĞÇÑ ãÍÊæÇ æ ÙÇåÑ Ñæ ÈÇ ÇÓ˜ÑíäÔÇÊ ÊÃííÏ ˜äã:
+
+ÙÇåÑ ÏÓ˜ÊÇ ÚÇáíå! ÍÇáÇ æíÑÇíÔ ÏÓÊí İÇíá ÏÑ äãÇíÔÑ Ñæ ÊÓÊ ãí˜äã:
+
+æíÑÇíÔ ÏÓÊí æ ĞÎíÑå åã ˜ÇÑ ãí˜äå. ÍÇáÇ İÊæí ÌÏíÏ æ ÊÈ İÊæåÇ Ñæ ÊÓÊ ãí˜äã:
+
+áíÓÊ İÊæåÇ ÈÇ ÚäæÇäåÇí ÎæÏ˜ÇÑ ÏÑÓÊ ˜ÇÑ ãí˜äå. ÍÇáÇ ÈÑÔÊ Èå İÊæí ŞÈáí Ñæ ÊÓÊ ãí˜äã:
+
+ÍÇáÇ ÊÓÊ ÑíÓÇäÓíæ ãæÈÇíá:
+
+ÏÑ ãæÈÇíá¡ äãÇíÔÑ İÇíá ÈåÕæÑÊ Sheet ÇÒ ÓãÊ  ÈÇÒ ÔÏ (æä İÇíá ÈÇÒ ÈæÏ — ÑİÊÇÑ ÏÑÓÊ). ÈĞÇÑ ÈÈäÏã æ áíÇæÊ ÇÕáí Ê ãæÈÇíá Ñæ ÈÈíäã:
+
+ãæÈÇíá åã ÚÇáíå — İæÊÑ Çííä¡ ÍÈÇÈåÇí Ê¡ í æ æÑæÏí åãå ÏÑÓÊ. ÍÇáÇ ÔíÊ äá ˜äÇÑ ãæÈÇíá:
+
+äá ãæÈÇíá åã ÈíäŞÕå. ÍÇáÇ ÏíÇáæ ÇäÊÎÇÈ æÔå Ñæ Ñæí ÏÓ˜ÊÇ ÊÓÊ ãí˜äã æ ÈÚÏ ÈÑÑÓíåÇí äåÇíí:
+
+äÇæÈÑí æÔå æÇáÏ ˜ÇÑ ãí˜äå. ÇäÊÎÇÈ ãí˜äã æ ÈÑÔÊ Èå demo-app ÈÇ Ï˜ãå ÓÑíÚ Ç˜ÓáæÑÑ:
+
+Ï˜ãå hover-only ÇÓÊ æ ˜ÇÑÇ˜ÊÑ äíãİÇÕáå ÏÑ name ãÔ˜á ÇíÌÇÏ ãí˜äå — ÈÇ JS ˜áí˜ ãí˜äã:
+
+åãåíÒ ˜ÇÑ ãí˜äå. ÍÇáÇ ÈÑÑÓíåÇí äåÇíí — ˜äÓæá ãÑæÑÑ¡ áÇ ÓÑæÑ¡ æ áíäÊ:
+
+åãåíÒ Ç˜ ÇÓÊ — ÎØÇí ˜äÓæá İŞØ Ñ˜æÑÏ ŞÏíãí ŞÈá ÇÒ İí˜Óå. ÍÇáÇ Ç˜ÓÇÒí ÏÇÏååÇí ÊÓÊ æ ÈÓÊä ˜ÇÑåÇ:
+
+ÊãÇã ÔÏ! ? Çáí˜íÔä «ÏÓÊíÇÑ Ñæå» ÓÇÎÊå æ ÏÑ ãÑæÑÑ æÇŞÚí ÊÓÊ ÔÏ.
+
+í ÓÇÎÊã¿
+í˜ ãÍíØ Ê ÈÇ åæÔ ãÕäæÚí ˜å ãíÊæäí ÈåÔ İæáÏÑ Ñæå æ İÇíáåÇ Ñæ ãÚÑİí ˜äí æ AI åãÇäÌÇ Ñæí İÇíáåÇ ˜ÇÑ ˜äå — ãíÎæäå¡ ãíÓÇÒå æ æíÑÇíÔ ãí˜äå.
+
+ŞÇÈáíÊåÇ
+ŞÇÈáíÊ
+ÊæÖíÍ
+?? ãÚÑİí İæáÏÑ	ÈÇ Ï˜ãå æÔå ÏÑ åÏÑ (íÇ Ï˜ãå ÓÑíÚ Ñæí åÑ æÔå ÏÑ Ç˜ÓáæÑÑ) ÑæåÇÊ Ñæ ÇäÊÎÇÈ ˜ä — ãËáÇğ /home/z/my-project íÇ åÑ æÔå ÏÇÎá /home/z
+?? Ç˜ÓáæÑÑ İÇíá	ÏÑÎÊ İÇíáåÇ ÈÇ lazy-load¡ ÇäÊÎÇÈ äÏ İÇíá/æÔå ÈåÚäæÇä «Òãíäå» ÈÑÇí AI¡ ÓÇÎÊ/ÍĞİ İÇíá æ æÔå
+?? Ïæ ÍÇáÊ Ê	ÑÓÔ (İŞØ ÊÍáíá æ ÑÇåäãÇíí) æ ˜ÏäæíÓí (AI ÇÌÇÒå ÓÇÎÊ/æíÑÇíÔ İÇíá ÏÇÑå)
+?? ÊÛííÑ ÎæÏ˜ÇÑ İÇíáåÇ	ÏÑ ÍÇáÊ ˜ÏäæíÓí¡ AI İÇíá Ñæ ˜Çãá ãíäæíÓåº İÇíá æÇŞÚÇğ Ñæí ÏíÓ˜ ÓÇÎÊå ãíÔå æ í ÓÈÒ/ÒÑÏ «ÓÇÎÊå ÔÏ/ÈåÑæÒ ÔÏ» ˜áí˜ÇÑ ÙÇåÑ ãíÔå
+?? äãÇíÔÑ/æíÑÇíÔÑ İÇíá	˜áí˜ Ñæí åÑ İÇíá ? äãÇíÔ ÈÇ syntax highlight + Çã˜Çä æíÑÇíÔ ÏÓÊí æ ĞÎíÑå
+?? İÊæåÇ	åãå ÊåÇ ÏÑ ÏíÊÇÈíÓ ĞÎíÑå ãíÔä ÈÇ ÚäæÇä ÎæÏ˜ÇÑº ÈÚÏ ÇÒ ÑİÑÔ åã ÈÑãíÑÏä
+?? ÑíÓÇäÓíæ RTL	ÑÇÈØ İÇÑÓí ˜Çãá ÈÇ İæäÊ æÒíÑãÊä¡ ÏÇÑ˜/áÇíÊ¡ äáåÇí ˜Ôæíí ÏÑ ãæÈÇíá
+
+äÍæå ÇÓÊİÇÏå
+Ñæå äãæäå (demo-app) ÇÒ ŞÈá ÏÑ workspace åÓÊ — íÇ æÔå ÎæÏÊ Ñæ ÇäÊÎÇÈ ˜ä
+Êí˜ İÇíáåÇ Ñæ ÈÒä ÊÇ AI ÇæäåÇ Ñæ ÈÈíäå
+ÍÇáÊ Ñæ Ñæí «˜ÏäæíÓí» ÈĞÇÑ æ ãËáÇğ ÈäæíÓ: «í˜ ÕİÍå ÏÑÈÇÑå ãÇ ÈÓÇÒ»
+Ñæí í İÇíá ÊÛííÑ íÇİÊå ˜áí˜ ˜ä ÊÇ äÊíÌå Ñæ ÈÈíäí
+ÊÓÊåÇí ÇäÌÇãÔÏå (ãÑæÑÑ æÇŞÚí)
+? Ê ÑÓÔæÇÓÎ ÈÇ ÎæÇäÏä İÇíá ÇäÊÎÇÈí — AI ÊÇÈÚ ÏÇÎá İÇíá Ñæ ÏÑÓÊ ÊÔÎíÕ ÏÇÏ
+? ÓÇÎÊ İÇíá æÇŞÚí ÈÇ AI (calculator.js ÈÇ ? ÊÇÈÚ Ñæí ÏíÓ˜ ÇíÌÇÏ ÔÏ)
+? æíÑÇíÔ ÏÓÊí + ĞÎíÑå¡ ÓÔäåÇ¡ ÏíÇáæ ÇäÊÎÇÈ æÔå¡ ãæÈÇíá æ ÏÓ˜ÊÇ
+ÏÑ Ííä ÊÓÊ ? ÈÇ íÏÇ æ ÑİÚ ÔÏ (ãåãÊÑíä: prop ÇÔÊÈÇå Radix ˜å ÈÇÚË ãíÔÏ ÍÇáÊ ˜ÏäæíÓí İÚÇá äÔå)
+ãíÊæäí äÊíÌå Ñæ ÇÒ Preview Panel ÈÈíäí (íÇ Ï˜ãå Open in New Tab ÈÇáÇí äá ÈÑÇí ÈÇÒ ÔÏä ÏÑ ÊÈ ÌÏÇ).
+
+???????????????????????????????????????????????
+?          Local AI Project Assistant         ?
+?                                             ?
+?  ?? Project Folder                          ?
+?  ?? C:\Projects\YFG-Designer                ?
+?                                             ?
+?  ?? Chat                                    ?
+?  ?? ÓÄÇá ÏÑÈÇÑå Ñæå                       ?
+?                                             ?
+?  ?? Files                                   ?
+?  ?? İÇíáåÇ / ˜ÏåÇ / ãÓÊäÏÇÊ                ?
+???????????????????????????????????????????????
+                       ?
+                       ? OpenAI Compatible API
+                       ?
+             http://127.0.0.1:8080/v1
+                       ?
+                       ?
+                 llama-server
+                       ?
+                       ?
+                 GLM-4.7-Flash  Show full message
+
+Thought Process
+I can see the project already contains an assistant codebase from a previous session. Let me review the existing work and the worklog before continuing.
+
+The previous session already built a working Persian RTL assistant (sessions, file explorer, ask/code chat via built-in ZAI). The user's diagram now specifies the key missing piece: an OpenAI-compatible provider pointing at their local llama-server (http://127.0.0.1:8080/v1, model GLM-4.7-Flash) plus a configurable project folder. Let me read the integration points, then extend the app.
+
+Now I have the full picture. Let me read the remaining files I need to touch (page.tsx, api-utils.ts), then start implementing the OpenAI-compatible provider layer.
+
+All integration points are clear. Now implementing the backend provider layer.
+
+Schema pushed. Now creating the settings library and the unified LLM provider layer:
+
+Now the type contract additions and the Windows-safe allowed-roots update in fs-safe.ts:
+
+Now the remaining fs-safe.ts fixes (allow-all mode, Windows separators, filesystem-root delete guard):
+
+Line-ending mismatch — let me retry with plain newlines:
+
+Now fix the Windows path check in ai.ts and wire the chat route to the new provider layer:
+
+Chat route wired. Now create the settings API routes (GET/PUT + connection test):
+
+Backend routes done. Quick smoke test before frontend:
+
+PUT failed because the long-running dev server still holds the pre-regeneration Prisma client in memory. I need to restart the dev server:
+
+Settings API fully working, with defaults already matching the user's diagram (http://127.0.0.1:8080/v1, GLM-4.7-Flash). Now the frontend:
+
+Now the store additions (settings slice + Windows path fix in openViewer):
+
+Now the settings dialog component:
+
+Now integrate into the header and boot sequence:
+
+Frontend integrated. Let me lint before E2E testing:
+
+Lint clean. Now create the mock llama-server (simulates the user's exact setup: OpenAI-compatible API on 127.0.0.1:8080/v1 with GLM-4.7-Flash):
+
+Let me fix a stray non-Persian artifact in the mock response text:
+
+Mock server is up. Now test the complete OpenAI-provider flow end-to-end via API:
+
+OpenAI provider chat works. Now test code-mode file creation and context injection through the same provider:
+
+ÊãÇãí ÌÑíÇäåÇí È˜ÇäÏ ÇÒ ØÑíŞ ÇÑÇÆåÏåäÏå OpenAI-compatible ÊÃííÏ ÔÏäÏ (İÇíá Èå ÕæÑÊ İíÒí˜í Ñæí ÏíÓ˜ äæÔÊå ãíÔæÏ¡ ãÍÊæÇ ÊÒÑíŞ ãíÔæÏ). Ç˜äæä ÏÑ ÍÇá Ç˜ÓÇÒí ÂÑÊíİ˜ÊåÇí ÊÓÊ æ ÈÇÒíÇÈí íÔİÑÖ ÓäÏÈÇ˜Ó åÓÊíã¡ ÓÓ ÊÃííÏ ãÑæÑÑ:
+
+Now let me verify the UI in a real browser using the agent-browser skill:
+
+The app renders with the new provider badge. Now let me test the settings dialog flow:
+
+Dialog renders correctly. Switch to the local OpenAI-compatible provider:
+
+OpenAI fields appeared with the correct defaults. Test the connection (mock llama-server is running on 8080):
+
+Header badge shows GLM-4.7-Flash — the user's exact architecture is now active. Send a chat through the UI:
+
+UI works beautifully with the local model setup. Now test code-mode file creation through the UI:
+
+Code mode verified: file physically created, chip shown, explorer refreshed. Let me verify the file chip opens the viewer, then check for console errors:
+
+Viewer works, zero console errors. Quick mobile check (header now has one more control):
+
+The mobile viewer sheet is showing the file correctly (LTR code, toolbar). Close it to inspect the header:
+
+Found a mobile overflow bug: the header pushes the theme toggle and new-chat button off-screen. Fix: hide the workspace chip on mobile (redundant — the explorer has a "change folder" button) and make the new-chat label icon-only on small screens:
+
+Both layouts fixed. Now restore the sandbox-safe default provider and clean up test artifacts:
+
+Cleanup complete. Final verification — lint, dev.log, and a browser sanity reload:
+
+All green. Appending the worklog entry:
+
+ÊãÇã ÔÏ! ? ÈÑäÇãå ÍÇáÇ ÏŞíŞÇğ ãØÇÈŞ ãÚãÇÑí äŞÔåí ÔãÇ ˜ÇÑ ãí˜äÏ.
+
+å íÒí ÇÖÇİå ÔÏ
+?. ÇÊÕÇá Èå ÓÑæÑ ãÍáí ÔãÇ (OpenAI Compatible API)
+
+ÏÑ åÏÑ ÈÑäÇãå í˜ äÔÇä ÌÏíÏ åÓÊ (ãËáÇğ GLM-4.7-Flash íÇ «ÓÑæíÓ ÏÇÎáí») — Ñæí Âä ˜áí˜ ˜äíÏ ÊÇ ÊäÙíãÇÊ åæÔ ãÕäæÚí ÈÇÒ ÔæÏ
+Ïæ ÇÑÇÆåÏåäÏå: «ÓÑæÑ ãÍáí (ÓÇÒÇÑ ÈÇ OpenAI)» æ «ÓÑæíÓ ÏÇÎáí»
+ÈÑÇí ÓÑæÑ ãÍáí: ÂÏÑÓ Base URL (íÔİÑÖ: http://127.0.0.1:8080/v1)¡ äÇã ãÏá (íÔİÑÖ: GLM-4.7-Flash)¡ ˜áíÏ API ÇÎÊíÇÑí¡ ÏãÇ æ ÍÏÇ˜ËÑ Êæ˜ä
+Ï˜ãå «ÊÓÊ ÇÊÕÇá» ˜å /v1/models ÓÑæÑ ÔãÇ ÑÇ ˜ ãí˜äÏ æ İåÑÓÊ ãÏáåÇ ÑÇ äÔÇä ãíÏåÏ
+?. ÔÊíÈÇäí ÇÒ åÑ æÔåÇí ãËá C:\Projects\YFG-Designer
+
+ÏÑ æíäÏæÒ åãåí ãÓíÑåÇ ÂÒÇÏäÏº ÇÒ Ï˜ãåí æÔå ÏÑ åÏÑ ãÓíÑ C:\Projects\YFG-Designer ÑÇ æÇÑÏ íÇ ãÑæÑ ˜äíÏ
+Çã˜Çä ãÍÏæÏÓÇÒí ÈÇ ãÊÛíÑ ãÍíØí FS_ALLOWED_ROOTS åã æÌæÏ ÏÇÑÏ
+?. åãå íÒ ÊÓÊ ÔÏå (E2E)
+
+í˜ ÓÑæÑ ÓÇÎÊíö llama-server Ñæí æÑÊ 8080 ÑÇå ÇäÏÇÎÊã æ ˜á ãÓíÑ ÑÇ ÏÑ ãÑæÑÑ æÇŞÚí ÊÓÊ ˜ÑÏã: ĞÎíÑå ÊäÙíãÇÊ ? ÊÓÊ ÇÊÕÇá ? Ê (ÍÇáÊ ÑÓÔ ÈÇ ÇäÊÎÇÈ İÇíá) ? Ê (ÍÇáÊ ˜ÏäæíÓí: İÇíá æÇŞÚÇğ ÏÑ æÔå ÓÇÎÊå ÔÏ) ? ÈÇÒ ˜ÑÏä İÇíá ÏÑ äãÇíÔÑ. ÈÏæä åí ÎØÇí ˜äÓæáº Ñæí ãæÈÇíá æ ÏÓ˜ÊÇ åã ˜ ÔÏ.
+ä˜Êå ÈÑÇí ÇÌÑÇí Ñæí ÓíÓÊã ÎæÏÊÇä
+æŞÊí ÈÑäÇãå ÑÇ Ñæí æíäÏæÒ ÎæÏÊÇä ÇÌÑÇ ˜ÑÏíÏ: ÊäÙíãÇÊ ? «ÓÑæÑ ãÍáí» ? ÂÏÑÓ http://127.0.0.1:8080/v1 ? ãÏá GLM-4.7-Flash ? ÊÓÊ ÇÊÕÇá ? ĞÎíÑå. Çíä ãŞÇÏíÑ ÇÒ ŞÈá Ñ ÔÏåÇäÏ. (ÏÑ íÔäãÇíÔ İÚáí ÓäÏÈÇ˜Ó¡ «ÓÑæÑ ãÍáí» Èå ÓÑæÑ ÓÇÎÊíö ÏÑ ÍÇá ÇÌÑÇ æÕá ÇÓÊ æ «ÓÑæíÓ ÏÇÎáí» åã ÈÏæä äíÇÒ Èå ÓÑæÑ ˜ÇÑ ãí˜äÏ.)
+
+ãíÊæÇäíÏ ÇÒ äá Preview (æ Ï˜ãå «Open in New Tab») ÈÑäÇãå ÑÇ ÇãÊÍÇä ˜äíÏ — ãËáÇğ İÇíá main.py ÑÇ Êí˜ ÈÒäíÏ æ ÏÑÈÇÑåÇÔ ÓÄÇá ÈÑÓíÏ¡ íÇ ÏÑ ÍÇáÊ «˜ÏäæíÓí» ÈÎæÇåíÏ İÇíáí ÑÇ ÈÓÇÒÏ íÇ ÇÕáÇÍ ˜äÏ.
+
+äÓÎå ˜Çãá ÑÇ ÈÏå 
+
+Thought Process
+
+
+Send a Message
+
+
+
+Long-running Tas

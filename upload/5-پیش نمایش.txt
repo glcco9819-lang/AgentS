@@ -1,0 +1,208 @@
+Èáå¡ ÇãÇ ÏÑ ãÚãÇÑí İÚáí **ÈåÕæÑÊ ÕÑíÍ æ ãÓÊŞá Èå ÇäÏÇÒåÇí ˜å ÈÇíÏ¡ ÊÚÑíİ äÔÏå ÇÓÊ**. íÒí ˜å ÊÇ ÇáÇä ÏÇÔÊíã ÈíÔÊÑ Ñæí «ÊæáíÏ¡ ÑÇÓÊíÂÒãÇíí æ ÊÍæíá äÑãÇİÒÇÑ» ãÊãÑ˜Ò ÈæÏ.
+
+ÈÑÇí YFG ÈÇíÏ í˜ ŞÇÈáíÊ ãÓÊŞá ÇÖÇİå ˜äíã:
+
+### Project Preview & Presentation — íÔäãÇíÔ æ ÇÑÇÆå Ñæå
+
+Çíä ÈÎÔ ÈÇíÏ ÇÒ åãÇä ãÑÇÍá Çæáíå æÇÑÏ ãÚãÇÑí ÔæÏ æ İŞØ ãÎÕæÕ äÓÎå äåÇíí äÈÇÔÏ.
+
+```text
+Human Idea
+   ?
+Requirements
+   ?
+Architecture
+   ?
+Design
+   ?
+????????????????????????????????????????
+? Project Preview & Presentation       ?
+? íÔäãÇíÔ æ ÇÑÇÆå Ñæå              ?
+????????????????????????????????????????
+? • UI Preview                         ?
+? • Screen Flow                        ?
+? • Interactive Prototype              ?
+? • Architecture Visualization         ?
+? • Database Visualization             ?
+? • Workflow Visualization             ?
+? • User Journey                       ?
+? • Dashboard Preview                 ?
+? • Generated Demo                     ?
+? • Feature Simulation                ?
+? • Project Walkthrough               ?
+????????????????????????????????????????
+   ?
+Human Review
+   ?
+Approval / Change Request
+   ?
+Implementation
+```
+
+### íÒí ˜å ãä ÈÑÇí YFG íÔäåÇÏ ãí˜äã
+
+Çíä ŞÇÈáíÊ ÑÇ Èå í˜ **Preview Engine — ãæÊæÑ íÔäãÇíÔ** ÊÈÏíá ˜äíã¡ äå ÕÑİÇğ í˜ ÕİÍå äãÇíÔ.
+
+ÈÇíÏ ÈÊæÇäÏ ãËáÇğ ÈÚÏ ÇÒ ÊÍáíá í˜ Ñæå¡ ŞÈá ÇÒ Çíä˜å ˜ÏäæíÓí ˜Çãá ÇäÌÇã ÔæÏ¡ Èå ÇäÓÇä äÔÇä ÏåÏ:
+
+* ÓÇÎÊÇÑ ˜áí äÑãÇİÒÇÑ
+* ÕİÍÇÊ æ İÑãåÇ
+* ãäæåÇ
+* Dashboard
+* ÑÏÔ ˜ÇÑ ˜ÇÑÈÑÇä
+* ÇÑÊÈÇØ ãÇæáåÇ
+* ãÚãÇÑí ÓíÓÊã
+* EntityåÇ æ ÑæÇÈØ
+* APIåÇ
+* WorkflowåÇ
+* äŞÔåÇ æ PermissionåÇ
+* äãæäå ÏÇÏå
+* ãÓíÑ ÇäÌÇã í˜ ÚãáíÇÊ
+* äÓÎå Çæáíå ŞÇÈá ˜áí˜ ÇÒ UI
+* ÊİÇæÊ äÓÎå İÚáí æ äÓÎå íÔäåÇÏí
+
+ÍÊí ÈåÊÑ ÇÒ Âä:
+
+### Interactive Project Preview — íÔäãÇíÔ ÊÚÇãáí Ñæå
+
+ãËáÇğ ÇäÓÇä ÈæíÏ:
+
+> «ÓíÓÊã İÑæÔ í˜ ERP ÑÇ ØÑÇÍí ˜ä.»
+
+YFG ÇÈÊÏÇ **äÓÎå ŞÇÈá ãÔÇåÏå æ ŞÇÈá ˜áí˜** ÊæáíÏ ˜äÏ:
+
+```text
+ERP
+??? Dashboard
+??? Customers
+??? Products
+??? Sales
+?   ??? Quotation
+?   ??? Sales Order
+?   ??? Invoice
+?   ??? Returns
+??? Inventory
+??? Accounting
+??? Reports
+```
+
+ÓÓ ˜ÇÑÈÑ ÈÊæÇäÏ ÏÑ Preview æÇÑÏ ÔæÏ:
+
+```text
+Dashboard
+   ?
+Customers
+   ?
+Customer Detail
+   ?
+Create Order
+   ?
+Select Product
+   ?
+Confirm Order
+   ?
+Invoice
+```
+
+æ ŞÈá ÇÒ Çíä˜å YFG æÇÑÏ Implementation ÔæÏ¡ ÇäÓÇä ÈæíÏ:
+
+> Çíä ÈÎÔ ÏÑÓÊ ÇÓÊ.
+
+íÇ:
+
+> İÑæÔ ÈÇíÏ ŞÈá ÇÒ ÇäÈÇÑ ŞÑÇÑ ÈíÑÏ.
+
+íÇ:
+
+> Çíä İÑã ÑÇ ÊÛííÑ ÈÏå.
+
+æ Çíä ÊÛííÑ ÈÇíÏ ÏæÈÇÑå æÇÑÏ ÑÎå ˜äÊÑáÔÏå ÔæÏ:
+
+```text
+Preview
+ ?
+Human Feedback
+ ?
+Change Request
+ ?
+Impact Analysis
+ ?
+Update Design
+ ?
+Preview Again
+ ?
+Verification
+ ?
+Human Approval
+ ?
+Implementation
+```
+
+### í˜ ä˜Êå ÈÓíÇÑ ãåã
+
+Çíä Preview äÈÇíÏ İŞØ í˜ **Mockup** ÈÇÔÏ.
+
+ÈåÊÑ ÇÓÊ Óå ÓØÍ ÏÇÔÊå ÈÇÔíã:
+
+| ÓØÍ | äÇã                                   | ˜ÇÑÈÑÏ                                   |
+| --- | ------------------------------------- | ---------------------------------------- |
+| P1  | Static Preview — íÔäãÇíÔ ÇíÓÊÇ      | äãÇíÔ UI æ ãÚãÇÑí                        |
+| P2  | Interactive Prototype — äãæäå ÊÚÇãáí  | ˜áí˜ æ ÍÑ˜Ê Èíä ÕİÍÇÊ                    |
+| P3  | Executable Preview — íÔäãÇíÔ ÇÌÑÇíí | ÇÌÑÇí æÇŞÚí ÈÎÔ ÊæáíÏÔÏå ÈÇ ÏÇÏå ÂÒãÇíÔí |
+
+æ ÏÑ ãÑÇÍá ÈÚÏ:
+
+**Digital Twin / Project Simulation — ÔÈíåÓÇÒí Ñæå**
+
+íÚäí YFG ÈÊæÇäÏ ŞÈá ÇÒ Deployment æÇŞÚí¡ ÑİÊÇÑ ÈÎÔåÇíí ÇÒ ÓíÓÊã ÑÇ ÏÑ ãÍíØ Sandbox ÔÈíåÓÇÒí ˜äÏ.
+
+---
+
+### ÌÇíÇå Âä ÏÑ ãÚãÇÑí
+
+ãä íÔäåÇÏ ãí˜äã í˜ **Preview & Presentation Layer** ãÓÊŞá Èå ãÚãÇÑí ÇÖÇİå ˜äíã æ åãäíä Âä ÑÇ ÏÑ äÏ Phase æÇÑÏ ˜äíã:
+
+```text
+P0 Foundation
+    ?
+P1 Core
+    ?
+P2 Agent Contracts
+    ?
+P3 Orchestration
+    ?
+P4 Verification
+    ?
+P5 Engineering Environment
+    ?
+P6 Project Intelligence
+    ?
+P7 Engineering Agents
+    ?
+P8 QA / Security / Release
+    ?
+P9 Operations
+    ?
+P10 Knowledge
+    ?
+P11 AI Software Factory
+```
+
+ÇãÇ Preview ÈÇíÏ **ÇÒ P1 ÔÑæÚ ÔæÏ** æ ÏÑ ÊãÇã ãÑÇÍá ÑÔÏ ˜äÏ.
+
+íÚäí:
+
+```text
+P1 ? Basic Project Preview
+P3 ? Workflow Preview
+P5 ? Executable Sandbox Preview
+P6 ? Architecture/Dependency Preview
+P7 ? AI-generated UI Preview
+P8 ? Release Candidate Preview
+P9 ? Production-like Preview
+P11 ? Full Interactive Project Presentation
+```
+
+Çíä ãæÖæÚ ÈÑÇí YFG ÈÓíÇÑ ãåã ÇÓÊ¡ æä åÏİ İŞØ Çíä äíÓÊ ˜å **AgentåÇ äÑãÇİÒÇÑ ÈÓÇÒäÏ**º ÇäÓÇä ÈÇíÏ ÈÊæÇäÏ ÏÑ Øæá ãÓíÑ **Âäå YFG ÏÑ ÍÇá ÓÇÎÊä ÇÓÊ ÈÈíäÏ¡ ÈÇ Âä ÊÚÇãá ˜äÏ¡ ÈÇÒÎæÑÏ ÈÏåÏ æ ŞÈá ÇÒ ÊÕãíãåÇí ãåã Âä ÑÇ ÈÑÑÓí ˜äÏ.**
+
+ÈäÇÈÑÇíä ãä Çíä ŞÇÈáíÊ ÑÇ ÌÒæ **Core Architecture** ŞÑÇÑ ãíÏåã¡ äå í˜ Feature ÌÇäÈí.

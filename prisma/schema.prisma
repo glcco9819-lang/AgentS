@@ -1,0 +1,137 @@
+// =============================================================
+// Local AI Project Assistant — Prisma Schema
+// Architecture principle: Project Intelligence is independent of LLM.
+// This schema supports V0.1 (Chat + AI Gateway) and lays the
+// groundwork for V0.2+ (File Scanner, Index, RAG, Analysis).
+// =============================================================
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ---------------------------------------------------------------
+// AI Gateway — provider/model configuration (singleton rows by key)
+// ---------------------------------------------------------------
+model AiSetting {
+  id        String   @id @default(cuid())
+  key       String   @unique // provider | baseUrl | model | apiKey | temperature | thinking | maxContextMessages
+  value     String
+  updatedAt DateTime @updatedAt
+
+  @@map("ai_settings")
+}
+
+// ---------------------------------------------------------------
+// Prompt Manager — system / analysis prompts (multi-language)
+// ---------------------------------------------------------------
+model Prompt {
+  id        String   @id @default(cuid())
+  key       String   // system | codeReview | architecture | sqlAnalysis | documentation | bugAnalysis
+  name      String
+  content   String
+  language  String   @default("fa") // fa | en
+  isDefault Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([key, language])
+  @@map("prompts")
+}
+
+// ---------------------------------------------------------------
+// Project Manager — registered projects (scanning in V0.2)
+// ---------------------------------------------------------------
+model Project {
+  id         String    @id @default(cuid())
+  name       String
+  rootPath   String
+  language   String? // e.g. csharp, typescript, ...
+  framework  String? // e.g. dotnet, nextjs, ...
+  status     String   @default("registered") // registered | scanning | indexed | error
+  note       String?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  lastScanAt DateTime?
+
+  sessions  Session[]
+  fileIndex  FileIndex[]
+
+  @@map("projects")
+}
+
+// ---------------------------------------------------------------
+// File Index — populated by Scanner/Parser in V0.2+.
+// Defined now so the architecture is stable.
+// ---------------------------------------------------------------
+model FileIndex {
+  id           String   @id @default(cuid())
+  projectId    String
+  path         String
+  extension    String
+  size         Int      @default(0)
+  hash         String?
+  lastModified DateTime?
+  language     String?
+  lineCount    Int      @default(0)
+  symbolCount  Int      @default(0)
+  indexedAt    DateTime @default(now())
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, path])
+  @@index([projectId])
+  @@map("file_index")
+}
+
+// ---------------------------------------------------------------
+// Session Manager — conversation threads
+// ---------------------------------------------------------------
+model Session {
+  id        String    @id @default(cuid())
+  projectId String?
+  title     String    @default("گفت‌وگوی جدید")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  project   Project?  @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  messages  Message[]
+
+  @@map("sessions")
+}
+
+// ---------------------------------------------------------------
+// Chat messages (user / assistant / system)
+// ---------------------------------------------------------------
+model Message {
+  id        String   @id @default(cuid())
+  sessionId String
+  role      String   // user | assistant | system
+  content   String
+  tokens    Int      @default(0)
+  createdAt DateTime @default(now())
+
+  session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@index([sessionId])
+  @@map("messages")
+}
+
+// ---------------------------------------------------------------
+// System logs — used by the Logs view
+// ---------------------------------------------------------------
+model SystemLog {
+  id        String   @id @default(cuid())
+  level     String   // info | warn | error | debug
+  source    String   // gateway | chat | project | scanner | system
+  message   String
+  meta      String?  // JSON string
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@map("system_logs")
+}

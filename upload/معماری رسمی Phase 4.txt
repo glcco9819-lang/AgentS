@@ -1,0 +1,2569 @@
+# ãÚãÇÑí ÑÓãí Phase 4 — Verification & Quality Gates
+
+## ãÚãÇÑí ÑÇÓÊíÂÒãÇíí ãÓÊŞá æ ÏÑæÇÒååÇí ˜íİíÊ YFG
+
+**Phase 4 = Verification & Quality Gates**
+**ãÑÍáå åÇÑã = ÑÇÓÊíÂÒãÇíí ãÓÊŞá æ ÏÑæÇÒååÇí ˜íİíÊ**
+
+Phase 4 ÈÚÏ ÇÒ Foundation¡ Agent Contract æ Orchestration ŞÑÇÑ ãííÑÏ æ æÙíİå Âä Çíä ÇÓÊ ˜å **åí Artifact¡ Task¡ Handoff íÇ Release ÕÑİÇğ Èå Ïáíá ÊæáíÏ ÔÏä ÊæÓØ Agent íÇ ãæİŞ ÈæÏä Workflow ãÚÊÈÑ ÊáŞí äÔæÏ.**
+
+---
+
+# 1. ÊÚÑíİ ÑÓãí Phase 4
+
+### English
+
+> **Phase 4 establishes the independent, evidence-driven Verification and Quality Gate layer of YFG, responsible for validating requirements, artifacts, implementations, security, architecture, tests, platform compatibility, traceability, and release readiness before controlled progression.**
+
+### İÇÑÓí
+
+> **Phase 4 áÇíå ãÓÊŞá¡ ãÈÊäí ÈÑ ÔæÇåÏ æ ŞÇÈá ÑÏíÇÈí ÑÇÓÊíÂÒãÇíí æ ÏÑæÇÒååÇí ˜íİíÊ YFG ÑÇ ÇíÌÇÏ ãí˜äÏ ˜å ãÓÆæá ÇÚÊÈÇÑÓäÌí RequirementåÇ¡ ArtifactåÇ¡ íÇÏåÓÇÒí¡ ÇãäíÊ¡ ãÚãÇÑí¡ ÂÒãæäåÇ¡ ÓÇÒÇÑí áÊİÑã¡ ÑÏíÇÈí æ ÂãÇÏí Release íÔ ÇÒ ÚÈæÑ ˜äÊÑáÔÏå Èå ãÑÍáå ÈÚÏ ÇÓÊ.**
+
+---
+
+# 2. ÌÇíÇå Phase 4 ÏÑ ãÚãÇÑí YFG
+
+ÊÇ ÇíäÌÇ:
+
+```text
+Phase 1
+Foundation & Governance
+        ?
+Phase 2
+Agent Contract / Identity / Capability
+        ?
+Phase 3
+Orchestration & Workflow
+        ?
+Phase 4
+Verification & Quality Gates
+```
+
+ÇãÇ ÇÒ Phase 4 Èå ÈÚÏ¡ Verification äÈÇíÏ İŞØ ÏÑ ÇäÊåÇí ˜ÇÑ ÈÇÔÏ.
+
+ãÏá ÑÓãí:
+
+```text
+                    HUMAN
+                      ?
+                      ?
+               GOVERNANCE / POLICY
+                      ?
+                      ?
+                ORCHESTRATION
+                      ?
+          ?????????????????????????
+          ?                       ?
+     WORK AGENTS              TASK FLOW
+          ?                       ?
+          ?????????????????????????
+                      ?
+                  ARTIFACT
+                      ?
+                      ?
+            ?????????????????????
+            ? VERIFICATION      ?
+            ? ENGINE            ?
+            ?????????????????????
+                      ?
+       ???????????????????????????????
+       ?              ?              ?
+ Deterministic      AI Review      Evidence
+ Verification       / Analysis     Collection
+       ?              ?              ?
+       ???????????????????????????????
+                      ?
+              QUALITY GATE ENGINE
+                      ?
+            ?????????????????????
+            ?                   ?
+          PASS                 FAIL
+            ?                   ?
+            ?                   ?
+       Next Stage          Root Cause
+                                ?
+                                ?
+                             Rework
+                                ?
+                                ?
+                           Verification
+```
+
+---
+
+# 3. ÇÕá ÇÓÇÓí Phase 4
+
+ÇÕá ãÍæÑí:
+
+> **No Agent Output Is Trusted by Default.**
+
+íÇ:
+
+> **åí ÎÑæÌí Agent ÕÑİÇğ Èå Ïáíá ÊæáíÏ ÔÏä ÊæÓØ í˜ Agent ãÚÊÈÑ äíÓÊ.**
+
+æ ÇÕá Ïæã:
+
+> **Verification must be independent from Generation.**
+
+íÚäí:
+
+```text
+Generator
+    ?
+Verifier
+```
+
+ÇãÇ Çíä ÇÓÊŞáÇá İŞØ Èå ãÚäÇí «Ïæ Agent ãÊİÇæÊ» äíÓÊ.
+
+ÇÑ:
+
+```text
+Generator AI
+     ?
+Verifier AI
+```
+
+åÑ Ïæ ÇÒ:
+
+* åãÇä Model
+* åãÇä Context
+* åãÇä Prompt
+* åãÇä Tool
+* åãÇä Knowledge
+* åãÇä Assumption
+
+ÇÓÊİÇÏå ˜ääÏ¡ ãã˜ä ÇÓÊ **ÎØÇí ãÔÊÑ˜** ÏÇÔÊå ÈÇÔäÏ.
+
+ÈäÇÈÑÇíä YFG ÈÇíÏ ÇÒ Verification äÏáÇíå ÇÓÊİÇÏå ˜äÏ.
+
+---
+
+# 4. ãÏá ÑÓãí Verification
+
+ãÏá ÇÕáí:
+
+```text
+Artifact
+   ?
+Verification Plan
+   ?
+Verification Execution
+   ??? Requirement Verification
+   ??? Acceptance Criteria Verification
+   ??? Contract Verification
+   ??? Build / Compile Verification
+   ??? Test Verification
+   ??? Static Analysis
+   ??? Security Verification
+   ??? Dependency / Supply Chain
+   ??? Architecture Verification
+   ??? Traceability Verification
+   ??? Platform Verification
+   ??? AI Independent Review
+   ??? Human Approval
+   ?
+Evidence Bundle
+   ?
+Quality Gate
+   ?
+PASS / FAIL / BLOCKED / WAIVED
+```
+
+---
+
+# 5. ãåãÊÑíä ÊÛííÑ ãÚãÇÑí
+
+ÏÑ YFG:
+
+## Verification ? Review
+
+Çíä Ïæ ÈÇíÏ ÌÏÇ ÈÇÔäÏ.
+
+### Review
+
+ÈÑÑÓí ãí˜äÏ:
+
+> ÂíÇ Çíä Artifact ÇÒ äÙÑ ãåäÏÓí¡ ØÑÇÍí¡ ãäØŞ æ ˜íİíÊ ãäÇÓÈ ÇÓÊ¿
+
+### Verification
+
+ÈÑÑÓí ãí˜äÏ:
+
+> ÂíÇ ÇÏÚÇí ŞÇÈá ÇËÈÇÊí ÏÑÈÇÑå Çíä Artifact æÌæÏ ÏÇÑÏ æ ÂíÇ ÔæÇåÏ ˜Çİí ÈÑÇí ÇËÈÇÊ Âä ÏÇÑíã¿
+
+ãËáÇğ:
+
+```text
+Agent:
+"Feature is complete."
+
+Review:
+"Code appears well designed."
+
+Verification:
+Requirement REQ-102
+       ?
+Acceptance Criteria AC-102-01
+       ?
+Test TEST-102-07
+       ?
+Execution Result = PASS
+       ?
+Evidence available
+```
+
+---
+
+# 6. ãÚãÇÑí ÑÓãí Verification Layer
+
+Phase 4 ÔÇãá Çíä ÇÌÒÇí ÇÕáí ÇÓÊ:
+
+```text
+Verification & Quality Layer
+?
+??? Verification Engine
+??? Verification Plan Engine
+??? Verification Registry
+??? Verifier Registry
+??? Evidence Engine
+??? Evidence Store
+??? Quality Gate Engine
+??? Requirement Validator
+??? Acceptance Criteria Validator
+??? Artifact Validator
+??? Contract Compliance Validator
+??? Build Validator
+??? Test Validator
+??? Static Analysis Engine
+??? Security Verification Engine
+??? Dependency / Supply Chain Validator
+??? Architecture Conformance Engine
+??? Traceability Validator
+??? Platform Verification Engine
+??? AI Review Engine
+??? Regression Verification Engine
+??? Failure Analysis Engine
+??? Rework Controller
+??? Waiver / Exception Engine
+??? Verification History
+??? Verification Audit
+```
+
+---
+
+# 7. Verification Engine
+
+åÓÊå Phase 4:
+
+## Verification Engine
+
+æÙÇíİ:
+
+* ÏÑíÇİÊ Verification Request
+* ÇíÌÇÏ Verification Plan
+* ÊÚííä Verification Checks
+* ÇÌÑÇí CheckåÇ
+* ÌãÚÂæÑí Evidence
+* ÇÑÒíÇÈí Result
+* ÊÔÎíÕ Failure
+* ÊÚííä Gate Status
+* ÇíÌÇÏ Verification Report
+* ÇÑÓÇá äÊíÌå Èå Orchestrator
+* ÏÑ ÕæÑÊ Failure ÇíÌÇÏ Rework Request
+
+ÌÑíÇä:
+
+```text
+Verification Request
+        ?
+Verification Engine
+        ?
+Verification Plan
+        ?
+Execute Checks
+        ?
+Collect Evidence
+        ?
+Evaluate
+        ?
+Verification Result
+        ?
+Quality Gate
+```
+
+---
+
+# 8. Verification Plan
+
+ÈÑÇí åÑ Artifact íÇ Task ãåã¡ Verification Plan ãÔÎÕ ãí˜äÏ:
+
+* å íÒí ÈÇíÏ ÈÑÑÓí ÔæÏ¿
+* ÑÇ ÈÇíÏ ÈÑÑÓí ÔæÏ¿
+* ÈÇ å ÑæÔí¿
+* ÊæÓØ å Verifier¿
+* ÈÇ å Tool¿
+* å EvidenceÇí áÇÒã ÇÓÊ¿
+* ãÚíÇÑ PASS íÓÊ¿
+* ãÚíÇÑ FAIL íÓÊ¿
+* ÂíÇ Human Approval áÇÒã ÇÓÊ¿
+
+ãËáÇğ:
+
+```text
+VP-001
+
+Target:
+CODE-187
+
+Checks:
+- Build
+- Unit Test
+- Static Analysis
+- Security
+- Requirement Coverage
+- Architecture Conformance
+- Traceability
+
+Risk:
+HIGH
+
+Human Approval:
+REQUIRED
+```
+
+---
+
+# 9. ÇäæÇÚ Verification
+
+## 9.1 Requirement Verification
+
+ÈÑÑÓí:
+
+```text
+Requirement
+    ?
+Implementation
+    ?
+Acceptance Criteria
+    ?
+Test
+```
+
+ÓÄÇá:
+
+> ÂíÇ íÒí ˜å ÓÇÎÊå ÔÏå æÇŞÚÇğ åãÇä íÒí ÇÓÊ ˜å Requirement ÊÚííä ˜ÑÏå¿
+
+---
+
+# 10. Acceptance Criteria Verification
+
+ãËáÇğ:
+
+```text
+REQ-102
+
+AC-102-01
+
+Given:
+Authenticated user
+
+When:
+User submits valid form
+
+Then:
+Record must be persisted
+```
+
+Verification:
+
+```text
+AC
+ ?
+TEST
+ ?
+EXECUTION
+ ?
+RESULT
+```
+
+ÇÑ Test æÌæÏ äÏÇÔÊå ÈÇÔÏ:
+
+```text
+Verification Status = INSUFFICIENT_EVIDENCE
+```
+
+äå Çíä˜å ÎæÏ˜ÇÑ PASS ÔæÏ.
+
+---
+
+# 11. Build Verification
+
+ÈÑÇí åÑ Platform:
+
+```text
+Source
+ ?
+Dependency Restore
+ ?
+Compile
+ ?
+Build
+ ?
+Package
+```
+
+ãËáÇğ:
+
+### Windows
+
+```text
+.NET
+ ?
+Build
+ ?
+x64
+ ?
+ARM64
+ ?
+Package
+```
+
+### Android
+
+```text
+Android SDK
+ ?
+Gradle
+ ?
+Build
+ ?
+APK / AAB
+```
+
+### Web
+
+```text
+Frontend
+ ?
+Build
+ ?
+Bundle
+ ?
+Server
+ ?
+Deployment Package
+```
+
+Build Failure:
+
+```text
+BUILD_FAILED
+```
+
+æ:
+
+```text
+Quality Gate = FAIL
+```
+
+---
+
+# 12. Test Verification
+
+YFG ÈÇíÏ ÇäæÇÚ Test ÑÇ ÔÊíÈÇäí ˜äÏ:
+
+```text
+Unit
+Integration
+Component
+API
+UI
+End-to-End
+Regression
+Performance
+Load
+Security
+Compatibility
+Platform
+Migration
+Recovery
+```
+
+æ Test İŞØ æÌæÏ äÏÇÔÊå ÈÇÔÏº ÈÇíÏ:
+
+```text
+Test Definition
+ ?
+Test Execution
+ ?
+Environment
+ ?
+Version
+ ?
+Result
+ ?
+Evidence
+```
+
+ÑÇ ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+# 13. Static Analysis
+
+ÈÑÑÓí:
+
+* syntax
+* type errors
+* code smells
+* complexity
+* unreachable code
+* duplication
+* dependency problems
+* architecture violations
+* unsafe patterns
+
+ãËáÇğ:
+
+```text
+CODE-187
+ ?
+Static Analysis
+ ?
+Tool Result
+ ?
+Findings
+ ?
+Severity
+ ?
+Quality Gate
+```
+
+---
+
+# 14. Security Verification
+
+Security ÈÇíÏ Verification ãÓÊŞá ÏÇÔÊå ÈÇÔÏ.
+
+ÈÑÑÓí:
+
+```text
+Authentication
+Authorization
+Secrets
+Input Validation
+Injection
+Access Control
+Dependency Vulnerabilities
+Configuration
+Network Exposure
+Data Protection
+Logging
+Audit
+```
+
+åãäíä:
+
+```text
+SAST
+DAST
+Dependency Scan
+Container Scan
+Secret Scan
+SBOM
+Artifact Integrity
+```
+
+---
+
+# 15. Supply Chain Verification
+
+ÈÑÇí Release ãåã ÇÓÊ ˜å ÈÏÇäíã:
+
+```text
+Source
+ ?
+Dependencies
+ ?
+Build
+ ?
+Package
+ ?
+Artifact
+ ?
+Release
+```
+
+ÇÒ ˜ÌÇ ÂãÏå ÇÓÊ.
+
+ÈäÇÈÑÇíä:
+
+* SBOM
+* dependency provenance
+* package integrity
+* artifact hash
+* build metadata
+* signing information
+
+ÈÇíÏ ŞÇÈá ÑÏíÇÈí ÈÇÔäÏ.
+
+---
+
+# 16. Architecture Conformance Verification
+
+Çíä ÈÎÔ ÈÓíÇÑ ãåã ÇÓÊ.
+
+YFG äÈÇíÏ İŞØ ÈæíÏ:
+
+> Code builds successfully.
+
+Èá˜å ÈÇíÏ ÈÑÑÓí ˜äÏ:
+
+> ÂíÇ Code ÈÇ Architecture Approved ÔÏå ãØÇÈŞÊ ÏÇÑÏ¿
+
+ãËáÇğ:
+
+```text
+Approved Architecture
+        ?
+ARCH-021
+        ?
+Allowed Components
+        ?
+Allowed Dependencies
+        ?
+Actual Code
+        ?
+Architecture Conformance
+```
+
+ÇÑ Agent ÈÏæä ãÌæÒ í˜ dependency ãÚãÇÑí ÌÏíÏ ÇÖÇİå ˜äÏ:
+
+```text
+Architecture Drift
+```
+
+ãã˜ä ÇÓÊ ÇíÌÇÏ ÔæÏ.
+
+---
+
+# 17. Traceability Verification
+
+YFG ÈÇíÏ ÈÊæÇäÏ ÒäÌíÑå ÒíÑ ÑÇ ÈÑÑÓí ˜äÏ:
+
+```text
+IDEA
+ ?
+REQUIREMENT
+ ?
+ACCEPTANCE CRITERIA
+ ?
+ARCHITECTURE
+ ?
+DATABASE
+ ?
+API
+ ?
+CODE
+ ?
+TEST
+ ?
+SECURITY
+ ?
+DOCUMENTATION
+ ?
+RELEASE
+```
+
+ãËáÇğ:
+
+```text
+REQ-102
+   ?
+ARCH-021
+   ?
+API-031
+   ?
+CODE-187
+   ?
+TEST-451
+   ?
+SEC-091
+   ?
+DOC-031
+   ?
+REL-012
+```
+
+ÇÑ ÇÑÊÈÇØí ãİŞæÏ ÈÇÔÏ:
+
+```text
+TRACEABILITY GAP
+```
+
+æ ÈÑÇí ArtifactåÇí Critical:
+
+```text
+Gate = BLOCKED
+```
+
+---
+
+# 18. Platform Verification
+
+Èå Ïáíá ÊÕãíã ãÚãÇÑí Multi-Platform¡ Phase 4 ÈÇíÏ Platform-Aware ÈÇÔÏ.
+
+ãËáÇğ í˜ Feature:
+
+```text
+REQ-200
+```
+
+ãã˜ä ÇÓÊ Èå:
+
+```text
+WEB
+WINDOWS
+MACOS
+ANDROID
+IOS
+```
+
+äÇÔÊ ÔæÏ.
+
+ÇãÇ Verification åÑ Platform ÌÏÇÇäå ÇäÌÇã ãíÔæÏ:
+
+```text
+                REQ-200
+                   ?
+       ?????????????????????????
+       ?           ?           ?
+      Web       Windows     Android
+       ?           ?           ?
+   Build/Test   Build/Test   Build/Test
+       ?           ?           ?
+       ?????????????????????????
+                   ?
+             Integration
+                   ?
+            Quality Gate
+```
+
+ÈäÇÈÑÇíä:
+
+> ãæİŞíÊ Windows Èå ãÚäí ãæİŞíÊ Android äíÓÊ.
+
+---
+
+# 19. AI Verification
+
+YFG ãíÊæÇäÏ ÇÒ AI ÈÑÇí Verification ÇÓÊİÇÏå ˜äÏ¡ ÇãÇ AI Verifier äíÒ ÎæÏÔ ŞÇÈá ÇÚÊãÇÏ ãØáŞ äíÓÊ.
+
+AI Verification ãíÊæÇäÏ ÈÑÑÓí ˜äÏ:
+
+* Requirement coverage
+* Architecture consistency
+* Code reasoning
+* Potential defects
+* API consistency
+* Documentation consistency
+* Test adequacy
+* Security reasoning
+* Impact analysis
+* Change risk
+
+ÇãÇ äÊíÌå AI ÈÇíÏ ÊÈÏíá ÔæÏ Èå:
+
+```text
+AI Finding
+ ?
+Evidence / Tool / Test
+ ?
+Verification Decision
+```
+
+äå:
+
+```text
+AI says PASS
+ ?
+PASS
+```
+
+---
+
+# 20. Deterministic Verification
+
+åÑ ÌÇ ãã˜ä ÈÇÔÏ YFG ÈÇíÏ Verification ŞØÚí ÑÇ ÊÑÌíÍ ÏåÏ.
+
+ãËáÇğ:
+
+```text
+Compiler
+Test Runner
+Linter
+Static Analyzer
+Security Scanner
+Dependency Scanner
+Schema Validator
+API Contract Validator
+Package Validator
+Signature Validator
+```
+
+ŞÇÚÏå:
+
+> **If a property can be deterministically verified, do not rely solely on AI judgment for that property.**
+
+---
+
+# 21. Independent Verifier Registry
+
+Phase 4 ÈÇíÏ Registry ãÎÕæÕ VerifieråÇ ÏÇÔÊå ÈÇÔÏ.
+
+```text
+Verifier Registry
+?
+??? Build Verifier
+??? Test Verifier
+??? Security Verifier
+??? Architecture Verifier
+??? Traceability Verifier
+??? Platform Verifier
+??? AI Code Reviewer
+??? Requirement Verifier
+??? Dependency Verifier
+??? Release Verifier
+```
+
+åÑ Verifier ÏÇÑÇí:
+
+* Verifier ID
+* Type
+* Version
+* Contract
+* Scope
+* Input
+* Output
+* Tools
+* Policies
+* Required Evidence
+* Acceptance Criteria
+* Failure Rules
+* Resource Limits
+* Independence Requirements
+
+ÇÓÊ.
+
+---
+
+# 22. Independence Model
+
+YFG ÈÇíÏ Dependency Èíä Generator æ Verifier ÑÇ ˜äÊÑá ˜äÏ.
+
+ãËáÇğ:
+
+```text
+Backend Agent
+     ?
+     ?
+Generated Code
+     ?
+     ?
+Independent Verification
+     ?
+     ??? Compiler
+     ??? Test Runner
+     ??? Security Scanner
+     ??? Architecture Validator
+     ??? Independent AI Reviewer
+```
+
+ÊÑÌíÍÇğ:
+
+```text
+Generator Model ? Reviewer Model
+```
+
+ÇãÇ Çíä äíÒ ˜Çİí äíÓÊ.
+
+ÈåÊÑ:
+
+```text
+Different Model
++
+Different Prompt
++
+Different Context Scope
++
+Deterministic Tools
++
+Independent Evidence
+```
+
+---
+
+# 23. Evidence Engine
+
+Verification ÈÏæä Evidence äÈÇíÏ ãÚÊÈÑ ÈÇÔÏ.
+
+Evidence Engine ãÓÆæá:
+
+* ÌãÚÂæÑí
+* ĞÎíÑå
+* Hash
+* Version
+* Timestamp
+* Source
+* Environment
+* Tool Version
+* Build ID
+* Commit ID
+* Test Result
+* Verification Result
+
+ÇÓÊ.
+
+ãËáÇğ:
+
+```text
+EV-001
+
+Artifact:
+CODE-187
+
+Commit:
+abc123
+
+Build:
+BUILD-901
+
+Environment:
+TEST-02
+
+Tool:
+.NET SDK 10.x
+
+Result:
+PASS
+
+Timestamp:
+...
+
+Verifier:
+BUILD-VERIFIER-001
+```
+
+---
+
+# 24. Evidence Bundle
+
+ÈÑÇí åÑ Gate ãåã:
+
+```text
+Evidence Bundle
+?
+??? Artifact
+??? Source Version
+??? Build Result
+??? Test Results
+??? Security Results
+??? Static Analysis
+??? Dependency Scan
+??? Traceability Report
+??? Architecture Report
+??? Platform Report
+??? AI Review
+??? Human Approval
+??? Audit Records
+```
+
+Çíä Bundle ãíÊæÇäÏ ãÈäÇí Release Decision ÈÇÔÏ.
+
+---
+
+# 25. Quality Gate Engine
+
+Quality Gate ÊÕãíã ãííÑÏ ˜å Artifact ÇÌÇÒå ÚÈæÑ ÏÇÑÏ íÇ ÎíÑ.
+
+æÖÚíÊåÇí ÑÓãí:
+
+```text
+PASS
+FAIL
+BLOCKED
+WAIVED
+NOT_APPLICABLE
+INSUFFICIENT_EVIDENCE
+```
+
+ÇãÇ:
+
+### WAIVED ? PASS
+
+ÇÑ í˜ Requirement íÇ Check ÈÇ ãÌæÒ ÎÇÕí ãÓÊËäí ÔæÏ:
+
+```text
+WAIVER
+ ?
+Reason
+ ?
+Risk
+ ?
+Approver
+ ?
+Expiration
+ ?
+Evidence
+```
+
+æ ÈÇíÏ ŞÇÈá ÑÏíÇÈí ÈÇÔÏ.
+
+---
+
+# 26. Quality Gate ÈÑ ÇÓÇÓ Risk
+
+YFG ÈÇíÏ Risk-Based Verification ÏÇÔÊå ÈÇÔÏ.
+
+### LOW
+
+ãã˜ä ÇÓÊ:
+
+```text
+Automated Verification
+```
+
+˜Çİí ÈÇÔÏ.
+
+### MEDIUM
+
+```text
+Automated
++
+AI Review
++
+Evidence
+```
+
+### HIGH
+
+```text
+Automated
++
+Independent Verification
++
+Security / Impact Review
++
+Human Approval
+```
+
+### CRITICAL
+
+```text
+Independent Verification
++
+Multiple Evidence Sources
++
+Security Verification
++
+Human Approval
+```
+
+Çíä ÓØÍÈäÏí ÈÇíÏ ÊæÓØ Policy ÊÚííä ÔæÏ¡ äå ÊæÓØ Agent ÇÌÑÇ˜ääÏå.
+
+---
+
+# 27. Quality Gate Matrix
+
+ãËáÇğ:
+
+| Artifact              | Build | Test | Security | Traceability |        Human |
+| --------------------- | ----: | ---: | -------: | -----------: | -----------: |
+| Documentation         |     ? |    — |        — |            ? | Policy-based |
+| Code                  |     ? |    ? |        ? |            ? | Policy-based |
+| DB Migration          |     ? |    ? |        ? |            ? |     Required |
+| Architecture          |     — |    — |        ? |            ? |     Required |
+| Release               |     ? |    ? |        ? |            ? |     Required |
+| Production Deployment |     ? |    ? |        ? |            ? |     Required |
+
+Çíä Matrix ÈÇíÏ Configurable æ Policy-driven ÈÇÔÏ.
+
+---
+
+# 28. Verification State Machine
+
+```text
+NOT_REQUESTED
+      ?
+REQUESTED
+      ?
+PLANNED
+      ?
+RUNNING
+      ?
+EVIDENCE_COLLECTION
+      ?
+EVALUATING
+      ?
+ ??????????????????
+ ?    ?           ?
+PASS FAIL      INSUFFICIENT
+ ?     ?           ?
+ ?     ?           ?
+GATE  REWORK      BLOCKED
+ ?     ?
+ ?     ?
+NEXT  VERIFY AGAIN
+```
+
+---
+
+# 29. Failure Classification
+
+åÑ Failure ÈÇíÏ ØÈŞåÈäÏí ÔæÏ.
+
+```text
+BUILD_FAILURE
+TEST_FAILURE
+SECURITY_FAILURE
+REQUIREMENT_FAILURE
+ACCEPTANCE_FAILURE
+ARCHITECTURE_VIOLATION
+TRACEABILITY_FAILURE
+CONTRACT_VIOLATION
+POLICY_VIOLATION
+PLATFORM_FAILURE
+DEPENDENCY_FAILURE
+PERFORMANCE_FAILURE
+EVIDENCE_FAILURE
+VERIFIER_FAILURE
+ENVIRONMENT_FAILURE
+```
+
+---
+
+# 30. Failure ? Rework ãÓÊŞíã
+
+æŞÊí Verification Fail ÔÏ:
+
+```text
+FAIL
+ ?
+Failure Analysis
+ ?
+Root Cause
+ ?
+Impact Analysis
+ ?
+Rework Strategy
+ ?
+Task Creation
+ ?
+Agent Assignment
+ ?
+Rework
+ ?
+Verification Again
+```
+
+ÈäÇÈÑÇíä Agent äÈÇíÏ ÕÑİÇğ ÈæíÏ:
+
+> ÏæÈÇÑå ÊáÇÔ ãí˜äã.
+
+ÈÇíÏ:
+
+```text
+Failure
++
+Root Cause
++
+Evidence
++
+Rework Plan
+```
+
+æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+# 31. Verification Loop
+
+ÑÎå ÑÓãí:
+
+```text
+WORK
+ ?
+ARTIFACT
+ ?
+VERIFY
+ ?
+GATE
+ ?
+PASS ?????????? NEXT STAGE
+ ?
+FAIL
+ ?
+ROOT CAUSE
+ ?
+REWORK
+ ?
+VERIFY AGAIN
+```
+
+ÊÚÏÇÏ Retry ÈÇíÏ ãÍÏæÏ ÈÇÔÏ.
+
+ãËáÇğ:
+
+```text
+Attempt 1
+Attempt 2
+Attempt 3
+       ?
+Escalation
+       ?
+Human
+```
+
+ÍÏ ÊáÇÔ ÏÑ Agent Contract / Workflow / Policy ÊÚííä ãíÔæÏ.
+
+---
+
+# 32. Regression Verification
+
+åÑ ÊÛííÑ äÈÇíÏ İŞØ ÎæÏÔ ÑÇ ÈÑÑÓí ˜äÏ.
+
+ãËáÇğ:
+
+```text
+CODE-187
+ ?
+Change
+ ?
+Impact Analysis
+ ?
+Affected:
+API-031
+TEST-451
+DB-021
+UI-090
+ ?
+Regression Verification
+```
+
+ÈäÇÈÑÇíä:
+
+> Verification ÈÇíÏ Change-Aware ÈÇÔÏ.
+
+---
+
+# 33. Change Impact Verification
+
+```text
+Change Request
+      ?
+Impact Analysis
+      ?
+Affected Artifacts
+      ?
+Required Verification Set
+      ?
+Verification
+```
+
+ãËáÇğ ÊÛííÑ Database:
+
+```text
+DB Schema
+ ?
+Migration
+ ?
+Repository
+ ?
+API
+ ?
+Backend
+ ?
+Frontend
+ ?
+Tests
+ ?
+Documentation
+```
+
+ãã˜ä ÇÓÊ åãå äíÇÒãäÏ Verification ãÌÏÏ ÈÇÔäÏ.
+
+---
+
+# 34. Human Approval Integration
+
+Phase 4 ÌÇí Human ÑÇ äãííÑÏ.
+
+ãÏá:
+
+```text
+Verification
+     ?
+Evidence
+     ?
+Quality Gate
+     ?
+Human Approval
+```
+
+ÈÑÇí ãæÇÑÏí ˜å Policy ÊÚííä ãí˜äÏ.
+
+ãËáÇğ:
+
+* Architecture Approval
+* Security Exception
+* Production Release
+* Critical Database Change
+* Contract Change
+* Platform Release
+* High-risk Change
+
+---
+
+# 35. Verification ? Human Approval
+
+Çíä Ïæ ÈÇíÏ ÌÏÇ ÈãÇääÏ.
+
+ãã˜ä ÇÓÊ:
+
+```text
+Verification = PASS
+Human Approval = PENDING
+```
+
+ÏÑ Çíä ÍÇáÊ:
+
+```text
+Cannot Proceed
+```
+
+æ åãäíä:
+
+```text
+Verification = FAIL
+Human Approval = APPROVED
+```
+
+ÏÑ ÍÇáÊ ÚÇÏí äíÒ:
+
+```text
+Cannot Proceed
+```
+
+ãÑ Çíä˜å í˜ **Waiver ÑÓãí æ Policy-authorized** æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+# 36. Verification Evidence ÈÑÇí Human
+
+Human äÈÇíÏ ãÌÈæÑ ÈÇÔÏ åÒÇÑÇä Log ÑÇ ÈÑÑÓí ˜äÏ.
+
+Control Center ÈÇíÏ ÎáÇÕåÇí ÇÑÇÆå ÏåÏ:
+
+```text
+Artifact:
+REL-012
+
+Verification:
+PASS
+
+Checks:
+24 / 24 Passed
+
+Security:
+PASS
+
+Tests:
+1,248 Passed
+3 Failed
+
+Release Gate:
+BLOCKED
+
+Reason:
+3 Regression Tests Failed
+```
+
+ÓÓ Human ãíÊæÇäÏ Evidence ÑÇ Drill Down ˜äÏ.
+
+---
+
+# 37. Verification Report
+
+åÑ Verification ãåã ÈÇíÏ Report ÏÇÔÊå ÈÇÔÏ:
+
+```text
+Verification Report
+
+Verification ID
+Target Artifact
+Version
+Verifier
+Verifier Version
+Verification Plan
+Checks
+Results
+Failures
+Evidence
+Risk
+Exceptions
+Waivers
+Final Status
+Timestamp
+Environment
+Commit
+Build
+```
+
+---
+
+# 38. Verification Contract
+
+Verifier äíÒ ÈÇíÏ Contract ÏÇÔÊå ÈÇÔÏ.
+
+### Minimum:
+
+```text
+Verifier ID
+Verifier Type
+Version
+Scope
+Inputs
+Outputs
+Checks
+Tools
+Evidence Requirements
+Acceptance Criteria
+Independence Rules
+Resource Limits
+Failure Rules
+Escalation Rules
+Security Requirements
+Audit Requirements
+```
+
+ÈäÇÈÑÇíä:
+
+> **Verifier ÎæÏÔ äíÒ í˜ ãæÌæÏíÊ ÊÍÊ Governance ÇÓÊ.**
+
+---
+
+# 39. Verifier äãíÊæÇäÏ ÎæÏÔ Gate ÑÇ ÏæÑ ÈÒäÏ
+
+ãËáÇğ:
+
+```text
+Verifier
+ ?
+FAIL
+```
+
+Verifier äãíÊæÇäÏ:
+
+```text
+"Ignore Failure"
+```
+
+ÑÇ ÎæÏÔ ÇÚãÇá ˜äÏ.
+
+Waiver ÈÇíÏ:
+
+```text
+Policy
++
+Authorized Actor
++
+Reason
++
+Evidence
++
+Expiration
+```
+
+ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+# 40. Verification Security
+
+Verification Environment ÈÇíÏ ÇíÒæáå ÈÇÔÏ.
+
+```text
+Artifact
+ ?
+Verification Sandbox
+ ?
+Build/Test/Scan
+ ?
+Evidence
+```
+
+Verifier äÈÇíÏ ÈÊæÇäÏ ÈÏæä ãÌæÒ:
+
+* Production DB ÑÇ ÊÛííÑ ÏåÏ
+* Production Service ÑÇ ÊÛííÑ ÏåÏ
+* Secret ÇÓÊÎÑÇÌ ˜äÏ
+* Policy ÑÇ ÊÛííÑ ÏåÏ
+* Artifact ÑÇ ãÎİíÇäå ÊÛííÑ ÏåÏ.
+
+---
+
+# 41. Verification Workspace
+
+ÈåÊÑ ÇÓÊ:
+
+```text
+Generator Workspace
+        ?
+Candidate Artifact
+        ?
+Verification Workspace
+        ?
+Build / Test / Scan
+```
+
+ÈÇÔÏ.
+
+Verifier äÈÇíÏ Artifact ãæÑÏ ÈÑÑÓí ÑÇ ÈÏæä ËÈÊ Change ÊÛííÑ ÏåÏ.
+
+---
+
+# 42. Platform Verification Architecture
+
+ÈÑÇí åÑ Platform¡ Verifier Adapter:
+
+```text
+Platform Verification
+?
+??? Web Verifier
+??? Windows Verifier
+??? macOS Verifier
+??? Linux Verifier
+??? Android Verifier
+??? iOS Verifier
+??? Server Verifier
+??? Container Verifier
+??? CLI Verifier
+```
+
+æ åÑ Adapter ÇÒ:
+
+```text
+Platform Contract
++
+Platform Toolchain
++
+Platform Constraints
+```
+
+ÇÓÊİÇÏå ãí˜äÏ.
+
+---
+
+# 43. Multi-Platform Gate
+
+ÇÑ Release äÏ Platform ÏÇÔÊå ÈÇÔÏ:
+
+```text
+REL-020
+
+Targets:
+Web
+Windows x64
+Windows ARM64
+Android
+```
+
+Verification:
+
+```text
+Web      ? PASS
+Windows  ? PASS
+Android  ? FAIL
+```
+
+äÊíÌå Release ãíÊæÇäÏ ØÈŞ Policy ãËáÇğ:
+
+```text
+PARTIALLY_VERIFIED
+```
+
+íÇ:
+
+```text
+BLOCKED
+```
+
+ÈÇÔÏ.
+
+YFG äÈÇíÏ ÎæÏÓÑÇäå ÊÕãíã ÈíÑÏ ˜å Failure í˜ Platform ÑÇ äÇÏíÏå ÈíÑÏ.
+
+---
+
+# 44. Verification Event Model
+
+EventåÇí ãåã:
+
+```text
+VerificationRequested
+VerificationStarted
+CheckStarted
+CheckCompleted
+EvidenceCreated
+VerificationPassed
+VerificationFailed
+VerificationBlocked
+QualityGateEvaluated
+QualityGatePassed
+QualityGateFailed
+ReworkRequested
+ReverificationRequested
+WaiverRequested
+WaiverApproved
+WaiverRejected
+HumanApprovalRequested
+HumanApprovalGranted
+HumanApprovalRejected
+```
+
+åãå ÈÇíÏ Audit ÔæäÏ.
+
+---
+
+# 45. Core Phase 4 Entities
+
+ãÏá ÏÇÏå ÇÕáí:
+
+```text
+Verification
+VerificationVersion
+VerificationPlan
+VerificationCheck
+VerificationRun
+Verifier
+VerifierVersion
+VerifierContract
+VerificationResult
+VerificationFinding
+Evidence
+EvidenceBundle
+QualityGate
+QualityGateRule
+QualityGateResult
+Failure
+RootCause
+ReworkRequest
+Reverification
+Waiver
+Exception
+RegressionVerification
+ImpactVerification
+VerificationPolicy
+VerificationAudit
+PlatformVerification
+SecurityVerification
+```
+
+---
+
+# 46. Traceability Phase 4
+
+Verification ÈÇíÏ ÈÎÔí ÇÒ Traceability ÈÇÔÏ:
+
+```text
+REQ-102
+   ?
+AC-102-01
+   ?
+ARCH-021
+   ?
+CODE-187
+   ?
+TEST-451
+   ?
+VER-991
+   ?
+EV-8821
+   ?
+GATE-201
+   ?
+REL-012
+```
+
+ÈäÇÈÑÇíä åÑ ÊÕãíã Release ŞÇÈá ÈÇÒÓÇÒí ÇÓÊ.
+
+---
+
+# 47. APIåÇí ÇÕáí Phase 4
+
+ÏÑ ÓØÍ ãÚãÇÑí:
+
+```text
+/verifications
+/verifications/{id}
+/verifications/{id}/plan
+/verifications/{id}/run
+/verifications/{id}/results
+/verifications/{id}/evidence
+/verifications/{id}/findings
+
+/verifiers
+/verifiers/{id}
+
+/quality-gates
+/quality-gates/{id}/evaluate
+
+/rework
+/rework/{id}
+
+/reverification
+/reverification/{id}
+
+/waivers
+/waivers/{id}
+
+/evidence
+/evidence/{id}
+
+/verification-policies
+```
+
+äÇã ÏŞíŞ APIåÇ ÏÑ Technical Design äåÇíí ãíÔæÏ.
+
+---
+
+# 48. ÇÑÊÈÇØ Phase 3 æ Phase 4
+
+Phase 3:
+
+> **What should execute and in what order?**
+
+Phase 4:
+
+> **Did it actually satisfy the required conditions?**
+
+ãÏá:
+
+```text
+Phase 3
+Orchestrator
+      ?
+Task
+      ?
+Agent
+      ?
+Artifact
+      ?
+Phase 4
+Verification
+      ?
+Quality Gate
+      ?
+ ???????????
+ ?         ?
+PASS      FAIL
+ ?         ?
+ ?         ?
+Next     Rework
+Stage      ?
+           ?
+        Phase 3
+```
+
+---
+
+# 49. ÇÑÊÈÇØ Phase 2 æ Phase 4
+
+Phase 2 ÊÚÑíİ ãí˜äÏ:
+
+```text
+Agent
+Contract
+Capability
+Permission
+Identity
+```
+
+Phase 4 ÈÑÑÓí ãí˜äÏ:
+
+```text
+Did Agent respect its Contract?
+Did Agent use allowed tools?
+Did Agent violate permissions?
+Did Agent produce required outputs?
+Did Agent satisfy acceptance criteria?
+```
+
+ÈäÇÈÑÇíä:
+
+> **Contract Compliance Verification**
+
+í˜ ÈÎÔ ÑÓãí Phase 4 ÇÓÊ.
+
+---
+
+# 50. ÇÑÊÈÇØ Phase 1 æ Phase 4
+
+Phase 1 ŞæÇäíä ÑÇ ÊÚÑíİ ãí˜äÏ:
+
+```text
+Governance
+Human Authority
+Policy
+Traceability
+Security Baseline
+```
+
+Phase 4 ÈÑÑÓí ãí˜äÏ ˜å:
+
+```text
+Implementation
+     ?
+Complies with
+     ?
+Foundation Rules
+```
+
+---
+
+# 51. Quality GateåÇí ÇÕáí YFG
+
+GateåÇí íÔäåÇÏí:
+
+```text
+QG-01 Requirement Gate
+QG-02 Acceptance Criteria Gate
+QG-03 Architecture Gate
+QG-04 Design Gate
+QG-05 Implementation Gate
+QG-06 Build Gate
+QG-07 Test Gate
+QG-08 Security Gate
+QG-09 Dependency Gate
+QG-10 Traceability Gate
+QG-11 Platform Gate
+QG-12 Regression Gate
+QG-13 Release Candidate Gate
+QG-14 Deployment Readiness Gate
+QG-15 Production Verification Gate
+```
+
+---
+
+# 52. Release Candidate Verification
+
+ŞÈá ÇÒ Release:
+
+```text
+Source
+ ?
+Build
+ ?
+Unit
+ ?
+Integration
+ ?
+Regression
+ ?
+Security
+ ?
+Dependency
+ ?
+SBOM
+ ?
+Traceability
+ ?
+Architecture
+ ?
+Platform
+ ?
+Documentation
+ ?
+Rollback
+ ?
+Independent Verification
+ ?
+Human Approval
+```
+
+ÓÓ:
+
+```text
+REL-CANDIDATE
+```
+
+ÓÇÎÊå ãíÔæÏ.
+
+---
+
+# 53. Production Verification
+
+ÍÊí ÈÚÏ ÇÒ Deployment¡ Verification ÊãÇã äãíÔæÏ.
+
+```text
+Deployment
+ ?
+Production Verification
+ ?
+Health
+ ?
+Smoke Test
+ ?
+Critical Path
+ ?
+Monitoring
+ ?
+Gate
+```
+
+ãã˜ä ÇÓÊ:
+
+```text
+Deployment = Successful
+```
+
+æáí:
+
+```text
+Production Verification = FAILED
+```
+
+ÈÇÔÏ.
+
+ÏÑ Çíä ÍÇáÊ:
+
+```text
+Rollback / Recovery
+```
+
+ØÈŞ Policy æ Release Plan ÇÌÑÇ ãíÔæÏ.
+
+---
+
+# 54. Verification Metrics
+
+Phase 4 ÈÇíÏ Metrics ÏÇÔÊå ÈÇÔÏ.
+
+### Quality
+
+* Verification Pass Rate
+* Failure Rate
+* Rework Rate
+* Regression Rate
+* Defect Escape Rate
+* Requirement Coverage
+* Acceptance Criteria Coverage
+* Traceability Coverage
+
+### Verification
+
+* Verification Duration
+* Evidence Completeness
+* False Positive Rate
+* False Negative Findings
+* Verifier Agreement / Disagreement
+* Deterministic Check Coverage
+
+### Operational
+
+* Verification Queue
+* Resource Consumption
+* Cost
+* Retry Count
+* Escalation Count
+
+---
+
+# 55. ä˜Êå ãåã ÏÑÈÇÑå «Best Candidate»
+
+ÏÑ ãÚãÇÑí äÏ-Agentí ãã˜ä ÇÓÊ äÏ ÎÑæÌí ÇíÌÇÏ ÔæÏ:
+
+```text
+Agent A ? Candidate A
+Agent B ? Candidate B
+Agent C ? Candidate C
+```
+
+Phase 4 äÈÇíÏ ÕÑİÇğ ÈæíÏ:
+
+> Candidate A ÈåÊÑíä ÇÓÊ.
+
+Èá˜å:
+
+```text
+Candidate A
+ ?
+Verification
+ ?
+PASS
+
+Candidate B
+ ?
+Verification
+ ?
+FAIL
+
+Candidate C
+ ?
+Verification
+ ?
+PASS
+```
+
+ÓÓ ãíÊæÇä ÈÑ ÇÓÇÓ **ãÚíÇÑåÇí ÇÒ ŞÈá ÊÚÑíİÔÏå** CandidateåÇí ãÚÊÈÑ ÑÇ ãŞÇíÓå ˜ÑÏ.
+
+ÚÈÇÑÊ ÑÓãí ÈåÊÑ:
+
+> **Best Validated Candidate**
+
+äå:
+
+> Best AI Output
+
+---
+
+# 56. Candidate Comparison
+
+ÏÑ ÕæÑÊ äíÇÒ:
+
+```text
+Candidate Set
+ ?
+Common Verification Criteria
+ ?
+Independent Evidence
+ ?
+Validated Candidates
+ ?
+Human / Policy Decision
+```
+
+Criteria ãíÊæÇäÏ ÔÇãá:
+
+* requirements coverage
+* test coverage
+* security findings
+* performance results
+* architecture conformance
+* resource cost
+* platform coverage
+
+ÈÇÔÏ.
+
+ÇãÇ ÇäÊÎÇÈ äåÇíí ÏÑ ÊÕãíãåÇí ãåã ÈÇíÏ ØÈŞ Policy æ ÓØÍ ÇÎÊíÇÑ Human ÇäÌÇã ÔæÏ.
+
+---
+
+# 57. Phase 4 Deliverables
+
+ÎÑæÌí ÑÓãí Phase 4:
+
+### D01
+
+Verification Architecture
+
+### D02
+
+Verification Engine Specification
+
+### D03
+
+Verification Plan Model
+
+### D04
+
+Verification Check Model
+
+### D05
+
+Verifier Model
+
+### D06
+
+Verifier Contract Specification
+
+### D07
+
+Verifier Registry Specification
+
+### D08
+
+Evidence Model
+
+### D09
+
+Evidence Bundle Specification
+
+### D10
+
+Quality Gate Model
+
+### D11
+
+Quality Gate Rule Engine
+
+### D12
+
+Requirement Verification Specification
+
+### D13
+
+Acceptance Criteria Verification
+
+### D14
+
+Build Verification
+
+### D15
+
+Test Verification
+
+### D16
+
+Static Analysis Verification
+
+### D17
+
+Security Verification
+
+### D18
+
+Supply Chain Verification
+
+### D19
+
+Architecture Conformance Verification
+
+### D20
+
+Traceability Verification
+
+### D21
+
+Platform Verification
+
+### D22
+
+AI Independent Review Specification
+
+### D23
+
+Regression Verification
+
+### D24
+
+Failure & Root Cause Model
+
+### D25
+
+Rework / Reverification Model
+
+### D26
+
+Waiver / Exception Model
+
+### D27
+
+Verification Audit Model
+
+### D28
+
+Verification Metrics
+
+### D29
+
+Release Candidate Verification
+
+### D30
+
+Production Verification
+
+### D31
+
+Phase 4 API / Event Contracts
+
+### D32
+
+Initial Verifier Definitions
+
+---
+
+# 58. Initial Verifiers
+
+äÓÎå Çæáíå ãíÊæÇäÏ ÔÇãá Çíä VerifieråÇ ÈÇÔÏ:
+
+```text
+VER-BUILD-001
+Build Verification
+
+VER-TEST-001
+Test Verification
+
+VER-SEC-001
+Security Verification
+
+VER-ARCH-001
+Architecture Verification
+
+VER-TRACE-001
+Traceability Verification
+
+VER-REQ-001
+Requirement Verification
+
+VER-AC-001
+Acceptance Criteria Verification
+
+VER-DEP-001
+Dependency Verification
+
+VER-PLATFORM-001
+Platform Verification
+
+VER-AI-REVIEW-001
+Independent AI Review
+
+VER-RELEASE-001
+Release Verification
+```
+
+---
+
+# 59. Acceptance Criteria ÑÓãí Phase 4
+
+Phase 4 ÒãÇäí ŞÇÈá ŞÈæá ÇÓÊ ˜å:
+
+### AC-01
+
+åÑ Artifact ãåã Verification Plan ÏÇÔÊå ÈÇÔÏ.
+
+### AC-02
+
+Verification ÇÒ Generation ãÓÊŞá ÈÇÔÏ.
+
+### AC-03
+
+Deterministic Verification ÔÊíÈÇäí ÔæÏ.
+
+### AC-04
+
+AI-based Verification ÔÊíÈÇäí ÔæÏ.
+
+### AC-05
+
+Evidence ÈÑÇí Verification ËÈÊ ÔæÏ.
+
+### AC-06
+
+åÑ Quality Gate ÏÇÑÇí Rule ãÔÎÕ ÈÇÔÏ.
+
+### AC-07
+
+PASS/FAIL/BLOCKED/WAIVED ÈåÕæÑÊ ÑÓãí ÊÚÑíİ ÔÏå ÈÇÔäÏ.
+
+### AC-08
+
+FAIL ãäÌÑ Èå Controlled Rework ÔæÏ.
+
+### AC-09
+
+Retry ãÍÏæÏ æ Policy-driven ÈÇÔÏ.
+
+### AC-10
+
+Root Cause ÈÑÇí FailureåÇí ãåã ËÈÊ ÔæÏ.
+
+### AC-11
+
+Regression Verification ÔÊíÈÇäí ÔæÏ.
+
+### AC-12
+
+Requirement ? Test ? Evidence ŞÇÈá ÑÏíÇÈí ÈÇÔÏ.
+
+### AC-13
+
+Architecture Conformance ŞÇÈá ÈÑÑÓí ÈÇÔÏ.
+
+### AC-14
+
+Security Verification ãÓÊŞá ÈÇÔÏ.
+
+### AC-15
+
+Supply Chain Verification æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-16
+
+Platform-specific Verification æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-17
+
+Verifier ÏÇÑÇí Contract ÈÇÔÏ.
+
+### AC-18
+
+Verifier äÊæÇäÏ ÎæÏÔ Verification Policy ÑÇ ÊÛííÑ ÏåÏ.
+
+### AC-19
+
+Waiver äíÇÒãäÏ ãÌæÒ ãäÇÓÈ ÈÇÔÏ.
+
+### AC-20
+
+Human Approval ÏÑ GateåÇí ãæÑÏäíÇÒ ÇÌÈÇÑí ÈÇÔÏ.
+
+### AC-21
+
+Production Verification æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-22
+
+ÊãÇã VerificationåÇí Critical ÏÇÑÇí Audit Trail ÈÇÔäÏ.
+
+### AC-23
+
+Evidence ŞÇÈá ÈÇÒÓÇÒí æ ÈÑÑÓí ãÌÏÏ ÈÇÔÏ.
+
+### AC-24
+
+Verification Result ŞÇÈá ÌÚá íÇ ÊÛííÑ ÈÏæä Audit äÈÇÔÏ.
+
+### AC-25
+
+Phase 4 ÈÇ Phase 1¡ 2 æ 3 í˜ÇÑå ÈÇÔÏ.
+
+---
+
+# 60. Hard Gates ÑÓãí Phase 4
+
+## HG-21
+
+**No Verification Plan ? No Critical Verification**
+
+## HG-22
+
+**No Required Evidence ? No PASS**
+
+## HG-23
+
+**Verification FAIL ? No Controlled Handoff**
+
+## HG-24
+
+**Critical Security Failure ? No Release**
+
+## HG-25
+
+**Traceability Failure ? Critical Gate Blocked**
+
+## HG-26
+
+**Required Test Failure ? Gate FAIL**
+
+## HG-27
+
+**Architecture Violation ? Gate FAIL**
+
+## HG-28
+
+**Unauthorized Waiver ? Invalid**
+
+## HG-29
+
+**Missing Human Approval ? Critical Gate Blocked**
+
+## HG-30
+
+**Verifier Cannot Self-Approve Its Own Critical Finding**
+
+## HG-31
+
+**Generator Cannot Override Verification Result**
+
+## HG-32
+
+**Agent Cannot Modify Verification Evidence**
+
+## HG-33
+
+**Verification Environment Cannot Bypass Security Policy**
+
+## HG-34
+
+**Missing Platform Verification ? Platform Release Blocked**
+
+## HG-35
+
+**Missing Rollback Evidence ? Critical Deployment Gate Blocked**
+
+---
+
+# 61. Phase 4 Exit Gate
+
+ÈÑÇí ÎÑæÌ ÇÒ Phase 4:
+
+```text
+G1
+Verification Engine Verification
+        ?
+G2
+Verifier Contract Verification
+        ?
+G3
+Evidence Verification
+        ?
+G4
+Quality Gate Verification
+        ?
+G5
+Security Verification
+        ?
+G6
+Requirement / Acceptance Verification
+        ?
+G7
+Architecture Verification
+        ?
+G8
+Traceability Verification
+        ?
+G9
+Platform Verification
+        ?
+G10
+Failure / Rework Verification
+        ?
+G11
+Regression Verification
+        ?
+G12
+Human Approval
+        ?
+G13
+Baseline Freeze
+```
+
+---
+
+# 62. ÎÑæÌí ÑÓãí Phase 4
+
+ÏÑ ÕæÑÊ PASS:
+
+```text
+YFG-VERIFICATION-FOUNDATION v0.1
+```
+
+ÔÇãá:
+
+```text
+Verification Engine
++
+Verifier Registry
++
+Verifier Contracts
++
+Evidence System
++
+Quality Gates
++
+Failure/Rework
++
+Regression
++
+Security Verification
++
+Platform Verification
++
+Release Verification
+```
+
+---
+
+# 63. ãÚãÇÑí äåÇíí åÇÑ Phase Çæá
+
+ÏÑ Çíä äŞØå ãÚãÇÑí YFG ÈÓíÇÑ ÔİÇİ ãíÔæÏ:
+
+```text
+?????????????????????????????????????????????
+?                HUMAN                      ?
+?        Product Owner / Authority          ?
+?????????????????????????????????????????????
+                     ?
+                     ?
+?????????????????????????????????????????????
+? PHASE 1                                  ?
+? FOUNDATION & GOVERNANCE                  ?
+? Rules / Policies / Models / Authority    ?
+?????????????????????????????????????????????
+                     ?
+                     ?
+?????????????????????????????????????????????
+? PHASE 2                                  ?
+? AGENT CONTRACT / IDENTITY / CAPABILITY   ?
+? Who can do What / Where / Under What     ?
+?????????????????????????????????????????????
+                     ?
+                     ?
+?????????????????????????????????????????????
+? PHASE 3                                  ?
+? ORCHESTRATION & WORKFLOW                 ?
+? Who works / When / With Whom / How       ?
+?????????????????????????????????????????????
+                     ?
+                     ?
+              GENERATED WORK
+                     ?
+                     ?
+?????????????????????????????????????????????
+? PHASE 4                                  ?
+? VERIFICATION & QUALITY GATES             ?
+? Is it actually valid and evidenced?      ?
+?????????????????????????????????????????????
+                     ?
+              ???????????????
+              ?             ?
+            PASS           FAIL
+              ?             ?
+              ?             ?
+         NEXT STAGE       REWORK
+                            ?
+                            ???????? Phase 3
+```
+
+---
+
+# 64. ÇÕá ˜áíÏí ˜å Phase 4 Èå YFG ÇÖÇİå ãí˜äÏ
+
+åÇÑ ãÑÍáå Ç˜äæä åÇÑ ÓÄÇá ãÊİÇæÊ ÏÇÑäÏ:
+
+| Phase       | ÓÄÇá ÇÕáí                                            |
+| ----------- | ---------------------------------------------------- |
+| **Phase 1** | å ŞæÇäíäí ÈÑ YFG ÍÇ˜ã ÇÓÊ¿                          |
+| **Phase 2** | å Agentí å ŞÇÈáíÊ æ ãÌæÒí ÏÇÑÏ¿                    |
+| **Phase 3** | å ˜ÇÑí¡ ÊæÓØ å Agentí¡ ÈÇ å ÊÑÊíÈí ÇäÌÇã ÔæÏ¿     |
+| **Phase 4** | ÂíÇ äÊíÌå æÇŞÚÇğ ãÚÊÈÑ¡ ŞÇÈá ÇËÈÇÊ æ ÂãÇÏå ÚÈæÑ ÇÓÊ¿ |
+
+æ Çíä Êİ˜í˜ ÈÓíÇÑ ãåã ÇÓÊ:
+
+```text
+Generation
+    ?
+Orchestration
+    ?
+Verification
+    ?
+Approval
+```
+
+ÏÑ ãÚãÇÑí äåÇíí YFG Çíä åÇÑ ãÓÆæáíÊ äÈÇíÏ ÏÑ í˜ Agent íÇ í˜ áÇíå ÇÏÛÇã ÔæäÏ.
+
+**Baseline ÑÓãí Phase 4:**
+
+> **YFG-VERIFICATION-FOUNDATION v0.1**
+
+æ Çíä Baseline äŞØåÇí ÇÓÊ ˜å YFG ÇÒ í˜ ÓíÓÊã ÕÑİÇğ **Agent-Orchestrating** Èå í˜ ÓíÓÊã **Verification-Driven Software Engineering** ÊÈÏíá ãíÔæÏ.

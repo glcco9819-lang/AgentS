@@ -1,0 +1,1615 @@
+Ќ г«р. »«  жће »е  г«г гж«—ѕн Ше  « «ндћ« »—«н **YFG Designer** ж ”Б” **YFG AI Software Factory**  Џ—нЁ Ш—ѕнг° гЏг«—н —« »«нѕ «“ Б«не »«“Ў—«Ќн ШднгЇ »еЭРждеЭ«н Ше «“ ег«д «» ѕ« **ѕжЭ“»«де° Agent-Based° Verification-Driven° Human-Governed° Traceable ж ё«»б  ж”Џе** »«‘ѕ.
+
+ѕ— «ѕ«ге° д”ќеЭ«н —« «—«∆е гнЭШдг Ше гнЭ ж«днг ¬д —« »еЭЏдж«д **YFG AI Software Factory Ч Final Target Architecture** г»д« ё—«— ѕенг.
+
+# YFG AI Software Factory
+
+## Ш«—ќ«де еж‘ г’джЏн гедѕ”н д—гЭ«Ё“«— YFG
+
+### Final Target Architecture Ч гЏг«—н де«нн еѕЁ
+
+**English:** Human-Governed, Verification-Driven, Traceable AI Engineering Platform
+
+**Ё«—”н:** Бб Ё—г гедѕ”н д—гЭ«Ё“«— г» дн »— еж‘ г’джЏн°  Ќ  Ќ«Шгн  «д”«д° г» дн »— —«” нЭ¬“г«нн ж Ш«гб«р ё«»б —ѕн«»н
+
+---
+
+# 1. Vision Ч Н‘гЭ«дѕ«“
+
+YFG AI Software Factory нШ Бб Ё—г еж‘гдѕ »—«н  »ѕнб «нѕе «жбне «д”«д »е нШ гЌ’жб д—гЭ«Ё“«—н ж«ёЏн° ё«»б  ” ° г” дѕ° «гд° ё«»б д’»° ё«»б дРеѕ«—н ж ё«»б  ж”Џе «” .
+
+еѕЁ ”н” г «нд дн”  Ше ’—Ё«р Ндѕ Agent еж‘ г’джЏн —« ѕ— Шд«— нШѕнР— ё—«— ѕеѕ.
+
+еѕЁ° «нћ«ѕ нШ **AI Engineering Organization Ч ”«“г«д гедѕ”н д—гЭ«Ё“«— г» дн »— еж‘ г’джЏн** «”  Ше Agentе«н  ќ’’н » ж«ддѕ »« нШѕнР— Ш«— Шддѕ° «г«  г«г ќ—жћнЭе«н гег ¬де«  Ќ  Шд —б° —«” нЭ¬“г«нн° Ћ»  ”ж«»ё ж  √ннѕ ё—«— Рн—ѕ.
+
+---
+
+# 2. Human Role Ч дё‘ «д”«д
+
+«д”«д ѕ— г—Ш“  ’гнгЭРн—н ё—«— ѕ«—ѕ.
+
+### Human Product Owner Ч г«бШ гЌ’жб «д”«дн
+
+ж—жѕнЭе«н «’бн  ж”Ў «д”«д  Џннд гнЭ‘жѕ:
+
+1. **Product Idea Ч «нѕе гЌ’жб**
+2. **Product Goal Ч еѕЁ гЌ’жб**
+3. **Target Market Ч »«“«— еѕЁ**
+4. **Feature Priorities Ч «жбжн  «гШ«д« **
+5. **Business Constraints Ч гЌѕжѕн Эе«н Ш”»ЭжШ«—**
+6. **Technical Constraints Ч гЌѕжѕн Эе«н Ёдн**
+7. **Final Decisions Ч  ’гнг«  де«нн**
+
+Agentе« г”∆жб  Ќбнб° Ў—«Ќн° «ћ—«° »——”н°  ” ° г” дѕ”«“н ж Бн‘де«ѕ е” дѕ.
+
+«г«  ’гнг«  Ќ”«” Ў»ё **Human Approval Policy Ч ”н«”   √ннѕ «д”«дн** »е «д”«д «—ћ«Џ гнЭ‘ждѕ.
+
+---
+
+# 3. Architecture Principles Ч «’жб гЏг«—н
+
+## Principle 01 Ч No Agent Output Is Trusted by Default
+
+### енН ќ—жћн Agent »еЭ’ж—  Бн‘ЭЁ—÷ ё«»б «Џ г«ѕ дн” .
+
+Every material Agent output must pass an independent verification gate before it can become an input to the next controlled stage.
+
+###  —ћге:
+
+е— ќ—жћн гег Agent »«нѕ Бн‘ «“  »ѕнб ‘ѕд »е ж—жѕн г—Ќбе Шд —бЭ‘ѕе »Џѕн° «“ нШ **Independent Verification Gate Ч ѕ—ж«“е —«” нЭ¬“г«нн г” ёб** Џ»ж— Шдѕ.
+
+---
+
+## Principle 02 Ч Independent Verification
+
+### —«” нЭ¬“г«нн г” ёб
+
+Agent  жбнѕШддѕе д»«нѕ  де« г—ћЏ  √ннѕ ќ—жћн ќжѕ‘ »«‘ѕ.
+
+```text
+Work Agent
+Џ«гб «дћ«гЭѕедѕе
+      ?
+Artifact
+ќ—жћн
+      ?
+Independent Verification
+—«” нЭ¬“г«нн г” ёб
+      ?
+Quality Gate
+ѕ—ж«“е ШнЁн 
+```
+
+---
+
+## Principle 03 Ч Human Governance
+
+### Ќ«Шгн  «д”«дн
+
+ѕ— дё«Ў Ќ”«”° ”н” г »ѕжд  √ннѕ «д”«д «ћ«“е Џ»ж— дѕ«—ѕ.
+
+```text
+AI Recommendation
+        ?
+Verification
+        ?
+Human Approval
+        ?
+Execution
+```
+
+---
+
+## Principle 04 Ч Full Traceability
+
+### ё«»бн  —ѕн«»н Ш«гб
+
+е— Requirement° Design° Code° Test° Decision ж Release »«нѕ ё«»б —ѕн«»н »«‘ѕ.
+
+```text
+Idea
+ ?
+Requirement
+ ?
+Architecture
+ ?
+Database
+ ?
+API
+ ?
+Code
+ ?
+Test
+ ?
+Security
+ ?
+Documentation
+ ?
+Release
+```
+
+---
+
+## Principle 05 Ч Reversible Execution
+
+### «ћ—«н ё«»б »«“Р‘ 
+
+е—  џнн— гег »«нѕ ѕ«—«н «гШ«д:
+
+**Versioning Ч д”ќеЭ»дѕн**
+
+**Rollback Ч »«“Р‘ **
+
+**Recovery Ч »«“н«»н**
+
+»«‘ѕ.
+
+---
+
+## Principle 06 Ч Least Privilege
+
+### Ќѕ«ёб ”ЎЌ ѕ” —”н
+
+е— Agent ЁёЎ гћж“е«нн —« ѕ—н«Ё  гнЭШдѕ Ше »—«н «дћ«г жўнЁе ќжѕ дн«“ ѕ«—ѕ.
+
+---
+
+# 4. Core Platform Ч е” е «’бн Бб Ё—г
+
+«нд «ћ“« «“ «жбнд д”ќе »«нѕ ѕ— е” е YFG жћжѕ ѕ«‘ е »«‘дѕ:
+
+| English             | Ё«—”н                |
+| ------------------- | -------------------- |
+| Agent Orchestrator  | ег«едРЭШддѕе Agentе« |
+| Workflow Engine     | гж ж— Р—ѕ‘ЭШ«—       |
+| Task Management     | гѕн—н  жў«нЁ         |
+| Verification Engine | гж ж— —«” нЭ¬“г«нн   |
+| Quality Gate Engine | гж ж— ѕ—ж«“е ШнЁн    |
+| Git Integration     | нШБ«—НеЭ”«“н Git     |
+| Sandbox             | гЌнЎ «ћ—«н «н“жбе    |
+| Test Environment    | гЌнЎ ¬“гжд           |
+| Artifact Management | гѕн—н  ќ—жћнЭе«      |
+| Traceability Engine | гж ж— —ѕн«»н         |
+| Audit Log           | Ћ»  ”ж«»ё Ќ”«»—”н    |
+| Approval Engine     | гж ж—  √ннѕ          |
+| Rollback Engine     | гж ж— »«“Р‘          |
+| Policy Engine       | гж ж— ”н«” Эе«       |
+| Security Layer      | б«не «гдн            |
+| Memory / Knowledge  | Ќ«Ёўе ж ѕ«д‘         |
+| Document Management | гѕн—н  «”д«ѕ         |
+| Reporting           | Р“«—‘Эѕен            |
+
+---
+
+# 5. High-Level Architecture Ч гЏг«—н ”ЎЌ »«б«
+
+```text
+                         ????????????????????????????
+                         ?       HUMAN USER          ?
+                         ?        Ш«—»— «д”«дн       ?
+                         ?    Product Owner / Admin  ?
+                         ????????????????????????????
+                                      ?
+                                      ?
+                         ????????????????????????????
+                         ?   YFG CONTROL CENTER     ?
+                         ?      г—Ш“ Шд —б YFG      ?
+                         ????????????????????????????
+                                      ?
+                                      ?
+                         ????????????????????????????
+                         ?    AI ORCHESTRATOR       ?
+                         ?    ег«едРЭШддѕе Agentе«  ?
+                         ????????????????????????????
+                                      ?
+             ???????????????????????????????????????????????????
+             ?                        ?                        ?
+             ?                        ?                        ?
+       Product Agents           Architecture Agents      Engineering Agents
+       Agentе«н гЌ’жб            Agentе«н гЏг«—н          Agentе«н гедѕ”н
+             ?                        ?                        ?
+             ???????????????????????????????????????????????????
+                                      ?
+                                      ?
+                         ????????????????????????????
+                         ?   VERIFICATION LAYER     ?
+                         ?      б«не —«” нЭ¬“г«нн   ?
+                         ????????????????????????????
+                                      ?
+                                      ?
+                         ????????????????????????????
+                         ?      QUALITY GATES        ?
+                         ?       ѕ—ж«“еЭе«н ШнЁн     ?
+                         ????????????????????????????
+                                      ?
+                            ?????????????????????
+                            ?                   ?
+                           PASS                FAIL
+                            ?                   ?
+                            ?                   ?
+                       NEXT STAGE            REWORK
+                                            «’б«Ќ гћѕѕ
+```
+
+---
+
+# 6. Agent Organization Ч ”«“г«д Agentе«
+
+YFG «“ Agentе«н  ќ’’н  ‘Шнб гнЭ‘жѕ.
+
+## 6.1 Product Domain Ч Ќж“е гЌ’жб
+
+### Product Manager Agent
+
+### Џ«гб гѕн—н  гЌ’жб
+
+жў«нЁ:
+
+* Product Vision Ч Н‘гЭ«дѕ«“ гЌ’жб
+* Product Scope Ч гЌѕжѕе гЌ’жб
+* Market Definition Ч  Џ—нЁ »«“«—
+* Feature Prioritization Ч «жбжн Э»дѕн «гШ«д« 
+* Product Roadmap Ч дё‘е —«е гЌ’жб
+* Release Planning Ч »—д«геЭ—н“н «д ‘«—
+
+---
+
+## 6.2 Business Analysis Domain Ч Ќж“е  Ќбнб Ш”»ЭжШ«—
+
+### Business Analyst Agent
+
+### Џ«гб  Ќбнб Ш”»ЭжШ«—
+
+жў«нЁ:
+
+* Requirement Analysis Ч  Ќбнб дн«“гдѕн
+* Business Process Ч Ё—¬ндѕ Ш”»ЭжШ«—
+* Business Rules Ч ёж«днд Ш”»ЭжШ«—
+* Use Cases Ч гж«—ѕ Ш«—»—ѕ
+* Actors Ч »«“нР—«д
+* Workflow Ч Р—ѕ‘ЭШ«—
+* Exception Handling Ч гѕн—н  ‘—«нЎ «” Ћд«
+
+---
+
+## 6.3 Architecture Domain Ч Ќж“е гЏг«—н
+
+### Solution Architect Agent
+
+### Џ«гб гЏг«—н —«еШ«—
+
+жў«нЁ:
+
+* System Architecture Ч гЏг«—н ”н” г
+* Module Architecture Ч гЏг«—н г«ОжбЭе«
+* Service Architecture Ч гЏг«—н ”—жн”Эе«
+* API Architecture Ч гЏг«—н API
+* Integration Architecture Ч гЏг«—н нШБ«—НеЭ”«“н
+* Security Architecture Ч гЏг«—н «гдн 
+* Deployment Architecture Ч гЏг«—н «” ё—«—
+
+---
+
+# 7. Data Architecture Ч гЏг«—н ѕ«ѕе
+
+### Database Architect Agent
+
+### Џ«гб гЏг«—н Б«нР«е ѕ«ѕе
+
+жў«нЁ:
+
+```text
+Domain Model
+гѕб ѕ«где
+      ?
+ERD
+дгжѕ«— гжћжѕн -—«»Ўе
+      ?
+Tables
+ћѕ«жб
+      ?
+Relationships
+—ж«»Ў
+      ?
+Indexes
+«ндѕШ”Эе«
+      ?
+Constraints
+гЌѕжѕн Эе«
+      ?
+Migration
+ге«ћ— 
+```
+
+»—«н Б—жОеЭе«н ERP° SQL Server гнЭ ж«дѕ »еЭЏдж«д нШн «“ Target Databaseе«н «’бн  Џ—нЁ ‘жѕ.
+
+---
+
+# 8. Engineering Agents Ч Agentе«н гедѕ”н
+
+## Backend Agent
+
+### Џ«гб  ж”Џе Backend
+
+жў«нЁ:
+
+* API
+* Business Logic
+* Services
+* Validation
+* Authentication
+* Authorization
+* Integration
+
+---
+
+## Frontend Agent
+
+### Џ«гб  ж”Џе Frontend
+
+жў«нЁ:
+
+* UI
+* UX Implementation
+* Forms
+* Dashboards
+* Reports
+* RTL
+* LTR
+* Localization
+
+---
+
+## Database Development Agent
+
+### Џ«гб  ж”Џе Б«нР«е ѕ«ѕе
+
+жў«нЁ:
+
+* SQL
+* Migration
+* Stored Procedures
+* Views
+* Functions
+* Index Optimization
+
+---
+
+## Integration Agent
+
+### Џ«гб нШБ«—НеЭ”«“н
+
+жўнЁе »——”н «— »«Ў:
+
+```text
+Frontend
+   ?
+API
+   ?
+Backend
+   ?
+Database
+   ?
+External Systems
+```
+
+---
+
+# 9. Verification Layer Ч б«не —«” нЭ¬“г«нн
+
+«нд нШн «“ гегЭ —нд »ќ‘Эе«н YFG «” .
+
+е— Agent гег нШ Ё—¬ндѕ г” ёб Verification ѕ«—ѕ.
+
+```text
+Developer Agent
+      ?
+Developer Artifact
+      ?
+Code Verification Agent
+      ?
+Quality Gate
+```
+
+### «дж«Џ Verification
+
+* Requirement Verification Ч —«” нЭ¬“г«нн дн«“гдѕн
+* Architecture Verification Ч —«” нЭ¬“г«нн гЏг«—н
+* Database Verification Ч —«” нЭ¬“г«нн Б«нР«е ѕ«ѕе
+* Code Verification Ч —«” нЭ¬“г«нн Шѕ
+* API Verification Ч —«” нЭ¬“г«нн API
+* UI Verification Ч —«” нЭ¬“г«нн —«»Ў Ш«—»—н
+* Security Verification Ч —«” нЭ¬“г«нн «гдн 
+* Documentation Verification Ч —«” нЭ¬“г«нн г” дѕ« 
+
+---
+
+# 10. Quality Gate Ч ѕ—ж«“е ШнЁн 
+
+е— г—Ќбе »«нѕ Gate ѕ«‘ е »«‘ѕ.
+
+```text
+WORK
+ ?
+VERIFY
+ ?
+QUALITY GATE
+ ??? PASS ? NEXT
+ ??? FAIL ? REWORK
+```
+
+### PASS Ч  √ннѕ
+
+ќ—жћн гнЭ ж«дѕ »е г—Ќбе »Џѕ гд ёб ‘жѕ.
+
+### FAIL Ч —ѕ
+
+ќ—жћн »е Agent г—»жЎе »«“Р—ѕ«дѕе гнЭ‘жѕ.
+
+---
+
+# 11. Rework Loop Ч Н—ќе «’б«Ќ гћѕѕ
+
+```text
+Agent
+ ?
+Artifact
+ ?
+Verification
+ ?
+FAIL
+ ?
+Failure Analysis
+ ?
+Feedback
+ ?
+Rework
+ ?
+Verification
+ ?
+PASS
+ ?
+Next Stage
+```
+
+»—«н ћбжРн—н «“ Loop »нЭде«н :
+
+```text
+Max Attempts
+Ќѕ«ШЋ—  Џѕ«ѕ  б«‘
+```
+
+ Џ—нЁ гнЭ‘жѕ.
+
+гЋб«р:
+
+```text
+Attempt 1 ? FAIL
+Attempt 2 ? FAIL
+Attempt 3 ? FAIL
+       ?
+Human Escalation
+«—ћ«Џ »е «д”«д
+```
+
+---
+
+# 12. Human Approval Gate Ч ѕ—ж«“е  √ннѕ «д”«дн
+
+ѕ— дё«Ў Ќ”«”:
+
+```text
+AI
+ ?
+Verification
+ ?
+Quality Gate
+ ?
+Human Approval
+ ?
+Continue
+```
+
+дгжде Gateе«:
+
+* Product Scope Approval Ч  √ннѕ гЌѕжѕе гЌ’жб
+* Architecture Approval Ч  √ннѕ гЏг«—н
+* Major Database Change Approval Ч  √ннѕ  џнн— Џгѕе Б«нР«е ѕ«ѕе
+* Security Approval Ч  √ннѕ «гдн 
+* Release Approval Ч  √ннѕ «д ‘«—
+* Production Deployment Approval Ч  √ннѕ «” ё—«— ѕ— Production
+
+---
+
+# 13. Git & Version Control Ч Шд —б д”ќе
+
+Git «“ «» ѕ« ћ“ж Core Platform «” .
+
+е— Agent »«нѕ —жн гЌнЎ Шд —бЭ‘ѕе Ш«— Шдѕ.
+
+```text
+Main
+ ?
+ ??? Feature Branch
+ ?
+ ??? Bug Fix Branch
+ ?
+ ??? Experiment Branch
+```
+
+Ё—¬ндѕ:
+
+```text
+Task
+ ?
+Branch
+ ?
+Agent Work
+ ?
+Commit
+ ?
+Build
+ ?
+Test
+ ?
+Verification
+ ?
+Review
+ ?
+Approval
+ ?
+Merge
+```
+
+---
+
+# 14. Sandbox Ч гЌнЎ «н“жбе Agent
+
+е— Agent »«нѕ гЌнЎ «ћ—«н Шд —бЭ‘ѕе ѕ«‘ е »«‘ѕ.
+
+```text
+Agent Sandbox
+?
+??? Source Code
+??? Dependencies
+??? Temporary Files
+??? Test Data
+??? Build Tools
+??? Test Runtime
+```
+
+ѕ” —”н г” ёнг Agent »е гд«»Џ Ќ”«” ггджЏ н« гЌѕжѕ «” .
+
+гЋб«р:
+
+```text
+Production Database       ?
+Production Secrets        ?
+Production Deployment     ?
+```
+
+гР— «“ Ў—нё Policy ж Approval г‘ќ’.
+
+---
+
+# 15. Test Environment Ч гЌнЎ ¬“гжд
+
+Ќѕ«ёб гЌнЎЭе«:
+
+```text
+Development
+ ж”Џе
+   ?
+Test
+¬“гжд
+   ?
+Staging
+Бн‘Э жбнѕ
+   ?
+Production
+гЌнЎ Џгбн« н
+```
+
+Agentе« Џгѕ «р ѕ— Development ж Test ЁЏ«бн  гнЭШддѕ.
+
+---
+
+# 16. Artifact Management Ч гѕн—н  ќ—жћнЭе«
+
+е— ќ—жћн гег »еЭЏдж«д Artifact Ћ»  гнЭ‘жѕ.
+
+дгжде:
+
+```text
+IDEA-001
+REQ-001
+ARCH-001
+DB-001
+API-001
+CODE-001
+TEST-001
+SEC-001
+DOC-001
+REL-001
+```
+
+Artifactе« Version ѕ«—дѕ.
+
+---
+
+# 17. Traceability Ч ё«»бн  —ѕн«»н
+
+—«»Ўе Ш«гб:
+
+```text
+IDEA
+ ?
+REQUIREMENT
+ ?
+ARCHITECTURE
+ ?
+DATABASE
+ ?
+API
+ ?
+CODE
+ ?
+TEST
+ ?
+SECURITY
+ ?
+DOCUMENTATION
+ ?
+RELEASE
+```
+
+»д«»—«нд ”н” г »«нѕ » ж«дѕ Б«”ќ ѕеѕ:
+
+> «нд Шѕ »— «”«” Шѕ«г дн«“гдѕн «нћ«ѕ ‘ѕе «” њ
+
+ж егНднд:
+
+> «нд Requirement ѕ— Шѕ«г ё”г  ”н” г Бн«ѕеЭ”«“н ‘ѕе «” њ
+
+---
+
+# 18. Audit Log Ч Ћ»  ”ж«»ё Ќ”«»—”н
+
+ г«г ЁЏ«бн Эе«н гег Ћ»  гнЭ‘ждѕ.
+
+гЋб«р:
+
+```text
+Timestamp
+“г«д
+
+Actor
+Џ«гб
+
+Agent
+Agent «ћ—«Шддѕе
+
+Action
+Џгбн« 
+
+Artifact
+ќ—жћн
+
+Version
+д”ќе
+
+Decision
+ ’гнг
+
+Verification Result
+д нће —«” нЭ¬“г«нн
+
+Approval
+ √ннѕ
+
+Reason
+ѕбнб
+```
+
+---
+
+# 19. Rollback & Recovery Ч »«“Р‘  ж »«“н«»н
+
+ г«г  џнн—«  гег »«нѕ ё«»б »«“Р‘  »«‘дѕ.
+
+```text
+Release 1.0
+     ?
+Release 1.1
+     ?
+Release 1.2
+     ?
+Incident
+     ?
+Rollback
+     ?
+Release 1.1
+```
+
+---
+
+# 20. Security Architecture Ч гЏг«—н «гдн 
+
+«гдн  »«нѕ ѕ—  г«г г—«Ќб жћжѕ ѕ«‘ е »«‘ѕ.
+
+### Security Agent
+
+»——”н:
+
+* Authentication Ч «Ќ—«“ ежн 
+* Authorization Ч гћж“ѕен
+* RBAC Ч Шд —б ѕ” —”н г» дн »— дё‘
+* Secret Management Ч гѕн—н  «”—«—
+* API Security Ч «гдн  API
+* Data Protection Ч ЌЁ«ў  ѕ«ѕе
+* Dependency Security Ч «гдн  ж«»” РнЭе«
+* Vulnerability Detection Ч  ‘ќн’ ¬”н»ЭБ–н—н
+* Tenant Isolation Ч ћѕ«”«“н Tenantе«
+
+---
+
+# 21. QA Architecture Ч гЏг«—н  ÷гнд ШнЁн 
+
+QA ЁёЎ ѕ— Б«н«д Б—жОе «дћ«г дгнЭ‘жѕ.
+
+»бШе:
+
+```text
+Requirement QA
+      ?
+Architecture QA
+      ?
+Database QA
+      ?
+Code QA
+      ?
+Integration QA
+      ?
+Security QA
+      ?
+Release QA
+```
+
+---
+
+# 22. Bug Management Ч гѕн—н  ќЎ«
+
+```text
+Bug Detected
+ ‘ќн’ ќЎ«
+      ?
+Classification
+ѕ” еЭ»дѕн
+      ?
+Root Cause Analysis
+ Ќбнб Џб  —н‘еЭ«н
+      ?
+Fix
+«’б«Ќ
+      ?
+Regression Test
+¬“гжд »«“Р‘ н
+      ?
+Verification
+—«” нЭ¬“г«нн
+```
+
+---
+
+# 23. Documentation Agent Ч Џ«гб г” дѕ”«“н
+
+”н” г »«нѕ » ж«дѕ »еЭ’ж—  ќжѕШ«—  жбнѕ Шдѕ:
+
+* Architecture Document Ч г” дѕ гЏг«—н
+* Technical Documentation Ч г” дѕ Ёдн
+* API Documentation Ч г” дѕ API
+* Database Documentation Ч г” дѕ Б«нР«е ѕ«ѕе
+* Installation Guide Ч —«едг«н д’»
+* Administration Guide Ч —«едг«н гѕн—н 
+* User Manual Ч —«едг«н Ш«—»—
+* Release Notes Ч н«ѕѕ«‘  «д ‘«—
+* Troubleshooting Guide Ч —«едг«н —ЁЏ «‘Ш«б
+
+---
+
+# 24. Training Agent Ч Џ«гб ¬гж“‘
+
+»—«н е— дё‘:
+
+```text
+Accountant
+Ќ”«»ѕ«—
+
+Sales User
+Ш«—»— Ё—ж‘
+
+Warehouse User
+Ш«—»— «д»«—
+
+Administrator
+гѕн— ”н” г
+
+Manager
+гѕн—
+```
+
+¬гж“‘  жбнѕ гнЭ‘жѕ.
+
+”«ќ «—:
+
+```text
+Goal
+еѕЁ
+ ?
+Prerequisites
+Бн‘Эдн«“
+ ?
+Steps
+г—«Ќб
+ ?
+Example
+гЋ«б
+ ?
+Common Errors
+ќЎ«е«н —«нћ
+ ?
+Practice
+ г—нд
+```
+
+---
+
+# 25. Catalog Agent Ч Џ«гб  жбнѕ Ш« «бжР
+
+Agent гнЭ ж«дѕ «“ Product Model ж Documentation:
+
+* Product Catalog Ч Ш« «бжР гЌ’жб
+* Module Catalog Ч Ш« «бжР г«ОжбЭе«
+* Feature Catalog Ч Ш« «бжР «гШ«д« 
+* Technical Catalog Ч Ш« «бжР Ёдн
+* User Catalog Ч —«едг«н ё«»бн Эе«н Ш«—»—
+
+ жбнѕ Шдѕ.
+
+---
+
+# 26. Deployment Agent Ч Џ«гб «” ё—«—
+
+Ё—¬ндѕ:
+
+```text
+Build
+ ?
+Package
+ ?
+Environment Validation
+ ?
+Deployment Verification
+ ?
+Human Approval
+ ?
+Deployment
+```
+
+---
+
+# 27. Monitoring Agent Ч Џ«гб Б«н‘
+
+»Џѕ «“ Release:
+
+```text
+Application
+ ?
+Monitoring
+ ?
+Logs
+ ?
+Metrics
+ ?
+Errors
+ ?
+Incident Detection
+```
+
+гж«—ѕ ё«»б Б«н‘:
+
+* CPU
+* RAM
+* Database
+* API
+* Response Time
+* Errors
+* Availability
+* Security Events
+
+---
+
+# 28. Incident Agent Ч Џ«гб гѕн—н  —ќѕ«ѕ
+
+```text
+Incident
+ ?
+Detection
+ ?
+Analysis
+ ?
+Root Cause
+ ?
+Impact Assessment
+ ?
+Fix Proposal
+ ?
+Verification
+ ?
+Human Approval
+ ?
+Deployment
+```
+
+---
+
+# 29. Agent Permission Model Ч гѕб гћж“ Agent
+
+е— Agent ѕ«—«н:
+
+```text
+Agent Identity
+ежн  Agent
+
+Role
+дё‘
+
+Permissions
+гћж“е«
+
+Tools
+«»“«—е«
+
+Resources
+гд«»Џ
+
+Memory
+Ќ«Ёўе
+
+Policies
+”н«” Эе«
+
+Approval Level
+”ЎЌ  √ннѕ
+```
+
+«” .
+
+гЋб«р:
+
+| Џгбн«                | Developer Agent |
+| -------------------- | --------------- |
+| Read Source          | гћ«“            |
+| Write Source         | гћ«“            |
+| Run Build            | гћ«“            |
+| Run Test             | гћ«“            |
+| Create Branch        | гћ«“            |
+| Commit               | гћ«“            |
+| Merge Main           | гЌѕжѕ           |
+| Production Deploy    | џн—гћ«“         |
+| Delete Production DB | џн—гћ«“         |
+
+---
+
+# 30. AI Orchestrator Ч ег«едРЭШддѕе г—Ш“н
+
+Orchestrator гџ“ Џгбн« н ”н” г «” .
+
+жў«нЁ:
+
+* Task Assignment Ч  ќ’н’ жўнЁе
+* Agent Selection Ч «д ќ«» Agent
+* Workflow Control Ч Шд —б Р—ѕ‘ЭШ«—
+* Dependency Management Ч гѕн—н  ж«»” Рн
+* Verification Routing Ч еѕ«н  —«” нЭ¬“г«нн
+* Retry Ч  б«‘ гћѕѕ
+* Escalation Ч «—ћ«Џ
+* Approval Management Ч гѕн—н   √ннѕ
+* Context Management Ч гѕн—н  “гнде
+
+---
+
+# 31. Workflow дгжде Ш«гб
+
+»—«н нШ ё«»бн  ћѕнѕ:
+
+```text
+Human
+ ?
+Product Manager Agent
+ ?
+Product Verification
+ ?
+BA Agent
+ ?
+BA Verification
+ ?
+Architecture Agent
+ ?
+Architecture Verification
+ ?
+Human Approval
+ ?
+Database Agent
+ ?
+Database Verification
+ ?
+Backend Agent
+ ?
+Code Verification
+ ?
+Frontend Agent
+ ?
+UI Verification
+ ?
+Integration Agent
+ ?
+Integration Verification
+ ?
+QA Agent
+ ?
+Security Agent
+ ?
+Documentation Agent
+ ?
+Release Verification
+ ?
+Human Approval
+ ?
+Deployment Agent
+ ?
+Production Verification
+ ?
+Monitoring
+```
+
+---
+
+# 32. Failure Flow Ч г”н— ‘Ш” 
+
+ѕ— е— г—Ќбе:
+
+```text
+Agent
+ ?
+Verification
+ ?
+FAIL
+ ?
+Failure Analysis
+ ?
+Feedback
+ ?
+Rework
+ ?
+Verification
+```
+
+«Р—:
+
+```text
+MAX ATTEMPTS EXCEEDED
+```
+
+¬дР«е:
+
+```text
+Human Escalation
+«—ћ«Џ »е «д”«д
+```
+
+---
+
+# 33. YFG Bilingual Architecture Ч гЏг«—н ѕж“»«де
+
+YFG »«нѕ «“ «» ѕ« **Persian + English Native Architecture** ѕ«‘ е »«‘ѕ.
+
+нЏдн “»«д ЁёЎ  —ћге UI дн” .
+
+»«нѕ ‘«гб:
+
+* UI Localization Ч »жгнЭ”«“н —«»Ў
+* RTL/LTR Ч —«” Э»еЭНБ/НБЭ»еЭ—«” 
+* Metadata Localization Ч »жгнЭ”«“н Metadata
+* Entity Display Names Ч д«г дг«н‘н гжћжѕн Эе«
+* Validation Messages Ч Бн«гЭе«н «Џ »«—”дћн
+* Error Messages Ч Бн«гЭе«н ќЎ«
+* Documentation Ч г” дѕ« 
+* Reports Ч Р“«—‘Эе«
+* Help / Tooltip Ч —«едг«
+* Generated Documentation Ч г” дѕ«   жбнѕ‘ѕе
+
+»«‘ѕ.
+
+«г« Identityе«н ѕ«ќбн д»«нѕ »«  џнн— “»«д  џнн— Шддѕ.
+
+гЋб«р:
+
+```text
+EntityId
+RequirementId
+API
+Database Object
+Permission
+Relationship
+ArtifactId
+```
+
+Ћ«»  гнЭг«ддѕ.
+
+дгжде:
+
+```text
+Higher Layer
+б«не »«б« —
+
+Lower Layer
+б«не Б«нндЭ —
+```
+
+---
+
+# 34. Knowledge & Memory Ч ѕ«д‘ ж Ќ«Ёўе
+
+YFG »«нѕ ѕ«д‘ Б—жОе —« дРеѕ«—н Шдѕ:
+
+```text
+Project Knowledge
+       ?
+       ??? Requirements
+       ??? Architecture
+       ??? Decisions
+       ??? Code
+       ??? Tests
+       ??? Documentation
+       ??? Policies
+       ??? History
+```
+
+Agent ћѕнѕ »«нѕ ё»б «“ «дћ«г Ш«—° Context г—»жЎ »е Б—жОе —« ѕ—н«Ё  Шдѕ.
+
+---
+
+# 35. Decision Records Ч Ћ»   ’гнг« 
+
+ ’гнг«  гег »«нѕ »еЭ’ж—  —”гн Ћ»  ‘ждѕ.
+
+гЋб«р:
+
+```text
+ADR-001
+
+Decision:
+Use SQL Server
+
+Reason:
+Enterprise ERP requirement
+
+Status:
+Approved
+
+Approved By:
+Human Product Owner
+```
+
+«нд «Ўб«Џ«  »Џѕ«р »—«н Agentе« ё«»б «” Ё«ѕе ќж«еѕ »жѕ.
+
+---
+
+# 36. Project State Ч ж÷Џн  Б—жОе
+
+YFG »«нѕ егн‘е »ѕ«дѕ:
+
+```text
+Current Stage
+г—Ќбе ЁЏбн
+
+Current Version
+д”ќе ЁЏбн
+
+Current Artifact
+ќ—жћн ЁЏбн
+
+Pending Verification
+гж«—ѕ ѕ— «д ў«— —«” нЭ¬“г«нн
+
+Pending Approval
+гж«—ѕ ѕ— «д ў«—  √ннѕ
+
+Failed Tasks
+жў«нЁ д«гжЁё
+
+Blocked Tasks
+жў«нЁ г”ѕжѕ
+
+Release Status
+ж÷Џн  «д ‘«—
+```
+
+---
+
+# 37. Project Lifecycle Ч Н—ќе Џг— Б—жОе
+
+```text
+IDEA
+«нѕе
+ ?
+DISCOVERY
+Ш‘Ё ж »——”н
+ ?
+REQUIREMENTS
+дн«“гдѕнЭе«
+ ?
+ARCHITECTURE
+гЏг«—н
+ ?
+DESIGN
+Ў—«Ќн
+ ?
+IMPLEMENTATION
+Бн«ѕеЭ”«“н
+ ?
+VERIFICATION
+—«” нЭ¬“г«нн
+ ?
+TESTING
+¬“гжд
+ ?
+SECURITY
+«гдн 
+ ?
+DOCUMENTATION
+г” дѕ”«“н
+ ?
+RELEASE
+«д ‘«—
+ ?
+DEPLOYMENT
+«” ё—«—
+ ?
+MONITORING
+Б«н‘
+ ?
+MAINTENANCE
+дРеѕ«—н
+ ?
+EVOLUTION
+ ж”Џе д”ќеЭе«н »Џѕн
+```
+
+---
+
+# 38. Core Architecture Layers Ч б«неЭе«н гЏг«—н «’бн
+
+гЏг«—н де«нн YFG —« гнЭ ж«д ѕ— 10 б«не «’бн  Џ—нЁ Ш—ѕ:
+
+```text
+Layer 01
+Human & Governance
+«д”«д ж Ќ«Шгн 
+
+Layer 02
+Control Center
+г—Ш“ Шд —б
+
+Layer 03
+Orchestration
+ег«едРЭ”«“н Agentе«
+
+Layer 04
+Agent Intelligence
+еж‘ Agentе«
+
+Layer 05
+Verification & Quality
+—«” нЭ¬“г«нн ж ШнЁн 
+
+Layer 06
+Engineering Environment
+гЌнЎ гедѕ”н
+
+Layer 07
+Artifacts & Traceability
+ќ—жћнЭе« ж —ѕн«»н
+
+Layer 08
+Security & Governance
+«гдн  ж Ќ«Шгн 
+
+Layer 09
+Deployment & Operations
+«” ё—«— ж Џгбн« 
+
+Layer 10
+Knowledge & Documentation
+ѕ«д‘ ж г” дѕ« 
+```
+
+---
+
+# 39. Final Architecture Model Ч гѕб де«нн
+
+```text
+???????????????????????????????????????????????????????????????
+?                    HUMAN GOVERNANCE                         ?
+?                  Ќ«Шгн  ж  ’гнгЭРн—н «д”«дн                ?
+???????????????????????????????????????????????????????????????
+                             ?
+                             ?
+???????????????????????????????????????????????????????????????
+?                     YFG CONTROL CENTER                      ?
+?                         г—Ш“ Шд —б YFG                      ?
+???????????????????????????????????????????????????????????????
+                             ?
+                             ?
+???????????????????????????????????????????????????????????????
+?                    AI ORCHESTRATOR                          ?
+?                 ег«едРЭШддѕе г—Ш“н Agentе«                 ?
+???????????????????????????????????????????????????????????????
+                             ?
+              ???????????????????????????????
+              ?              ?              ?
+         PRODUCT         BUSINESS       ARCHITECTURE
+          AGENTS          AGENTS           AGENTS
+              ?              ?              ?
+              ???????????????????????????????
+                             ?
+                    ENGINEERING AGENTS
+                             ?
+              ???????????????????????????????
+              ?              ?              ?
+           BACKEND        FRONTEND       DATABASE
+              ?              ?              ?
+              ???????????????????????????????
+                             ?
+                    INTEGRATION AGENT
+                             ?
+                             ?
+                 INDEPENDENT VERIFICATION
+                       —«” нЭ¬“г«нн г” ёб
+                             ?
+                             ?
+                      QUALITY GATE
+                       ѕ—ж«“е ШнЁн 
+                       ?          ?
+                     PASS        FAIL
+                       ?          ?
+                       ?          ?
+                       ?        REWORK
+                       ?          ?
+                       ?          ????????
+                       ?                 ?
+                       ???????????????????
+                             ?
+                             ?
+                           QA
+                             ?
+                             ?
+                         SECURITY
+                             ?
+                             ?
+                       CODE REVIEW
+                             ?
+                             ?
+                      DOCUMENTATION
+                             ?
+                             ?
+                         TRAINING
+                             ?
+                             ?
+                    RELEASE VERIFICATION
+                             ?
+                             ?
+                    HUMAN APPROVAL GATE
+                             ?
+                         APPROVED
+                             ?
+                             ?
+                       DEPLOYMENT
+                             ?
+                             ?
+                        MONITORING
+                             ?
+                             ?
+                       INCIDENT AI
+                             ?
+                             ?
+                     HUMAN DECISION
+```
+
+---
+
+# 40. Core Governance Loop Ч Ќбёе Ќ«Шгн  «’бн
+
+ё«джд »дн«ѕн Шб ”н” г:
+
+```text
+CREATE
+ ?
+VERIFY
+ ?
+VALIDATE
+ ?
+APPROVE
+ ?
+EXECUTE
+ ?
+AUDIT
+ ?
+MONITOR
+ ?
+ROLLBACK / IMPROVE
+```
+
+н« »е Ё«—”н:
+
+```text
+«нћ«ѕ
+ ?
+—«” нЭ¬“г«нн
+ ?
+«Џ »«—”дћн
+ ?
+ √ннѕ
+ ?
+«ћ—«
+ ?
+Ћ»  ”ж«»ё
+ ?
+Б«н‘
+ ?
+»«“Р‘  н« »е»жѕ
+```
+
+---
+
+# 41. YFG Core Rules Ч ёж«днд Б«не YFG
+
+### Rule 01
+
+**No Agent Output Is Trusted by Default.**
+
+енН ќ—жћн Agent »еЭ’ж—  Бн‘ЭЁ—÷ ё«»б «Џ г«ѕ дн” .
+
+### Rule 02
+
+**No Material Artifact Moves Forward Without Verification.**
+
+енН Artifact гегн »ѕжд —«” нЭ¬“г«нн »е г—Ќбе »Џѕ гд ёб дгнЭ‘жѕ.
+
+### Rule 03
+
+**Failed Work Must Enter a Controlled Rework Loop.**
+
+Ш«— —ѕ‘ѕе »«нѕ ж«—ѕ Н—ќе «’б«Ќ Шд —бЭ‘ѕе ‘жѕ.
+
+### Rule 04
+
+**Critical Actions Require Human Approval.**
+
+Џгбн«  Ќ”«” дн«“гдѕ  √ннѕ «д”«дн «” .
+
+### Rule 05
+
+**Every Material Change Must Be Traceable.**
+
+е—  џнн— гег »«нѕ ё«»б —ѕн«»н »«‘ѕ.
+
+### Rule 06
+
+**Every Material Change Must Be Reversible.**
+
+е—  џнн— гег »«нѕ ё«»б »«“Р‘  »«‘ѕ.
+
+### Rule 07
+
+**Agents Operate Under Least Privilege.**
+
+Agentе« »« Ќѕ«ёб ”ЎЌ ѕ” —”н ЁЏ«бн  гнЭШддѕ.
+
+### Rule 08
+
+**Production Is Never the Default Workspace.**
+
+Production е—Р“ гЌнЎ Бн‘ЭЁ—÷ Ш«— Agent дн” .
+
+### Rule 09
+
+**Verification Must Be Independent From Generation.**
+
+—«” нЭ¬“г«нн »«нѕ «“  жбнѕ г” ёб »«‘ѕ.
+
+### Rule 10
+
+**Human Authority Cannot Be Bypassed.**
+
+енН Agent н« Ё—¬ндѕн гћ«“ »е ѕж— “ѕд «ќ н«— «д”«дн дн” .
+
+---
+
+# 42. Final Definition Ч  Џ—нЁ де«нн
+
+## YFG AI Software Factory
+
+**English:**
+
+> A Human-Governed, Verification-Driven, Traceable AI Software Engineering Platform that transforms human product intent into validated, secure, documented, deployable, and maintainable software through coordinated specialized AI agents.
+
+**Ё«—”н:**
+
+> **Бб Ё—г гедѕ”н д—гЭ«Ё“«— г» дн »— еж‘ г’джЏн YFG° нШ Бб Ё—г  Ќ  Ќ«Шгн  «д”«д° г» дн »— —«” нЭ¬“г«нн ж Ш«гб«р ё«»б —ѕн«»н «”  Ше еѕЁ ж ќж«” е гЌ’жб «—«∆еЭ‘ѕе  ж”Ў «д”«д —« «“ Ў—нё ег«едРн гћгжЏеЭ«н «“ Agentе«н  ќ’’н еж‘ г’джЏн »е д—гЭ«Ё“«—н «Џ »«—”дћнЭ‘ѕе° «гд° г” дѕ° ё«»б «” ё—«— ж ё«»б дРеѕ«—н  »ѕнб гнЭШдѕ.**
+
+---
+
+# 43. Final Strategic Position Ч ћ«нР«е —«е»—ѕн
+
+YFG ѕ— «нд гЏг«—н ѕнР— ЁёЎ:
+
+**AI Agent Platform Ч Бб Ё—г Agentе«н еж‘ г’джЏн**
+
+дн” .
+
+ж ЁёЎ:
+
+**Software Generator Ч  жбнѕШддѕе д—гЭ«Ё“«—**
+
+ег дн” .
+
+»бШе:
+
+# **AI Engineering Organization**
+
+## **”«“г«д гедѕ”н д—гЭ«Ё“«— г» дн »— еж‘ г’джЏн**
+
+«” .
+
+»« ”е «’б »дн«ѕнд:
+
+```text
+HUMAN GOVERNANCE
+Ќ«Шгн  «д”«д
+
++
+INDEPENDENT VERIFICATION
+—«” нЭ¬“г«нн г” ёб
+
++
+FULL TRACEABILITY
+—ѕн«»н Ш«гб
+```
+
+ж е” е џн—ё«»б Ќ–Ё:
+
+```text
+Git
++
+Sandbox
++
+Test Environment
++
+Artifact / Traceability
++
+Audit Log
++
+Rollback
++
+Human Approval Gate
++
+Verification
++
+Quality Gates
++
+Orchestration
+```
+
+Ше »«нѕ «“ **д”ќе ’Ё— YFG** жћжѕ ѕ«‘ е »«‘ѕ° де «ндШе ѕ— д”ќеЭе«н ¬ндѕе »е ”н” г «÷«Ёе ‘жѕ.

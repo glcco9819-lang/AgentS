@@ -1,0 +1,1150 @@
+Èáå. ÈÇ ÊæÌå Èå ÊÕãíãÇÊ ÌÏíÏ¡ **Phase 2 äÈÇíÏ ÕÑİÇğ «Agent Registry» ÈÇÔÏ**. ÇÑ Phase 1 ÑÇ Foundation & Governance ÏÑ äÙÑ ÈíÑíã¡ Phase 2 ÈÇíÏ Çæáíä áÇíåÇí ÈÇÔÏ ˜å Çíä Foundation ÑÇ Èå **ŞÇÈáíÊ æÇŞÚí ãÏíÑíÊ æ ÇÌÑÇí AgentåÇ** ÊÈÏíá ãí˜äÏ.
+
+# YFG — Phase 2
+
+## Agent Contract, Identity, Capability & Registry
+
+### ŞÑÇÑÏÇÏ¡ åæíÊ¡ ŞÇÈáíÊ æ Registry ãÑÈæØ Èå AgentåÇ
+
+**åÏİ Phase 2:**
+
+> ÇíÌÇÏ ÒíÑÓÇÎÊ ÑÓãí¡ ãÇÔíäÎæÇä¡ äÓÎåĞíÑ æ ŞÇÈá˜äÊÑá ÈÑÇí ÊÚÑíİ¡ ËÈÊ¡ ÇÍÑÇÒ åæíÊ¡ ÊÎÕíÕ ŞÇÈáíÊ¡ ÇÚØÇí ãÌæÒ æ ãÏíÑíÊ ÑÎå ÚãÑ AgentåÇº ÈåæäåÇí ˜å åí Agent ÎÇÑÌ ÇÒ Contract¡ Identity¡ Capability æ Policy ÎæÏ äÊæÇäÏ ÏÑ YFG İÚÇáíÊ ˜äÏ.
+
+---
+
+# 1. ÌÇíÇå Phase 2 ÏÑ ãÚãÇÑí ˜á YFG
+
+```text
+                    HUMAN
+                      ?
+                      ?
+             ???????????????????
+             ? PHASE 1         ?
+             ? FOUNDATION      ?
+             ? & GOVERNANCE    ?
+             ???????????????????
+                      ?
+                      ?
+             ???????????????????
+             ? PHASE 2         ?
+             ? AGENT CONTRACT  ?
+             ? IDENTITY        ?
+             ? CAPABILITY      ?
+             ? REGISTRY        ?
+             ???????????????????
+                      ?
+                      ?
+             ???????????????????
+             ? PHASE 3         ?
+             ? ORCHESTRATION   ?
+             ? & WORKFLOW      ?
+             ???????????????????
+                      ?
+                      ?
+             ???????????????????
+             ? PHASE 4         ?
+             ? VERIFICATION    ?
+             ? & QUALITY       ?
+             ???????????????????
+```
+
+ÈäÇÈÑÇíä:
+
+**Phase 1 ãíæíÏ YFG å ŞæÇäíäí ÏÇÑÏ.**
+
+**Phase 2 ãíæíÏ Agent íÓÊ æ ÏŞíŞÇğ ÊÍÊ å ÔÑÇíØí ÇÌÇÒå İÚÇáíÊ ÏÇÑÏ.**
+
+**Phase 3 ãíæíÏ AgentåÇ æäå ÈÇ åã ˜ÇÑ ãí˜ääÏ.**
+
+**Phase 4 ãíæíÏ ÎÑæÌí ÂäåÇ æäå ãÓÊŞá ÈÑÑÓí ãíÔæÏ.**
+
+---
+
+# 2. ÇÕá ÈäíÇÏíä Phase 2
+
+ãåãÊÑíä ŞÇäæä:
+
+> **No Contract ? No Agent Execution**
+
+æ ŞæÇäíä ã˜ãá:
+
+```text
+No Identity
+      ?
+No Execution
+
+No Contract
+      ?
+No Execution
+
+No Capability
+      ?
+No Action
+
+No Permission
+      ?
+No Tool Access
+
+No Policy Authorization
+      ?
+Action Denied
+
+Expired Contract
+      ?
+Execution Denied
+
+Unverified Contract
+      ?
+Activation Denied
+```
+
+---
+
+# 3. ãÚãÇÑí ÑÓãí Phase 2
+
+```text
+                         HUMAN
+                           ?
+                           ?
+                  Governance / Policy
+                           ?
+                           ?
+              ???????????????????????????
+              ?     AGENT CONTROL       ?
+              ?         PLANE           ?
+              ???????????????????????????
+                           ?
+       ?????????????????????????????????????????
+       ?                   ?                   ?
+       ?                   ?                   ?
+ Agent Registry      Contract Registry    Capability Registry
+       ?                   ?                   ?
+       ?????????????????????????????????????????
+                           ?
+                           ?
+                  Identity Service
+                           ?
+                           ?
+                  Permission Service
+                           ?
+                           ?
+                   Policy Evaluation
+                           ?
+                           ?
+                 Agent Runtime Context
+                           ?
+                           ?
+                 ?????????????????????
+                 ?   AGENT EXECUTION ?
+                 ?????????????????????
+                           ?
+              ???????????????????????????
+              ?            ?            ?
+            Tools       Models       Workspace
+              ?            ?            ?
+              ???????????????????????????
+                           ?
+                    Audit / Evidence
+```
+
+Çíä ŞÓãÊ ÈÓíÇÑ ãåã ÇÓÊ:
+
+### Agent Registry ÈÇ Agent Runtime í˜í äíÓÊ.
+
+Registry İŞØ ãíæíÏ:
+
+> å AgentåÇíí æÌæÏ ÏÇÑäÏ æ Contract ÂäåÇ íÓÊ.
+
+Runtime ãíæíÏ:
+
+> Çíä Agent ÇáÂä ÈÇ å Identity¡ Permission¡ Context¡ Model æ Environmentí ÏÑ ÍÇá ÇÌÑÇÓÊ.
+
+---
+
+# 4. Agent Model
+
+åÑ Agent ÈÇíÏ í˜ ãæÌæÏíÊ ÑÓãí YFG ÈÇÔÏ.
+
+```text
+Agent
+??? Agent ID
+??? Name
+??? Type
+??? Version
+??? Contract Version
+??? Owner
+??? Status
+??? Mission
+??? Scope
+??? Capabilities
+??? Permissions
+??? Tools
+??? Models
+??? Environments
+??? Supported Platforms
+??? Inputs
+??? Outputs
+??? Constraints
+??? Policies
+??? Acceptance Criteria
+??? Verification Requirements
+??? Escalation Rules
+??? Resource Limits
+??? Security Requirements
+??? Audit Requirements
+```
+
+ãËáÇğ:
+
+```text
+AGENT-BACKEND-001
+
+Type:
+Backend Development Agent
+
+Capabilities:
+- API Development
+- Service Development
+- Unit Test Generation
+
+Technologies:
+- ASP.NET Core
+- Node.js
+
+Platforms:
+- Windows
+- Linux
+- Container
+
+Permissions:
+- READ source
+- WRITE authorized backend paths
+- EXECUTE dotnet build
+- EXECUTE dotnet test
+
+Forbidden:
+- Production database
+- Production deployment
+- Secret extraction
+```
+
+---
+
+# 5. Agent Contract
+
+Çíä ãåãÊÑíä Artifact Phase 2 ÇÓÊ.
+
+```text
+Agent Contract
+?
+??? Identity
+??? Mission
+??? Scope
+??? Inputs
+??? Outputs
+??? Capabilities
+??? Tools
+??? Models
+??? Permissions
+??? Environments
+??? Platform Support
+??? Constraints
+??? Policies
+??? Acceptance Criteria
+??? Verification
+??? Retry
+??? Timeout
+??? Resource Budget
+??? Escalation
+??? Security
+??? Audit
+??? Rollback
+??? Dependencies
+??? Failure Conditions
+```
+
+Contract ÈÇíÏ:
+
+* Machine-readable
+* Versioned
+* Immutable after activation
+* Auditable
+* Verifiable
+* Human-approvable
+
+ÈÇÔÏ.
+
+---
+
+# 6. Agent Identity
+
+åÑ Agent ÈÇíÏ Identity ãÓÊŞá ÏÇÔÊå ÈÇÔÏ.
+
+```text
+Human Identity
+      ?
+      ?
+Agent Identity
+      ?
+      ?
+Service Identity
+      ?
+      ?
+Tool Identity
+```
+
+ãËáÇğ:
+
+```text
+AGENT-BACKEND-001
+CONTRACT-v1.4
+```
+
+æ åÑ ÇŞÏÇã ËÈÊ ÔæÏ:
+
+```text
+Actor:
+AGENT-BACKEND-001
+
+Contract:
+v1.4
+
+Action:
+WRITE_FILE
+
+Resource:
+/Project/API/UsersController.cs
+
+Permission:
+WRITE_SOURCE
+
+Policy:
+POL-014
+
+Result:
+ALLOWED
+```
+
+---
+
+# 7. Capability Model
+
+Capability ÈÇ Permission í˜í äíÓÊ.
+
+### Capability
+
+Agent **å ˜ÇÑí ÈáÏ ÇÓÊ¿**
+
+ãËáÇğ:
+
+```text
+CAP-API-DESIGN
+CAP-CODE-GENERATION
+CAP-UNIT-TEST
+CAP-DB-MIGRATION
+CAP-SECURITY-SCAN
+```
+
+### Permission
+
+Agent **å ˜ÇÑí ÇÌÇÒå ÏÇÑÏ ÇäÌÇã ÏåÏ¿**
+
+ãËáÇğ:
+
+```text
+READ_FILE
+WRITE_FILE
+EXECUTE_COMMAND
+READ_DATABASE
+WRITE_DATABASE
+CREATE_BRANCH
+CREATE_RELEASE
+DEPLOY
+```
+
+Çíä Êİ˜í˜ ÈÓíÇÑ ãåã ÇÓÊ.
+
+ãã˜ä ÇÓÊ:
+
+```text
+Agent Capability:
+DB Migration
+
+Permission:
+Development DB only
+```
+
+íÚäí Agent ÊæÇäÇíí Migration ÏÇÑÏ¡ æáí ÇÌÇÒå äÏÇÑÏ Âä ÑÇ Ñæí Production ÇÌÑÇ ˜äÏ.
+
+---
+
+# 8. Tool Access Architecture
+
+Agent äÈÇíÏ ãÓÊŞíã Èå ÓíÓÊãÚÇãá ÏÓÊÑÓí ÏÇÔÊå ÈÇÔÏ.
+
+```text
+AGENT
+  ?
+  ?
+Tool Request
+  ?
+  ?
+Permission Check
+  ?
+  ?
+Policy Check
+  ?
+  ?
+Environment Check
+  ?
+  ?
+Sandbox
+  ?
+  ?
+Tool
+  ?
+  ?
+Result
+  ?
+  ?
+Audit
+```
+
+ãËáÇğ:
+
+```text
+Agent
+ ?
+"dotnet build"
+ ?
+Tool Gateway
+ ?
+Allowed?
+ ?
+Development Workspace?
+ ?
+YES
+ ?
+Execute
+```
+
+æáí:
+
+```text
+Agent
+ ?
+"DROP DATABASE Production"
+ ?
+Tool Gateway
+ ?
+Policy
+ ?
+DENIED
+```
+
+---
+
+# 9. Model Gateway
+
+ÇÒ ÂäÌÇ ˜å YFG ŞÑÇÑ ÇÓÊ Èå äÏ AI ãÊÕá ÔæÏ¡ Phase 2 ÈÇíÏ Çíä ÇÑÊÈÇØ ÑÇ åã ÊÚÑíİ ˜äÏ.
+
+```text
+Agent
+  ?
+  ?
+Model Request
+  ?
+  ?
+YFG Model Gateway
+  ?
+  ??? Cloud Model A
+  ??? Cloud Model B
+  ??? Cloud Model C
+  ??? Local Model
+  ??? Specialized Model
+```
+
+Agent äÈÇíÏ ãÓÊŞíãÇğ Provider ÑÇ ˜äÊÑá ˜äÏ.
+
+ãËáÇğ:
+
+```text
+Backend Agent
+     ?
+     ?
+Model Gateway
+     ?
+     ??? Model A
+     ??? Model B
+```
+
+æ YFG ÈÑ ÇÓÇÓ Policy ÊÕãíã ãííÑÏ ˜ÏÇã Model ãÌÇÒ ÇÓÊ.
+
+---
+
+# 10. Multi-Platform Capability
+
+ÈÇ ÊÕãíã ÌÏíÏãÇä¡ Phase 2 ÈÇíÏ Platform ÑÇ åã ÈÔäÇÓÏ.
+
+```text
+Agent
+?
+??? Capabilities
+??? Technologies
+??? Target Platforms
+??? Environment Access
+```
+
+ãËáÇğ:
+
+```text
+WINDOWS-DESKTOP-AGENT
+
+Platforms:
+Windows x64
+Windows ARM64
+
+Technologies:
+.NET
+WPF
+WinUI
+.NET MAUI
+
+Tools:
+Visual Studio / dotnet CLI / MSBuild
+```
+
+íÇ:
+
+```text
+ANDROID-AGENT
+
+Platforms:
+Android
+
+Technologies:
+Kotlin
+Android SDK
+
+Tools:
+Gradle
+Android SDK
+ADB
+```
+
+---
+
+# 11. Agent Lifecycle
+
+åÑ Agent ÑÎå ÚãÑ ãÔÎÕ ÏÇÑÏ:
+
+```text
+DRAFT
+  ?
+DESIGNED
+  ?
+CONTRACTED
+  ?
+VERIFIED
+  ?
+HUMAN APPROVED
+  ?
+REGISTERED
+  ?
+ACTIVE
+  ?
+SUSPENDED
+  ?
+DEPRECATED
+  ?
+RETIRED
+```
+
+Agent äÈÇíÏ ãÓÊŞíãÇğ ÇÒ:
+
+```text
+DRAFT ? ACTIVE
+```
+
+ÈÑæÏ.
+
+---
+
+# 12. Contract Lifecycle
+
+```text
+Contract Draft
+      ?
+Contract Validation
+      ?
+Security Review
+      ?
+Capability Review
+      ?
+Policy Review
+      ?
+Independent Verification
+      ?
+Human Approval
+      ?
+Version Activation
+```
+
+æ:
+
+```text
+Agent Contract v1.0
+       ?
+Change Request
+       ?
+v1.1 Draft
+       ?
+Verification
+       ?
+Human Approval
+       ?
+v1.1 Active
+```
+
+äÓÎå ŞÈáí äÈÇíÏ äÇÈæÏ ÔæÏ.
+
+---
+
+# 13. Agent-to-Agent Communication
+
+Çíä ŞÓãÊ Çíå Phase 3 ÎæÇåÏ ÈæÏ¡ ÇãÇ Contract Âä ÈÇíÏ ÏÑ Phase 2 ÊÚÑíİ ÔæÏ.
+
+Agent äÈÇíÏ ÂÒÇÏÇäå åÑ íÒí ÈÑÇí åÑ Agentí ÈİÑÓÊÏ.
+
+```text
+Agent A
+   ?
+   ?
+Handoff Request
+   ?
+   ?
+Contract Check
+   ?
+   ?
+Input Schema Validation
+   ?
+   ?
+Permission Check
+   ?
+   ?
+Agent B
+```
+
+ãËáÇğ:
+
+```text
+Architect Agent
+      ?
+      ?
+ARCH-021
+      ?
+      ?
+Backend Agent
+```
+
+Backend Agent İŞØ ArtifactåÇíí ÑÇ ÏÑíÇİÊ ãí˜äÏ ˜å Contract Âä ÇÌÇÒå ÏÇÏå ÇÓÊ.
+
+---
+
+# 14. Agent Context
+
+åÑ Agent ÈÇíÏ Context ˜äÊÑáÔÏå ÏÇÔÊå ÈÇÔÏ.
+
+```text
+Agent Context
+??? Project
+??? Requirements
+??? Approved Architecture
+??? Relevant Artifacts
+??? Policies
+??? Previous Decisions
+??? Task
+??? Constraints
+??? Allowed Tools
+```
+
+äå Çíä˜å ˜á Ñæå æ ÊãÇã ÇØáÇÚÇÊ ÈÏæä ãÍÏæÏíÊ ÏÑ ÇÎÊíÇÑ Agent ŞÑÇÑ íÑÏ.
+
+Çíä ÈÑÇí:
+
+* Security
+* Cost
+* Accuracy
+* Privacy
+* Context Management
+
+ÈÓíÇÑ ãåã ÇÓÊ.
+
+---
+
+# 15. Agent Resource Budget
+
+åÑ Agent ÈÇíÏ Resource Limit ÏÇÔÊå ÈÇÔÏ:
+
+```text
+Max Tokens
+Max Runtime
+Max Retries
+Max Tool Calls
+Max CPU
+Max Memory
+Max Cost
+Max Parallel Tasks
+```
+
+ãËáÇğ:
+
+```text
+Backend Agent
+
+Max Retry: 3
+Max Runtime: 20 min
+Max Tool Calls: 100
+Max AI Budget: $X
+```
+
+ÇÑ ÇÒ Limit ÚÈæÑ ˜ÑÏ:
+
+```text
+Agent
+ ?
+Resource Limit
+ ?
+STOP
+ ?
+Escalate
+```
+
+---
+
+# 16. Agent Failure Model
+
+Phase 2 ÈÇíÏ Failure Condition ÑÇ äíÒ ÊÚÑíİ ˜äÏ.
+
+```text
+FAILURE
+?
+??? Timeout
+??? Tool Failure
+??? Model Failure
+??? Invalid Output
+??? Contract Violation
+??? Permission Denied
+??? Security Violation
+??? Resource Limit
+??? Verification Failure
+??? Dependency Failure
+```
+
+æ ÎÑæÌí:
+
+```text
+Failure
+ ?
+Audit
+ ?
+Classify
+ ?
+Retry / Rework / Escalate
+```
+
+---
+
+# 17. Agent Registry
+
+Registry ŞáÈ Phase 2 ÇÓÊ.
+
+ÈÇíÏ ÈÊæÇäíã ÈÑÓíã:
+
+> å AgentåÇíí ÏÑ YFG æÌæÏ ÏÇÑäÏ¿
+
+ãËáÇğ:
+
+```text
+Agent Registry
+?
+??? Product Manager Agent
+??? Business Analyst Agent
+??? Architect Agent
+??? UX Agent
+??? Database Agent
+??? Backend Agent
+??? Frontend Agent
+??? Windows Agent
+??? Android Agent
+??? QA Agent
+??? Security Agent
+??? Documentation Agent
+??? Verification Agents
+```
+
+ÈÑÇí åÑ˜ÏÇã:
+
+```text
+ID
+Version
+Contract
+Capabilities
+Tools
+Models
+Permissions
+Platforms
+Status
+Verification Status
+Approval Status
+```
+
+---
+
+# 18. Agent Registry äÈÇíÏ İŞØ í˜ ÌÏæá ÓÇÏå ÈÇÔÏ
+
+ÈåÊÑ ÇÓÊ Registry ÔÇãá Çíä Sub-RegistryåÇ ÈÇÔÏ:
+
+```text
+                    AGENT REGISTRY
+                         ?
+        ???????????????????????????????????
+        ?                ?                ?
+        ?                ?                ?
+ Agent Registry    Contract Registry   Capability Registry
+        ?                ?                ?
+        ?                ?                ?
+ Identity Registry   Tool Registry    Model Registry
+        ?                ?                ?
+        ???????????????????????????????????
+                         ?
+                  Permission Registry
+```
+
+---
+
+# 19. ãÏá ÏÇÏå Phase 2
+
+ãæÌæÏíÊåÇí ÇÕáí:
+
+```text
+Agent
+AgentVersion
+AgentContract
+ContractVersion
+AgentIdentity
+Capability
+CapabilityVersion
+Permission
+Tool
+ToolVersion
+ModelProvider
+Model
+ModelVersion
+AgentToolBinding
+AgentModelBinding
+AgentCapabilityBinding
+AgentPermissionBinding
+AgentPlatformBinding
+AgentEnvironmentBinding
+AgentDependency
+AgentPolicyBinding
+AgentFailureRule
+AgentResourcePolicy
+AgentHandoffPolicy
+AgentApproval
+AgentAudit
+```
+
+---
+
+# 20. Traceability ÏÑ Phase 2
+
+ãËáÇğ:
+
+```text
+AGENT-BACKEND-001
+        ?
+        ?
+CONTRACT-014 v1.3
+        ?
+        ?
+CAP-API-DEVELOPMENT
+        ?
+        ?
+PERMISSION-028
+        ?
+        ?
+TOOL-DOTNET-CLI
+        ?
+        ?
+MODEL-XYZ v5
+        ?
+        ?
+PROJECT-001
+```
+
+ÈäÇÈÑÇíä ÈÚÏÇğ ãíÊæÇäíã Èİåãíã:
+
+> Çíä ˜Ï ÊæÓØ ˜ÏÇã Agent¡ ÈÇ ˜ÏÇã Contract¡ ÈÇ ˜ÏÇã Model¡ ÈÇ å Permission æ ÈÇ å Tool ÊæáíÏ ÔÏå ÇÓÊ¿
+
+Çíä ÏŞíŞÇğ ÈÑÇí Traceability YFG ÍíÇÊí ÇÓÊ.
+
+---
+
+# 21. Deliverables ÑÓãí Phase 2
+
+ãä Phase 2 ÑÇ ÈÇ Çíä DeliverableåÇ ÊÚÑíİ ãí˜äã:
+
+| ID  | Deliverable                     |
+| --- | ------------------------------- |
+| D01 | Agent Architecture              |
+| D02 | Agent Model                     |
+| D03 | Agent Contract Specification    |
+| D04 | Agent Identity Model            |
+| D05 | Capability Model                |
+| D06 | Permission Model                |
+| D07 | Tool Registry                   |
+| D08 | Model Gateway Specification     |
+| D09 | Platform Capability Model       |
+| D10 | Agent Registry Specification    |
+| D11 | Agent Lifecycle Model           |
+| D12 | Contract Lifecycle Model        |
+| D13 | Agent Context Model             |
+| D14 | Agent-to-Agent Handoff Contract |
+| D15 | Resource & Budget Model         |
+| D16 | Failure & Escalation Model      |
+| D17 | Agent Audit Model               |
+| D18 | Agent Security Baseline         |
+| D19 | Phase 2 API/Event Contracts     |
+| D20 | Initial Agent Definitions       |
+
+---
+
+# 22. Initial Agents
+
+ÈÑÇí Çíä˜å Phase 2 ÕÑİÇğ ÊÆæÑí äÈÇÔÏ¡ äÏ Agent Çíå ÊÚÑíİ ãí˜äíã:
+
+```text
+AGENT-001 Product Manager
+AGENT-002 Business Analyst
+AGENT-003 Solution Architect
+AGENT-004 UX/UI
+AGENT-005 Database Architect
+AGENT-006 Backend Developer
+AGENT-007 Frontend Developer
+AGENT-008 Windows Developer
+AGENT-009 Android Developer
+AGENT-010 QA
+AGENT-011 Security
+AGENT-012 Documentation
+AGENT-013 Code Reviewer
+AGENT-014 Independent Verification
+```
+
+ÇãÇ **Çíä AgentåÇ åäæÒ Workflow ííÏå ÇÌÑÇ äãí˜ääÏ**º Âä ÈÎÔ æÇÑÏ Phase 3 ãíÔæÏ.
+
+---
+
+# 23. Acceptance Criteria Phase 2
+
+Phase 2 ÒãÇäí ˜Çãá ÇÓÊ ˜å:
+
+### AC-01
+
+åÑ Agent ÏÇÑÇí Unique ID ÈÇÔÏ.
+
+### AC-02
+
+åÑ Agent ÏÇÑÇí Version æ Contract Version ÈÇÔÏ.
+
+### AC-03
+
+Agent ÈÏæä Contract İÚÇá äÊæÇäÏ ÇÌÑÇ ÔæÏ.
+
+### AC-04
+
+Agent ÈÏæä Identity ãÚÊÈÑ äÊæÇäÏ Action ÇäÌÇã ÏåÏ.
+
+### AC-05
+
+Capabilities æ Permissions ÇÒ í˜ÏíÑ Êİ˜í˜ ÔÏå ÈÇÔäÏ.
+
+### AC-06
+
+åÑ Tool Access ÇÒ Permission æ Policy ÚÈæÑ ˜äÏ.
+
+### AC-07
+
+Agent äÊæÇäÏ Permission ÎæÏÔ ÑÇ ÇİÒÇíÔ ÏåÏ.
+
+### AC-08
+
+Agent äÊæÇäÏ Contract ÎæÏÔ ÑÇ ÊÛííÑ ÏåÏ.
+
+### AC-09
+
+Contract ÊÛííÑ íÇİÊå ÈÏæä Verification æ Human Approval İÚÇá äÔæÏ.
+
+### AC-10
+
+åÑ Agent ÈÊæÇäÏ Èå í˜ íÇ äÏ Model ãÊÕá ÔæÏ.
+
+### AC-11
+
+Model Provider ÇÒ Agent ÌÏÇ ÈÇÔÏ.
+
+### AC-12
+
+Platform Capability ÈÑÇí Agent ŞÇÈá ÊÚÑíİ ÈÇÔÏ.
+
+### AC-13
+
+Environment Access ŞÇÈá ÊÚÑíİ æ ãÍÏæÏÓÇÒí ÈÇÔÏ.
+
+### AC-14
+
+Agent-to-Agent Handoff ÏÇÑÇí Schema æ Policy ÈÇÔÏ.
+
+### AC-15
+
+Resource Budget ŞÇÈá ÇÚãÇá ÈÇÔÏ.
+
+### AC-16
+
+Failure æ Escalation ŞÇÈá ÊÚÑíİ ÈÇÔÏ.
+
+### AC-17
+
+ÊãÇã ActionåÇí ãåã Audit ÔæäÏ.
+
+### AC-18
+
+Agent Registry ÈÊæÇäÏ æÖÚíÊ ˜Çãá Agent ÑÇ ÇÑÇÆå ˜äÏ.
+
+### AC-19
+
+Agent Configuration ŞÇÈá Traceability ÈÇÔÏ.
+
+### AC-20
+
+ÍÏÇŞá AgentåÇí Çæáíå ËÈÊ¡ Verify æ ÈÑÇí ÇÓÊİÇÏå ÏÑ Phase 3 ÂãÇÏå ÔÏå ÈÇÔäÏ.
+
+---
+
+# 24. Phase 2 Exit Gate
+
+```text
+                 Phase 2 Work
+                       ?
+                       ?
+             Contract Verification
+                       ?
+                       ?
+              Identity Verification
+                       ?
+                       ?
+             Capability Verification
+                       ?
+                       ?
+              Permission Verification
+                       ?
+                       ?
+                Security Review
+                       ?
+                       ?
+             Platform Review
+                       ?
+                       ?
+            Registry Consistency
+                       ?
+                       ?
+             Human Architecture
+                   Approval
+                       ?
+                       ?
+                      PASS
+                       ?
+                       ?
+          YFG-AGENT-FOUNDATION v0.1
+```
+
+### GateåÇ:
+
+| Gate | ãæÖæÚ                              |
+| ---- | ---------------------------------- |
+| G1   | Agent Model Verification           |
+| G2   | Contract Verification              |
+| G3   | Identity & Permission Verification |
+| G4   | Security Review                    |
+| G5   | Tool/Model Boundary Review         |
+| G6   | Platform Capability Review         |
+| G7   | Registry Integrity Review          |
+| G8   | Traceability Review                |
+| G9   | Human Approval                     |
+| G10  | Baseline Freeze                    |
+
+---
+
+# 25. ÎÑæÌí äåÇíí Phase 2
+
+ÏÑ ÇíÇä ÈÇíÏ ÏÇÔÊå ÈÇÔíã:
+
+> **YFG-AGENT-FOUNDATION v0.1**
+
+˜å ÔÇãá Çíä ÒäÌíÑå ÈÇÔÏ:
+
+```text
+Agent
+ ?
+Identity
+ ?
+Contract
+ ?
+Capability
+ ?
+Permission
+ ?
+Tool
+ ?
+Model
+ ?
+Platform
+ ?
+Environment
+ ?
+Policy
+ ?
+Resource Limit
+ ?
+Audit
+ ?
+Approval
+```
+
+æ ÓÓ Phase 3 ãíÊæÇäÏ Ñæí Âä ÈäÇ ÔæÏ:
+
+```text
+Phase 2
+Agent Foundation
+       ?
+       ?
+Phase 3
+Orchestration & Workflow
+       ?
+       ?
+"å Agentí¡ å ÒãÇäí¡ ÈÇ å æÑæÏí¡ ÈÑÇí å ˜ÇÑí¡
+Èå å Agent ÏíÑí¡ ÈÇ å ÔÑÇíØí¡ Handoff ˜äÏ¿"
+```
+
+### ÎáÇÕå ãÚãÇÑí ÑÓãí
+
+**Phase 1 = ŞæÇäíä ÓÇÒãÇä**
+
+**Phase 2 = åæíÊ æ ŞÑÇÑÏÇÏ ˜ÇÑ˜äÇä ÓÇÒãÇä**
+
+**Phase 3 = ãÏíÑíÊ åã˜ÇÑí ˜ÇÑ˜äÇä**
+
+**Phase 4 = ˜äÊÑá ˜íİíÊ ãÓÊŞá ˜ÇÑ ˜ÇÑ˜äÇä**
+
+Çíä Êİ˜í˜ Èå äÙÑã ÈÑÇí YFG ÈÓíÇÑ ãåã ÇÓÊº æä ÇÑ Agent Contract¡ Identity¡ Permission æ Capability ÑÇ ŞÈá ÇÒ Orchestration ÏÑÓÊ ØÑÇÍí ˜äíã¡ ÈÚÏÇğ ãíÊæÇäíã ÊÚÏÇÏ AgentåÇ¡ ModelåÇ¡ IDEåÇ¡ PlatformåÇ æ ToolåÇ ÑÇ ÒíÇÏ ˜äíã ÈÏæä Çíä˜å åÓÊå YFG ÇÒ ˜äÊÑá ÎÇÑÌ ÔæÏ.

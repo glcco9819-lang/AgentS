@@ -1,0 +1,775 @@
+Èáå. **Agent Contract — ŞÑÇÑÏÇÏ Agent** ÈÇíÏ í˜í ÇÒ ÇÌÒÇí Core Architecture ÈÇÔÏº æä ÈÏæä ŞÑÇÑÏÇÏ¡ Orchestrator ÏŞíŞÇğ äãíÏÇäÏ åÑ Agent å íÒí ÏÑíÇİÊ ãí˜äÏ¡ å íÒí ÈÇíÏ ÊÍæíá ÏåÏ¡ å ÇÎÊíÇÑÇÊí ÏÇÑÏ¡ å ãÍÏæÏíÊåÇíí ÏÇÑÏ æ å ÒãÇäí ÎÑæÌí Çæ ãÚÊÈÑ ãÍÓæÈ ãíÔæÏ.
+
+Èå ãÚãÇÑí äåÇíí¡ í˜ áÇíå æ ãİåæã ÌÏíÏ ÇÖÇİå ãí˜äíã:
+
+# Agent Contract Layer — áÇíå ŞÑÇÑÏÇÏ AgentåÇ
+
+### ÊÚÑíİ
+
+> **Every Agent must operate under an explicit, machine-readable, versioned contract that defines its role, inputs, outputs, tools, permissions, constraints, acceptance criteria, verification requirements, and escalation rules.**
+
+### ÊÑÌãå:
+
+> **åÑ Agent ÈÇíÏ ÊÍÊ í˜ ŞÑÇÑÏÇÏ ÕÑíÍ¡ äÓÎåÈäÏíÔÏå æ ŞÇÈá ÑÏÇÒÔ ÊæÓØ ãÇÔíä İÚÇáíÊ ˜äÏ ˜å äŞÔ¡ æÑæÏíåÇ¡ ÎÑæÌíåÇ¡ ÇÈÒÇÑåÇ¡ ãÌæÒåÇ¡ ãÍÏæÏíÊåÇ¡ ãÚíÇÑåÇí ĞíÑÔ¡ ÇáÒÇãÇÊ ÑÇÓÊíÂÒãÇíí æ ŞæÇäíä ÇÑÌÇÚ Âä ÑÇ ãÔÎÕ ãí˜äÏ.**
+
+---
+
+# ÌÇíÇå Agent Contract ÏÑ ãÚãÇÑí
+
+ãÚãÇÑí Èå Çíä Ô˜á Ê˜ãíá ãíÔæÏ:
+
+```text
+                         HUMAN
+                           ?
+                           ?
+                  HUMAN GOVERNANCE
+                  ÍÇ˜ãíÊ ÇäÓÇäí
+                           ?
+                           ?
+                  YFG CONTROL CENTER
+                  ãÑ˜Ò ˜äÊÑá YFG
+                           ?
+                           ?
+                  AI ORCHESTRATOR
+                  åãÇåä˜ääÏå AgentåÇ
+                           ?
+                           ?
+                ??????????????????????
+                ? AGENT CONTRACT     ?
+                ? ŞÑÇÑÏÇÏ Agent      ?
+                ??????????????????????
+                          ?
+                          ?
+                     WORK AGENT
+                    ÚÇãá ÇÌÑÇ˜ääÏå
+                          ?
+                          ?
+                      ARTIFACT
+                   ÎÑæÌí ŞÇÈá ÑÏíÇÈí
+                          ?
+                          ?
+              INDEPENDENT VERIFICATION
+                  ÑÇÓÊíÂÒãÇíí ãÓÊŞá
+                          ?
+                          ?
+                    QUALITY GATE
+                    ÏÑæÇÒå ˜íİíÊ
+                    ?          ?
+                  PASS        FAIL
+                    ?          ?
+                    ?          ?
+                NEXT AGENT   REWORK
+```
+
+íÚäí **ŞÈá ÇÒ Çíä˜å Agent ˜ÇÑí ÑÇ ÔÑæÚ ˜äÏ¡ Contract Âä ÈÇíÏ ãÔÎÕ ÈÇÔÏ.**
+
+---
+
+# Agent Contract — ŞÑÇÑÏÇÏ ÇÓÊÇäÏÇÑÏ Agent
+
+åÑ Agent ÏÑ YFG ÈÇíÏ ÍÏÇŞá Çíä ãÔÎÕÇÊ ÑÇ ÏÇÔÊå ÈÇÔÏ:
+
+| English                | İÇÑÓí                      |
+| ---------------------- | -------------------------- |
+| Agent ID               | ÔäÇÓå Agent                |
+| Agent Name             | äÇã Agent                  |
+| Agent Type             | äæÚ Agent                  |
+| Version                | äÓÎå ŞÑÇÑÏÇÏ               |
+| Role                   | äŞÔ                        |
+| Mission                | ãÃãæÑíÊ                    |
+| Scope                  | ãÍÏæÏå İÚÇáíÊ              |
+| Inputs                 | æÑæÏíåÇ                   |
+| Outputs                | ÎÑæÌíåÇ                   |
+| Required Artifacts     | ÎÑæÌíåÇí ÇáÒÇãí           |
+| Tools                  | ÇÈÒÇÑåÇí ãÌÇÒ              |
+| Permissions            | ãÌæÒåÇ                     |
+| Resources              | ãäÇÈÚ ãÌÇÒ                 |
+| Constraints            | ãÍÏæÏíÊåÇ                 |
+| Policies               | ÓíÇÓÊåÇí ÍÇ˜ã             |
+| Acceptance Criteria    | ãÚíÇÑåÇí ĞíÑÔ             |
+| Verification Rules     | ŞæÇäíä ÑÇÓÊíÂÒãÇíí        |
+| Quality Gates          | ÏÑæÇÒååÇí ˜íİíÊ           |
+| Retry Policy           | ÓíÇÓÊ ÊáÇÔ ãÌÏÏ            |
+| Escalation Rules       | ŞæÇäíä ÇÑÌÇÚ               |
+| Human Approval         | ÇáÒÇãÇÊ ÊÃííÏ ÇäÓÇäí       |
+| Security Requirements  | ÇáÒÇãÇÊ ÇãäíÊí             |
+| Audit Requirements     | ÇáÒÇãÇÊ ËÈÊ ÓæÇÈŞ          |
+| Rollback Policy        | ÓíÇÓÊ ÈÇÒÔÊ               |
+| Dependencies           | æÇÈÓÊíåÇ                 |
+| Failure Conditions     | ÔÑÇíØ Ô˜ÓÊ                 |
+| SLA / Limits           | ãÍÏæÏíÊ ÒãÇäí æ ãäÇÈÚ      |
+| Knowledge Requirements | ÏÇäÔ ãæÑÏäíÇÒ              |
+| Handoff Rules          | ŞæÇäíä ÊÍæíá Èå Agent ÈÚÏí |
+
+---
+
+# 1. Agent Identity — åæíÊ Agent
+
+åÑ Agent ÈÇíÏ åæíÊ ÛíÑŞÇÈá ÇÈåÇã ÏÇÔÊå ÈÇÔÏ.
+
+ãËáÇğ:
+
+```text
+Agent ID:
+YFG-BE-001
+
+Name:
+Backend Development Agent
+
+Version:
+1.0.0
+
+Contract Version:
+1.0.0
+```
+
+ÈäÇÈÑÇíä ÏÑ Audit Log ãÔÎÕ ÇÓÊ ÏŞíŞÇğ ˜ÏÇã äÓÎå Agent ˜ÇÑ ÑÇ ÇäÌÇã ÏÇÏå ÇÓÊ.
+
+---
+
+# 2. Role — äŞÔ
+
+ŞÑÇÑÏÇÏ ãÔÎÕ ãí˜äÏ Agent **å äŞÔí ÏÇÑÏ**.
+
+ãËáÇğ:
+
+> Backend Development Agent ãÓÆæá íÇÏåÓÇÒí ÓÑæíÓåÇí Backend ãØÇÈŞ Requirement æ Architecture ÊÃííÏÔÏå ÇÓÊ.
+
+Agent ÇÌÇÒå äÏÇÑÏ ÎæÏÔ äŞÔ Architect ÑÇ ÈÑ ÚåÏå ÈíÑÏ.
+
+---
+
+# 3. Scope — ãÍÏæÏå
+
+ÈÇíÏ ÏŞíŞÇğ ãÔÎÕ ÔæÏ Agent å ˜ÇÑí **ãíÊæÇäÏ** æ å ˜ÇÑí **äãíÊæÇäÏ** ÇäÌÇã ÏåÏ.
+
+ãËáÇğ Backend Agent:
+
+```text
+Allowed:
+? Create API
+? Modify Backend Code
+? Create Unit Tests
+? Run Build
+? Run Tests
+
+Not Allowed:
+? Modify Product Requirements
+? Change Architecture
+? Modify Production Database
+? Deploy Production
+? Approve Own Work
+```
+
+---
+
+# 4. Inputs — æÑæÏíåÇ
+
+Agent İŞØ æÑæÏíåÇí ÊÚÑíİÔÏå ÏÑ Contract ÑÇ ÏÑíÇİÊ ãí˜äÏ.
+
+ãËáÇğ Backend Agent:
+
+```text
+Required Inputs:
+
+REQ Artifact
+Architecture Artifact
+API Specification
+Database Contract
+Coding Standards
+Security Policies
+```
+
+---
+
+# 5. Outputs — ÎÑæÌíåÇ
+
+Contract ãÔÎÕ ãí˜äÏ å íÒí ÈÇíÏ ÊÍæíá ÔæÏ.
+
+ãËáÇğ:
+
+```text
+Required Outputs:
+
+Source Code
+API Implementation
+Unit Tests
+Build Result
+Technical Notes
+Change Summary
+```
+
+---
+
+# 6. Acceptance Criteria — ãÚíÇÑ ĞíÑÔ
+
+Çíä ŞÓãÊ ÈÓíÇÑ ãåã ÇÓÊ.
+
+Agent äãíÊæÇäÏ ÈæíÏ:
+
+> ˜ÇÑ ÇäÌÇã ÔÏ.
+
+ÈÇíÏ ËÇÈÊ ˜äÏ ãÚíÇÑåÇí ĞíÑÔ ÑÇ ÈÑÂæÑÏå ˜ÑÏå ÇÓÊ.
+
+ãËáÇğ:
+
+```text
+AC-001
+API must return HTTP 201 on successful creation.
+
+AC-002
+Unauthorized users must receive HTTP 401/403.
+
+AC-003
+Invalid customer must be rejected.
+
+AC-004
+Unit tests must pass.
+
+AC-005
+Build must complete successfully.
+```
+
+---
+
+# 7. Verification Contract — ŞÑÇÑÏÇÏ ÑÇÓÊíÂÒãÇíí
+
+Contract åÑ Agent ÈÇíÏ ãÔÎÕ ˜äÏ:
+
+> å ˜Óí æ æäå ÎÑæÌí ãä ÑÇ ÈÑÑÓí ãí˜äÏ¿
+
+ãËáÇğ:
+
+```text
+Producer:
+Backend Agent
+
+Verifier:
+Independent Code Verification Agent
+
+Additional Verifiers:
+QA Agent
+Security Agent
+
+Required Gate:
+Code Quality Gate
+```
+
+ÈäÇÈÑÇíä:
+
+```text
+Backend Agent
+      ?
+Code Verification
+      ?
+QA
+      ?
+Security
+      ?
+Quality Gate
+```
+
+---
+
+# 8. Self-Approval ããäæÚ
+
+í˜ ŞÇäæä ãåã:
+
+> **An Agent Cannot Be the Sole Approver of Its Own Material Output.**
+
+### ÊÑÌãå:
+
+> **í˜ Agent äãíÊæÇäÏ ÊäåÇ ÊÃííÏ˜ääÏå ÎÑæÌí ãåã ÎæÏÔ ÈÇÔÏ.**
+
+ãã˜ä ÇÓÊ Agent ÊÓÊ ÏÇÎáí ÇäÌÇã ÏåÏ¡ ÇãÇ ÊÃííÏ äåÇíí ÈÇíÏ ÊæÓØ İÑÂíäÏ ãÓÊŞá ÇäÌÇã ÔæÏ.
+
+---
+
+# 9. Tools — ÇÈÒÇÑåÇí ãÌÇÒ
+
+ŞÑÇÑÏÇÏ ãÔÎÕ ãí˜äÏ Agent å ÇÈÒÇÑåÇíí ãíÊæÇäÏ ÇÓÊİÇÏå ˜äÏ.
+
+ãËáÇğ:
+
+```text
+Backend Agent:
+
+? Git
+? IDE/Code Tools
+? Compiler
+? Test Runner
+? Static Analyzer
+
+? Production Shell
+? Production Database
+? Secret Store
+```
+
+---
+
+# 10. Permissions — ãÌæÒåÇ
+
+Çíä ŞÓãÊ ãÓÊŞíãÇğ Èå Security æÕá ãíÔæÏ.
+
+ãËáÇğ:
+
+```text
+Repository:
+READ     ?
+WRITE    ?
+DELETE   ãÍÏæÏ
+
+Database:
+DEV      ?
+TEST     ?
+STAGING  ãÍÏæÏ
+PROD     ?
+
+Deployment:
+DEV      ?
+TEST     ?
+STAGING  ãÍÏæÏ
+PROD     ?
+```
+
+---
+
+# 11. Constraints — ãÍÏæÏíÊåÇ
+
+Agent ÈÇíÏ ÈÏÇäÏ å ŞæÇäíäí ÛíÑŞÇÈá äŞÖ åÓÊäÏ.
+
+ãËáÇğ:
+
+```text
+Must use:
+.NET
+SQL Server
+REST API
+
+Must follow:
+YFG Naming Convention
+YFG Security Policy
+YFG Architecture Rules
+YFG Database Standards
+```
+
+---
+
+# 12. Failure Conditions — ÔÑÇíØ Ô˜ÓÊ
+
+Contract ÈÇíÏ ãÔÎÕ ˜äÏ å ÒãÇäí ˜ÇÑ Ô˜ÓÊÎæÑÏå ãÍÓæÈ ãíÔæÏ.
+
+ãËáÇğ:
+
+```text
+Build Failed
+OR
+Required Test Failed
+OR
+Security Violation
+OR
+Requirement Coverage < 100%
+OR
+Architecture Violation
+```
+
+---
+
+# 13. Retry Policy — ÓíÇÓÊ ÊáÇÔ ãÌÏÏ
+
+ãËáÇğ:
+
+```text
+Maximum Attempts: 3
+```
+
+ÑÎå:
+
+```text
+Attempt 1
+   ?
+FAIL
+   ?
+Feedback
+   ?
+Attempt 2
+   ?
+FAIL
+   ?
+Feedback
+   ?
+Attempt 3
+   ?
+FAIL
+   ?
+Human Escalation
+```
+
+---
+
+# 14. Escalation Rules — ŞæÇäíä ÇÑÌÇÚ
+
+Agent ÈÇíÏ ÈÏÇäÏ å ÒãÇäí äÈÇíÏ ÎæÏÔ ÊÕãíã ÈíÑÏ.
+
+ãËáÇğ:
+
+```text
+Architecture Conflict
+        ?
+Escalate to Architect Agent
+
+Requirement Conflict
+        ?
+Escalate to BA Agent
+
+Security Critical Issue
+        ?
+Escalate to Security Agent
+
+Repeated Failure
+        ?
+Escalate to Human
+```
+
+---
+
+# 15. Human Approval Policy — ÓíÇÓÊ ÊÃííÏ ÇäÓÇäí
+
+Contract ãíÊæÇäÏ ÓØÍ ÊÃííÏ áÇÒã ÑÇ ãÔÎÕ ˜äÏ:
+
+```text
+Approval Level 0
+ÎæÏ˜ÇÑ
+
+Approval Level 1
+ÈÑÑÓí Agent ÏíÑ
+
+Approval Level 2
+ÊÃííÏ Human
+
+Approval Level 3
+ÊÃííÏ ÕÑíÍ Human + ˜äÊÑá ãÖÇÚİ
+```
+
+ãËáÇğ Production Deployment:
+
+```text
+Approval Level 3
+```
+
+---
+
+# 16. Handoff Contract — ŞÑÇÑÏÇÏ ÊÍæíá
+
+Agent äÈÇíÏ İŞØ ÈæíÏ:
+
+> Done.
+
+Èá˜å ÈÇíÏ í˜ **Handoff Package — ÈÓÊå ÊÍæíá** ÊæáíÏ ˜äÏ.
+
+ãËáÇğ:
+
+```text
+Handoff Package
+
+Artifact ID
+Version
+Task ID
+Requirements Covered
+Files Changed
+Tests Executed
+Test Results
+Known Issues
+Security Results
+Dependencies
+Verification Status
+Rollback Information
+```
+
+ÓÓ Agent ÈÚÏí Çíä ÈÓÊå ÑÇ ÏÑíÇİÊ ãí˜äÏ.
+
+---
+
+# 17. Contract Example — äãæäå ŞÑÇÑÏÇÏ
+
+ãËáÇğ ŞÑÇÑÏÇÏ Backend Development Agent:
+
+```text
+Agent ID:
+YFG-BACKEND-001
+
+Agent Name:
+Backend Development Agent
+
+Role:
+Backend Developer
+
+Mission:
+Implement approved backend requirements.
+
+Inputs:
+- Approved Requirements
+- Approved Architecture
+- API Contract
+- Database Contract
+- Coding Standards
+
+Outputs:
+- Source Code
+- Unit Tests
+- Build Result
+- Change Summary
+
+Allowed Tools:
+- Git
+- Compiler
+- Test Runner
+- Static Analyzer
+
+Allowed Environments:
+- Development
+- Test
+
+Forbidden:
+- Production Deployment
+- Production Database Access
+- Requirement Modification
+- Architecture Approval
+- Self-Approval
+
+Acceptance Criteria:
+- Build Successful
+- Tests Passed
+- Requirements Covered
+- Security Rules Satisfied
+- Coding Standards Satisfied
+
+Verification:
+- Independent Code Verification
+- QA Verification
+- Security Verification
+
+Max Attempts:
+3
+
+Escalation:
+After 3 failed attempts ? Human Approval
+
+Rollback:
+Git Revert / Previous Valid Artifact
+
+Audit:
+All actions must be logged.
+```
+
+---
+
+# 18. ŞÑÇÑÏÇÏ Agent ŞÇÈá ÊÛííÑ ÇÓÊ¡ ÇãÇ ÎæÏÓÑÇäå äå
+
+Çíä ä˜Êå ãåã ÇÓÊ.
+
+Agent äÈÇíÏ ÈÊæÇäÏ Contract ÎæÏÔ ÑÇ ÊÛííÑ ÏåÏ.
+
+```text
+Agent
+  ?
+  ?
+Change Own Contract
+```
+
+Èá˜å:
+
+```text
+Human / Governance
+       ?
+Contract Change Proposal
+       ?
+Contract Verification
+       ?
+Human Approval
+       ?
+New Contract Version
+       ?
+Activation
+```
+
+ãËáÇğ:
+
+```text
+Contract v1.0
+      ?
+Change Request
+      ?
+Verification
+      ?
+Human Approval
+      ?
+Contract v1.1
+```
+
+---
+
+# 19. Contract Registry — ãÎÒä ŞÑÇÑÏÇÏåÇ
+
+ÏÑ Core Platform ÈÇíÏ í˜:
+
+## **Agent Contract Registry — ãÎÒä ŞÑÇÑÏÇÏ AgentåÇ**
+
+ÏÇÔÊå ÈÇÔíã.
+
+```text
+Agent Contract Registry
+?
+??? Product Manager Agent
+??? Business Analyst Agent
+??? Architect Agent
+??? Database Agent
+??? Backend Agent
+??? Frontend Agent
+??? Integration Agent
+??? QA Agent
+??? Security Agent
+??? Documentation Agent
+??? Training Agent
+??? Deployment Agent
+??? Monitoring Agent
+```
+
+åÑ ŞÑÇÑÏÇÏ:
+
+```text
+ID
+Version
+Status
+Owner
+Permissions
+Policies
+Verification
+History
+```
+
+ÏÇÑÏ.
+
+---
+
+# 20. Contract + Verification + Artifact
+
+Óå ãİåæã ÈÇíÏ ˜ÇãáÇğ Èå åã ãÊÕá ÈÇÔäÏ:
+
+```text
+AGENT CONTRACT
+      ?
+      ?
+AGENT EXECUTION
+      ?
+      ?
+ARTIFACT
+      ?
+      ?
+VERIFICATION
+      ?
+      ?
+QUALITY GATE
+      ?
+ ???????????
+ ?         ?
+PASS      FAIL
+ ?         ?
+ ?         ?
+HANDOFF   REWORK
+```
+
+Çíä í˜í ÇÒ ãåãÊÑíä ŞÓãÊåÇí ãÚãÇÑí YFG ÎæÇåÏ ÈæÏ.
+
+---
+
+# 21. ãÚãÇÑí äåÇíí Ó ÇÒ ÇÖÇİå ÔÏä Agent Contracts
+
+```text
+?????????????????????????????????????????????????????????????????
+?                    HUMAN GOVERNANCE                           ?
+?                     ÍÇ˜ãíÊ ÇäÓÇäí                            ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?                    YFG CONTROL CENTER                         ?
+?                       ãÑ˜Ò ˜äÊÑá YFG                          ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?                    AI ORCHESTRATOR                            ?
+?                 åãÇåä˜ääÏå ãÑ˜Òí AgentåÇ                   ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?                  AGENT CONTRACT REGISTRY                      ?
+?                    ãÎÒä ŞÑÇÑÏÇÏ AgentåÇ                       ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?                    SPECIALIZED AGENTS                         ?
+?                     AgentåÇí ÊÎÕÕí                            ?
+?                                                               ?
+? Product ? BA ? Architect ? DB ? Backend ? Frontend ? QA      ?
+? Security ? DevOps ? Documentation ? Training ? Deployment    ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?                  SANDBOX / EXECUTION                          ?
+?                    ãÍíØ ÇÌÑÇí ÇíÒæáå                          ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?                    ARTIFACT ENGINE                            ?
+?                 ãæÊæÑ ãÏíÑíÊ ÎÑæÌíåÇ                         ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?              INDEPENDENT VERIFICATION LAYER                   ?
+?                    áÇíå ÑÇÓÊíÂÒãÇíí ãÓÊŞá                    ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                                ?
+?????????????????????????????????????????????????????????????????
+?                    QUALITY GATE ENGINE                        ?
+?                     ãæÊæÑ ÏÑæÇÒå ˜íİíÊ                        ?
+?????????????????????????????????????????????????????????????????
+                                ?
+                       ???????????????????
+                       ?                 ?
+                     PASS              FAIL
+                       ?                 ?
+                       ?                 ?
+                 HANDOFF             REWORK
+                 ÊÍæíá ãÑÍáå ÈÚÏ     ÇÕáÇÍ ãÌÏÏ
+                       ?                 ?
+                       ?                 ?????????
+                       ?                         ?
+                NEXT CONTROLLED STAGE            ?
+                                                 ?
+                       ???????????????????????????
+                       ?
+                       ?
+                VERIFICATION AGAIN
+```
+
+---
+
+## äÊíÌå ãåã
+
+ÈÇ ÇÖÇİå ˜ÑÏä **Agent Contract Layer**¡ ãÚãÇÑí YFG ÇÒ í˜ ÓíÓÊã «AgentåÇí åæÔãäÏ ˜å ÈÇ åã ˜ÇÑ ãí˜ääÏ» Èå í˜ ÓíÓÊã ÈÓíÇÑ ÓÇÎÊÇÑíÇİÊåÊÑ ÊÈÏíá ãíÔæÏ:
+
+**Agent + Contract + Permission + Sandbox + Artifact + Verification + Quality Gate + Audit + Human Approval**
+
+Çíä íÚäí åÑ Agent ŞÈá ÇÒ ÔÑæÚ ˜ÇÑ ãíÏÇäÏ:
+
+> **ãä å ˜Óí åÓÊã¿ å ˜ÇÑí ÈÇíÏ ÇäÌÇã Ïåã¿ å íÒí ÏÑíÇİÊ ãí˜äã¿ å íÒí ÈÇíÏ ÊÍæíá ÈÏåã¿ ÈÇ å ÇÈÒÇÑåÇíí¿ ÈÇ å ãÍÏæÏíÊåÇíí¿ å ˜Óí ˜ÇÑ ãÑÇ ÈÑÑÓí ãí˜äÏ¿ ãÚíÇÑ ŞÈæáí íÓÊ¿ ÇÑ Ô˜ÓÊ ÎæÑÏã å ÇÊİÇŞí ãíÇİÊÏ¿ æ å ÒãÇäí ÈÇíÏ ãæÖæÚ ÑÇ Èå ÇäÓÇä ÇÑÌÇÚ Ïåã¿**
+
+Çíä ÈÎÔ ÑÇ ÈÇíÏ ÈåÚäæÇä **Core Architecture Component** ÏÑ ãÚãÇÑí äåÇíí YFG ËÈÊ ˜äíã¡ äå í˜ ŞÇÈáíÊ İÑÚí.

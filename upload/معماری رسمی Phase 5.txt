@@ -1,0 +1,2534 @@
+# ãÚãÇÑí ÑÓãí Phase 5 — Engineering Environment
+
+## ãÚãÇÑí ÑÓãí ãÍíØ ãåäÏÓí¡ Workspace¡ Toolchain æ ÇÌÑÇí æÇÞÚí YFG
+
+ÈÇ Ê˜ãíá Phase 1 ÊÇ 4¡ YFG Ç˜äæä åÇÑ áÇíå ÈäíÇÏí ÎæÏ ÑÇ ÏÇÑÏ:
+
+```text
+Phase 1 ? Governance
+Phase 2 ? Agent Contract / Identity / Capability
+Phase 3 ? Orchestration / Workflow
+Phase 4 ? Verification / Quality Gates
+```
+
+**Phase 5** ÈÇíÏ Çíä áÇíååÇ ÑÇ Èå **ãÍíØ æÇÞÚí ãåäÏÓí äÑãÇÝÒÇÑ** ãÊÕá ˜äÏº íÚäí ÌÇíí ˜å Agent æÇÞÚÇð ÈÊæÇäÏ Ñæí Repository¡ IDE¡ SDK¡ Compiler¡ Runtime¡ Package Manager¡ Container æ ÇÈÒÇÑåÇí ÊæÓÚå ˜ÇÑ ˜äÏ¡ Build ÈíÑÏ¡ Test ÇÌÑÇ ˜äÏ æ Evidence ÊæáíÏ ˜äÏ.
+
+---
+
+# 1. ÊÚÑíÝ ÑÓãí Phase 5
+
+### English
+
+> **Phase 5 establishes the governed Engineering Environment layer of YFG that provides isolated, reproducible, policy-controlled and observable workspaces through which AI agents can safely inspect, modify, build, test, run and debug real software projects across supported platforms, IDEs, SDKs, runtimes, toolchains and source-control systems.**
+
+### ÝÇÑÓí
+
+> **Phase 5 áÇíå ãÍíØ ãåäÏÓí ÊÍÊ ÍÇ˜ãíÊ YFG ÑÇ ÇíÌÇÏ ãí˜äÏ ˜å WorkspaceåÇí ÇíÒæáå¡ ÞÇÈá Ê˜ÑÇÑ¡ Policy-controlled æ ÞÇÈá ÇíÔ ÑÇ ÝÑÇåã ãí˜äÏ ÊÇ AgentåÇí åæÔ ãÕäæÚí ÈÊæÇääÏ ÏÑ ÑæŽååÇí æÇÞÚí æ ÈÑ Ñæí PlatformåÇ¡ IDEåÇ¡ SDKåÇ¡ RuntimeåÇ¡ ToolchainåÇ æ ÓíÓÊãåÇí ˜äÊÑá äÓÎå ÔÊíÈÇäíÔÏå¡ ÈåÕæÑÊ Çíãä ˜Ï ÑÇ ÈÑÑÓí¡ ÇíÌÇÏ¡ ÊÛííÑ¡ Build¡ Test¡ Run æ Debug ˜ääÏ.**
+
+---
+
+# 2. ÌÇíÇå Phase 5
+
+ãÚãÇÑí ÊÇ˜äæä:
+
+```text
+HUMAN
+  ?
+PHASE 1
+Governance
+  ?
+PHASE 2
+Agent Contract / Identity / Capability
+  ?
+PHASE 3
+Orchestration / Workflow
+  ?
+PHASE 4
+Verification / Quality Gates
+  ?
+PHASE 5
+ENGINEERING ENVIRONMENT
+```
+
+ÇãÇ ÇÒ äÙÑ ÇÌÑÇí æÇÞÚí¡ Phase 5 Èíä Orchestration æ Verification ÞÑÇÑ ãííÑÏ:
+
+```text
+Task
+ ?
+Agent
+ ?
+Engineering Workspace
+ ?
+IDE / Repository / SDK / Runtime / Database
+ ?
+Build / Run / Test / Debug
+ ?
+Artifact + Evidence
+ ?
+Independent Verification
+```
+
+ÈäÇÈÑÇíä Phase 5 **ãÍá ÇÌÑÇí Engineering Work** ÇÓÊº äå ãÍá ÊÕãíãíÑí ÍÇ˜ãíÊí æ äå ÌÇíÒíä Verification.
+
+---
+
+# 3. åÏÝ ÇÕáí Phase 5
+
+YFG äÈÇíÏ ÝÞØ ÈæíÏ:
+
+> «Agent ˜Ï ÊæáíÏ ˜ÑÏ.»
+
+Èá˜å ÈÇíÏ ÈÊæÇäÏ:
+
+```text
+Requirement
+    ?
+Task
+    ?
+Agent
+    ?
+Real Project
+    ?
+Real Workspace
+    ?
+Edit
+    ?
+Build
+    ?
+Run
+    ?
+Test
+    ?
+Debug
+    ?
+Evidence
+    ?
+Verification
+```
+
+ÑÇ ÇÌÑÇ ˜äÏ.
+
+---
+
+# 4. ÇÕá ãÚãÇÑí Phase 5
+
+ÇÕá ÑÓãí:
+
+> **Agents do not directly control the operating system.**
+
+íÇ:
+
+> **Agent äÈÇíÏ ãÓÊÞíãÇð æ ÈÏæä ˜äÊÑá Èå Operating System ÏÓÊÑÓí ÏÇÔÊå ÈÇÔÏ.**
+
+ãÚãÇÑí:
+
+```text
+Agent
+  ?
+YFG Tool Layer
+  ?
+Permission Check
+  ?
+Policy Check
+  ?
+Environment Check
+  ?
+Workspace Sandbox
+  ?
+Engineering Tool
+  ?
+Result
+  ?
+Evidence
+```
+
+ÈäÇÈÑÇíä:
+
+```text
+Agent ? OS
+```
+
+ããäæÚ ÇÓÊ.
+
+æ:
+
+```text
+Agent
+ ?
+Governed Tool Gateway
+ ?
+Authorized Workspace
+ ?
+Tool
+```
+
+ãÏá ÑÓãí ÇÓÊ.
+
+---
+
+# 5. ãÚãÇÑí ˜áÇä Phase 5
+
+```text
+????????????????????????????????????????????????
+?                YFG CONTROL PLANE             ?
+?                                              ?
+? Governance / Policy / Identity / Workflow   ?
+????????????????????????????????????????????????
+                       ?
+                       ?
+????????????????????????????????????????????????
+?          ENGINEERING CONTROL PLANE           ?
+?                                              ?
+? Workspace Manager                            ?
+? Tool Registry                                ?
+? Tool Gateway                                 ?
+? Environment Manager                          ?
+? Toolchain Manager                            ?
+? Repository Manager                           ?
+? Runtime Manager                              ?
+? Build Manager                                ?
+? Test Execution Manager                       ?
+? Debug Manager                                ?
+? Artifact Collector                           ?
+? Evidence Collector                           ?
+????????????????????????????????????????????????
+                       ?
+                       ?
+????????????????????????????????????????????????
+?          ENGINEERING WORKSPACE               ?
+?                                              ?
+? Source Code                                  ?
+? Configuration                                ?
+? Dependencies                                 ?
+? Build Files                                  ?
+? Tests                                        ?
+? Local Data                                   ?
+????????????????????????????????????????????????
+                       ?
+          ???????????????????????????
+          ?            ?            ?
+       IDE/CLI      SDK/Runtime   Database
+          ?            ?            ?
+          ???????????????????????????
+                       ?
+               Build / Run / Test
+                       ?
+                       ?
+                   Evidence
+                       ?
+                       ?
+             Phase 4 Verification
+```
+
+---
+
+# 6. Engineering Environment íÓÊ¿
+
+ÏÑ YFG¡ Engineering Environment ÝÞØ í˜ Docker Container íÇ Folder äíÓÊ.
+
+Èá˜å í˜ ãæÌæÏíÊ ÑÓãí ÇÓÊ:
+
+```text
+Engineering Environment
+??? Workspace
+??? OS
+??? CPU Architecture
+??? SDK
+??? Runtime
+??? Compiler
+??? Package Manager
+??? Build Tools
+??? Test Tools
+??? Debug Tools
+??? IDE / CLI
+??? Network Policy
+??? Secret Policy
+??? Database Connections
+??? Storage
+??? Environment Variables
+??? Tool Permissions
+??? Resource Limits
+??? Evidence Configuration
+```
+
+---
+
+# 7. Workspace Model
+
+åÑ Task ÈÇíÏ Workspace ãÔÎÕ ÏÇÔÊå ÈÇÔÏ.
+
+ãËáÇð:
+
+```text
+PROJECT-001
+    ?
+WORKSPACE-021
+    ?
+TASK-182
+    ?
+AGENT-BACKEND-001
+```
+
+Workspace ÈÇíÏ ÏÇÑÇí:
+
+* Workspace ID
+* Project ID
+* Task ID
+* Branch
+* Commit
+* Environment
+* Owner
+* Agent
+* Created At
+* Status
+* Security Policy
+* Resource Policy
+* Network Policy
+
+ÈÇÔÏ.
+
+---
+
+# 8. Workspace Isolation
+
+AgentåÇ äÈÇíÏ ÈÏæä ˜äÊÑá ÏÑ í˜ Workspace ãÔÊÑ˜ ˜ÇÑ ˜ääÏ.
+
+ãÏá íÔäåÇÏí:
+
+```text
+Project
+  ?
+  ??? Workspace A
+  ?     ??? Agent A
+  ?
+  ??? Workspace B
+  ?     ??? Agent B
+  ?
+  ??? Workspace C
+  ?     ??? Agent C
+  ?
+  ??? Integration Workspace
+```
+
+ÓÓ:
+
+```text
+Agent Work
+ ?
+Commit
+ ?
+Build
+ ?
+Test
+ ?
+Review
+ ?
+Merge
+```
+
+---
+
+# 9. Concurrency Control
+
+ÇÑ Ïæ Agent åãÒãÇä í˜ ÝÇíá ÑÇ ÊÛííÑ ÏåäÏ:
+
+```text
+Agent A ? file.cs
+Agent B ? file.cs
+```
+
+YFG äÈÇíÏ ÇÌÇÒå ÏåÏ äÊíÌå äÇãÔÎÕ ÇíÌÇÏ ÔæÏ.
+
+ÑÇå˜ÇÑåÇ:
+
+* Git Branch
+* File Lock
+* Workspace Isolation
+* Change Set
+* Merge Control
+* Conflict Detection
+* Human Escalation
+
+---
+
+# 10. Git æ Source Control
+
+Source Control ÈÇíÏ ÌÒæ åÓÊå Engineering Environment ÈÇÔÏ.
+
+```text
+Task
+ ?
+Branch
+ ?
+Workspace
+ ?
+Agent Changes
+ ?
+Commit
+ ?
+Build
+ ?
+Test
+ ?
+Verification
+ ?
+Review
+ ?
+Merge
+```
+
+YFG ÈÇíÏ ÈÊæÇäÏ:
+
+* clone
+* checkout
+* branch
+* commit
+* diff
+* merge
+* rebase ÏÑ ÕæÑÊ Policy
+* tag
+* inspect history
+* compare versions
+
+ÑÇ ÇÒ ØÑíÞ Tool Gateway ÇäÌÇã ÏåÏ.
+
+---
+
+# 11. Repository Adapter
+
+YFG äÈÇíÏ Èå í˜ Git Provider æÇÈÓÊå ÈÇÔÏ.
+
+ãÚãÇÑí:
+
+```text
+Repository Manager
+       ?
+       ??? Git
+       ??? GitHub Adapter
+       ??? GitLab Adapter
+       ??? Bitbucket Adapter
+       ??? Enterprise Git Adapter
+```
+
+ProvideråÇí ÏÞíÞ ÞÇÈá ÔÊíÈÇäí ÏÑ åÑ Deployment ÊÚÑíÝ ãíÔæäÏ.
+
+---
+
+# 12. IDE Integration
+
+Çíä ÈÎÔ ÈÑÇí YFG ÈÓíÇÑ ãåã ÇÓÊ.
+
+YFG ÈÇíÏ ÈÊæÇäÏ ÈÇ IDEåÇí æÇÞÚí ˜ÇÑ ˜äÏ¡ äå Çíä˜å ÎæÏÔ ÑÇ Èå í˜ IDE ÎÇÕ ãÍÏæÏ ˜äÏ.
+
+åÏÝ:
+
+```text
+YFG
+ ?
+IDE Adapter
+ ?
+Local Project
+```
+
+äãæäå IDEåÇ:
+
+* Visual Studio
+* Visual Studio Code
+* JetBrains Rider
+* IntelliJ IDEA
+* PyCharm
+* WebStorm
+* Android Studio
+
+ÇãÇ ÇÕá ãÚãÇÑí:
+
+> **IDE is an Adapter, not the Platform Core.**
+
+---
+
+# 13. C# / .NET / ASP.NET Core
+
+í˜ ãÓíÑ ÑÓãí:
+
+```text
+YFG
+ ?
+.NET Adapter
+ ?
+.NET SDK
+ ?
+dotnet CLI / MSBuild
+ ?
+ASP.NET Core
+ ?
+Build
+ ?
+Test
+ ?
+Run
+ ?
+Debug
+```
+
+ÔÊíÈÇäí ÇÒ ãæÇÑÏí ãÇääÏ:
+
+* C#
+* .NET
+* ASP.NET Core
+* EF Core
+* Blazor
+* Razor
+* Worker Services
+* Console Applications
+* Class Libraries
+
+ÈÇíÏ ÇÒ ØÑíÞ AdapteråÇí ÞÇÈá ÊæÓÚå ÇäÌÇã ÔæÏ.
+
+---
+
+# 14. Frontend Toolchain
+
+ÈÑÇí ãËÇá:
+
+```text
+Node.js
+ ?
+npm / pnpm / yarn
+ ?
+TypeScript
+ ?
+React / Angular / Vue / Next.js
+ ?
+Build
+ ?
+Test
+ ?
+Preview
+```
+
+YFG ÈÇíÏ ÈÊæÇäÏ Toolchain ÑÇ ØÈÞ Environment Contract ãÏíÑíÊ ˜äÏ.
+
+---
+
+# 15. ÓÇíÑ ÒÈÇäåÇ æ FrameworkåÇ
+
+Phase 5 ÈÇíÏ Adapter-Based ÈÇÔÏ.
+
+äãæäå:
+
+### Python
+
+```text
+Python
+ ?
+pip / uv
+ ?
+pytest
+ ?
+Django / FastAPI / Flask
+```
+
+### Java
+
+```text
+JDK
+ ?
+Maven / Gradle
+ ?
+JUnit
+ ?
+Spring / ÓÇíÑ FrameworkåÇ
+```
+
+### JavaScript / TypeScript
+
+```text
+Node.js
+ ?
+Package Manager
+ ?
+Build
+ ?
+Test
+```
+
+ãÚãÇÑí äÈÇíÏ Èå Çíä TechnologyåÇ ãÍÏæÏ ÔæÏ.
+
+---
+
+# 16. Runtime Manager
+
+YFG ÈÇíÏ RuntimeåÇ ÑÇ ãÏíÑíÊ ˜äÏ:
+
+```text
+Runtime Manager
+??? .NET
+??? Node.js
+??? JVM
+??? Python
+??? Container Runtime
+??? Other Supported Runtimes
+```
+
+åÑ Environment ÈÇíÏ Runtime Version ãÔÎÕ ÏÇÔÊå ÈÇÔÏ.
+
+ãËáÇð:
+
+```text
+ENV-001
+
+OS:
+Windows 11
+
+Architecture:
+x64
+
+Runtime:
+.NET 10
+
+SDK:
+.NET 10 SDK
+
+Node:
+22.x
+```
+
+---
+
+# 17. Toolchain Manifest
+
+åÑ Engineering Environment ÈÇíÏ í˜ Manifest ÏÇÔÊå ÈÇÔÏ.
+
+ãËáÇð:
+
+```text
+Environment Manifest
+
+OS:
+Windows
+
+Architecture:
+x64
+
+.NET SDK:
+10.x
+
+Node:
+22.x
+
+Git:
+2.x
+
+Docker:
+Supported
+
+PowerShell:
+Allowed
+
+Network:
+Restricted
+```
+
+Çíä Manifest ÈÇÚË Reproducibility ãíÔæÏ.
+
+---
+
+# 18. Reproducible Engineering Environment
+
+åÏÝ:
+
+> í˜ Task ãÔÇÈå ÏÑ í˜ Environment ãÔÇÈå ÈÇíÏ ÊÇ ÍÏ Çã˜Çä äÊíÌå ÞÇÈá ÈÇÒÊæáíÏ ÇíÌÇÏ ˜äÏ.
+
+ÈÑÇí Çíä ãäÙæÑ:
+
+* Version Pinning
+* Dependency Locking
+* Toolchain Manifest
+* Environment Snapshot
+* Container Image
+* Build Metadata
+* Configuration Versioning
+
+áÇÒã ÇÓÊ.
+
+---
+
+# 19. Build Manager
+
+Build ÈÇíÏ Service ãÓÊÞá ÈÇÔÏ.
+
+```text
+Build Request
+ ?
+Environment Validation
+ ?
+Source Version
+ ?
+Dependency Restore
+ ?
+Build
+ ?
+Artifact
+ ?
+Logs
+ ?
+Evidence
+```
+
+Build Result:
+
+```text
+SUCCESS
+FAILED
+CANCELLED
+TIMEOUT
+```
+
+---
+
+# 20. Test Execution Manager
+
+Test äíÒ ÇÒ Build ÌÏÇÓÊ:
+
+```text
+Build
+ ?
+Test Environment
+ ?
+Test Suite
+ ?
+Execution
+ ?
+Results
+ ?
+Coverage
+ ?
+Evidence
+```
+
+---
+
+# 21. Debug Manager
+
+Çíä ÈÎÔ ÈÑÇí AgentåÇí Engineering ÈÓíÇÑ ãåã ÇÓÊ.
+
+Agent ÈÇíÏ ÈÊæÇäÏ ÈÇ ˜äÊÑá ãäÇÓÈ:
+
+* Logs ÑÇ ÈÎæÇäÏ
+* Stack Trace ÑÇ ÈÑÑÓí ˜äÏ
+* Process ÑÇ ÇÌÑÇ ˜äÏ
+* Breakpoint ÇíÌÇÏ ˜äÏ
+* Debug Session ÇíÌÇÏ ˜äÏ
+* Test ÎÇÕ ÑÇ ÇÌÑÇ ˜äÏ
+* Failure ÑÇ ÈÇÒÊæáíÏ ˜äÏ
+
+ÇãÇ åãå Çíä ÚãáíÇÊ ÇÒ Tool Gateway ÚÈæÑ ãí˜ääÏ.
+
+---
+
+# 22. Local Development Integration
+
+í˜í ÇÒ ÞÇÈáíÊåÇí ˜áíÏí YFG:
+
+```text
+YFG
+ ?
+Local Workspace Manager
+ ?
+Local Project
+ ?
+IDE / CLI / SDK
+ ?
+Build / Run / Test / Debug
+ ?
+Evidence
+```
+
+ÈäÇÈÑÇíä ˜ÇÑÈÑ ãíÊæÇäÏ ãËáÇð ÑæŽå ASP.NET Core ãæÌæÏ ÎæÏ ÑÇ ÏÑ Workspace ÊÍÊ ãÏíÑíÊ YFG ÞÑÇÑ ÏåÏ.
+
+YFG ÈÇíÏ ÈÊæÇäÏ:
+
+```text
+Inspect
+Analyze
+Modify
+Build
+Run
+Test
+Debug
+Verify
+```
+
+ÑÇ Ñæí Âä ÇäÌÇã ÏåÏ¡ ÏÑ ãÍÏæÏå PermissionåÇí ÊÚííäÔÏå.
+
+---
+
+# 23. Local Agent Execution
+
+ãÏá:
+
+```text
+Agent
+ ?
+YFG Local Agent / Connector
+ ?
+Local Workspace
+ ?
+Governed Tool Gateway
+ ?
+OS / IDE / SDK
+```
+
+Local Connector äÈÇíÏ Èå ãÚäÇí:
+
+> Remote AI has unrestricted control over my computer
+
+ÈÇÔÏ.
+
+Èá˜å ÈÇíÏ:
+
+```text
+Allowlisted Tools
++
+Allowlisted Paths
++
+Allowlisted Commands
++
+Network Policy
++
+Resource Limits
++
+Audit
+```
+
+ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+# 24. Tool Gateway
+
+í˜í ÇÒ ãåãÊÑíä ÇÌÒÇí Phase 5:
+
+```text
+Tool Request
+     ?
+Tool Gateway
+     ?
+Identity
+     ?
+Capability
+     ?
+Permission
+     ?
+Policy
+     ?
+Environment
+     ?
+Resource Limit
+     ?
+Execute
+     ?
+Result
+     ?
+Audit
+```
+
+Agent ãÓÊÞíãÇð Tool ÑÇ ÇÌÑÇ äãí˜äÏ.
+
+---
+
+# 25. Tool Registry
+
+åÑ Tool ÈÇíÏ Registry ÏÇÔÊå ÈÇÔÏ:
+
+```text
+Tool ID
+Name
+Version
+Type
+Capabilities
+Input Schema
+Output Schema
+Permissions
+Supported OS
+Supported Platforms
+Security Classification
+Network Requirements
+Resource Requirements
+Audit Requirements
+```
+
+äãæäå:
+
+```text
+TOOL-DOTNET-CLI
+TOOL-GIT
+TOOL-NPM
+TOOL-DOCKER
+TOOL-POWERSHELL
+TOOL-BASH
+```
+
+---
+
+# 26. Command Execution Policy
+
+ÇÌÑÇí Command ÈÇíÏ Policy-aware ÈÇÔÏ.
+
+ãËáÇð:
+
+```text
+dotnet build
+```
+
+ãã˜ä ÇÓÊ ãÌÇÒ ÈÇÔÏ.
+
+ÇãÇ:
+
+```text
+Production Database Drop
+```
+
+ÈÇíÏ Block ÔæÏ.
+
+ÍÊí ÇÑ Agent ÏÑÎæÇÓÊ ˜äÏ.
+
+ãÏá:
+
+```text
+Command
+ ?
+Classification
+ ?
+Policy
+ ?
+Environment
+ ?
+Permission
+ ?
+Allow / Deny
+```
+
+---
+
+# 27. Shell Access
+
+PowerShell æ Bash ÈÇíÏ ÇÒ ØÑíÞ Adapter ÇÓÊÝÇÏå ÔæäÏ.
+
+äå:
+
+```text
+Agent ? unrestricted shell
+```
+
+Èá˜å:
+
+```text
+Agent
+ ?
+Shell Tool
+ ?
+Command Policy
+ ?
+Sandbox
+ ?
+Execution
+```
+
+åãäíä:
+
+* timeout
+* output limit
+* CPU limit
+* memory limit
+* process limit
+* network restriction
+
+ÈÇíÏ æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+# 28. Database Connectivity ÏÑ Phase 5
+
+Phase 5 ÈÇíÏ Database ÑÇ Èå ãÍíØ ãåäÏÓí ãÊÕá ˜äÏ.
+
+```text
+Agent
+ ?
+Database Tool
+ ?
+Database Gateway
+ ?
+Policy
+ ?
+Environment
+ ?
+Database
+```
+
+DatabaseåÇí åÏÝ ãíÊæÇääÏ ÔÇãá:
+
+* SQL Server
+* PostgreSQL
+* MySQL
+* MariaDB
+* Oracle
+* SQLite
+* MongoDB
+* Redis
+* Elasticsearch / OpenSearch
+* ÓÇíÑ DBåÇ ÇÒ ØÑíÞ Adapter
+
+ÈÇÔäÏ.
+
+---
+
+# 29. Database Environment Isolation
+
+ãËáÇð:
+
+```text
+Development DB
+   READ/WRITE
+
+Test DB
+   READ/WRITE
+
+Staging DB
+   LIMITED
+
+Production DB
+   DENIED
+```
+
+ãÑ Çíä˜å Policy ÕÑíÍ æ ÓØÍ ÏÓÊÑÓí ãäÇÓÈ æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+# 30. Migration Execution
+
+Agent ãíÊæÇäÏ:
+
+```text
+Schema Change
+ ?
+Migration Generation
+ ?
+Migration Validation
+ ?
+Test DB
+ ?
+Migration Execution
+ ?
+Verification
+```
+
+ÑÇ ÇäÌÇã ÏåÏ.
+
+ÇãÇ:
+
+```text
+Production Migration
+```
+
+ÈÇíÏ ãÓíÑ ÌÏÇÇäå¡ Approval æ Verification ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+# 31. Container Support
+
+ContaineråÇ ÈÎÔ ãåã Engineering Environment åÓÊäÏ:
+
+```text
+Project
+ ?
+Container Environment
+ ?
+Dependencies
+ ?
+Build
+ ?
+Test
+ ?
+Run
+```
+
+ãÒÇíÇ:
+
+* Isolation
+* Reproducibility
+* Dependency Control
+* Toolchain Consistency
+
+YFG ÈÇíÏ Container Runtime ÑÇ ÈåÕæÑÊ Adapter ÔÊíÈÇäí ˜äÏ.
+
+---
+
+# 32. Environment Types
+
+ÍÏÇÞá:
+
+```text
+LOCAL
+DEVELOPMENT
+TEST
+PREVIEW
+SANDBOX
+STAGING
+```
+
+Production ÏÑ Phase 5 ÕÑÝÇð ÈåÚäæÇä Target Environment ÔäÇÎÊå ãíÔæÏ æ ÇÌÑÇí Production ÏÑ ãÓíÑ Release/Deployment ˜äÊÑá ãíÔæÏ.
+
+---
+
+# 33. Environment State
+
+```text
+DRAFT
+PROVISIONING
+READY
+BUSY
+DEGRADED
+FAILED
+QUARANTINED
+DESTROYING
+DESTROYED
+```
+
+---
+
+# 34. Environment Provisioning
+
+Workflow:
+
+```text
+Task
+ ?
+Required Environment
+ ?
+Environment Template
+ ?
+Provision
+ ?
+Validate
+ ?
+Workspace
+ ?
+Execute
+ ?
+Destroy / Preserve
+```
+
+---
+
+# 35. Environment Templates
+
+ãËáÇð:
+
+```text
+ENV-TEMPLATE-DOTNET-WINDOWS-X64
+ENV-TEMPLATE-DOTNET-LINUX
+ENV-TEMPLATE-ANDROID
+ENV-TEMPLATE-NODE-REACT
+ENV-TEMPLATE-PYTHON-FASTAPI
+```
+
+Çíä Templates ÈÇíÏ Versioned ÈÇÔäÏ.
+
+---
+
+# 36. Multi-Platform Engineering
+
+Phase 5 ÈÇíÏ ÇÒ Multi-Platform ÈæÏä YFG ÔÊíÈÇäí ˜äÏ.
+
+ãËáÇð:
+
+```text
+Project
+ ?
+ ??? Windows x64 Environment
+ ??? Windows ARM64 Environment
+ ??? macOS Environment
+ ??? Linux Environment
+ ??? Android Environment
+ ??? Web Environment
+```
+
+ÇãÇ Availability åÑ Platform æÇÈÓÊå Èå:
+
+* Toolchain
+* Host
+* SDK
+* Licensing
+* Signing
+* Hardware
+* CI/CD
+* Deployment Environment
+
+ÇÓÊ.
+
+---
+
+# 37. Platform Adapter Architecture
+
+```text
+Engineering Core
+       ?
+       ??? Windows Adapter
+       ??? macOS Adapter
+       ??? Linux Adapter
+       ??? Android Adapter
+       ??? iOS Adapter
+       ??? Web Adapter
+       ??? Embedded Adapter
+```
+
+Çíä AdapteråÇ Core YFG ÑÇ ÊÛííÑ äãíÏåäÏ.
+
+---
+
+# 38. ãåã: Architecture Capability ? Current Execution Coverage
+
+YFG ãã˜ä ÇÓÊ ÇÒ äÙÑ ãÚãÇÑí:
+
+```text
+Web
+Windows
+macOS
+Linux
+Android
+iOS
+Embedded
+```
+
+ÑÇ ÔÊíÈÇäí ˜äÏ.
+
+ÇãÇ Deployment ÝÚáí ãã˜ä ÇÓÊ ÝÞØ:
+
+```text
+Web
+Windows
+Android
+```
+
+ÑÇ ÝÚÇá ˜ÑÏå ÈÇÔÏ.
+
+ÈäÇÈÑÇíä ÈÇíÏ Ïæ ãÝåæã ÌÏÇ ÏÇÔÊå ÈÇÔíã:
+
+```text
+Platform Capability
+Platform Availability
+```
+
+---
+
+# 39. Artifact Collection
+
+ÈÚÏ ÇÒ åÑ Execution:
+
+```text
+Execution
+ ?
+Outputs
+ ?
+Artifact Collector
+```
+
+ÌãÚÂæÑí:
+
+* binaries
+* packages
+* logs
+* test results
+* coverage
+* screenshots
+* reports
+* build metadata
+* hashes
+* generated files
+
+---
+
+# 40. Evidence Collection
+
+Engineering Environment ÈÇíÏ Evidence ÊæáíÏ ˜äÏ:
+
+```text
+Source Commit
+Build ID
+Environment ID
+Tool Versions
+Commands
+Outputs
+Logs
+Test Results
+Artifact Hash
+Timestamp
+Agent Identity
+Task ID
+```
+
+Çíä ÇØáÇÚÇÊ Èå Phase 4 ÊÍæíá ãíÔæäÏ.
+
+---
+
+# 41. Observability
+
+Phase 5 ÈÇíÏ ÞÇÈá ãÔÇåÏå ÈÇÔÏ.
+
+Metrics:
+
+* Workspace CPU
+* Memory
+* Disk
+* Process
+* Build duration
+* Test duration
+* Tool execution
+* Network
+* Queue time
+* Failure rate
+
+Logs:
+
+```text
+Workspace Logs
+Tool Logs
+Build Logs
+Test Logs
+Runtime Logs
+Debug Logs
+Security Logs
+```
+
+---
+
+# 42. Resource Governance
+
+Agent äÈÇíÏ ÈÊæÇäÏ ãäÇÈÚ äÇãÍÏæÏ ãÕÑÝ ˜äÏ.
+
+ãËáÇð:
+
+```text
+Task Budget
+
+Max Runtime
+Max CPU
+Max Memory
+Max Disk
+Max Network
+Max Tool Calls
+Max Processes
+Max Cost
+```
+
+ÇÑ Budget ÊãÇã ÔæÏ:
+
+```text
+Execution
+ ?
+Resource Limit
+ ?
+STOP
+ ?
+Audit
+ ?
+Escalate / Retry
+```
+
+---
+
+# 43. Network Policy
+
+WorkspaceåÇ ÈÇíÏ Network Policy ÏÇÔÊå ÈÇÔäÏ:
+
+```text
+NO_NETWORK
+LIMITED_NETWORK
+ALLOWLIST
+FULL_NETWORK
+```
+
+ãËáÇð Build ãã˜ä ÇÓÊ äíÇÒ Èå:
+
+```text
+NuGet
+npm Registry
+Maven
+PyPI
+```
+
+ÏÇÔÊå ÈÇÔÏ.
+
+ÇãÇ Network ÈÇíÏ ãÍÏæÏ æ ÞÇÈá Audit ÈÇÔÏ.
+
+---
+
+# 44. Secret Management
+
+Secret äÈÇíÏ ÏÑ:
+
+* Prompt
+* Source Code
+* Logs
+* Artifact
+* Agent Context
+
+ÈåÕæÑÊ ÎÇã ÞÑÇÑ íÑÏ.
+
+ãÏá:
+
+```text
+Agent
+ ?
+Secret Request
+ ?
+Policy
+ ?
+Secret Manager
+ ?
+Short-lived Credential
+ ?
+Tool
+```
+
+Secret ÈÇíÏ:
+
+* scoped
+* short-lived
+* audited
+* rotated
+
+ÈÇÔÏ.
+
+---
+
+# 45. Environment Variables
+
+Environment VariableåÇ äíÒ ÈÇíÏ Governance ÔæäÏ.
+
+ãËáÇð:
+
+```text
+PUBLIC_CONFIG
+SAFE
+
+DATABASE_PASSWORD
+RESTRICTED
+
+PRODUCTION_SECRET
+CRITICAL
+```
+
+Agent äÈÇíÏ ÈÊæÇäÏ ÈåÕæÑÊ ÂÒÇÏ åãå Environment VariableåÇ ÑÇ enumerate ˜äÏ.
+
+---
+
+# 46. Dependency Management
+
+Engineering Environment ÈÇíÏ DependencyåÇ ÑÇ ãÏíÑíÊ ˜äÏ:
+
+```text
+Dependency
+ ?
+Resolve
+ ?
+Lock
+ ?
+Scan
+ ?
+Build
+ ?
+Evidence
+```
+
+Çíä ÞÓãÊ Èå Phase 4 Supply Chain Verification ãÊÕá ãíÔæÏ.
+
+---
+
+# 47. SDK / Tool Version Management
+
+ãËáÇð:
+
+```text
+Project:
+.NET 10
+
+Environment:
+.NET SDK 10.x
+
+Build:
+MSBuild compatible
+
+Test:
+xUnit version X
+```
+
+ÇÑ Environment ÇÔÊÈÇå ÈÇÔÏ:
+
+```text
+Environment Validation = FAIL
+```
+
+ÞÈá ÇÒ ÇÌÑÇí Task.
+
+---
+
+# 48. Environment Validation
+
+ÞÈá ÇÒ Execution:
+
+```text
+OS
+CPU
+SDK
+Runtime
+Toolchain
+Dependency
+Disk
+Memory
+Network
+Credentials
+Database
+```
+
+ÈÑÑÓí ãíÔæäÏ.
+
+ÓÓ:
+
+```text
+READY
+```
+
+íÇ:
+
+```text
+BLOCKED
+```
+
+---
+
+# 49. Engineering Session
+
+åÑ ÇÌÑÇí Agent ÈÇíÏ Session ÏÇÔÊå ÈÇÔÏ:
+
+```text
+Engineering Session
+??? Session ID
+??? Agent
+??? Task
+??? Workspace
+??? Environment
+??? Start
+??? End
+??? Tools Used
+??? Commands
+??? Changes
+??? Results
+??? Evidence
+??? Status
+```
+
+---
+
+# 50. Change Set
+
+ÊÛííÑÇÊ Agent ÈÇíÏ ÞÇÈá ãÔÇåÏå ÈÇÔäÏ.
+
+```text
+Task
+ ?
+Change Set
+ ?
+Files Changed
+ ?
+Diff
+ ?
+Commit
+```
+
+Human æ Verification ÈÇíÏ ÈÊæÇääÏ ÈÈíääÏ:
+
+> ÏÞíÞÇð å íÒí ÊÛííÑ ˜ÑÏå ÇÓÊ¿
+
+---
+
+# 51. Rollback
+
+åÑ Change ãåã ÈÇíÏ ÞÇÈá ÈÑÔÊ ÈÇÔÏ.
+
+```text
+Before
+ ?
+Change Set
+ ?
+After
+```
+
+ÏÑ ÕæÑÊ Failure:
+
+```text
+Rollback
+ ?
+Previous Version
+```
+
+Rollback ãíÊæÇäÏ ÇÒ ØÑíÞ:
+
+* Git
+* Artifact Version
+* Database Migration Rollback
+* Environment Snapshot
+
+ÇäÌÇã ÔæÏ.
+
+---
+
+# 52. Engineering Environment State Machine
+
+```text
+REQUESTED
+   ?
+PROVISIONING
+   ?
+READY
+   ?
+ASSIGNED
+   ?
+RUNNING
+   ?
+IDLE
+   ?
+RELEASED
+   ?
+DESTROYED
+```
+
+Failure:
+
+```text
+READY
+ ?
+FAILED
+ ?
+QUARANTINED
+ ?
+REPAIR / REBUILD
+```
+
+---
+
+# 53. Phase 5 Security Boundary
+
+ãÑÒ ÇãäíÊí:
+
+```text
+?????????????????????????????????
+? YFG Control Plane             ?
+?                               ?
+? Identity / Policy / Audit     ?
+?????????????????????????????????
+                ?
+          Controlled API
+                ?
+?????????????????????????????????
+? Engineering Control Plane     ?
+?????????????????????????????????
+                ?
+         Sandbox Boundary
+                ?
+?????????????????????????????????
+? Engineering Workspace         ?
+?????????????????????????????????
+                ?
+       Controlled Tool Access
+                ?
+?????????????????????????????????
+? OS / IDE / SDK / Runtime / DB ?
+?????????????????????????????????
+```
+
+---
+
+# 54. Agent äãíÊæÇäÏ Environment ÑÇ ÎæÏÔ ÊÚÑíÝ ˜äÏ
+
+ãËáÇð Agent äÈÇíÏ ÈÊæÇäÏ:
+
+```text
+"Give me unrestricted production access."
+```
+
+æ Environment ÑÇ ÊÛííÑ ÏåÏ.
+
+Environment Configuration ÈÇíÏ ÊæÓØ:
+
+```text
+Policy
++
+Environment Template
++
+Permission
++
+Human Approval if required
+```
+
+˜äÊÑá ÔæÏ.
+
+---
+
+# 55. Engineering Environment Contract
+
+åÑ Environment ÈÇíÏ Contract ÏÇÔÊå ÈÇÔÏ:
+
+```text
+Environment ID
+Type
+OS
+Architecture
+Toolchain
+Runtime
+SDK
+IDE
+Tools
+Network
+Storage
+Database
+Secrets
+Resource Limits
+Security Policy
+Supported Platforms
+Lifecycle
+Evidence Rules
+```
+
+---
+
+# 56. Core Phase 5 Entities
+
+ãÏá ÏÇÏå ÑÓãí:
+
+```text
+EngineeringEnvironment
+EnvironmentVersion
+EnvironmentTemplate
+EnvironmentCapability
+EnvironmentPolicy
+Workspace
+WorkspaceVersion
+WorkspaceAssignment
+WorkspaceSnapshot
+Repository
+RepositoryVersion
+Branch
+Commit
+ChangeSet
+Tool
+ToolVersion
+ToolBinding
+ToolExecution
+ToolPermission
+Runtime
+RuntimeVersion
+SDK
+SDKVersion
+Toolchain
+ToolchainVersion
+Build
+BuildArtifact
+TestExecution
+DebugSession
+EngineeringSession
+CommandExecution
+EnvironmentVariable
+SecretReference
+NetworkPolicy
+ResourceAllocation
+EnvironmentEvidence
+EnvironmentAudit
+PlatformAdapter
+IDEAdapter
+RuntimeAdapter
+RepositoryAdapter
+```
+
+---
+
+# 57. Core Services
+
+Phase 5 ÈÇíÏ ÍÏÇÞá Çíä Services ÑÇ ÏÇÔÊå ÈÇÔÏ:
+
+```text
+Workspace Manager
+Environment Manager
+Environment Provisioner
+Tool Registry
+Tool Gateway
+Tool Execution Manager
+Repository Manager
+Source Control Service
+Build Manager
+Test Execution Manager
+Debug Manager
+Runtime Manager
+SDK Manager
+Toolchain Manager
+Database Connector
+Secret Integration
+Network Policy Manager
+Resource Manager
+Artifact Collector
+Evidence Collector
+Engineering Session Manager
+Environment Audit
+```
+
+---
+
+# 58. ÇÑÊÈÇØ ÈÇ Phase 3
+
+Phase 3 ãíæíÏ:
+
+```text
+Task T-101
+assigned to
+Backend Agent
+```
+
+Phase 5 ÇÓÎ ãíÏåÏ:
+
+```text
+Workspace WS-201
+Environment ENV-DOTNET-001
+Repository REPO-001
+Branch feature/T-101
+```
+
+æ ÓÓ Agent æÇÞÚÇð ˜ÇÑ ãí˜äÏ.
+
+---
+
+# 59. ÇÑÊÈÇØ ÈÇ Phase 4
+
+ÈÚÏ ÇÒ ÇÌÑÇí Engineering:
+
+```text
+Build
+Test
+Artifacts
+Logs
+Evidence
+```
+
+Èå Phase 4 ÊÍæíá ÏÇÏå ãíÔæÏ:
+
+```text
+Engineering Environment
+        ?
+Evidence
+        ?
+Verification Engine
+        ?
+Quality Gate
+```
+
+---
+
+# 60. Workflow ˜Çãá Phase 3 ? 4 ? 5
+
+```text
+Human
+ ?
+Requirement
+ ?
+Workflow
+ ?
+Task
+ ?
+Agent Selection
+ ?
+Engineering Environment
+ ?
+Workspace
+ ?
+Agent
+ ?
+Edit
+ ?
+Build
+ ?
+Run
+ ?
+Test
+ ?
+Debug
+ ?
+Commit
+ ?
+Evidence
+ ?
+Independent Verification
+ ?
+Quality Gate
+ ??? PASS
+ ?     ?
+ ?   Next Stage
+ ?
+ ??? FAIL
+       ?
+     Root Cause
+       ?
+     Rework Task
+       ?
+     Engineering Workspace
+```
+
+---
+
+# 61. Multi-Platform Feature Example
+
+ÝÑÖ ˜äíã Human ãíæíÏ:
+
+> Çíä Feature ÈÇíÏ ÈÑÇí Web¡ Windows æ Android ÓÇÎÊå ÔæÏ.
+
+YFG:
+
+```text
+Requirement
+ ?
+Architecture
+ ?
+Platform Matrix
+ ??? Web
+ ??? Windows x64
+ ??? Android
+```
+
+ÓÓ:
+
+```text
+Workflow
+ ?
+Platform Tasks
+```
+
+ãËáÇð:
+
+```text
+TASK-WEB
+TASK-WINDOWS
+TASK-ANDROID
+```
+
+åÑ Task:
+
+```text
+Platform Environment
+ ?
+Workspace
+ ?
+Agent
+ ?
+Toolchain
+ ?
+Build/Test
+ ?
+Evidence
+```
+
+æ ÈÚÏ:
+
+```text
+Platform Verification
+ ?
+Integration Verification
+```
+
+---
+
+# 62. Local IDE + YFG Example
+
+ÓäÇÑíæ:
+
+```text
+Developer
+ ?
+Visual Studio
+ ?
+YFG Local Connector
+ ?
+Project
+ ?
+YFG Control
+ ?
+Backend Agent
+```
+
+Agent ãíÊæÇäÏ ÈÇ Policy:
+
+```text
+Read
+Edit
+Build
+Test
+Run
+Debug
+```
+
+ÇäÌÇã ÏåÏ.
+
+æáí:
+
+```text
+Production Database
+Production Server
+System-wide Files
+```
+
+ÏÑ ÕæÑÊ äÏÇÔÊä ãÌæÒ ÞÇÈá ÏÓÊÑÓí äíÓÊäÏ.
+
+---
+
+# 63. Phase 5 Deliverables
+
+### D01
+
+Engineering Environment Architecture
+
+### D02
+
+Workspace Model
+
+### D03
+
+Environment Model
+
+### D04
+
+Environment Template Specification
+
+### D05
+
+Environment Provisioning Model
+
+### D06
+
+Tool Registry Specification
+
+### D07
+
+Tool Gateway Specification
+
+### D08
+
+Tool Execution Model
+
+### D09
+
+Repository Integration Model
+
+### D10
+
+Git / Source Control Integration
+
+### D11
+
+IDE Adapter Architecture
+
+### D12
+
+Runtime Adapter Architecture
+
+### D13
+
+SDK / Toolchain Model
+
+### D14
+
+Build Manager Specification
+
+### D15
+
+Test Execution Manager
+
+### D16
+
+Debug Manager
+
+### D17
+
+Local Development Integration
+
+### D18
+
+Database Engineering Connectivity
+
+### D19
+
+Container / Sandbox Architecture
+
+### D20
+
+Network Policy Model
+
+### D21
+
+Secret Integration Model
+
+### D22
+
+Resource Governance Model
+
+### D23
+
+Artifact Collection Model
+
+### D24
+
+Engineering Evidence Model
+
+### D25
+
+Engineering Session Model
+
+### D26
+
+Change Set / Workspace Versioning
+
+### D27
+
+Concurrency / Merge Model
+
+### D28
+
+Rollback Model
+
+### D29
+
+Multi-Platform Engineering Environment Model
+
+### D30
+
+Platform Adapter SDK
+
+### D31
+
+Engineering Security Baseline
+
+### D32
+
+Engineering Audit Model
+
+### D33
+
+Phase 5 API / Event Contracts
+
+### D34
+
+Initial Environment Templates
+
+### D35
+
+Initial Tool Adapters
+
+---
+
+# 64. Initial Environment Templates
+
+ÈÑÇí MVP ãÚãÇÑí ãíÊæÇä Çíä TemplateåÇ ÑÇ ÊÚÑíÝ ˜ÑÏ:
+
+```text
+ENV-001
+.NET Windows x64
+
+ENV-002
+.NET Linux
+
+ENV-003
+Node.js / TypeScript
+
+ENV-004
+React / Web
+
+ENV-005
+Python
+
+ENV-006
+Android
+
+ENV-007
+Containerized Build
+
+ENV-008
+Database Test Environment
+```
+
+ÇíäåÇ TemplateåÇí ÇæáíåÇäÏ¡ äå ãÍÏæÏíÊ ãÚãÇÑí YFG.
+
+---
+
+# 65. Acceptance Criteria ÑÓãí Phase 5
+
+Phase 5 ÒãÇäí ÞÇÈá ÞÈæá ÇÓÊ ˜å:
+
+### AC-01
+
+Workspace ÑÓãí æ Versioned æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-02
+
+Agent ÈÏæä Tool Gateway äÊæÇäÏ ÇÈÒÇÑ Engineering ÑÇ ÇÌÑÇ ˜äÏ.
+
+### AC-03
+
+Tool Access ÈÑ ÇÓÇÓ Permission æ Policy ˜äÊÑá ÔæÏ.
+
+### AC-04
+
+Local Development Integration æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-05
+
+Git / Repository Integration æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-06
+
+IDE Adapter Architecture æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-07
+
+SDK æ Runtime ãÏíÑíÊ ÔæäÏ.
+
+### AC-08
+
+Build Manager æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-09
+
+Test Execution Manager æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-10
+
+Debugging ˜äÊÑáÔÏå ÔÊíÈÇäí ÔæÏ.
+
+### AC-11
+
+Database Connectivity ÊÍÊ Policy ÈÇÔÏ.
+
+### AC-12
+
+Workspace Isolation æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-13
+
+Concurrency æ Merge Conflict ˜äÊÑá ÔæÏ.
+
+### AC-14
+
+Resource Limits enforce ÔæäÏ.
+
+### AC-15
+
+Network Policy enforce ÔæÏ.
+
+### AC-16
+
+SecretåÇ ãÓÊÞíã ÏÑ ÇÎÊíÇÑ Agent ÞÑÇÑ äíÑäÏ.
+
+### AC-17
+
+Engineering Environment ÞÇÈá ÈÇÒÊæáíÏ ÈÇÔÏ.
+
+### AC-18
+
+Toolchain Versioning æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-19
+
+Artifact Collection æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-20
+
+Engineering Evidence ÊæáíÏ ÔæÏ.
+
+### AC-21
+
+ÊãÇã ExecutionåÇ Audit ÔæäÏ.
+
+### AC-22
+
+Rollback / Workspace Recovery æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-23
+
+Multi-Platform Environment Model æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-24
+
+Platform Adapter Architecture æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### AC-25
+
+Phase 5 ÈÇ Phase 3 æ Phase 4 í˜ÇÑå ÈÇÔÏ.
+
+### AC-26
+
+Production ÏÓÊÑÓí íÔÝÑÖ Agent äÈÇÔÏ.
+
+### AC-27
+
+Command Execution ÊÍÊ Allowlist / Policy ÈÇÔÏ.
+
+### AC-28
+
+Environment ÞÈá ÇÒ Execution Validation ÔæÏ.
+
+### AC-29
+
+Tool/SDK/Runtime Version ÞÇÈá ÑÏíÇÈí ÈÇÔÏ.
+
+### AC-30
+
+Human ÈÊæÇäÏ Change Set æ Execution Evidence ÑÇ ãÔÇåÏå ˜äÏ.
+
+---
+
+# 66. Hard Gates ÑÓãí Phase 5
+
+## HG-36
+
+**No Authorized Workspace ? No Agent Engineering Execution**
+
+## HG-37
+
+**No Tool Permission ? No Tool Execution**
+
+## HG-38
+
+**No Environment Validation ? No Execution**
+
+## HG-39
+
+**Unrestricted OS Access ? Forbidden**
+
+## HG-40
+
+**Production as Default Workspace ? Forbidden**
+
+## HG-41
+
+**Unauthorized Network Access ? Denied**
+
+## HG-42
+
+**Unauthorized Secret Access ? Denied**
+
+## HG-43
+
+**Resource Limit Exceeded ? Execution Stopped**
+
+## HG-44
+
+**Workspace Conflict ? Execution Blocked**
+
+## HG-45
+
+**Missing Engineering Evidence ? Critical Handoff Blocked**
+
+## HG-46
+
+**Untracked Change ? Cannot Enter Controlled Verification**
+
+## HG-47
+
+**Unverified Environment Configuration ? Critical Execution Blocked**
+
+## HG-48
+
+**Unsupported Platform Toolchain ? Platform Task Blocked**
+
+## HG-49
+
+**Unauthorized Production Database Access ? Forbidden**
+
+## HG-50
+
+**Tool Gateway Bypass ? Forbidden**
+
+---
+
+# 67. Phase 5 Exit Gate
+
+ÈÑÇí ÎÑæÌ ÑÓãí ÇÒ Phase 5:
+
+```text
+G1
+Engineering Architecture Verification
+        ?
+G2
+Workspace Verification
+        ?
+G3
+Environment Isolation Verification
+        ?
+G4
+Tool Gateway Verification
+        ?
+G5
+Repository / Git Verification
+        ?
+G6
+IDE / CLI Integration Verification
+        ?
+G7
+Build / Test / Debug Verification
+        ?
+G8
+Database Connectivity Verification
+        ?
+G9
+Security / Secret / Network Review
+        ?
+G10
+Resource Governance Verification
+        ?
+G11
+Multi-Platform Environment Verification
+        ?
+G12
+Evidence / Audit Verification
+        ?
+G13
+Local Development End-to-End Test
+        ?
+G14
+Human Architecture Approval
+        ?
+G15
+Baseline Freeze
+```
+
+---
+
+# 68. ÎÑæÌí ÑÓãí Phase 5
+
+ÏÑ ÕæÑÊ PASS:
+
+```text
+YFG-ENGINEERING-ENVIRONMENT-FOUNDATION v0.1
+```
+
+Çíä Baseline ÈÇíÏ ËÇÈÊ ˜äÏ ˜å YFG ÇÒ äÙÑ ãÚãÇÑí ÞÇÏÑ ÇÓÊ:
+
+```text
+Human Intent
+   ?
+Task
+   ?
+Agent
+   ?
+Real Repository
+   ?
+Real Workspace
+   ?
+Real IDE / CLI / SDK
+   ?
+Real Build
+   ?
+Real Test
+   ?
+Real Runtime
+   ?
+Evidence
+   ?
+Independent Verification
+```
+
+ÑÇ ÇÌÑÇ ˜äÏ.
+
+---
+
+# 69. ãÚãÇÑí äÌ Phase Çæá YFG
+
+Ç˜äæä ÓÇÎÊÇÑ ÈäíÇÏí YFG Èå Ô˜á ÈÓíÇÑ ãÔÎÕí ÏÑÂãÏå ÇÓÊ:
+
+```text
+???????????????????????????????????????????????
+?                  HUMAN                      ?
+?           Product Authority                 ?
+???????????????????????????????????????????????
+                       ?
+                       ?
+???????????????????????????????????????????????
+? PHASE 1                                     ?
+? FOUNDATION & GOVERNANCE                     ?
+?                                             ?
+? Rules / Authority / Models / Policies      ?
+???????????????????????????????????????????????
+                       ?
+                       ?
+???????????????????????????????????????????????
+? PHASE 2                                     ?
+? AGENT CONTRACT / IDENTITY / CAPABILITY     ?
+?                                             ?
+? Who can do What / Where / Under Which Rule ?
+???????????????????????????????????????????????
+                       ?
+                       ?
+???????????????????????????????????????????????
+? PHASE 3                                     ?
+? ORCHESTRATION & WORKFLOW                    ?
+?                                             ?
+? What / Who / When / Dependency / Handoff   ?
+???????????????????????????????????????????????
+                       ?
+                       ?
+???????????????????????????????????????????????
+? PHASE 5                                     ?
+? ENGINEERING ENVIRONMENT                     ?
+?                                             ?
+? Where and How Engineering Actually Runs    ?
+???????????????????????????????????????????????
+                       ?
+                       ?
+                 ARTIFACT / EVIDENCE
+                       ?
+                       ?
+???????????????????????????????????????????????
+? PHASE 4                                     ?
+? VERIFICATION & QUALITY GATES                ?
+?                                             ?
+? Is It Valid / Secure / Tested / Evidenced? ?
+???????????????????????????????????????????????
+                       ?
+                  ???????????
+                  ?         ?
+                PASS       FAIL
+                  ?         ?
+                  ?         ?
+             NEXT STAGE   REWORK
+```
+
+### äÊíÌå ãÚãÇÑí Phase 5
+
+Phase 5 ÏÑ æÇÞÚ **á Èíä «Agent ãíÏÇäÏ å ˜ÇÑí ÈÇíÏ ÇäÌÇã ÏåÏ» æ «Agent æÇÞÚÇð ãíÊæÇäÏ Âä ˜ÇÑ ãåäÏÓí ÑÇ ÏÑ í˜ ãÍíØ æÇÞÚí æ ˜äÊÑáÔÏå ÇäÌÇã ÏåÏ»** ÇÓÊ.
+
+æ Óå ÊÝ˜í˜ ÈÇíÏ ˜ÇãáÇð ÍÝÙ ÔæäÏ:
+
+> **Agent Intelligence ? Engineering Environment ? Verification**
+
+íÚäí:
+
+```text
+Agent
+= Think / Decide / Generate
+
+Engineering Environment
+= Execute / Build / Run / Debug
+
+Verification
+= Independently Validate / Prove
+```
+
+**Baseline ÑÓãí Phase 5:**
+
+> **YFG-ENGINEERING-ENVIRONMENT-FOUNDATION v0.1**

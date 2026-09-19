@@ -1,0 +1,1652 @@
+Èáå. ÈÇ ÊæÌå Èå ãÚãÇÑí äåÇíí ˜å ÊËÈíÊ ˜ÑÏíã¡ ãÑÍáå ÈÚÏ ÈÇíÏ **Phase-Based Architecture — ãÚãÇÑí İÇÒÈäÏíÔÏå** ÈÇÔÏº íÚäí ãÔÎÕ ˜äíã YFG ÇÒ å äÓÎåÇí ÔÑæÚ ãíÔæÏ¡ ÏÑ åÑ İÇÒ ÏŞíŞÇğ å ÇÌÒÇíí ÓÇÎÊå ãíÔæäÏ¡ å íÒåÇíí äÈÇíÏ Èå İÇÒ ÈÚÏ ãäÊŞá ÔæäÏ¡ æ Gate åÑ İÇÒ íÓÊ.
+
+íÔäåÇÏ ãä Çíä ÇÓÊ ˜å İÇÒåÇ ÑÇ ÈÑ ÇÓÇÓ **ŞÇÈáíÊ ÚãáíÇÊí æÇŞÚí** ÊÚÑíİ ˜äíã¡ äå ÕÑİÇğ ÈÑ ÇÓÇÓ ÊÚÏÇÏ ãÇæáåÇ.
+
+# YFG AI Software Factory
+
+## Phase-Based Architecture — ãÚãÇÑí İÇÒÈäÏíÔÏå
+
+### äÓÎå Çíå ãÚãÇÑí: V1.0
+
+---
+
+# 1. åÏİ İÇÒÈäÏí
+
+åÏİ Çíä İÇÒÈäÏí¡ ÊÈÏíá ãÚãÇÑí äåÇíí YFG Èå í˜ ãÓíÑ ÇÌÑÇíí ˜äÊÑáÔÏå ÇÓÊ.
+
+åÑ Phase ÈÇíÏ:
+
+* ŞÇÈáíÊ ãÔÎÕí ÇíÌÇÏ ˜äÏ.
+* ArtifactåÇí ãÔÎÕí ÊæáíÏ ˜äÏ.
+* Verification ãÓÊŞá ÏÇÔÊå ÈÇÔÏ.
+* Quality Gate ÏÇÔÊå ÈÇÔÏ.
+* ÏÑ äŞÇØ ÍÓÇÓ Human Approval ÏÇÔÊå ÈÇÔÏ.
+* ŞÇÈá Rollback ÈÇÔÏ.
+* ÎÑæÌí Âä ÈÑÇí Phase ÈÚÏí ŞÇÈá ÇÓÊİÇÏå ÈÇÔÏ.
+
+ÇÕá ãåã:
+
+> **Phase ÈÚÏí äÈÇíÏ ÕÑİÇğ Èå Ïáíá Ê˜ãíá ˜ÏäæíÓí Phase ŞÈáí ÔÑæÚ ÔæÏº Èá˜å ÈÇíÏ GateåÇí ãÚãÇÑí¡ ˜íİíÊ æ ÍÇ˜ãíÊ Phase ŞÈáí ÈÇ ãæİŞíÊ ÚÈæÑ ˜ÑÏå ÈÇÔäÏ.**
+
+---
+
+# 2. ãÏá ˜áí İÇÒåÇ
+
+YFG ÑÇ ãíÊæÇä ÏÑ **12 İÇÒ ÇÕáí** íÇÏåÓÇÒí ˜ÑÏ:
+
+```text
+PHASE 0
+Foundation & Governance
+ÈäíÇä æ ÍÇ˜ãíÊ
+        ?
+PHASE 1
+YFG Core Platform
+åÓÊå áÊİÑã
+        ?
+PHASE 2
+Agent Contract & Registry
+ŞÑÇÑÏÇÏ æ Registry AgentåÇ
+        ?
+PHASE 3
+Orchestration & Workflow
+åãÇåäÓÇÒí æ ÑÏÔ˜ÇÑ
+        ?
+PHASE 4
+Verification & Quality Gates
+ÑÇÓÊíÂÒãÇíí æ ÏÑæÇÒååÇí ˜íİíÊ
+        ?
+PHASE 5
+Engineering Environment
+ãÍíØ ãåäÏÓí
+        ?
+PHASE 6
+Project Intelligence & Traceability
+åæÔ Ñæå æ ÑÏíÇÈí
+        ?
+PHASE 7
+AI Engineering Agents
+AgentåÇí ãåäÏÓí
+        ?
+PHASE 8
+QA / Security / Release
+˜íİíÊ¡ ÇãäíÊ æ ÇäÊÔÇÑ
+        ?
+PHASE 9
+Deployment & Operations
+ÇÓÊŞÑÇÑ æ ÚãáíÇÊ
+        ?
+PHASE 10
+Knowledge / Documentation / Training
+ÏÇäÔ¡ ãÓÊäÏÇÊ æ ÂãæÒÔ
+        ?
+PHASE 11
+AI Software Factory
+˜ÇÑÎÇäå ˜Çãá äÑãÇİÒÇÑ
+```
+
+---
+
+# 3. Phase 0 — Foundation & Governance
+
+## İÇÒ ÕİÑ — ÈäíÇä æ ÍÇ˜ãíÊ
+
+### åÏİ
+
+ÇíÌÇÏ ÒíÑÓÇÎÊ ãİåæãí æ ÍÇ˜ãíÊí YFG ŞÈá ÇÒ æÑæÏ Èå AgentåÇí æÇŞÚí.
+
+ÏÑ Çíä Phase åäæÒ åÏİ ÇÕáí «ÊæáíÏ äÑãÇİÒÇÑ» äíÓÊ.
+
+åÏİ:
+
+> ÓÇÎÊ ŞæÇäíä¡ ãÏáåÇ æ ŞÑÇÑÏÇÏåÇíí ˜å ˜á ˜ÇÑÎÇäå ÂíäÏå ÈÑ ÇÓÇÓ ÂäåÇ ˜ÇÑ ÎæÇåÏ ˜ÑÏ.
+
+---
+
+## ÇÌÒÇí Phase 0
+
+### 0.1 Product Model
+
+ãÏá ãÍÕæá
+
+### 0.2 Project Model
+
+ãÏá Ñæå
+
+### 0.3 Requirement Model
+
+ãÏá äíÇÒãäÏí
+
+### 0.4 Artifact Model
+
+ãÏá ÎÑæÌí
+
+### 0.5 Version Model
+
+ãÏá äÓÎå
+
+### 0.6 Decision Model
+
+ãÏá ÊÕãíã
+
+### 0.7 Approval Model
+
+ãÏá ÊÃííÏ
+
+### 0.8 Audit Model
+
+ãÏá ÍÓÇÈÑÓí
+
+### 0.9 Policy Model
+
+ãÏá ÓíÇÓÊ
+
+### 0.10 Security Model
+
+ãÏá ÇãäíÊ
+
+---
+
+## ÎÑæÌí Phase 0
+
+```text
+Product
+Project
+Requirement
+Artifact
+Version
+Decision
+Approval
+Policy
+Audit
+Security
+```
+
+---
+
+## Gate 0
+
+### Foundation Gate
+
+ÈÇíÏ ãÔÎÕ ÈÇÔÏ:
+
+* å íÒí Project ÇÓÊ¿
+* å íÒí Artifact ÇÓÊ¿
+* å íÒí Requirement ÇÓÊ¿
+* å íÒí Decision ÇÓÊ¿
+* å ˜Óí Approval ãíÏåÏ¿
+* å íÒí äíÇÒãäÏ Verification ÇÓÊ¿
+* å íÒí ŞÇÈá Rollback ÇÓÊ¿
+
+---
+
+# 4. Phase 1 — YFG Core Platform
+
+## İÇÒ í˜ — åÓÊå áÊİÑã YFG
+
+### åÏİ
+
+ÓÇÎÊ ÍÏÇŞá Runtime æÇŞÚí YFG.
+
+---
+
+## ÇÌÒÇí ÇÕáí
+
+### Control Center
+
+ãÑ˜Ò ˜äÊÑá
+
+### Project Management
+
+ãÏíÑíÊ Ñæå
+
+### Task Management
+
+ãÏíÑíÊ æÙÇíİ
+
+### Artifact Management
+
+ãÏíÑíÊ ÎÑæÌíåÇ
+
+### Version Management
+
+ãÏíÑíÊ äÓÎååÇ
+
+### Audit Log
+
+ËÈÊ ÑæíÏÇÏåÇ
+
+### Approval Engine
+
+ãæÊæÑ ÊÃííÏ
+
+### Policy Engine
+
+ãæÊæÑ ÓíÇÓÊ
+
+### Notification Engine
+
+ãæÊæÑ ÇÚáÇä
+
+---
+
+## Architecture
+
+```text
+Human
+  ?
+Control Center
+  ?
+Project
+  ?
+Task
+  ?
+Artifact
+  ?
+Approval
+  ?
+Audit
+```
+
+---
+
+## Gate 1
+
+YFG ÈÇíÏ ÈÊæÇäÏ:
+
+1. Project ÇíÌÇÏ ˜äÏ.
+2. Task ÇíÌÇÏ ˜äÏ.
+3. Artifact ËÈÊ ˜äÏ.
+4. Version ËÈÊ ˜äÏ.
+5. Approval ËÈÊ ˜äÏ.
+6. Audit ÇíÌÇÏ ˜äÏ.
+7. æÖÚíÊ Project ÑÇ äåÏÇÑí ˜äÏ.
+
+---
+
+# 5. Phase 2 — Agent Contract & Registry
+
+## İÇÒ Ïæ — ŞÑÇÑÏÇÏ æ Registry AgentåÇ
+
+Çíä Phase í˜í ÇÒ ãåãÊÑíä ãÑÇÍá ãÚãÇÑí ÇÓÊ.
+
+### åÏİ
+
+ŞÈá ÇÒ Çíä˜å AgentåÇí ãÊÚÏÏ æÇÑÏ ÓíÓÊã ÔæäÏ¡ ÈÇíÏ ãÔÎÕ ÔæÏ:
+
+> åÑ Agent ÏŞíŞÇğ å ˜Óí ÇÓÊ æ å ÇÌÇÒåÇí ÏÇÑÏ¿
+
+---
+
+# Agent Contract Layer
+
+åÑ Agent ÏÇÑÇí Contract ÎæÇåÏ ÈæÏ.
+
+```text
+Agent
+ ?
+Contract
+ ?
+Role
+ ?
+Scope
+ ?
+Tools
+ ?
+Permissions
+ ?
+Inputs
+ ?
+Outputs
+ ?
+Verification
+ ?
+Quality Gate
+ ?
+Escalation
+```
+
+---
+
+## Agent Registry
+
+ãÎÒä ãÑ˜Òí AgentåÇ:
+
+```text
+Agent ID
+Agent Name
+Agent Type
+Version
+Contract Version
+Role
+Status
+Permissions
+Tools
+Capabilities
+```
+
+---
+
+## Agent Contract
+
+ÍÏÇŞá:
+
+```text
+Identity
+Role
+Mission
+Scope
+Inputs
+Outputs
+Tools
+Permissions
+Constraints
+Policies
+Acceptance Criteria
+Verification Rules
+Quality Gates
+Retry Policy
+Escalation Rules
+Human Approval
+Security Requirements
+Audit Requirements
+Rollback Policy
+Dependencies
+Failure Conditions
+SLA
+Knowledge Requirements
+Handoff Rules
+```
+
+---
+
+## Gate 2
+
+ŞÈá ÇÒ ÚÈæÑ:
+
+* Agent ÈÇíÏ Identity ÏÇÔÊå ÈÇÔÏ.
+* Contract ÏÇÔÊå ÈÇÔÏ.
+* Permission ÏÇÔÊå ÈÇÔÏ.
+* Tool Scope ÏÇÔÊå ÈÇÔÏ.
+* Verification Rule ÏÇÔÊå ÈÇÔÏ.
+* Escalation Rule ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+# 6. Phase 3 — Orchestration & Workflow
+
+## İÇÒ Óå — åãÇåäÓÇÒí æ ÑÏÔ˜ÇÑ
+
+### åÏİ
+
+YFG ÇÒ í˜ ÓíÓÊã ãÏíÑíÊ Agent Èå í˜ ÓíÓÊã **Agent Organization** ÊÈÏíá ÔæÏ.
+
+---
+
+## ÇÌÒÇí ÇÕáí
+
+### Agent Orchestrator
+
+åãÇåä˜ääÏå AgentåÇ
+
+### Workflow Engine
+
+ãæÊæÑ ÑÏÔ˜ÇÑ
+
+### Task Scheduler
+
+ÒãÇäÈäÏí æÙÇíİ
+
+### Dependency Manager
+
+ãÏíÑíÊ æÇÈÓÊí
+
+### Context Manager
+
+ãÏíÑíÊ Òãíäå
+
+### Handoff Manager
+
+ãÏíÑíÊ ÊÍæíá Èíä AgentåÇ
+
+---
+
+## Workflow
+
+```text
+Task
+ ?
+Orchestrator
+ ?
+Select Agent
+ ?
+Load Contract
+ ?
+Load Context
+ ?
+Execute
+ ?
+Handoff
+```
+
+---
+
+## Gate 3
+
+ÓíÓÊã ÈÇíÏ ÈÊæÇäÏ:
+
+```text
+Task
+ ?
+Agent Selection
+ ?
+Execution
+ ?
+Handoff
+```
+
+ÑÇ ÈÏæä ÏÎÇáÊ ÏÓÊí ÈÑÇí ãÑÇÍá ÚÇÏí ÇäÌÇã ÏåÏ.
+
+ÇãÇ:
+
+> Human Authority åãäÇä ŞÇÈá ÏæÑ ÒÏä äíÓÊ.
+
+---
+
+# 7. Phase 4 — Verification & Quality Gates
+
+## İÇÒ åÇÑ — ÑÇÓÊíÂÒãÇíí æ ÏÑæÇÒååÇí ˜íİíÊ
+
+Çíä Phase åÓÊå ÇÚÊãÇÏ YFG ÇÓÊ.
+
+### åÏİ
+
+ÊÈÏíá YFG ÇÒ:
+
+**Agent Execution Platform**
+
+Èå:
+
+**Verification-Driven AI Engineering Platform**
+
+---
+
+# Verification Engine
+
+```text
+Artifact
+ ?
+Verification Rule
+ ?
+Independent Verifier
+ ?
+Verification Result
+ ?
+Quality Gate
+```
+
+---
+
+## Verification Types
+
+### Requirement Verification
+
+ÑÇÓÊíÂÒãÇíí äíÇÒãäÏí
+
+### Architecture Verification
+
+ÑÇÓÊíÂÒãÇíí ãÚãÇÑí
+
+### Database Verification
+
+ÑÇÓÊíÂÒãÇíí ÇíÇå ÏÇÏå
+
+### Code Verification
+
+ÑÇÓÊíÂÒãÇíí ˜Ï
+
+### API Verification
+
+ÑÇÓÊíÂÒãÇíí API
+
+### UI Verification
+
+ÑÇÓÊíÂÒãÇíí UI
+
+### Security Verification
+
+ÑÇÓÊíÂÒãÇíí ÇãäíÊ
+
+### Documentation Verification
+
+ÑÇÓÊíÂÒãÇíí ãÓÊäÏÇÊ
+
+---
+
+# Rework Engine
+
+```text
+FAIL
+ ?
+Failure Analysis
+ ?
+Feedback
+ ?
+Rework
+ ?
+Verification
+```
+
+---
+
+# Escalation
+
+```text
+Attempt 1
+ ?
+FAIL
+ ?
+Attempt 2
+ ?
+FAIL
+ ?
+Attempt 3
+ ?
+FAIL
+ ?
+Human Escalation
+```
+
+ÊÚÏÇÏ ÊáÇÔ ÈÇíÏ ÏÑ Contract ŞÇÈá ÊäÙíã ÈÇÔÏ.
+
+---
+
+## Gate 4
+
+åí Artifact ãåãí äÈÇíÏ ÈÊæÇäÏ ÈÏæä Verification æÇÑÏ ãÑÍáå ÈÚÏ ÔæÏ.
+
+Çíä Phase ÈÇíÏ í˜í ÇÒ **Hard Architectural Gates** ÓíÓÊã ÈÇÔÏ.
+
+---
+
+# 8. Phase 5 — Engineering Environment
+
+## İÇÒ äÌ — ãÍíØ ãåäÏÓí
+
+### åÏİ
+
+ÇíÌÇÏ ãÍíØí ˜å Agent ÈÊæÇäÏ æÇŞÚÇğ äÑãÇİÒÇÑ ÊæáíÏ ˜äÏ.
+
+---
+
+## ÇÌÒÇ
+
+### Git Integration
+
+˜äÊÑá äÓÎå
+
+### Repository Manager
+
+ãÏíÑíÊ Repository
+
+### Branch Management
+
+ãÏíÑíÊ Branch
+
+### Sandbox
+
+ãÍíØ ÇíÒæáå
+
+### Build Environment
+
+ãÍíØ Build
+
+### Test Environment
+
+ãÍíØ Test
+
+### Dependency Manager
+
+ãÏíÑíÊ æÇÈÓÊí
+
+---
+
+# Environment Architecture
+
+```text
+Agent
+ ?
+Sandbox
+ ?
+Repository
+ ?
+Branch
+ ?
+Build
+ ?
+Test
+```
+
+---
+
+# Environment Isolation
+
+```text
+Development
+     ?
+Test
+     ?
+Staging
+     ?
+Production
+```
+
+Production äÈÇíÏ Workspace íÔİÑÖ Agent ÈÇÔÏ.
+
+---
+
+## Gate 5
+
+Agent ÈÇíÏ ÈÊæÇäÏ:
+
+```text
+Create Branch
+Write Code
+Commit
+Build
+Test
+Return Artifact
+```
+
+ÇãÇ:
+
+```text
+Direct Production Access
+```
+
+äÈÇíÏ ÈåÕæÑÊ íÔİÑÖ æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+# 9. Phase 6 — Project Intelligence & Traceability
+
+## İÇÒ ÔÔ — åæÔ Ñæå æ ŞÇÈáíÊ ÑÏíÇÈí
+
+Çíä Phase åãÇä íÒí ÇÓÊ ˜å YFG ÑÇ ÇÒ í˜ Agent Orchestrator ÓÇÏå ÌÏÇ ãí˜äÏ.
+
+---
+
+# Project Intelligence
+
+YFG ÈÇíÏ ÓÇÎÊÇÑ Ñæå ÑÇ ÈİåãÏ:
+
+```text
+Project
+ ??? Requirements
+ ??? Architecture
+ ??? Database
+ ??? APIs
+ ??? Source Code
+ ??? Tests
+ ??? Security
+ ??? Documentation
+ ??? Releases
+```
+
+---
+
+# Dependency Graph
+
+```text
+Requirement
+      ?
+Architecture
+      ?
+Module
+      ?
+API
+      ?
+Code
+      ?
+Test
+```
+
+---
+
+# Traceability Engine
+
+ÈÇíÏ ÈÊæÇäÏ ÇÓÎ ÏåÏ:
+
+### ÓÄÇá 1
+
+> Çíä Requirement ˜ÌÇ íÇÏåÓÇÒí ÔÏå¿
+
+### ÓÄÇá 2
+
+> Çíä Code ÈÑ ÇÓÇÓ ˜ÏÇã Requirement ÇíÌÇÏ ÔÏå¿
+
+### ÓÄÇá 3
+
+> ˜ÏÇã Test Çíä Requirement ÑÇ æÔÔ ãíÏåÏ¿
+
+### ÓÄÇá 4
+
+> Çíä Bug å ArtifactåÇíí ÑÇ ÊÍÊ ÊÃËíÑ ŞÑÇÑ ãíÏåÏ¿
+
+### ÓÄÇá 5
+
+> Çíä Release ÔÇãá å ÊÛííÑÇÊí ÇÓÊ¿
+
+---
+
+# Project State Engine
+
+```text
+Current Stage
+Current Version
+Current Artifact
+Pending Verification
+Pending Approval
+Failed Tasks
+Blocked Tasks
+Release Status
+```
+
+---
+
+## Gate 6
+
+YFG ÈÇíÏ ÈÊæÇäÏ í˜ Project ÑÇ ÈåÕæÑÊ ÓÇÎÊÇÑíÇİÊå ÊÍáíá æ Navigate ˜äÏ.
+
+---
+
+# 10. Phase 7 — AI Engineering Agents
+
+## İÇÒ åİÊ — AgentåÇí ãåäÏÓí äÑãÇİÒÇÑ
+
+Ç˜äæä AgentåÇí ÊÎÕÕí æÇŞÚí æÇÑÏ ÓíÓÊã ãíÔæäÏ.
+
+---
+
+# Product Agents
+
+### Product Manager Agent
+
+ãÏíÑíÊ ãÍÕæá
+
+### Business Analyst Agent
+
+ÊÍáíá ˜ÓÈæ˜ÇÑ
+
+---
+
+# Architecture Agents
+
+### Solution Architect Agent
+
+ãÚãÇÑ ÑÇå˜ÇÑ
+
+### Database Architect Agent
+
+ãÚãÇÑ ÇíÇå ÏÇÏå
+
+---
+
+# Development Agents
+
+### Backend Agent
+
+ÊæÓÚå Backend
+
+### Frontend Agent
+
+ÊæÓÚå Frontend
+
+### Database Development Agent
+
+ÊæÓÚå Database
+
+### Integration Agent
+
+í˜ÇÑåÓÇÒí
+
+---
+
+# Quality Agents
+
+### QA Agent
+
+ÊÖãíä ˜íİíÊ
+
+### Code Review Agent
+
+ÈÇÒÈíäí ˜Ï
+
+### Security Agent
+
+ÇãäíÊ
+
+### Bug Hunter Agent
+
+˜Ôİ ÎØÇ
+
+---
+
+# Support Agents
+
+### Documentation Agent
+
+ãÓÊäÏÓÇÒí
+
+### Training Agent
+
+ÂãæÒÔ
+
+### Catalog Agent
+
+˜ÇÊÇáæ
+
+---
+
+# Orchestration
+
+```text
+Human
+ ?
+Product Manager
+ ?
+BA
+ ?
+Architect
+ ?
+Database
+ ?
+Backend
+ ?
+Frontend
+ ?
+Integration
+ ?
+QA
+ ?
+Security
+ ?
+Documentation
+```
+
+åÑ ãÑÍáå:
+
+```text
+Generate
+ ?
+Verify
+ ?
+Gate
+ ?
+Next
+```
+
+---
+
+## Gate 7
+
+ÍÏÇŞá í˜ **End-to-End Software Delivery Flow** ÈÇíÏ ÈÏæä ÏÎÇáÊ ÏÓÊí Èíä ÊãÇã ãÑÇÍá ÇÕáí ÇÌÑÇ ÔæÏ.
+
+---
+
+# 11. Phase 8 — QA / Security / Release
+
+## İÇÒ åÔÊ — ˜íİíÊ¡ ÇãäíÊ æ ÇäÊÔÇÑ
+
+ÏÑ Çíä Phase¡ ÓíÓÊã ÇÒ ÊæáíÏ ÕÑİ Èå **Release Engineering** ÊÈÏíá ãíÔæÏ.
+
+---
+
+## QA
+
+```text
+Requirement QA
+ ?
+Architecture QA
+ ?
+Database QA
+ ?
+Code QA
+ ?
+Integration QA
+```
+
+---
+
+## Security
+
+```text
+Authentication
+Authorization
+RBAC
+Secrets
+Dependencies
+Vulnerabilities
+API Security
+Data Protection
+```
+
+---
+
+## Release
+
+```text
+Build
+ ?
+Test
+ ?
+Security
+ ?
+Review
+ ?
+Release Verification
+ ?
+Human Approval
+ ?
+Release
+```
+
+---
+
+## Gate 8
+
+åí Release ãåãí ÈÏæä:
+
+```text
+QA
++
+Security
++
+Verification
++
+Human Approval
+```
+
+ãäÊÔÑ äãíÔæÏ.
+
+---
+
+# 12. Phase 9 — Deployment & Operations
+
+## İÇÒ äå — ÇÓÊŞÑÇÑ æ ÚãáíÇÊ
+
+### åÏİ
+
+YFG ÈÊæÇäÏ ãÍÕæá ÓÇÎÊåÔÏå ÑÇ ÈÇ ˜äÊÑá ˜Çãá æÇÑÏ ãÍíØ æÇŞÚí ˜äÏ.
+
+---
+
+# Deployment Agent
+
+```text
+Package
+ ?
+Environment Validation
+ ?
+Deployment Plan
+ ?
+Verification
+ ?
+Human Approval
+ ?
+Deployment
+```
+
+---
+
+# Monitoring Agent
+
+ÇíÔ:
+
+```text
+CPU
+RAM
+Database
+API
+Latency
+Errors
+Availability
+Security Events
+```
+
+---
+
+# Incident Agent
+
+```text
+Incident
+ ?
+Detection
+ ?
+Analysis
+ ?
+Root Cause
+ ?
+Impact
+ ?
+Fix
+ ?
+Verification
+ ?
+Approval
+ ?
+Deployment
+```
+
+---
+
+# Rollback
+
+```text
+Release 1.2
+ ?
+Incident
+ ?
+Rollback
+ ?
+Release 1.1
+```
+
+---
+
+## Gate 9
+
+YFG ÈÇíÏ ÈÊæÇäÏ:
+
+* Deploy
+* Verify
+* Monitor
+* Detect Incident
+* Prepare Recovery
+* Rollback
+
+ÑÇ ÏÑ í˜ ÑÎå ˜äÊÑáÔÏå ÇäÌÇã ÏåÏ.
+
+---
+
+# 13. Phase 10 — Knowledge / Documentation / Training
+
+## İÇÒ Ïå — ÏÇäÔ¡ ãÓÊäÏÇÊ æ ÂãæÒÔ
+
+### åÏİ
+
+ÊÈÏíá ÎÑæÌíåÇí İäí YFG Èå ÏÇäÔ ŞÇÈá ÇÓÊİÇÏå ÈÑÇí ÇäÓÇä.
+
+---
+
+# Documentation
+
+```text
+Architecture Document
+Technical Documentation
+API Documentation
+Database Documentation
+Installation Guide
+Administration Guide
+User Manual
+Release Notes
+Troubleshooting Guide
+```
+
+---
+
+# Training
+
+```text
+Goal
+ ?
+Prerequisites
+ ?
+Steps
+ ?
+Example
+ ?
+Common Errors
+ ?
+Practice
+```
+
+---
+
+# Catalog
+
+```text
+Product Catalog
+Module Catalog
+Feature Catalog
+Technical Catalog
+User Catalog
+```
+
+---
+
+## Gate 10
+
+åÑ Release ÈÇíÏ Documentation æ Training ãÊäÇÓÈ ÈÇ ÊÛííÑÇÊ ÎæÏ ÏÇÔÊå ÈÇÔÏ.
+
+---
+
+# 14. Phase 11 — AI Software Factory
+
+## İÇÒ íÇÒÏå — ˜ÇÑÎÇäå ˜Çãá äÑãÇİÒÇÑ
+
+ÏÑ Çíä ãÑÍáå ÊãÇã ÇÌÒÇí YFG Èå í˜ ÓíÓÊã í˜ÇÑå ÊÈÏíá ãíÔæäÏ.
+
+---
+
+# End-to-End Factory
+
+```text
+HUMAN IDEA
+     ?
+PRODUCT
+     ?
+REQUIREMENTS
+     ?
+ARCHITECTURE
+     ?
+DESIGN
+     ?
+DATABASE
+     ?
+BACKEND
+     ?
+FRONTEND
+     ?
+INTEGRATION
+     ?
+TEST
+     ?
+SECURITY
+     ?
+DOCUMENTATION
+     ?
+RELEASE
+     ?
+DEPLOYMENT
+     ?
+MONITORING
+     ?
+INCIDENT
+     ?
+MAINTENANCE
+     ?
+EVOLUTION
+```
+
+ÏÑ ÊãÇã ãÓíÑ:
+
+```text
+CONTRACT
++
+VERIFICATION
++
+QUALITY GATE
++
+TRACEABILITY
++
+AUDIT
++
+HUMAN GOVERNANCE
+```
+
+İÚÇá åÓÊäÏ.
+
+---
+
+# 15. Phase Dependency Map
+
+## äŞÔå æÇÈÓÊí İÇÒåÇ
+
+```text
+P0 Foundation
+       ?
+       ?
+P1 Core Platform
+       ?
+       ?
+P2 Agent Contracts
+       ?
+       ?
+P3 Orchestration
+       ?
+       ?
+P4 Verification
+       ?
+       ?
+P5 Engineering Environment
+       ?
+       ?
+P6 Project Intelligence
+       ?
+       ?
+P7 Engineering Agents
+       ?
+       ?
+P8 QA / Security / Release
+       ?
+       ?
+P9 Deployment / Operations
+       ?
+       ?
+P10 Knowledge / Documentation
+       ?
+       ?
+P11 AI Software Factory
+```
+
+---
+
+# 16. MVP Boundary
+
+## ãÑÒ MVP
+
+ÈÑÇí Çíä˜å Ñæå ÈíÔ ÇÒ ÍÏ ÈÒÑ äÔæÏ¡ Çæáíä äÓÎå ÚãáíÇÊí äÈÇíÏ ÊãÇã PhaseåÇ ÑÇ íÇÏåÓÇÒí ˜äÏ.
+
+### MVP æÇŞÚí YFG:
+
+```text
+P0
++
+P1
++
+P2
++
+P3
++
+P4
++
+P5
++
+P6
+```
+
+íÚäí:
+
+```text
+Foundation
+Core
+Agent Contracts
+Orchestration
+Verification
+Engineering Environment
+Project Intelligence
+```
+
+---
+
+# 17. MVP ÚãáíÇÊí
+
+Ó ÇÒ MVP¡ ÈÇíÏ í˜ ÓäÇÑíæí æÇŞÚí ŞÇÈá ÇÌÑÇ ÏÇÔÊå ÈÇÔíã:
+
+```text
+Human
+ ?
+Create Project
+ ?
+Create Requirement
+ ?
+Assign Agent
+ ?
+Agent Contract
+ ?
+Agent Execution
+ ?
+Artifact
+ ?
+Independent Verification
+ ?
+Quality Gate
+ ?
+Git Commit
+ ?
+Traceability
+ ?
+Audit
+```
+
+ÇÑ Verification Ô˜ÓÊ ÎæÑÏ:
+
+```text
+FAIL
+ ?
+Feedback
+ ?
+Rework
+ ?
+Verification
+```
+
+ÇÑ äÏ ÈÇÑ Ô˜ÓÊ ÎæÑÏ:
+
+```text
+Human Escalation
+```
+
+---
+
+# 18. V1 — Çæáíä äÓÎå æÇŞÚí ˜ÇÑÎÇäå
+
+Ó ÇÒ MVP:
+
+```text
+MVP
+ ?
+P7 Engineering Agents
+ ?
+P8 QA / Security / Release
+ ?
+P9 Deployment
+```
+
+ÏÑ Çíä äŞØå YFG ŞÇÏÑ ÎæÇåÏ ÈæÏ í˜ ãÍÕæá äÑãÇİÒÇÑí æÇŞÚí ÑÇ ÇÒ Requirement ÊÇ Release åÏÇíÊ ˜äÏ.
+
+---
+
+# 19. V2 — Factory Intelligence
+
+ÈÚÏ ÇÒ Ê˜ãíá V1:
+
+### Advanced Project Intelligence
+
+### Deep Code Indexing
+
+### Dependency Graph
+
+### Semantic Code Analysis
+
+### Architecture Drift Detection
+
+### Requirement Coverage Analysis
+
+### Automated Impact Analysis
+
+### Intelligent Bug Localization
+
+### Automated Refactoring
+
+### Technical Debt Analysis
+
+---
+
+# 20. V3 — Autonomous Engineering
+
+ÏÑ V3 ÓØÍ ÇÊæãÇÓíæä ÇİÒÇíÔ ãííÇÈÏ.
+
+ÇãÇ ÇÕá ÈäíÇÏíä ÊÛííÑ äãí˜äÏ:
+
+```text
+More Autonomy
+?
+Less Governance
+```
+
+Èá˜å:
+
+```text
+More Autonomy
++
+More Verification
++
+More Traceability
++
+More Policy Control
+```
+
+---
+
+# 21. Human Approval Matrix
+
+## ãÇÊÑíÓ ÊÃííÏ ÇäÓÇäí
+
+| ÚãáíÇÊ                |      Agent | Verification |                            Human |
+| --------------------- | ---------: | -----------: | -------------------------------: |
+| Requirement Draft     |          ? |            ? |                         Optional |
+| Architecture Draft    |          ? |            ? |                     **Required** |
+| Major DB Change       |          ? |            ? |                     **Required** |
+| Code Generation       |          ? |            ? |                         Optional |
+| Security Finding      |          ? |            ? |            Required for critical |
+| Release               |          ? |            ? |                     **Required** |
+| Production Deployment |          ? |            ? |                     **Required** |
+| Rollback              |          ? |            ? | Policy-based / Critical approval |
+| Agent Contract Change | ? Proposal |            ? |                     **Required** |
+
+---
+
+# 22. Phase Gate Model
+
+åÑ Phase ÇÒ Çíä ÑÎå ÚÈæÑ ãí˜äÏ:
+
+```text
+PHASE START
+     ?
+DESIGN
+     ?
+IMPLEMENTATION
+     ?
+VERIFICATION
+     ?
+QUALITY GATE
+     ?
+ ??????????
+ ?        ?
+PASS     FAIL
+ ?        ?
+ ?        ?
+NEXT    REWORK
+          ?
+          ???? VERIFICATION
+```
+
+ÏÑ äŞÇØ ÍÓÇÓ:
+
+```text
+Quality Gate
+      ?
+Human Approval
+      ?
+Next Phase
+```
+
+---
+
+# 23. Phase Completion Criteria
+
+## ãÚíÇÑ Ê˜ãíá åÑ İÇÒ
+
+í˜ Phase ÒãÇäí Complete ÇÓÊ ˜å:
+
+### 1. Functional Completion
+
+ŞÇÈáíÊåÇí ÊÚÑíİÔÏå ÇÌÑÇ ÔæäÏ.
+
+### 2. Verification Completion
+
+Verification ÇäÌÇã ÔÏå ÈÇÔÏ.
+
+### 3. Quality Completion
+
+Quality Gate PASS ÈÇÔÏ.
+
+### 4. Security Completion
+
+ÑíÓ˜åÇí ÊÚÑíİÔÏå ÈÑÑÓí ÔÏå ÈÇÔäÏ.
+
+### 5. Traceability Completion
+
+ArtifactåÇ ŞÇÈá ÑÏíÇÈí ÈÇÔäÏ.
+
+### 6. Documentation Completion
+
+ãÓÊäÏÇÊ áÇÒã ÇíÌÇÏ ÔÏå ÈÇÔäÏ.
+
+### 7. Audit Completion
+
+ÑæíÏÇÏåÇí ãåã ËÈÊ ÔÏå ÈÇÔäÏ.
+
+### 8. Rollback Readiness
+
+Çã˜Çä ÈÇÒÔÊ æÌæÏ ÏÇÔÊå ÈÇÔÏ.
+
+### 9. Human Approval
+
+ÏÑ ÕæÑÊ äíÇÒ Approval ÇäÌÇã ÔÏå ÈÇÔÏ.
+
+---
+
+# 24. äÓÎåÈäÏí íÔäåÇÏí YFG
+
+```text
+YFG 0.1
+Foundation
+
+YFG 0.2
+Core Platform
+
+YFG 0.3
+Agent Contracts
+
+YFG 0.4
+Orchestration
+
+YFG 0.5
+Verification
+
+YFG 0.6
+Engineering Environment
+
+YFG 0.7
+Project Intelligence
+
+YFG 0.8
+Engineering Agents
+
+YFG 0.9
+QA / Security
+
+YFG 1.0
+AI Software Factory MVP
+
+YFG 1.1
+Deployment & Operations
+
+YFG 1.2
+Knowledge & Documentation
+
+YFG 2.0
+Advanced Project Intelligence
+
+YFG 3.0
+Autonomous Engineering
+```
+
+---
+
+# 25. ãåãÊÑíä ÊÕãíã ãÚãÇÑí
+
+İÇÒåÇí YFG äÈÇíÏ İŞØ Èå Ô˜á:
+
+```text
+Version 1
+Version 2
+Version 3
+```
+
+ÓÇÎÊå ÔæäÏ.
+
+Èá˜å åÑ äÓÎå ÈÇíÏ í˜ **Capability** ÌÏíÏ ÇíÌÇÏ ˜äÏ.
+
+ãËáÇğ:
+
+```text
+V0.1 ? YFG understands projects
+V0.2 ? YFG manages agents
+V0.3 ? YFG controls agent contracts
+V0.4 ? YFG orchestrates agents
+V0.5 ? YFG verifies agents
+V0.6 ? YFG executes engineering work
+V0.7 ? YFG understands project structure
+V0.8 ? YFG develops software
+V0.9 ? YFG validates software
+V1.0 ? YFG operates as an AI Software Factory
+```
+
+---
+
+# 26. Final Phase Architecture
+
+ãÏá äåÇíí:
+
+```text
+                 HUMAN
+                   ?
+                   ?
+        ????????????????????????
+        ? P0 GOVERNANCE        ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P1 CORE PLATFORM     ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P2 AGENT CONTRACTS   ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P3 ORCHESTRATION     ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P4 VERIFICATION      ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P5 ENGINEERING ENV   ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P6 PROJECT INTELL.   ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P7 AI ENGINEERING    ?
+        ?       AGENTS         ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P8 QA / SECURITY     ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P9 DEPLOY / OPS      ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P10 KNOWLEDGE        ?
+        ? DOCUMENTATION        ?
+        ????????????????????????
+                   ?
+        ????????????????????????
+        ? P11 AI SOFTWARE      ?
+        ?      FACTORY         ?
+        ????????????????????????
+```
+
+---
+
+# 27. ãÚãÇÑí äåÇíí İÇÒÈäÏíÔÏå ÏÑ í˜ Ìãáå
+
+> **YFG ÇÈÊÏÇ ÈÇíÏ «ŞÇÈá ˜äÊÑá» ÔæÏ¡ ÓÓ «ŞÇÈá ÇÑ˜ÓÊÑÇÓíæä»¡ ÓÓ «ŞÇÈá ÑÇÓÊíÂÒãÇíí»¡ ÓÓ «ŞÇÈá ÇÌÑÇ ÏÑ ãÍíØ ãåäÏÓí»¡ ÓÓ «ŞÇÈá ÏÑ˜ ÇÒ Ñæå»¡ æ ÏÑ äåÇíÊ «ŞÇÈá ÊæáíÏ ˜Çãá äÑãÇİÒÇÑ».**
+
+Èå åãíä Ïáíá ÊÑÊíÈ ÇÕáí İÇÒåÇ ÈÇíÏ ÍİÙ ÔæÏ:
+
+**Governance ? Core ? Contracts ? Orchestration ? Verification ? Engineering ? Intelligence ? Agents ? QA/Security ? Operations ? Knowledge ? Factory**
+
+æ ãåãÊÑ ÇÒ åãå:
+
+> **Verification æ Governance äÈÇíÏ ÈÚÏ ÇÒ ÓÇÎÊ AgentåÇ ÇÖÇİå ÔæäÏº Çíä Ïæ ÈÇíÏ ŞÈá ÇÒ æÑæÏ AgentåÇí ŞÏÑÊãäÏ Èå ÓíÓÊã æÌæÏ ÏÇÔÊå ÈÇÔäÏ.**

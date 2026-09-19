@@ -1,0 +1,1440 @@
+»бе. »« Foundation г—Ќбе ? ж Agent Foundation г—Ќбе ?° **Phase 3 »«нѕ гџ“ ег«едРЭШддѕе YFG »«‘ѕ**: нЏдн г‘ќ’ Шдѕ Не Ш«—н° »« Не  — н»н°  ж”Ў Шѕ«г Agent° »« Не Contextн° »« Не Model/Toolе«нн «дћ«г ‘жѕ° ќ—жћн НРжде  Ќжнб ‘жѕ° ж ѕ— ’ж—  ‘Ш”  Не « Ё«ён »нЁ ѕ.
+
+# YFG Ч Phase 3
+
+## Orchestration & Workflow
+
+### ег«едРЭ”«“н Agentе« ж гж ж— Workflow
+
+###  Џ—нЁ —”гн
+
+> **Phase 3 «нћ«ѕ б«неЭ«н Шд —бЭ‘ѕе° ё«»б —ѕн«»н ж Policy-Aware »—«н »—д«геЭ—н“н° «ћ—«н° ег«едРЭ”«“н° Hand-off°  жёЁ° «ѕ«ге° Retry° Rework ж Escalation ЁЏ«бн Эе«н Ндѕ-Agentн YFG «” Ї »ѕжд ¬дШе енН Agent » ж«дѕ Ќ«Шгн  «д”«дн° Policy° Permission н« Quality Gate —« ѕж— »“дѕ.**
+
+---
+
+# 1. ћ«нР«е Phase 3
+
+```text
+???????????????????????????????????????
+?           PHASE 1                   ?
+? Foundation & Governance             ?
+? ёж«днд ж Ќ«Шгн                      ?
+???????????????????????????????????????
+                  ?
+                  ?
+???????????????????????????????????????
+?           PHASE 2                   ?
+? Agent Contract & Identity            ?
+? Agent / Contract / Capability       ?
+? Permission / Tool / Model           ?
+???????????????????????????????????????
+                  ?
+                  ?
+???????????????????????????????????????
+?           PHASE 3                   ?
+? ORCHESTRATION & WORKFLOW             ?
+?                                     ?
+? Plan ? Assign ? Execute ? Handoff   ?
+? ? Check ? Retry ? Escalate          ?
+???????????????????????????????????????
+                  ?
+                  ?
+???????????????????????????????????????
+?           PHASE 4                   ?
+? Verification & Quality Gates         ?
+???????????????????????????????????????
+```
+
+---
+
+# 2. г”∆бе «’бн Phase 3
+
+Ё—÷ Шднг Human »Ржнѕ:
+
+> ЂнШ ”н” г Ё—ж‘ Ндѕ”Шжнн »—«н Web° Windows ж Android »”«“.ї
+
+YFG д»«нѕ ЁёЎ «нд —« »е нШ Agent »ѕеѕ.
+
+»«нѕ ¬д —«  »ѕнб Шдѕ »е:
+
+```text
+PRODUCT GOAL
+      ?
+      ?
+PROJECT PLAN
+      ?
+      ?
+WORKFLOW
+      ?
+      ??? Requirements
+      ??? Architecture
+      ??? UX
+      ??? Database
+      ??? Backend
+      ??? Web
+      ??? Windows
+      ??? Android
+      ??? Testing
+      ??? Security
+      ??? Documentation
+```
+
+«г« «нд Workflow **д»«нѕ ’—Ё«р нШ “дћн—е Ћ«»  »«‘ѕ**.
+
+»«нѕ Dynamic »«‘ѕ.
+
+---
+
+# 3. гЏг«—н Шб«д Phase 3
+
+```text
+                         HUMAN
+                           ?
+                           ?
+                  Product / Project
+                           ?
+                           ?
+                  Workflow Request
+                           ?
+                           ?
+              ????????????????????????
+              ?   ORCHESTRATION      ?
+              ?       ENGINE         ?
+              ????????????????????????
+                         ?
+       ??????????????????????????????????????
+       ?                 ?                  ?
+       ?                 ?                  ?
+  Planner Engine   Task Decomposer    Dependency Engine
+       ?                 ?                  ?
+       ??????????????????????????????????????
+                         ?
+                   Task Graph
+                         ?
+                         ?
+                  Agent Selector
+                         ?
+                         ?
+                Context Builder
+                         ?
+                         ?
+                Execution Manager
+                         ?
+            ???????????????????????????
+            ?            ?            ?
+          Agent        Agent        Agent
+            ?            ?            ?
+            ???????????????????????????
+                         ?
+                   Handoff Engine
+                         ?
+                         ?
+                 Verification Gate
+                         ?
+             ?????????????????????????
+             ?                       ?
+           PASS                     FAIL
+             ?                       ?
+             ?                       ?
+        Next Task                 Rework
+                                     ?
+                                     ?
+                                  Retry
+                                     ?
+                              max attempts?
+                                ?       ?
+                               NO      YES
+                                ?       ?
+                                ?       ?
+                             Rework   Human
+                                      Escalation
+```
+
+---
+
+# 4. «’б »”н«— гег
+
+Phase 3 **«ћ—«Шддѕе гЎбё дн” **.
+
+Orchestrator Ќё дѕ«—ѕ »Ржнѕ:
+
+> Ђгд  ’гнг Р—Ё г «нд Ш«— —« «дћ«г »ѕег° Б” «дћ«г гнЭ‘жѕ.ї
+
+»бШе е— Action »«нѕ «“ «нд г”н— Џ»ж— Шдѕ:
+
+```text
+Workflow
+   ?
+Task
+   ?
+Agent Contract
+   ?
+Capability
+   ?
+Permission
+   ?
+Policy
+   ?
+Environment
+   ?
+Execution
+```
+
+---
+
+# 5. Workflow Нн” њ
+
+Workflow ѕ— YFG »«нѕ нШ Artifact —”гн »«‘ѕ.
+
+```text
+Workflow
+??? Workflow ID
+??? Project ID
+??? Version
+??? Goal
+??? Trigger
+??? Inputs
+??? Tasks
+??? Dependencies
+??? Agents
+??? Policies
+??? Approval Points
+??? Verification Points
+??? Failure Rules
+??? Retry Rules
+??? Escalation Rules
+??? Resource Budget
+??? Timeout
+??? Completion Criteria
+```
+
+гЋб«р:
+
+```text
+WF-001
+Software Product Creation
+v1.0
+```
+
+---
+
+# 6. Workflow д»«нѕ ЁёЎ Linear »«‘ѕ
+
+«нд ќнбн гег «” .
+
+Workflow гнЭ ж«дѕ:
+
+### Sequential
+
+```text
+A
+?
+B
+?
+C
+```
+
+### Parallel
+
+```text
+       ??? B
+A ???????? C
+       ??? D
+```
+
+### Conditional
+
+```text
+A
+?
+??? condition X ? B
+?
+??? condition Y ? C
+```
+
+### Loop
+
+```text
+A
+?
+Verify
+?
+FAIL
+?
+Rework
+?
+Verify
+```
+
+### Human Approval
+
+```text
+A
+?
+Human
+??? Approve ? B
+??? Reject ? Rework
+```
+
+---
+
+# 7. Task Graph
+
+YFG »е — «”  Workflow —« »е **Directed Acyclic Graph / DAG** н« ѕ— гж«—ѕ ѕ«—«н Loop° гѕб Workflow Шд —бЭ‘ѕе  »ѕнб Шдѕ.
+
+гЋб«р:
+
+```text
+REQ
+ ?
+ ????????????????
+ ?              ?
+ARCH           UX
+ ?              ?
+ ?              ?
+DB              ?
+ ?              ?
+ ????????????????
+        ?
+      API
+        ?
+ ?????????????????
+ ?      ?        ?
+Web   Windows   Android
+ ?      ?        ?
+ ?????????????????
+        ?
+       QA
+        ?
+        ?
+    Security
+        ?
+        ?
+   Verification
+```
+
+«нд Graph »«нѕ ё«»б г‘«еѕе ж ё«»б Audit »«‘ѕ.
+
+---
+
+# 8. Task Decomposition Engine
+
+«нд »ќ‘ нШн «“ гегЭ —нд ё”г Эе«н Phase 3 «” .
+
+Human:
+
+> Ђ”н” г Ё—ж‘ »”«“.ї
+
+YFG:
+
+```text
+Goal
+ ?
+Analyze
+ ?
+Decompose
+```
+
+ж  жбнѕ Шдѕ:
+
+```text
+TASK-001 Requirements
+TASK-002 Architecture
+TASK-003 UX
+TASK-004 Database
+TASK-005 Backend API
+TASK-006 Web UI
+TASK-007 Windows UI
+TASK-008 Android UI
+TASK-009 Integration
+TASK-010 Tests
+TASK-011 Security
+TASK-012 Documentation
+```
+
+«г« Taskе« »«нѕ **ё«»б —ѕн«»н »е Requirement** »«‘дѕ.
+
+---
+
+# 9. Agent Selection Engine
+
+YFG д»«нѕ Agent —« ’—Ё«р »« д«г «д ќ«» Шдѕ.
+
+»«нѕ »——”н Шдѕ:
+
+```text
+Task
+ ?
+Required Capability
+ ?
+Candidate Agents
+ ?
+Contract Compatibility
+ ?
+Platform Compatibility
+ ?
+Permission Compatibility
+ ?
+Environment Compatibility
+ ?
+Resource Availability
+ ?
+Policy
+ ?
+Selected Agent
+```
+
+гЋб«р:
+
+```text
+Task:
+Windows Desktop UI
+
+Candidates:
+Frontend Agent
+Windows Agent
+Cross-Platform Agent
+
+Required:
+Windows Desktop Capability
+
+Selected:
+Windows Agent
+```
+
+---
+
+# 10. Model Selection
+
+Agent «д ќ«» ‘ѕЇ Ќ«б« Model ег »«нѕ «д ќ«» ‘жѕ.
+
+```text
+Agent
+ ?
+Model Gateway
+ ?
+Candidate Models
+ ?
+Policy
+ ?
+Task Requirements
+ ?
+Quality
+ ?
+Cost
+ ?
+Latency
+ ?
+Data Sensitivity
+ ?
+Selected Model
+```
+
+»д«»—«нд:
+
+**Agent ? Model**
+
+ж:
+
+**Workflow ? Model**
+
+---
+
+# 11. Context Builder
+
+нШн «“ ќЎ—д«ШЭ —нд «‘ »«е«  ”н” гЭе«н Agentн «нд «”  Ше Шб Project —« »е е— Agent »ѕедѕ.
+
+YFG »«нѕ Context —« »”«“ѕ:
+
+```text
+Task
++
+Relevant Requirements
++
+Relevant Architecture
++
+Relevant Artifacts
++
+Relevant Decisions
++
+Policies
++
+Previous Handoffs
++
+Constraints
+```
+
+ж ЁёЎ егнд —« ѕ— «ќ н«— Agent ё—«— ѕеѕ.
+
+гЋб«р Backend Agent б«“г дн”   г«г UI Design —« ѕ—н«Ё  Шдѕ.
+
+---
+
+# 12. Handoff Engine
+
+«нд »ќ‘ ёб» егШ«—н Agentе«” .
+
+```text
+Agent A
+   ?
+   ?
+Output Artifact
+   ?
+   ?
+Handoff Package
+   ?
+   ??? Artifact
+   ??? Version
+   ??? Context
+   ??? Requirements
+   ??? Decisions
+   ??? Constraints
+   ??? Evidence
+   ??? Expected Next Action
+   ?
+   ?
+Handoff Validation
+   ?
+   ?
+Agent B
+```
+
+---
+
+# 13. Handoff Package
+
+гЋб«р Architect Agent ќ—жћн гнЭѕеѕ:
+
+```text
+HANDOFF-001
+
+From:
+Architect Agent
+
+To:
+Backend Agent
+
+Artifacts:
+ARCH-021
+API-031
+
+Requirements:
+REQ-101
+REQ-102
+REQ-107
+
+Constraints:
+.NET
+PostgreSQL
+REST
+
+Expected:
+Implement API according to ARCH-021
+
+Verification:
+Architecture Verification = PASS
+```
+
+Backend Agent д»«нѕ гћ»ж— »«‘ѕ Ќѕ” »“дѕ Не Ш«—н »«нѕ «дћ«г ѕеѕ.
+
+---
+
+# 14. Orchestration State Machine
+
+е— Task »«нѕ State ѕ«‘ е »«‘ѕ:
+
+```text
+CREATED
+   ?
+READY
+   ?
+ASSIGNED
+   ?
+RUNNING
+   ?
+WAITING
+   ?
+COMPLETED
+   ?
+VERIFYING
+   ?
+VERIFIED
+   ?
+HANDOFF
+```
+
+ж Ќ«б«  ќЎ«:
+
+```text
+FAILED
+RETRYING
+REWORK
+ESCALATED
+BLOCKED
+CANCELLED
+```
+
+---
+
+# 15. Human Approval ѕ«ќб Workflow
+
+«нд гж÷жЏ »«нѕ **Native** »«‘ѕ.
+
+гЋб«р:
+
+```text
+Requirements
+      ?
+Architecture
+      ?
+???????? HUMAN GATE ????????
+      ?
+ ???????????
+ ?         ?
+Approve   Reject
+ ?          ?
+ ?          ?
+Coding    Rework
+```
+
+Human д»«нѕ гћ»ж— ‘жѕ »—«н Approval «“ Workflow ќ«—ћ ‘жѕ.
+
+---
+
+# 16. Risk-Based Approval
+
+еге Ш«—е« дн«“ »е Approval «д”«дн дѕ«—дѕ.
+
+```text
+Risk Level
+?
+??? LOW
+?    ? Automated
+
+??? MEDIUM
+?    ? AI + Verification
+
+??? HIGH
+?    ? Verification + Human
+
+??? CRITICAL
+     ? Explicit Human Approval
+```
+
+гЋб«р:
+
+```text
+Rename internal variable
+? Low
+
+Database schema change
+? High
+
+Production deployment
+? Critical
+
+Security exception
+? Critical
+```
+
+---
+
+# 17. Rework Engine
+
+«Р— Agent «‘ »«е Ш—ѕ:
+
+```text
+Agent
+ ?
+Artifact
+ ?
+Verification
+ ?
+FAIL
+ ?
+Root Cause
+ ?
+Rework Task
+ ?
+Same Agent / Different Agent
+ ?
+Verification
+```
+
+«г« нШ дШ е гег:
+
+**Rework д»«нѕ »нЭде«н  »«‘ѕ.**
+
+```text
+Attempt 1
+Attempt 2
+Attempt 3
+       ?
+Escalation
+       ?
+Human
+```
+
+ Џѕ«ѕ Retry ѕ— Contract/Workflow г‘ќ’ гнЭ‘жѕ.
+
+---
+
+# 18. Agent Replacement
+
+«Р— Agent ‘Ш”  ќж—ѕ° YFG »«нѕ » ж«дѕ Agent ѕнР—н —« ћ«нР“нд Шдѕ.
+
+```text
+Backend Agent A
+      ?
+     FAIL
+      ?
+Capability Search
+      ?
+Backend Agent B
+      ?
+Rework
+```
+
+«нд нШн «“ г“н Эе«н гег Architecture г» дн »— Contract «” .
+
+---
+
+# 19. Parallel Execution
+
+»—«н ”—Џ :
+
+```text
+                    Architecture
+                         ?
+             ?????????????????????????
+             ?           ?           ?
+           UX          Database    API Design
+             ?           ?           ?
+             ?????????????????????????
+                         ?
+                      Backend
+                         ?
+            ???????????????????????????
+            ?            ?            ?
+           Web        Windows      Android
+```
+
+жбн Parallel Execution ЁёЎ жё н гћ«“ «”  Ше Dependencyе« «ћ«“е ѕедѕ.
+
+---
+
+# 20. Dependency Engine
+
+гЋб«р:
+
+```text
+Backend
+   depends on
+API Contract
+
+API Contract
+   depends on
+Architecture
+
+Architecture
+   depends on
+Requirements
+```
+
+»д«»—«нд:
+
+```text
+Requirements
+   ?
+Architecture
+   ?
+API Contract
+   ?
+Backend
+```
+
+Backend дгнЭ ж«дѕ ё»б «“ Artifactе«н б«“г «ћ—« ‘жѕ.
+
+---
+
+# 21. Workflow Versioning
+
+Workflow ќжѕ‘ Version ѕ«—ѕ:
+
+```text
+WF-001 v1.0
+WF-001 v1.1
+WF-001 v2.0
+```
+
+ џнн— Workflow »«нѕ Traceable »«‘ѕ.
+
+```text
+Change Request
+ ?
+Impact Analysis
+ ?
+Workflow Update
+ ?
+Verification
+ ?
+Human Approval
+ ?
+Activation
+```
+
+---
+
+# 22. Event Architecture
+
+Phase 3 »«нѕ Event-Driven »«‘ѕ.
+
+гЋб«р:
+
+```text
+RequirementApproved
+ArchitectureApproved
+TaskCreated
+TaskAssigned
+AgentStarted
+AgentCompleted
+ArtifactCreated
+VerificationRequested
+VerificationPassed
+VerificationFailed
+HumanApprovalRequested
+HumanApproved
+HumanRejected
+HandoffCreated
+ReworkRequested
+ReleaseRequested
+```
+
+«нд Eventе« »—«н:
+
+* Audit
+* Monitoring
+* Notifications
+* Traceability
+* Recovery
+
+÷—ж—н е” дѕ.
+
+---
+
+# 23. Event Flow
+
+```text
+Agent Completed
+       ?
+       ?
+Artifact Created
+       ?
+       ?
+Event Bus
+       ?
+ ?????????????????????????
+ ?     ?      ?          ?
+Audit Verify Notification Workflow
+```
+
+---
+
+# 24. Scheduler / Queue
+
+»—«н «ћ—«н ж«ёЏн Agentе« дн«“ ѕ«—нг:
+
+```text
+Workflow
+   ?
+Task Queue
+   ?
+Scheduler
+   ?
+Worker
+   ?
+Agent Runtime
+```
+
+Scheduler »«нѕ гж«—ѕ “н— —« »ѕ«дѕ:
+
+* Priority
+* Dependency
+* Resource
+* Agent availability
+* Model availability
+* Deadline
+* Budget
+* Risk
+* Policy
+
+---
+
+# 25. Concurrency Control
+
+гЋб«р ѕж Agent д»«нѕ ег“г«д нШ Ё«нб гег —«  џнн— ѕедѕ.
+
+```text
+Agent A
+   ?
+   ?
+CODE-187
+   ?
+   ?
+LOCK
+   ?
+   ??? Agent B ? BLOCKED
+   ?
+   ??? Agent A ? WRITE
+```
+
+»—«н Repository ж Artifactе«н Ќ”«” »«нѕ:
+
+* Locking
+* Branching
+* Versioning
+* Merge control
+
+жћжѕ ѕ«‘ е »«‘ѕ.
+
+---
+
+# 26. Workspace Isolation
+
+е— Task гнЭ ж«дѕ Workspace ќжѕ‘ —« ѕ«‘ е »«‘ѕ:
+
+```text
+Project
+?
+??? Workspace-A
+?    ??? Agent A
+?
+??? Workspace-B
+?    ??? Agent B
+?
+??? Integration Workspace
+```
+
+ж »Џѕ:
+
+```text
+Build
+ ?
+Test
+ ?
+Verification
+ ?
+Merge
+```
+
+«нд гж÷жЏ гќ’ж’«р »—«н Ш«— »« IDE ж Local Development »”н«— гег «” .
+
+---
+
+# 27. Local Development ѕ— Phase 3
+
+»«  ’гнг ё»бн г«:
+
+```text
+YFG
+ ?
+Orchestrator
+ ?
+Task
+ ?
+Agent
+ ?
+Local Workspace
+ ?
+IDE / CLI / SDK
+ ?
+Build / Test / Run
+ ?
+Evidence
+```
+
+гЋб«р:
+
+```text
+Windows Development Task
+       ?
+Windows Agent
+       ?
+Local Workspace
+       ?
+Visual Studio / dotnet CLI
+       ?
+Build
+       ?
+Test
+       ?
+Artifact
+```
+
+жбн егНд«д:
+
+**Agent ? Tool Gateway ? Policy ? Execution**
+
+де:
+
+**Agent ? unrestricted OS**
+
+---
+
+# 28. Multi-Platform Workflow
+
+нШ Б—жОе ггШд «”  Нднд Workflow ѕ«‘ е »«‘ѕ:
+
+```text
+                 REQUIREMENTS
+                       ?
+                       ?
+                  ARCHITECTURE
+                       ?
+          ????????????????????????????
+          ?            ?             ?
+        WEB          WINDOWS       ANDROID
+          ?            ?             ?
+          ?            ?             ?
+       Build        Build          Build
+          ?            ?             ?
+          ????????????????????????????
+                       ?
+                 Integration
+                       ?
+                       ?
+                     QA
+                       ?
+                       ?
+                   Security
+                       ?
+                       ?
+                Independent Verify
+                       ?
+                       ?
+                 Human Approval
+```
+
+---
+
+# 29. Orchestrator д»«нѕ ќжѕ‘  ’гнг«  џн—ё«»бЭ—ѕн«»н »Рн—ѕ
+
+гЋб«р «Р— «д ќ«» Ш—ѕ:
+
+> Windows Agent B
+
+»«нѕ Evidence ѕ«‘ е »«‘ѕ:
+
+```text
+Selection Decision
+
+Task:
+TASK-008
+
+Required Capability:
+Windows Desktop Development
+
+Candidates:
+AGENT-008
+AGENT-021
+
+Selected:
+AGENT-008
+
+Reason:
+Contract compatibility
+Platform compatibility
+Permission compatibility
+Resource availability
+
+Policy:
+POL-017
+```
+
+«нд Decision »«нѕ Audit ‘жѕ.
+
+---
+
+# 30. гѕбЭе«н «’бн Phase 3
+
+гжћжѕн Эе«н —”гн:
+
+```text
+Workflow
+WorkflowVersion
+WorkflowDefinition
+WorkflowInstance
+WorkflowState
+Task
+TaskVersion
+TaskDependency
+TaskAssignment
+TaskAttempt
+Execution
+ExecutionContext
+Handoff
+HandoffPackage
+AgentSelection
+ModelSelection
+ToolSelection
+ApprovalPoint
+ApprovalRequest
+Rework
+Retry
+Escalation
+Queue
+Schedule
+Event
+EventSubscription
+Workspace
+ResourceAllocation
+ExecutionBudget
+ExecutionEvidence
+```
+
+---
+
+# 31. —«»Ўе «’бн гѕб
+
+```text
+Project
+   ?
+   ?
+Workflow
+   ?
+   ?
+Workflow Instance
+   ?
+   ?
+Task
+   ?
+   ??? Dependency
+   ??? Agent Assignment
+   ??? Context
+   ??? Workspace
+   ??? Execution
+   ??? Evidence
+          ?
+          ?
+       Artifact
+          ?
+          ?
+      Verification
+```
+
+---
+
+# 32. APIе«н «’бн Phase 3
+
+Ќѕ«ёб »«нѕ APIе«нн »—«н гж«—ѕ “н— ѕ«‘ е »«‘нг:
+
+```text
+POST   /workflows
+GET    /workflows/{id}
+POST   /workflows/{id}/start
+POST   /workflows/{id}/pause
+POST   /workflows/{id}/resume
+POST   /workflows/{id}/cancel
+
+POST   /tasks
+GET    /tasks/{id}
+POST   /tasks/{id}/assign
+POST   /tasks/{id}/execute
+POST   /tasks/{id}/retry
+POST   /tasks/{id}/rework
+POST   /tasks/{id}/escalate
+
+POST   /handoffs
+GET    /handoffs/{id}
+
+POST   /approvals
+POST   /approvals/{id}/approve
+POST   /approvals/{id}/reject
+```
+
+д«гЭе«н ѕёнё API ѕ— Ў—«Ќн Ёдн »Џѕн де«нн гнЭ‘ждѕ.
+
+---
+
+# 33. Deliverables —”гн Phase 3
+
+гд Scope —”гн Phase 3 —« «ндЭЎж— Ћ»  гнЭШдг:
+
+| ID  | Deliverable                       |
+| --- | --------------------------------- |
+| D01 | Orchestration Architecture        |
+| D02 | Workflow Model                    |
+| D03 | Workflow Definition Specification |
+| D04 | Workflow State Machine            |
+| D05 | Task Model                        |
+| D06 | Task Dependency Model             |
+| D07 | Task Decomposition Engine         |
+| D08 | Agent Selection Engine            |
+| D09 | Model Selection Integration       |
+| D10 | Context Builder                   |
+| D11 | Execution Manager                 |
+| D12 | Agent Handoff Engine              |
+| D13 | Scheduler & Queue                 |
+| D14 | Parallel Execution Model          |
+| D15 | Retry & Rework Engine             |
+| D16 | Escalation Engine                 |
+| D17 | Human Approval Integration        |
+| D18 | Event Architecture                |
+| D19 | Workspace/Concurrency Model       |
+| D20 | Resource & Budget Enforcement     |
+| D21 | Multi-Platform Workflow Model     |
+| D22 | Orchestration Audit Model         |
+| D23 | Initial Standard Workflows        |
+| D24 | Phase 3 APIs / Events             |
+
+---
+
+# 34. Standard Workflows «жбне
+
+»—«н Б«н«д Phase 3 Ќѕ«ёб «нд Workflowе« —«  Џ—нЁ гнЭШднг:
+
+### WF-001 Ч Requirement Analysis
+
+```text
+Human Goal
+ ?
+Business Analysis
+ ?
+Requirement
+ ?
+Acceptance Criteria
+ ?
+Verification
+ ?
+Human Approval
+```
+
+### WF-002 Ч Architecture
+
+```text
+Requirements
+ ?
+Architecture Agents
+ ?
+Candidate Architectures
+ ?
+Architecture Review
+ ?
+Verification
+ ?
+Human Approval
+```
+
+### WF-003 Ч Feature Development
+
+```text
+Requirement
+ ?
+Task Decomposition
+ ?
+Agent Assignment
+ ?
+Implementation
+ ?
+Build/Test
+ ?
+Verification
+ ?
+Handoff
+```
+
+### WF-004 Ч Multi-Platform Feature
+
+```text
+Approved Architecture
+ ?
+Platform Analysis
+ ?
+Web
+Windows
+Android
+macOS
+...
+ ?
+Platform Verification
+ ?
+Integration
+```
+
+### WF-005 Ч Rework
+
+```text
+FAIL
+ ?
+Root Cause
+ ?
+Rework
+ ?
+Retry
+ ?
+Verification
+ ?
+PASS / Escalate
+```
+
+---
+
+# 35. Acceptance Criteria —”гн Phase 3
+
+Phase 3 ЁёЎ “г«дн PASS «”  Ше:
+
+* Workflow ё«»б  Џ—нЁ ж Versioning »«‘ѕ.
+* Workflow ё«»б «ћ—«°  жёЁ ж Resume »«‘ѕ.
+* Taskе« Dependency ѕ«‘ е »«‘дѕ.
+* Agent Selection »— «”«” Contract/Capability/Permission «дћ«г ‘жѕ.
+* Model Selection «“ Agent г” ёб »«‘ѕ.
+* Context Шд —бЭ‘ѕе  жбнѕ ‘жѕ.
+* Agent-to-Agent Handoff —”гн ж Schema-based »«‘ѕ.
+* Parallel Execution Б‘ н»«дн ‘жѕ.
+* Retry ж Rework гЌѕжѕ ж ё«»б —ѕн«»н »«‘ѕ.
+* Human Approval ѕ— Workflow ё«»б  Џ—нЁ »«‘ѕ.
+* Escalation жћжѕ ѕ«‘ е »«‘ѕ.
+* Resource ж Budget ё«»б «Џг«б »«‘ѕ.
+* Eventе« Ћ»  ж Audit ‘ждѕ.
+* Workspace Isolation жћжѕ ѕ«‘ е »«‘ѕ.
+* Multi-Platform Workflow Б‘ н»«дн ‘жѕ.
+*  г«г  ’гнг«  гег Orchestrator ё«»б —ѕн«»н »«‘дѕ.
+* енН Workflow д ж«дѕ Policy н« Human Gate —« ѕж— »“дѕ.
+* Ќѕ«ёб Workflowе«н «” «дѕ«—ѕ «ћ—« ж Verify ‘ѕе »«‘дѕ.
+
+---
+
+# 36. Phase 3 Exit Gate
+
+```text
+Phase 3 Implementation
+        ?
+        ?
+Workflow Verification
+        ?
+        ?
+Orchestration Verification
+        ?
+        ?
+Agent Selection Verification
+        ?
+        ?
+Handoff Verification
+        ?
+        ?
+Security & Permission Review
+        ?
+        ?
+Concurrency / Failure Testing
+        ?
+        ?
+Human Approval Testing
+        ?
+        ?
+Multi-Platform Workflow Test
+        ?
+        ?
+Audit / Traceability Review
+        ?
+        ?
+Human Architecture Approval
+        ?
+        ?
+        PASS
+        ?
+        ?
+YFG-ORCHESTRATION-FOUNDATION v0.1
+```
+
+---
+
+# 37. Hard Gates ћѕнѕ Phase 3
+
+«ндЭе« »«нѕ »е Hard Gateе«н ё»бн «÷«Ёе ‘ждѕ:
+
+**HG-11 Ч No Valid Workflow ? No Multi-Agent Execution**
+
+**HG-12 Ч No Valid Task Dependency ? No Task Execution**
+
+**HG-13 Ч No Contract-Compatible Agent ? Task Blocked**
+
+**HG-14 Ч Invalid Handoff ? No Downstream Execution**
+
+**HG-15 Ч Resource Limit Exceeded ? Execution Stopped**
+
+**HG-16 Ч Retry Limit Exceeded ? Escalation**
+
+**HG-17 Ч Required Human Gate Missing ? Workflow Blocked**
+
+**HG-18 Ч Policy Conflict ? Execution Denied**
+
+**HG-19 Ч Workspace Conflict ? Execution Blocked**
+
+**HG-20 Ч Missing Execution Evidence ? Critical Handoff Blocked**
+
+---
+
+# 38. ќ—жћн де«нн Phase 3
+
+ѕ— Б«н«д »«нѕ нШ ”н” г ж«ёЏн ѕ«‘ е »«‘нг Ше » ж«дѕ «нд —« «ћ—« Шдѕ:
+
+```text
+                         ?? HUMAN
+                            ?
+                            ?
+                    PRODUCT GOAL
+                            ?
+                            ?
+                      WORKFLOW
+                            ?
+                            ?
+                    TASK DECOMPOSER
+                            ?
+                            ?
+                     TASK GRAPH
+                            ?
+                            ?
+                   AGENT SELECTOR
+                            ?
+                            ?
+                    CONTEXT BUILDER
+                            ?
+                            ?
+                     AGENT RUNTIME
+                            ?
+                     ???????????????
+                     ?             ?
+                  TOOL           MODEL
+                     ?             ?
+                     ???????????????
+                            ?
+                         OUTPUT
+                            ?
+                            ?
+                        HANDOFF
+                            ?
+                            ?
+                    VERIFICATION
+                            ?
+                    ?????????????????
+                    ?               ?
+                  PASS             FAIL
+                    ?               ?
+                    ?               ?
+                  NEXT            REWORK
+                    ?               ?
+                    ?          Retry / Escalate
+                    ?               ?
+                    ?????????????????
+                            ?
+                      HUMAN GATE
+                            ?
+                            ?
+                      NEXT STAGE
+```
+
+###  Џ—нЁ нШЭќЎн Phase 3
+
+> **Phase 1 »е YFG ёж«днд гнЭѕеѕЇ Phase 2 »е YFG Agentе«н ё«»бЭ‘д«”«нн ж ё«»бЭШд —б гнЭѕеѕЇ Phase 3 »е «нд Agentе« «гШ«д егШ«—н гедѕ”нЭ‘ѕе° ё«»бЭ—ѕн«»н ж Policy-controlled гнЭѕеѕЇ ж Phase 4 ’Ќ  ќ—жћн «нд егШ«—н —« г” ёб »——”н гнЭШдѕ.**
+
+ж »е дў—г нШ  ’гнг гЏг«—н »”н«— гег «ндћ«” : **Phase 3 д»«нѕ Verification —« ѕ«ќб ќжѕ‘ «ѕџ«г Шдѕ.** Orchestrator »«нѕ »ѕ«дѕ ЂНе “г«дн Verification б«“г «” ї ж ¬д —« Ё—«ќж«дн Шдѕ° «г« **ќжѕ‘ д»«нѕ ѕ«ж— де«нн ќ—жћн »«‘ѕ**. «нд «” ёб«б »—«н Phase 4 ÷—ж—н «” .

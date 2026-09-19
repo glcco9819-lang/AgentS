@@ -1,0 +1,506 @@
+ÍÊãÇğ. ÏÑ äÓÎå ÈÚÏí¡ ÈÑÇí **åÑ ?? İÇÒ** Óå ÈÎÔ ÑÓãí ÇÖÇİå ãí˜äíã:
+
+1. **Deliverables — ÎÑæÌíåÇí ŞÇÈá ÊÍæíá**
+2. **Acceptance Criteria — ãÚíÇÑåÇí ĞíÑÔ**
+3. **Phase Exit Gate — ÏÑæÇÒå ÎÑæÌ ÇÒ İÇÒ**
+
+Çíä ˜ÇÑ ÈÇÚË ãíÔæÏ İÇÒÈäÏí YFG ÇÒ í˜ Roadmap ãİåæãí Èå í˜ **Execution Baseline — ãÈäÇí ÇÌÑÇíí ŞÇÈá ÇäÏÇÒåíÑí** ÊÈÏíá ÔæÏ.
+
+
+Èáå. Çíä Óå ŞÇÈáíÊ ÈÇíÏ ÏÑ ãÚãÇÑí YFG **ÌÒæ Core Platform** ÈÇÔäÏ¡ äå Çã˜ÇäÇÊ ÌÇäÈí. ãÎÕæÕÇğ æä åÏİ YFG Çíä ÇÓÊ ˜å ÇÒ ØÑÇÍí ÊÇ ÇÌÑÇí æÇŞÚí äÑãÇİÒÇÑ ÑÇ ˜äÊÑá ˜äÏ.
+
+ãä ÓÇÎÊÇÑ ÑÇ ÇíäØæÑ Ê˜ãíá ãí˜äã:
+
+## 1. Local Development Integration — ÇÊÕÇá Èå ÇÈÒÇÑåÇí ÊæÓÚå ãÍáí
+
+YFG ÈÇíÏ ÈÊæÇäÏ Èå äÑãÇİÒÇÑåÇí ÈÑäÇãåäæíÓí äÕÈÔÏå Ñæí ÓíÓÊã/ÓÑæÑ ãÊÕá ÔæÏ.
+
+äãæäååÇ:
+
+* Visual Studio
+* VS Code
+* JetBrains Rider
+* IntelliJ IDEA
+* PyCharm
+* WebStorm
+* Android Studio
+* Eclipse
+* ÓÇíÑ IDEåÇ
+
+æ åãäíä ÇÈÒÇÑåÇí ÎØ İÑãÇä:
+
+* Git
+* GitHub/GitLab/Bitbucket
+* .NET SDK
+* Node.js / npm
+* Python
+* Java / JDK
+* Docker
+* Kubernetes
+* PowerShell
+* Bash
+* Build tools
+* Test runners
+
+ÇãÇ ÇÊÕÇá äÈÇíÏ ÕÑİÇğ «ÈÇÒ ˜ÑÏä IDE» ÈÇÔÏ.
+
+YFG ÈÇíÏ ÈÊæÇäÏ:
+
+```text
+YFG
+ ?
+Project Workspace
+ ?
+Repository
+ ?
+Local Development Environment
+ ?
+IDE / CLI Tools
+ ?
+Build
+ ?
+Test
+ ?
+Artifact
+ ?
+Verification
+ ?
+YFG
+```
+
+íÚäí YFG ÊÈÏíá ÔæÏ Èå **Control Plane** æ ÇÈÒÇÑåÇí ÊæÓÚå ãÍáí Èå **Execution Tools**.
+
+---
+
+# 2. Database Connectivity — ÇÊÕÇá Èå ÇäæÇÚ ÇíÇå ÏÇÏå
+
+í˜ **Database Connectivity Layer — áÇíå ÇÊÕÇá ÇíÇå ÏÇÏå** áÇÒã ÏÇÑíã.
+
+ÍÏÇŞá ãÚãÇÑí ÈÇíÏ ÈÑÇí ÇíäåÇ ÂãÇÏå ÈÇÔÏ:
+
+### Relational
+
+* Microsoft SQL Server
+* PostgreSQL
+* MySQL
+* MariaDB
+* Oracle Database
+* SQLite
+
+### NoSQL
+
+* MongoDB
+* Redis
+* Elasticsearch / OpenSearch
+* Cassandra
+
+### Cloud / Enterprise
+
+* Azure SQL
+* Amazon RDS
+* Google Cloud SQL
+* ÓÇíÑ Database ServiceåÇ
+
+æ ãÚãÇÑí ÈÇíÏ Driver/Provider ãÍæÑ ÈÇÔÏ:
+
+```text
+YFG Database Gateway
+        ?
+Provider / Adapter
+   ??? SQL Server
+   ??? PostgreSQL
+   ??? MySQL
+   ??? Oracle
+   ??? MongoDB
+   ??? Redis
+   ??? ...
+```
+
+### ŞÇÈáíÊåÇí ãåã
+
+YFG ÈÇíÏ ÈÊæÇäÏ¡ ÈÇ ãÌæÒ ãäÇÓÈ:
+
+* ÇÊÕÇá ÑÇ ÊÓÊ ˜äÏ
+* Schema ÑÇ ÈÎæÇäÏ
+* TableåÇ ÑÇ ÔäÇÓÇíí ˜äÏ
+* ColumnåÇ ÑÇ ÈÎæÇäÏ
+* PK/FK ÑÇ ÊÔÎíÕ ÏåÏ
+* IndexåÇ ÑÇ ÔäÇÓÇíí ˜äÏ
+* ViewåÇ ÑÇ ÈÎæÇäÏ
+* Stored ProcedureåÇ ÑÇ ÔäÇÓÇíí ˜äÏ
+* Dependency Graph ÈÓÇÒÏ
+* Migration ÊæáíÏ
+
+ÏŞíŞÇğ. Çíä Óå ãæÑÏ ÑÇ ÈÇíÏ ÏÑ YFG ÈåÕæÑÊ **í˜ ÒíÑÓÇÎÊ í˜ÇÑå ÈÑÇí ÇÊÕÇá¡ ÊæÓÚå¡ ÇÌÑÇ æ íÔäãÇíÔ** ÊÚÑíİ ˜äíãº äå İŞØ äÏ Connector ÓÇÏå.
+
+### 1. Local Development & Runtime Integration — ÇÊÕÇá æ ˜ÇÑ ÈÇ ãÍíØ ÊæÓÚå ãÍáí
+
+YFG ÈÇíÏ ÈÊæÇäÏ Ñæí ÓíÓÊã ÊæÓÚåÏåäÏå ÈÇ Stack æÇŞÚí ˜ÇÑ ˜äÏ¡ ãËáÇğ:
+
+* **C# / .NET**
+* **ASP.NET Core**
+* **Entity Framework Core**
+* **Blazor**
+* **ASP.NET Core Web API**
+* **React / Angular / Vue**
+* **Node.js / TypeScript**
+* **Python**
+* **Java / Spring**
+* æ ÓÇíÑ StackåÇ
+
+æ ÈÇ ÇÈÒÇÑåÇíí ãËá:
+
+* Visual Studio
+* VS Code
+* JetBrains Rider
+* .NET SDK
+* Node.js / npm
+* Git
+* Docker
+* PowerShell / Terminal
+* Build/Test tools
+
+˜ÇÑ ˜äÏ.
+
+íÚäí YFG ÈÊæÇäÏ:
+
+```text
+YFG
+ ?
+ ??? Create Project
+ ??? Open Project
+ ??? Inspect Project
+ ??? Analyze Code
+ ??? Create/Edit Files
+ ??? Manage Dependencies
+ ??? Build
+ ??? Run
+ ??? Debug/Test
+ ??? Git Commit
+ ??? Collect Results
+```
+
+ãËáÇğ ÈÑÇí í˜ Ñæå:
+
+```text
+YFG
+ ?
+ASP.NET Core Project
+ ?
+Solution / .sln
+ ?
+Projects
+ ??? ERP.Web
+ ??? ERP.API
+ ??? ERP.Application
+ ??? ERP.Domain
+ ??? ERP.Infrastructure
+ ??? ERP.Tests
+ ?
+Build
+ ?
+Test
+ ?
+Run
+ ?
+Web Preview
+```
+
+ä˜Êå ãåã: YFG äÈÇíÏ Èå í˜ IDE ÎÇÕ æÇÈÓÊå ÈÇÔÏ. í˜ **Local Development Adapter Layer** ÏÇÔÊå ÈÇÔíã ÊÇ IDE æ ÇÈÒÇÑ ŞÇÈá ÊÚæíÖ ÈÇÔäÏ.
+
+---
+
+# 2. Database Integration Layer — áÇíå ÇÊÕÇá Èå ÇíÇååÇí ÏÇÏå
+
+YFG ÈÇíÏ ÈÊæÇäÏ ÈÇ DatabaseåÇí ãÎÊáİ ˜ÇÑ ˜äÏ:
+
+### Relational
+
+* SQL Server
+* PostgreSQL
+* MySQL
+* MariaDB
+* Oracle
+* SQLite
+
+### NoSQL
+
+* MongoDB
+* Redis
+* Elasticsearch / OpenSearch
+* Cassandra æ ÓÇíÑ ãæÇÑÏ ÏÑ ÕæÑÊ äíÇÒ
+
+ãÚãÇÑí:
+
+```text
+             YFG Database Gateway
+                     ?
+        ???????????????????????????
+        ?            ?            ?
+    SQL Server   PostgreSQL    MySQL
+        ?            ?            ?
+      Oracle       SQLite      MongoDB
+```
+
+YFG ÈÊæÇäÏ ÈÇ ÊæÌå Èå Permission:
+
+* Connect
+* Test Connection
+* Read Schema
+* Analyze Tables
+* Analyze Columns
+* PK / FK
+* Index
+* View
+* Procedure
+* Trigger
+* Constraint
+* Migration
+* Seed Data
+* Query
+* Database Documentation
+* Dependency Analysis
+
+ÑÇ ÇäÌÇã ÏåÏ.
+
+æ ÈÓíÇÑ ãåã:
+
+**Database Agent äÈÇíÏ ãÓÊŞíãÇğ ÈÏæä ˜äÊÑá Èå Production Database ÏÓÊÑÓí ÏÇÔÊå ÈÇÔÏ.**
+
+ÏÓÊÑÓí ÈÇíÏ ÇÒ:
+
+```text
+Agent
+ ?
+Agent Contract
+ ?
+Permission
+ ?
+Database Gateway
+ ?
+Environment Policy
+ ?
+Database
+```
+
+ÚÈæÑ ˜äÏ.
+
+---
+
+# 3. Web Preview Engine — ãæÊæÑ íÔäãÇíÔ ÊÍÊ æÈ
+
+Çíä ãæÑÏ ÈÇíÏ í˜í ÇÒ ŞÇÈáíÊåÇí ÇÕáí YFG ÈÇÔÏ.
+
+YFG ÈÇíÏ ÈÊæÇäÏ Ñæå ÊæáíÏÔÏå ÑÇ ÏÑ í˜ ãÍíØ Web Preview ÇÌÑÇ æ äãÇíÔ ÏåÏ.
+
+ãËáÇğ:
+
+```text
+                    YFG
+                     ?
+              Project Preview
+                     ?
+          ???????????????????????
+          ?                     ?
+     Static Preview       Executable Preview
+                                ?
+                         Sandbox Environment
+                                ?
+                         ASP.NET Core
+                                ?
+                            Browser
+```
+
+˜ÇÑÈÑ ÏÑ ÎæÏ YFG ÈÊæÇäÏ ãËáÇğ:
+
+**Run Preview**
+
+ÑÇ ÈÒäÏ æ äÑãÇİÒÇÑ ÊæáíÏÔÏå ÑÇ ÏÑ Browser ÈÈíäÏ.
+
+---
+
+# 4. Preview äÈÇíÏ İŞØ Screenshot ÈÇÔÏ
+
+Óå ÓØÍ íÔäåÇÏ ãí˜äã:
+
+### Level 1 — Design Preview
+
+äãÇíÔ:
+
+* ÕİÍÇÊ
+* İÑãåÇ
+* ãäæ
+* Dashboard
+* Navigation
+* Workflow
+* ãÚãÇÑí
+
+### Level 2 — Interactive Preview
+
+˜ÇÑÈÑ ÈÊæÇäÏ æÇŞÚÇğ:
+
+* ˜áí˜ ˜äÏ
+* İÑã ÈÇÒ ˜äÏ
+* ÏÇÏå ÂÒãÇíÔí æÇÑÏ ˜äÏ
+* Workflow ÑÇ Øí ˜äÏ
+* Dashboard ÈÈíäÏ
+* Login ÑÇ ÇãÊÍÇä ˜äÏ
+
+### Level 3 — Executable Preview
+
+ÇÌÑÇí æÇŞÚí Ñæå ÏÑ Sandbox:
+
+```text
+Source Code
+    ?
+Build
+    ?
+Test
+    ?
+Sandbox
+    ?
+ASP.NET Core Runtime
+    ?
+Web Server
+    ?
+Browser Preview
+```
+
+Çíä ÈÎÔ ÈÑÇí YFG ÈÓíÇÑ ãåã ÇÓÊ.
+
+---
+
+# 5. ÇÑÊÈÇØ Óå ŞÇÈáíÊ
+
+ÏÑ äåÇíÊ ãÚãÇÑí ÈÇíÏ Èå Çíä Ô˜á ÈÇÔÏ:
+
+```text
+                  ???????????????????????
+                  ?        YFG          ?
+                  ?   AI Software       ?
+                  ?      Factory        ?
+                  ???????????????????????
+                             ?
+          ???????????????????????????????????????
+          ?                  ?                  ?
+          ?                  ?                  ?
+ Local Development     Database Gateway    Web Preview
+ Integration           Integration         Engine
+          ?                  ?                  ?
+          ?                  ?                  ?
+ ??????????????????   ?????????????????   ?????????????????
+ ? C#             ?   ? SQL Server    ?   ? Browser       ?
+ ? ASP.NET Core   ?   ? PostgreSQL    ?   ? Interactive   ?
+ ? EF Core        ?   ? MySQL         ?   ? Preview       ?
+ ? React          ?   ? Oracle        ?   ? Sandbox       ?
+ ? Node.js        ?   ? MongoDB       ?   ? Runtime       ?
+ ? Python         ?   ? Redis         ?   ? Test Data     ?
+ ??????????????????   ?????????????????   ?????????????????
+```
+
+## 6. ÌÇíÇå ÏÑ ãÚãÇÑí YFG
+
+ãä Çíä ÑÇ Èå ãÚãÇÑí ÇÕáí ÇÖÇİå ãí˜äã:
+
+### **Engineering Connectivity & Preview Layer**
+
+### **áÇíå ÇÊÕÇá ãåäÏÓí æ íÔäãÇíÔ**
+
+ÈÇ ÒíÑÓíÓÊãåÇí:
+
+1. **Local Development Connector**
+
+   * ÇÊÕÇá Èå ãÍíØ ÊæÓÚå ãÍáí
+
+2. **IDE Integration**
+
+   * ÇÊÕÇá Èå IDEåÇ
+
+3. **Runtime Integration**
+
+   * ÇÌÑÇí .NET / Node / Python æ ÓÇíÑ RuntimeåÇ
+
+4. **Source Code Workspace**
+
+   * ãÏíÑíÊ Workspace æ Source Code
+
+5. **Database Connectivity Gateway**
+
+   * ÇÊÕÇá ÇÓÊÇäÏÇÑÏ Èå DatabaseåÇ
+
+6. **Database Schema Intelligence**
+
+   * ÊÍáíá ÓÇÎÊÇÑ Database
+
+7. **Build & Test Integration**
+
+   * Build æ Test æÇŞÚí
+
+8. **Sandbox Runtime**
+
+   * ÇÌÑÇí ÇíÒæáå
+
+9. **Web Preview Engine**
+
+   * íÔäãÇíÔ ÊÍÊ æÈ
+
+10. **Interactive Preview**
+
+    * ÊÚÇãá æÇŞÚí ÈÇ äÑãÇİÒÇÑ
+
+11. **Preview Data Manager**
+
+    * ÏÇÏå ÂÒãÇíÔí
+
+12. **Environment Manager**
+
+    * Development / Test / Preview / Staging
+
+13. **Port & Service Manager**
+
+    * ãÏíÑíÊ ÓÑæíÓåÇ æ PortåÇ
+
+14. **Preview Security Boundary**
+
+    * ÌáæíÑí ÇÒ ÏÓÊÑÓí Preview Èå ãäÇÈÚ ÍÓÇÓ
+
+---
+
+## 7. í˜ ŞÇÈáíÊ ÈÓíÇÑ ãåã ÏíÑ
+
+Èå äÙÑã ÈÇíÏ ÇÒ åãíä ÇÈÊÏÇ íÒí ÑÇ åã ÇÖÇİå ˜äíã:
+
+### **Project Workspace Manager — ãÏíÑ Workspace Ñæå**
+
+ÊÇ YFG ÈÊæÇäÏ Ñæå æÇŞÚí ÑÇ Ñæí ÓíÓÊã ãÏíÑíÊ ˜äÏ:
+
+```text
+YFG Project
+?
+??? Source
+??? Solution
+??? Database
+??? Tests
+??? Documentation
+??? Configuration
+??? Docker
+??? Artifacts
+??? Logs
+??? Preview
+??? Git
+```
+
+ÏÑ äÊíÌå YFG İŞØ í˜ **AI Chat + Agent System** äÎæÇåÏ ÈæÏ.
+
+Èá˜å ãíÊæÇäÏ ÊÈÏíá ÔæÏ Èå:
+
+> **AI Engineering Control Center**
+
+˜å ÇÒ ÏÇÎá Âä ÈÊæÇä Ñæå ÑÇ **ØÑÇÍí ˜ÑÏ ? ˜Ï ÊæáíÏ ˜ÑÏ ? Ñæí ãÍíØ ãÍáí ˜ÇÑ ˜ÑÏ ? Database ÑÇ ãÊÕá ˜ÑÏ ? Build ˜ÑÏ ? Test ˜ÑÏ ? ÇÌÑÇ ˜ÑÏ ? ÏÑ Browser ÏíÏ ? ÊÛííÑ ÏÇÏ ? Verify ˜ÑÏ ? Commit ˜ÑÏ ? Release ˜ÑÏ.**
+
+æ åãå Çíä ãÑÇÍá åãäÇä ÊÍÊ åãÇä ÇÕæá ÇÕáí YFG ÈÇŞí ãíãÇääÏ:
+
+**Contract ? Permission ? Sandbox ? Execution ? Artifact ? Independent Verification ? Quality Gate ? Human Approval ? Traceability ? Rollback**.
+
+
+
