@@ -1,9 +1,4 @@
-// =============================================================
-// Local AI Project Assistant — Prisma Schema
-// Architecture principle: Project Intelligence is independent of LLM.
-// This schema supports V0.1 (Chat + AI Gateway) and lays the
-// groundwork for V0.2+ (File Scanner, Index, RAG, Analysis).
-// =============================================================
+// YFG AI Software Factory — Prisma Schema (71 models)
 
 generator client {
   provider = "prisma-client-js"
@@ -14,124 +9,928 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// ---------------------------------------------------------------
-// AI Gateway — provider/model configuration (singleton rows by key)
-// ---------------------------------------------------------------
 model AiSetting {
-  id        String   @id @default(cuid())
-  key       String   @unique // provider | baseUrl | model | apiKey | temperature | thinking | maxContextMessages
+  id        String @id @default(cuid())
+  key       String @unique
   value     String
   updatedAt DateTime @updatedAt
-
   @@map("ai_settings")
 }
 
-// ---------------------------------------------------------------
-// Prompt Manager — system / analysis prompts (multi-language)
-// ---------------------------------------------------------------
 model Prompt {
-  id        String   @id @default(cuid())
-  key       String   // system | codeReview | architecture | sqlAnalysis | documentation | bugAnalysis
+  id        String @id @default(cuid())
+  key       String
   name      String
   content   String
-  language  String   @default("fa") // fa | en
-  isDefault Boolean  @default(false)
+  language  String @default("fa")
+  isDefault Boolean @default(false)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-
-  @@unique([key, language])
   @@map("prompts")
 }
 
-// ---------------------------------------------------------------
-// Project Manager — registered projects (scanning in V0.2)
-// ---------------------------------------------------------------
-model Project {
-  id         String    @id @default(cuid())
-  name       String
-  rootPath   String
-  language   String? // e.g. csharp, typescript, ...
-  framework  String? // e.g. dotnet, nextjs, ...
-  status     String   @default("registered") // registered | scanning | indexed | error
-  note       String?
-  createdAt  DateTime  @default(now())
-  updatedAt  DateTime  @updatedAt
-  lastScanAt DateTime?
-
-  sessions  Session[]
-  fileIndex  FileIndex[]
-
-  @@map("projects")
+model User {
+  id           String @id @default(cuid())
+  username     String @unique
+  email        String? @unique
+  passwordHash String
+  fullName     String?
+  displayName  String?
+  isActive     Boolean @default(true)
+  lastLoginAt  DateTime?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  sessions     UserSession[]
+  roles        UserRole[]
+  @@map("users")
 }
 
-// ---------------------------------------------------------------
-// File Index — populated by Scanner/Parser in V0.2+.
-// Defined now so the architecture is stable.
-// ---------------------------------------------------------------
+model Role {
+  id          String @id @default(cuid())
+  name        String @unique
+  description String?
+  permissions String
+  isSystem    Boolean @default(false)
+  createdAt   DateTime @default(now())
+  users       UserRole[]
+  @@map("roles")
+}
+
+model UserRole {
+  id     String @id @default(cuid())
+  userId String
+  roleId String
+  user   User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role   Role @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  @@unique([userId, roleId])
+  @@index([userId])
+  @@index([roleId])
+  @@map("user_roles")
+}
+
+model UserSession {
+  id        String @id @default(cuid())
+  userId    String
+  token     String @unique
+  expiresAt DateTime
+  ipAddress String?
+  userAgent String?
+  createdAt DateTime @default(now())
+  user      User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([userId])
+  @@map("user_sessions")
+}
+
+model Workspace {
+  id        String @id @default(cuid())
+  name      String
+  rootPath  String
+  language  String?
+  framework String?
+  status    String @default("active")
+  vision    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  tasks     Task[]
+  artifacts Artifact[]
+  traces    TraceLink[]
+  audits    AuditLog[]
+  @@map("workspaces")
+}
+
+model Agent {
+  id        String @id @default(cuid())
+  name      String @unique
+  domain    String
+  type      String
+  version   String @default("1.0.0")
+  config    String?
+  enabled   Boolean @default(true)
+  createdAt DateTime @default(now())
+  tasks     Task[]
+  @@map("agents")
+}
+
+model Task {
+  id            String @id @default(cuid())
+  workspaceId   String
+  agentId       String?
+  parentId      String?
+  type          String
+  title         String
+  input         String?
+  output        String?
+  status        String @default("pending")
+  attempt       Int @default(1)
+  maxAttempts   Int @default(3)
+  createdAt     DateTime @default(now())
+  startedAt     DateTime?
+  finishedAt    DateTime?
+  workspace     Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  agent         Agent? @relation(fields: [agentId], references: [id], onDelete: SetNull)
+  artifacts     Artifact[]
+  verifications Verification[]
+  gates         QualityGate[]
+  approvals     Approval[]
+  attempts      ReworkAttempt[]
+  traces        TraceLink[]
+  @@index([workspaceId])
+  @@index([status])
+  @@map("tasks")
+}
+
+model Artifact {
+  id            String @id @default(cuid())
+  workspaceId   String
+  taskId        String
+  type          String
+  path          String?
+  name          String
+  content       String
+  version       Int @default(1)
+  hash          String?
+  createdAt     DateTime @default(now())
+  workspace     Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  task          Task @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  verifications Verification[]
+  @@index([workspaceId])
+  @@index([taskId])
+  @@map("artifacts")
+}
+
+model Verification {
+  id         String @id @default(cuid())
+  taskId     String
+  artifactId String
+  type       String
+  result     String @default("pending")
+  report     String?
+  checkedBy  String?
+  createdAt  DateTime @default(now())
+  task       Task @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  artifact   Artifact @relation(fields: [artifactId], references: [id], onDelete: Cascade)
+  gates      QualityGate[]
+  @@index([taskId])
+  @@index([artifactId])
+  @@map("verifications")
+}
+
+model QualityGate {
+  id             String @id @default(cuid())
+  taskId         String
+  verificationId String?
+  decision       String
+  reason         String?
+  requiresHuman  Boolean @default(false)
+  createdAt      DateTime @default(now())
+  task           Task @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  verification   Verification? @relation(fields: [verificationId], references: [id], onDelete: SetNull)
+  @@index([taskId])
+  @@map("quality_gates")
+}
+
+model Approval {
+  id          String @id @default(cuid())
+  taskId      String
+  gateType    String
+  status      String @default("pending")
+  decidedBy   String?
+  decidedById String?
+  comment     String?
+  createdAt   DateTime @default(now())
+  decidedAt   DateTime?
+  task        Task @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  @@index([taskId])
+  @@map("approvals")
+}
+
+model ReworkAttempt {
+  id        String @id @default(cuid())
+  taskId    String
+  attempt   Int
+  result    String
+  feedback  String?
+  createdAt DateTime @default(now())
+  task      Task @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  @@index([taskId])
+  @@map("rework_attempts")
+}
+
+model TraceLink {
+  id          String @id @default(cuid())
+  workspaceId String
+  sourceType  String
+  sourceId    String
+  targetType  String
+  targetId    String
+  relation    String
+  taskId      String?
+  createdAt   DateTime @default(now())
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  task        Task? @relation(fields: [taskId], references: [id], onDelete: SetNull)
+  @@index([workspaceId])
+  @@map("trace_links")
+}
+
+model AuditLog {
+  id          String @id @default(cuid())
+  workspaceId String?
+  actor       String
+  action      String
+  targetType  String
+  targetId    String
+  meta        String?
+  hash        String?
+  createdAt   DateTime @default(now())
+  workspace   Workspace? @relation(fields: [workspaceId], references: [id], onDelete: SetNull)
+  @@index([workspaceId])
+  @@index([createdAt])
+  @@map("audit_logs")
+}
+
+model Policy {
+  id        String @id @default(cuid())
+  name      String @unique
+  rule      String
+  scope     String
+  enabled   Boolean @default(true)
+  createdAt DateTime @default(now())
+  @@map("policies")
+}
+
+model Sandbox {
+  id          String @id @default(cuid())
+  agentId     String?
+  workspaceId String?
+  path        String
+  status      String @default("idle")
+  createdAt   DateTime @default(now())
+  @@map("sandboxes")
+}
+
+model TaskTemplate {
+  id               String @id @default(cuid())
+  name             String
+  category         String
+  description      String
+  instruction      String
+  agentType        String
+  taskType         String
+  verificationType String
+  approvalGate     String?
+  expectedOutput   String?
+  icon             String?
+  isCustom         Boolean @default(false)
+  createdAt        DateTime @default(now())
+  @@map("task_templates")
+}
+
+model Environment {
+  id          String @id @default(cuid())
+  workspaceId String
+  name        String
+  repoPath    String
+  branch      String @default("main")
+  status      String @default("idle")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  commits     GitCommit[]
+  builds      BuildRun[]
+  testRuns    TestRun[]
+  @@index([workspaceId])
+  @@map("environments")
+}
+
+model GitCommit {
+  id            String @id @default(cuid())
+  environmentId String
+  sha           String
+  message       String
+  author        String
+  filesChanged  Int @default(0)
+  createdAt     DateTime @default(now())
+  environment   Environment @relation(fields: [environmentId], references: [id], onDelete: Cascade)
+  @@index([environmentId])
+  @@map("git_commits")
+}
+
+model BuildRun {
+  id            String @id @default(cuid())
+  environmentId String
+  command       String
+  success       Boolean
+  output        String
+  durationMs    Int @default(0)
+  createdAt     DateTime @default(now())
+  environment   Environment @relation(fields: [environmentId], references: [id], onDelete: Cascade)
+  @@index([environmentId])
+  @@map("build_runs")
+}
+
+model TestRun {
+  id            String @id @default(cuid())
+  environmentId String
+  command       String
+  success       Boolean
+  passed        Int @default(0)
+  failed        Int @default(0)
+  output        String
+  durationMs    Int @default(0)
+  createdAt     DateTime @default(now())
+  environment   Environment @relation(fields: [environmentId], references: [id], onDelete: Cascade)
+  @@index([environmentId])
+  @@map("test_runs")
+}
+
+model AgentContract {
+  id                String @id @default(cuid())
+  agentId           String @unique
+  version           String @default("1.0.0")
+  capabilities      String
+  permissions       String
+  tools             String
+  maxRetries        Int @default(3)
+  canSelfApprove    Boolean @default(false)
+  canModifyContract Boolean @default(false)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  @@map("agent_contracts")
+}
+
+model Capability {
+  id          String @id @default(cuid())
+  name        String @unique
+  description String
+  @@map("capabilities")
+}
+
+model Permission {
+  id          String @id @default(cuid())
+  name        String @unique
+  description String
+  @@map("permissions")
+}
+
+model Tool {
+  id          String @id @default(cuid())
+  name        String @unique
+  command     String
+  description String
+  @@map("tools")
+}
+
 model FileIndex {
-  id           String   @id @default(cuid())
-  projectId    String
-  path         String
-  extension    String
-  size         Int      @default(0)
-  hash         String?
-  lastModified DateTime?
-  language     String?
-  lineCount    Int      @default(0)
-  symbolCount  Int      @default(0)
-  indexedAt    DateTime @default(now())
-
-  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
-
-  @@unique([projectId, path])
-  @@index([projectId])
-  @@map("file_index")
+  id            String @id @default(cuid())
+  environmentId String
+  path          String
+  extension     String
+  size          Int @default(0)
+  hash          String?
+  language      String?
+  lineCount     Int @default(0)
+  symbolCount   Int @default(0)
+  indexedAt     DateTime @default(now())
+  symbols       Symbol[]
+  @@unique([environmentId, path])
+  @@index([environmentId])
+  @@map("file_index_p6")
 }
 
-// ---------------------------------------------------------------
-// Session Manager — conversation threads
-// ---------------------------------------------------------------
-model Session {
-  id        String    @id @default(cuid())
-  projectId String?
-  title     String    @default("گفت‌وگوی جدید")
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
-
-  project   Project?  @relation(fields: [projectId], references: [id], onDelete: SetNull)
-  messages  Message[]
-
-  @@map("sessions")
+model Symbol {
+  id       String @id @default(cuid())
+  fileId   String
+  name     String
+  kind     String
+  line     Int
+  language String
+  file     FileIndex @relation(fields: [fileId], references: [id], onDelete: Cascade)
+  @@index([fileId])
+  @@index([name])
+  @@map("symbols_p6")
 }
 
-// ---------------------------------------------------------------
-// Chat messages (user / assistant / system)
-// ---------------------------------------------------------------
-model Message {
-  id        String   @id @default(cuid())
-  sessionId String
-  role      String   // user | assistant | system
-  content   String
-  tokens    Int      @default(0)
-  createdAt DateTime @default(now())
-
-  session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
-
-  @@index([sessionId])
-  @@map("messages")
+model DependencyEdge {
+  id            String @id @default(cuid())
+  environmentId String
+  sourcePath    String
+  targetPath    String
+  relation      String @default("imports")
+  createdAt     DateTime @default(now())
+  @@unique([environmentId, sourcePath, targetPath, relation])
+  @@index([environmentId])
+  @@map("dependency_edges")
 }
 
-// ---------------------------------------------------------------
-// System logs — used by the Logs view
-// ---------------------------------------------------------------
-model SystemLog {
-  id        String   @id @default(cuid())
-  level     String   // info | warn | error | debug
-  source    String   // gateway | chat | project | scanner | system
+model ImpactReport {
+  id            String @id @default(cuid())
+  environmentId String
+  changedPath   String
+  impactedPaths String
+  depth         Int @default(3)
+  createdAt     DateTime @default(now())
+  @@index([environmentId])
+  @@map("impact_reports")
+}
+
+model ChangeRequest {
+  id             String @id @default(cuid())
+  environmentId  String
+  title          String
+  description    String
+  status         String @default("open")
+  impactReportId String?
+  createdAt      DateTime @default(now())
+  @@index([environmentId])
+  @@map("change_requests")
+}
+
+model Release {
+  id            String @id @default(cuid())
+  workspaceId   String
+  environmentId String?
+  version       String
+  name          String
+  notes         String?
+  status        String @default("draft")
+  commitSha     String?
+  createdAt     DateTime @default(now())
+  releasedAt    DateTime?
+  @@index([workspaceId])
+  @@map("releases")
+}
+
+model Incident {
+  id          String @id @default(cuid())
+  workspaceId String?
+  severity    String
+  title       String
+  description String
+  status      String @default("open")
+  assignedTo  String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  resolvedAt  DateTime?
+  @@index([workspaceId])
+  @@map("incidents")
+}
+
+model Evidence {
+  id          String @id @default(cuid())
+  workspaceId String
+  releaseId   String?
+  taskId      String?
+  type        String
+  content     String
+  hash        String?
+  createdAt   DateTime @default(now())
+  @@index([workspaceId])
+  @@map("evidence")
+}
+
+model KnowledgeEntry {
+  id          String @id @default(cuid())
+  workspaceId String?
+  title       String
+  content     String
+  kind        String
+  tags        String?
+  embedding   String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  @@index([workspaceId])
+  @@map("knowledge_entries")
+}
+
+model Notification {
+  id        String @id @default(cuid())
+  recipient String
+  type      String
+  title     String
   message   String
-  meta      String?  // JSON string
+  read      Boolean @default(false)
+  link      String?
   createdAt DateTime @default(now())
+  @@index([recipient])
+  @@index([read])
+  @@map("notifications")
+}
 
+model ProjectState {
+  id            String @id @default(cuid())
+  workspaceId   String @unique
+  phase         String @default("P0")
+  health        String @default("green")
+  openTasks     Int @default(0)
+  openApprovals Int @default(0)
+  openIncidents Int @default(0)
+  lastReleaseId String?
+  updatedAt     DateTime @updatedAt
+  @@map("project_states")
+}
+
+model PlatformProfile {
+  id           String @id @default(cuid())
+  workspaceId  String @unique
+  targets      String
+  architecture String?
+  constraints  String?
+  runtimeReqs  String?
+  distMethod   String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  @@map("platform_profiles")
+}
+
+model PlatformTarget {
+  id          String @id @default(cuid())
+  profileId   String
+  platform    String
+  osVersions  String?
+  techStack   String?
+  uiFramework String?
+  priority    Int @default(0)
+  @@index([profileId])
+  @@map("platform_targets")
+}
+
+model AgentVersion {
+  id        String @id @default(cuid())
+  agentId   String
+  version   String
+  changes   String?
+  active    Boolean @default(true)
+  createdAt DateTime @default(now())
+  @@index([agentId])
+  @@map("agent_versions")
+}
+
+model ContractVersion {
+  id           String @id @default(cuid())
+  agentId      String
+  version      String
+  capabilities String
+  permissions  String
+  tools        String
+  models       String?
+  changeReason String?
+  approved     Boolean @default(false)
+  approvedBy   String?
+  createdAt    DateTime @default(now())
+  @@index([agentId])
+  @@map("contract_versions")
+}
+
+model AgentResourcePolicy {
+  id              String @id @default(cuid())
+  agentId         String @unique
+  maxTokensPerRun Int @default(50000)
+  maxDurationMs   Int @default(120000)
+  maxRetries      Int @default(3)
+  maxParallel     Int @default(1)
+  cooldownMs      Int @default(0)
+  @@map("agent_resource_policies")
+}
+
+model AgentHandoffPolicy {
+  id                   String @id @default(cuid())
+  agentId              String @unique
+  requiresArtifact     Boolean @default(true)
+  requiresVerification Boolean @default(true)
+  requiresTrace        Boolean @default(true)
+  handoffFormat        String @default("json")
+  @@map("agent_handoff_policies")
+}
+
+model AgentFailureRule {
+  id             String @id @default(cuid())
+  agentId        String
+  failureType    String
+  maxOccurrences Int @default(3)
+  action         String
+  cooldownMs     Int @default(30000)
+  @@index([agentId])
+  @@map("agent_failure_rules")
+}
+
+model AgentPlatformBinding {
+  id       String @id @default(cuid())
+  agentId  String
+  platform String
+  @@unique([agentId, platform])
+  @@map("agent_platform_bindings")
+}
+
+model ModelProvider {
+  id        String @id @default(cuid())
+  name      String @unique
+  baseUrl   String
+  apiKey    String?
+  enabled   Boolean @default(true)
+  createdAt DateTime @default(now())
+  @@map("model_providers")
+}
+
+model ModelRegistry {
+  id              String @id @default(cuid())
+  providerId      String
+  name            String
+  version         String @default("latest")
+  contextWindow   Int @default(8192)
+  costPer1kTokens Float @default(0)
+  enabled         Boolean @default(true)
+  @@unique([providerId, name, version])
+  @@map("model_registry")
+}
+
+model AgentModelBinding {
+  id         String @id @default(cuid())
+  agentId    String @unique
+  providerId String
+  modelName  String?
+  createdAt  DateTime @default(now())
+  @@index([providerId])
+  @@map("agent_model_bindings")
+}
+
+model Workflow {
+  id          String @id @default(cuid())
+  workspaceId String?
+  name        String
+  description String?
+  version     String @default("1.0.0")
+  definition  String
+  status      String @default("draft")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  @@index([workspaceId])
+  @@map("workflows")
+}
+
+model WorkflowRun {
+  id          String @id @default(cuid())
+  workflowId  String
+  workspaceId String
+  status      String @default("pending")
+  currentStep Int @default(0)
+  context     String?
+  startedAt   DateTime?
+  finishedAt  DateTime?
+  createdAt   DateTime @default(now())
+  @@index([workflowId])
+  @@index([workspaceId])
+  @@map("workflow_runs")
+}
+
+model TaskGraph {
+  id          String @id @default(cuid())
+  workspaceId String
+  name        String
+  nodes       String
+  edges       String
+  createdAt   DateTime @default(now())
+  @@index([workspaceId])
+  @@map("task_graphs")
+}
+
+model HandoffPackage {
+  id                  String @id @default(cuid())
+  taskId              String
+  artifactId          String?
+  version             String?
+  requirementsCovered String?
+  filesChanged        String?
+  testsExecuted       String?
+  results             String?
+  knownIssues         String?
+  securityResults     String?
+  dependencies        String?
+  verificationStatus  String?
+  rollbackInfo        String?
+  createdAt           DateTime @default(now())
+  @@index([taskId])
+  @@map("handoff_packages")
+}
+
+model EventLog {
+  id          String @id @default(cuid())
+  workspaceId String?
+  eventType   String
+  actor       String
+  targetType  String
+  targetId    String
+  payload     String?
+  createdAt   DateTime @default(now())
+  @@index([workspaceId])
+  @@index([eventType])
+  @@map("event_logs")
+}
+
+model VerificationPlan {
+  id          String @id @default(cuid())
+  workspaceId String
+  taskId      String?
+  releaseId   String?
+  checks      String
+  riskLevel   String @default("medium")
+  status      String @default("draft")
+  createdAt   DateTime @default(now())
+  @@index([workspaceId])
+  @@map("verification_plans")
+}
+
+model VerificationRun {
+  id               String @id @default(cuid())
+  planId           String
+  taskId           String?
+  artifactId       String?
+  type             String
+  result           String @default("pending")
+  findings         String?
+  evidenceBundleId String?
+  verifierName     String?
+  durationMs       Int @default(0)
+  createdAt        DateTime @default(now())
+  @@index([planId])
+  @@index([taskId])
+  @@map("verification_runs")
+}
+
+model EvidenceBundle {
+  id          String @id @default(cuid())
+  workspaceId String
+  releaseId   String?
+  taskId      String?
+  items       String
+  bundleHash  String?
+  createdAt   DateTime @default(now())
+  @@index([workspaceId])
+  @@map("evidence_bundles")
+}
+
+model QualityGateRule {
+  id                    String @id @default(cuid())
+  name                  String @unique
+  riskLevel             String
+  requiredVerifications String
+  requiresHumanApproval Boolean @default(false)
+  requiresEvidence      Boolean @default(true)
+  requiresTraceability  Boolean @default(true)
+  @@map("quality_gate_rules")
+}
+
+model Waiver {
+  id                String @id @default(cuid())
+  verificationRunId String
+  reason            String
+  approvedBy        String
+  expiresAt         DateTime?
+  createdAt         DateTime @default(now())
+  @@index([verificationRunId])
+  @@map("waivers")
+}
+
+model Verifier {
+  id        String @id @default(cuid())
+  name      String @unique
+  type      String
+  version   String @default("1.0.0")
+  contract  String?
+  enabled   Boolean @default(true)
+  createdAt DateTime @default(now())
+  @@map("verifiers")
+}
+
+model EnvironmentTemplate {
+  id        String @id @default(cuid())
+  name      String @unique
+  platform  String
+  baseImage String?
+  tools     String
+  runtimes  String?
+  sdks      String?
+  envVars   String?
+  createdAt DateTime @default(now())
+  @@map("environment_templates")
+}
+
+model Toolchain {
+  id            String @id @default(cuid())
+  environmentId String
+  name          String
+  version       String @default("1.0.0")
+  tools         String
+  createdAt     DateTime @default(now())
+  @@index([environmentId])
+  @@map("toolchains")
+}
+
+model CommandExecution {
+  id            String @id @default(cuid())
+  environmentId String
+  agentId       String?
+  command       String
+  args          String?
+  cwd           String?
+  exitCode      Int?
+  stdout        String?
+  stderr        String?
+  durationMs    Int @default(0)
+  approved      Boolean @default(false)
+  approvedBy    String?
+  createdAt     DateTime @default(now())
+  @@index([environmentId])
+  @@map("command_executions")
+}
+
+model SecretReference {
+  id            String @id @default(cuid())
+  workspaceId   String?
+  environmentId String?
+  name          String
+  secretType    String
+  reference     String
+  requiredBy    String?
+  createdAt     DateTime @default(now())
+  @@index([environmentId])
+  @@map("secret_references")
+}
+
+model NetworkPolicy {
+  id            String @id @default(cuid())
+  environmentId String
+  allowedHosts  String
+  blockedPorts  String?
+  createdAt     DateTime @default(now())
+  @@index([environmentId])
+  @@map("network_policies")
+}
+
+model ResourceAllocation {
+  id            String @id @default(cuid())
+  environmentId String
+  maxCpuPercent Int @default(100)
+  maxMemoryMb   Int @default(2048)
+  maxDiskMb     Int @default(10240)
+  maxDurationMs Int @default(300000)
+  createdAt     DateTime @default(now())
+  @@index([environmentId])
+  @@map("resource_allocations")
+}
+
+model DebugSession {
+  id            String @id @default(cuid())
+  environmentId String
+  taskId        String?
+  language      String
+  debugger      String
+  status        String @default("idle")
+  startedAt     DateTime?
+  endedAt       DateTime?
+  createdAt     DateTime @default(now())
+  @@index([environmentId])
+  @@map("debug_sessions")
+}
+
+model Plugin {
+  id        String @id @default(cuid())
+  name      String @unique
+  kind      String
+  version   String @default("1.0.0")
+  enabled   Boolean @default(true)
+  config    String?
+  createdAt DateTime @default(now())
+  @@map("plugins_p12")
+}
+
+model Adapter {
+  id        String @id @default(cuid())
+  name      String @unique
+  kind      String
+  config    String
+  enabled   Boolean @default(false)
+  createdAt DateTime @default(now())
+  @@map("adapters")
+}
+
+model SystemLog {
+  id        String @id @default(cuid())
+  level     String
+  source    String
+  message   String
+  meta      String?
+  createdAt DateTime @default(now())
   @@index([createdAt])
   @@map("system_logs")
+}
+
+model AnalysisReport {
+  id        String @id @default(cuid())
+  projectId String
+  kind      String
+  title     String
+  summary   String
+  findings  String
+  createdAt DateTime @default(now())
+  @@index([projectId])
+  @@map("analysis_reports")
 }
