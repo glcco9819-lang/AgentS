@@ -26,6 +26,7 @@ model Prompt {
   isDefault Boolean @default(false)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  @@unique([key, language])
   @@map("prompts")
 }
 

@@ -14,10 +14,10 @@ export async function verifyPassword(password: string, stored: string): Promise<
 }
 export function generateToken(): string { return randomBytes(32).toString("hex"); }
 
-export async function createSession(userId: string, req?: Request): Promise<string> {
+export async function createSession(userId: string, ip?: string, ua?: string): Promise<string> {
   const token = generateToken();
   const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
-  await db.userSession.create({ data: { userId, token, expiresAt, ipAddress: req?.headers.get("x-forwarded-for") ?? null, userAgent: req?.headers.get("user-agent") ?? null } });
+  await db.userSession.create({ data: { userId, token, expiresAt, ipAddress: ip ?? null, userAgent: ua ?? null } });
   await db.user.update({ where: { id: userId }, data: { lastLoginAt: new Date() } });
   return token;
 }

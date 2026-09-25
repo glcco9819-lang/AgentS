@@ -28,7 +28,7 @@ export async function POST(req: NextRequest) {
       roles: viewerRole ? { create: { roleId: viewerRole.id } } : undefined,
     },
   });
-  const { token } = await createSession(user.id);
+  const token = await createSession(user.id);
   return NextResponse.json({
     token,
     user: {

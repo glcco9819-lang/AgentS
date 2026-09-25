@@ -18,13 +18,14 @@ export async function POST(req: NextRequest) {
     where: { username },
     include: { roles: { include: { role: true } } },
   });
-  if (!user || !user.isActive || !verifyPassword(password, user.passwordHash)) {
+  if (!user || !user.isActive || !(await verifyPassword(password, user.passwordHash))) {
     return NextResponse.json({ error: "نام کاربری یا رمز عبور نادرست است" }, { status: 401 });
   }
-  const { token } = await createSession(user.id, {
-    ipAddress: req.headers.get("x-forwarded-for") ?? undefined,
-    userAgent: req.headers.get("user-agent") ?? undefined,
-  });
+  const token = await createSession(
+    user.id,
+    req.headers.get("x-forwarded-for") ?? undefined,
+    req.headers.get("user-agent") ?? undefined,
+  );
   await log("info", "system", `User ${username} logged in`);
   return NextResponse.json({
     token,
