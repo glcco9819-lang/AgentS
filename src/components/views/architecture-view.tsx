@@ -1,106 +1,177 @@
 "use client";
 
 import * as React from "react";
-import { Network, Layers, GitBranch, Workflow, ArrowRight } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Network, Layers, Flame, Loader2, Play } from "lucide-react";
+import { api } from "@/lib/auth/client";
 import { useAppStore } from "@/lib/store";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Badge } from "@/components/ui/badge";
+import { Markdown } from "@/components/markdown";
+import { toast } from "sonner";
 
-const PIPELINE = [
-  "Project",
-  "Scanner",
-  "Parser",
-  "Indexer",
-  "Context",
-  "AI Analysis",
-  "Architecture Graph",
-];
+interface Layer { name: string; files: number; languages: string[]; }
+interface Hotspot { path: string; size: number; inDegree: number; }
 
 export function ArchitectureView() {
-  const { setView } = useAppStore();
+  const activeWorkspaceId = useAppStore((s) => s.activeWorkspaceId);
+  const [envs, setEnvs] = React.useState<Array<{ id: string; name: string }>>([]);
+  const [envId, setEnvId] = React.useState("");
+  const [layers, setLayers] = React.useState<Layer[]>([]);
+  const [hotspots, setHotspots] = React.useState<Hotspot[]>([]);
+  const [aiReview, setAiReview] = React.useState("");
+  const [running, setRunning] = React.useState(false);
+  const [focus, setFocus] = React.useState("");
+
+  React.useEffect(() => {
+    if (!activeWorkspaceId) return;
+    api<{ environments: Array<{ id: string; name: string }> }>(`/api/environments?workspaceId=${activeWorkspaceId}`)
+      .then((d) => setEnvs(d.environments ?? []))
+      .catch(() => {});
+  }, [activeWorkspaceId]);
+
+  const run = async () => {
+    setRunning(true);
+    setAiReview("");
+    setLayers([]);
+    setHotspots([]);
+    try {
+      const r = await api<{
+        layers: Layer[];
+        hotspots: Hotspot[];
+        aiReview: string;
+      }>("/api/architecture/review", {
+        method: "POST",
+        body: JSON.stringify({
+          environmentId: envId || undefined,
+          workspaceId: activeWorkspaceId,
+          focus,
+        }),
+      });
+      setLayers(r.layers ?? []);
+      setHotspots(r.hotspots ?? []);
+      setAiReview(r.aiReview ?? "");
+      toast.success("بازبینی معماری کامل شد");
+    } catch (e) {
+      toast.error((e as Error).message);
+    } finally {
+      setRunning(false);
+    }
+  };
+
   return (
-    <div className="flex-1 overflow-y-auto scroll-thin">
-      <div className="mx-auto w-full max-w-4xl px-4 py-8">
-        <div className="mb-6">
-          <Badge variant="secondary" className="mb-2 gap-1">
-            <Network className="h-3 w-3" />
-            فاز V0.5
-          </Badge>
-          <h1 className="flex items-center gap-2 text-xl font-bold">
-            <Network className="h-5 w-5 text-primary" />
-            بازبینی معماری
-          </h1>
-          <p className="mt-1 text-sm text-muted-foreground">
-            تحلیل خودکار وابستگی‌ها، لایه‌ها، ماژول‌ها و نقاط اتصال پروژه و تولید Graph معماری.
-          </p>
-        </div>
+    <div className="flex h-full min-h-0 flex-col">
+      <header className="border-b border-border p-4">
+        <h1 className="text-xl font-bold">بازبینی معماری</h1>
+        <p className="text-xs text-muted-foreground">تحلیل لایه‌ها، نقاط داغ و بررسی هوش مصنوعی</p>
+      </header>
 
-        <Card className="mb-6">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-sm">
-              <Workflow className="h-4 w-4 text-primary" />
-              Pipeline معماری
-            </CardTitle>
-            <CardDescription className="text-xs">
-              جریان داده از پروژه تا تحلیل معماری
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="flex flex-wrap items-center gap-2" dir="ltr">
-              {PIPELINE.map((step, i) => (
-                <React.Fragment key={step}>
-                  <span className="rounded-lg border border-border bg-muted/40 px-3 py-1.5 font-mono text-[11px]">
-                    {step}
-                  </span>
-                  {i < PIPELINE.length - 1 && (
-                    <span className="text-muted-foreground">→</span>
-                  )}
-                </React.Fragment>
+      <div className="flex min-h-0 flex-1">
+        <aside className="w-72 shrink-0 space-y-3 overflow-y-auto scroll-thin border-l border-border p-4">
+          <div>
+            <Label className="text-xs">محیط</Label>
+            <select
+              className="mt-1.5 w-full rounded-md border border-input bg-background px-2 py-1.5 text-xs"
+              value={envId}
+              onChange={(e) => setEnvId(e.target.value)}
+            >
+              <option value="">بدون محیط</option>
+              {envs.map((e) => (
+                <option key={e.id} value={e.id}>{e.name}</option>
               ))}
-            </div>
-          </CardContent>
-        </Card>
-
-        <div className="mb-8 rounded-xl border border-dashed border-border bg-muted/30 p-6 text-center">
-          <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-            <Layers className="h-7 w-7" />
+            </select>
           </div>
-          <h3 className="text-sm font-semibold">به‌زودی در دسترس</h3>
-          <p className="mx-auto mt-1 max-w-md text-xs text-muted-foreground">
-            بازبینی معماری پس از فعال‌سازی File Scanner و Context Engine در فازهای V0.2 و
-            V0.3 آماده می‌شود. اصل کلیدی: Project Intelligence مستقل از LLM باقی می‌ماند.
-          </p>
-          <button
-            onClick={() => setView("chat")}
-            className="mx-auto mt-4 flex items-center gap-1.5 text-xs font-medium text-primary hover:underline"
-          >
-            با Chat ادامه دهید
-            <ArrowRight className="h-3.5 w-3.5 rtl:rotate-180" />
-          </button>
-        </div>
+          <div>
+            <Label className="text-xs">تمرکز</Label>
+            <input
+              className="mt-1.5 w-full rounded-md border border-input bg-background px-2 py-1.5 text-xs"
+              value={focus}
+              onChange={(e) => setFocus(e.target.value)}
+              placeholder="مثلاً: coupling"
+              dir="ltr"
+            />
+          </div>
+          <Button className="w-full gap-1.5" disabled={running} onClick={run}>
+            {running ? <Loader2 className="h-4 w-4 animate-spin" /> : <Play className="h-4 w-4" />}
+            {running ? "در حال بررسی…" : "اجرای بازبینی"}
+          </Button>
+        </aside>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          {[
-            { icon: GitBranch, t: "Dependency Graph", d: "نقشه‌ی وابستگی ماژول‌ها" },
-            { icon: Layers, t: "Layer Analysis", d: "بررسی جداسازی لایه‌ها" },
-            { icon: Network, t: "Architecture Graph", d: "گراف بصری معماری" },
-          ].map((f) => {
-            const Icon = f.icon;
-            return (
-              <Card key={f.t} className="opacity-70">
-                <CardHeader className="pb-3">
-                  <div className="mb-1 flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                    <Icon className="h-4 w-4" />
+        <main className="flex-1 overflow-y-auto scroll-thin p-4">
+          <div className="mx-auto max-w-4xl space-y-4">
+            <Card>
+              <CardHeader className="pb-2">
+                <CardTitle className="flex items-center gap-2 text-sm">
+                  <Layers className="h-4 w-4 text-primary" />
+                  لایه‌ها
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                {layers.length === 0 ? (
+                  <p className="text-xs text-muted-foreground">برای مشاهده، بازبینی را اجرا کنید.</p>
+                ) : (
+                  <div className="grid gap-2 sm:grid-cols-2">
+                    {layers.map((l) => (
+                      <div key={l.name} className="rounded-md border border-border bg-muted/30 p-3">
+                        <div className="flex items-center justify-between">
+                          <span className="font-mono text-sm" dir="ltr">{l.name}</span>
+                          <Badge variant="secondary" className="text-[10px]">{l.files} فایل</Badge>
+                        </div>
+                        <div className="mt-1 flex flex-wrap gap-1">
+                          {l.languages.map((lng) => (
+                            <Badge key={lng} variant="outline" className="text-[10px]">{lng}</Badge>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                  <CardTitle className="text-sm">{f.t}</CardTitle>
+                )}
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="pb-2">
+                <CardTitle className="flex items-center gap-2 text-sm">
+                  <Flame className="h-4 w-4 text-amber-500" />
+                  نقاط داغ
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                {hotspots.length === 0 ? (
+                  <p className="text-xs text-muted-foreground">بدون داده.</p>
+                ) : (
+                  <div className="space-y-1">
+                    {hotspots.map((h) => (
+                      <div key={h.path} className="flex items-center justify-between gap-2 rounded border border-border p-2 text-xs">
+                        <span className="truncate font-mono" dir="ltr">{h.path}</span>
+                        <div className="flex gap-2 text-[10px] text-muted-foreground">
+                          <span>{(h.size / 1024).toFixed(1)}KB</span>
+                          <span>درجه: {h.inDegree}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+
+            {aiReview && (
+              <Card>
+                <CardHeader className="pb-2">
+                  <CardTitle className="flex items-center gap-2 text-sm">
+                    <Network className="h-4 w-4 text-primary" />
+                    بررسی هوش مصنوعی
+                  </CardTitle>
+                  <CardDescription className="text-xs">تحلیل تخصصی معماری</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-xs">{f.d}</CardDescription>
+                  <Markdown content={aiReview} />
                 </CardContent>
               </Card>
-            );
-          })}
-        </div>
+            )}
+          </div>
+        </main>
       </div>
     </div>
   );
