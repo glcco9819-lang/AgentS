@@ -1,27 +1,25 @@
 import { create } from "zustand";
 
 export type ViewKey =
-  | "chat"
-  | "projects"
-  | "analysis"
-  | "architecture"
-  | "settings"
-  | "logs";
+  | "control" | "workspaces" | "templates" | "tasks" | "guide"
+  | "environments" | "analysis" | "architecture" | "providers" | "users"
+  | "artifacts" | "verification" | "gates" | "approvals" | "trace"
+  | "audit" | "settings" | "logs";
 
 interface AppState {
   view: ViewKey;
-  activeSessionId: string | null;
-  activeProjectId: string | null;
+  activeWorkspaceId: string | null;
+  activeEnvironmentId: string | null;
   setView: (v: ViewKey) => void;
-  setActiveSessionId: (id: string | null) => void;
-  setActiveProjectId: (id: string | null) => void;
+  setActiveWorkspaceId: (id: string | null) => void;
+  setActiveEnvironmentId: (id: string | null) => void;
 }
 
 export const useAppStore = create<AppState>((set) => ({
-  view: "chat",
-  activeSessionId: null,
-  activeProjectId: null,
+  view: "control",
+  activeWorkspaceId: null,
+  activeEnvironmentId: null,
   setView: (view) => set({ view }),
-  setActiveSessionId: (activeSessionId) => set({ activeSessionId }),
-  setActiveProjectId: (activeProjectId) => set({ activeProjectId }),
+  setActiveWorkspaceId: (activeWorkspaceId) => set({ activeWorkspaceId }),
+  setActiveEnvironmentId: (activeEnvironmentId) => set({ activeEnvironmentId }),
 }));

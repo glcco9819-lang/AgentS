@@ -1,14 +1,7 @@
 import { db } from "@/lib/db";
 
 export type LogLevel = "info" | "warn" | "error" | "debug";
-export type LogSource =
-  | "gateway"
-  | "chat"
-  | "project"
-  | "scanner"
-  | "system"
-  | "settings"
-  | "prompt";
+export type LogSource = string;
 
 /**
  * System Logger — writes structured logs to the database (SystemLog table)
