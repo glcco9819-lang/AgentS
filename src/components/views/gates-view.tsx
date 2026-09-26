@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Gate as GateIcon, ShieldAlert, RefreshCw } from "lucide-react";
+import { GitFork as GateIcon, ShieldAlert, RefreshCw } from "lucide-react";
 import { api } from "@/lib/auth/client";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
