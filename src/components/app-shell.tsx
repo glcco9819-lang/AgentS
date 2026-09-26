@@ -70,7 +70,7 @@ const NAV_GROUPS: NavGroup[] = [
       { key: "control", label: "داشبورد", icon: LayoutDashboard },
       { key: "workspaces", label: "فضاهای کار", icon: FolderTree },
       { key: "templates", label: "قالب‌ها", icon: LayoutTemplate },
-      { key: "tasks", label: "وظایف", icon: ListTodo },
+      { key: "tasks", label: "وظایف", icon: ListChecks },
       { key: "guide", label: "راهنما", icon: BookOpen },
     ],
   },

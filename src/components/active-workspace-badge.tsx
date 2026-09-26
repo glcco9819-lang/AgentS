@@ -1,97 +1,95 @@
 "use client";
 
 import * as React from "react";
-import { FolderOpen, ChevronDown, Check } from "lucide-react";
+import { FolderOpen, X } from "lucide-react";
 import { useAppStore } from "@/lib/store";
 import { api } from "@/lib/auth/client";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-} from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 interface Workspace {
   id: string;
   name: string;
-  language?: string | null;
-  framework?: string | null;
   status: string;
 }
 
 export function ActiveWorkspaceBadge() {
-  const activeWorkspaceId = useAppStore((s) => s.activeWorkspaceId);
-  const setActiveWorkspaceId = useAppStore((s) => s.setActiveWorkspaceId);
+  const { activeWorkspaceId, setActiveWorkspaceId, setView } = useAppStore();
   const [workspaces, setWorkspaces] = React.useState<Workspace[]>([]);
-  const [loading, setLoading] = React.useState(false);
+  const [current, setCurrent] = React.useState<Workspace | null>(null);
+  const [open, setOpen] = React.useState(false);
 
   const load = React.useCallback(async () => {
-    setLoading(true);
     try {
       const data = await api<{ workspaces: Workspace[] }>("/api/workspaces");
       setWorkspaces(data.workspaces ?? []);
-      if (!activeWorkspaceId && data.workspaces?.length > 0) {
-        setActiveWorkspaceId(data.workspaces[0].id);
+      if (activeWorkspaceId) {
+        setCurrent(data.workspaces?.find((w) => w.id === activeWorkspaceId) ?? null);
       }
     } catch {
-      // ignore
-    } finally {
-      setLoading(false);
+      // not authed yet or error
     }
-  }, [activeWorkspaceId, setActiveWorkspaceId]);
+  }, [activeWorkspaceId]);
 
-  React.useEffect(() => {
-    load();
-  }, [load]);
+  React.useEffect(() => { load(); }, [load]);
 
-  const active = workspaces.find((w) => w.id === activeWorkspaceId);
+  const select = (ws: Workspace) => {
+    setActiveWorkspaceId(ws.id);
+    setCurrent(ws);
+    setOpen(false);
+  };
+
+  if (!activeWorkspaceId) {
+    return (
+      <button
+        onClick={() => setView("workspaces")}
+        className="flex items-center gap-2 rounded-lg border border-dashed border-sidebar-border px-2.5 py-1.5 text-[11px] text-muted-foreground hover:text-foreground transition-colors"
+      >
+        <FolderOpen className="h-3 w-3" />
+        انتخاب ورک‌اسپیس
+      </button>
+    );
+  }
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="sm" className="gap-2 max-w-[200px]">
-          <FolderOpen className="h-3.5 w-3.5 shrink-0" />
-          <span className="truncate">{active?.name ?? "بدون فضای کار"}</span>
-          <ChevronDown className="h-3 w-3 shrink-0 opacity-60" />
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="start" className="w-64">
-        <DropdownMenuLabel className="text-xs text-muted-foreground">فضاهای کار</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        {loading && (
-          <DropdownMenuItem disabled className="text-xs">
-            در حال بارگذاری…
-          </DropdownMenuItem>
-        )}
-        {!loading && workspaces.length === 0 && (
-          <DropdownMenuItem disabled className="text-xs text-muted-foreground">
-            فضای کاری یافت نشد
-          </DropdownMenuItem>
-        )}
-        {workspaces.map((w) => (
-          <DropdownMenuItem
-            key={w.id}
-            onClick={() => setActiveWorkspaceId(w.id)}
-            className="gap-2 text-xs"
-          >
-            <div className="flex flex-1 flex-col">
-              <span className="truncate">{w.name}</span>
-              {(w.language || w.framework) && (
-                <span className="text-[10px] text-muted-foreground">
-                  {w.language}
-                  {w.language && w.framework ? " · " : ""}
-                  {w.framework}
-                </span>
-              )}
-            </div>
-            {activeWorkspaceId === w.id && <Check className="h-3 w-3 text-primary" />}
-          </DropdownMenuItem>
-        ))}
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <div className="relative">
+      <button
+        onClick={() => setOpen(!open)}
+        className="flex items-center gap-2 rounded-lg border border-sidebar-border bg-card px-2.5 py-1.5 text-[11px]"
+      >
+        <FolderOpen className="h-3 w-3 text-primary" />
+        <span className="truncate max-w-[100px]">{current?.name ?? "..."}</span>
+        <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+      </button>
+      {open && (
+        <>
+          <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
+          <div className="absolute right-0 top-full z-50 mt-1 min-w-[200px] rounded-lg border border-border bg-popover p-1 shadow-lg">
+            {workspaces.map((ws) => (
+              <button
+                key={ws.id}
+                onClick={() => select(ws)}
+                className={cn(
+                  "flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-xs hover:bg-accent",
+                  ws.id === activeWorkspaceId && "bg-accent"
+                )}
+              >
+                <FolderOpen className="h-3 w-3 text-primary" />
+                <span className="truncate">{ws.name}</span>
+                {ws.id === activeWorkspaceId && <span className="ms-auto text-primary">✓</span>}
+              </button>
+            ))}
+            <div className="my-1 border-t border-border" />
+            <button
+              onClick={() => { setActiveWorkspaceId(null); setCurrent(null); setOpen(false); }}
+              className="flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-xs text-muted-foreground hover:bg-accent"
+            >
+              <X className="h-3 w-3" />
+              حذف انتخاب
+            </button>
+          </div>
+        </>
+      )}
+    </div>
   );
 }

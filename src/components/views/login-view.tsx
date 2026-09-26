@@ -7,19 +7,18 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { setToken } from "@/lib/auth/client";
-import { useAppStore } from "@/lib/store";
-import { toast } from "sonner";
 
-export function LoginView() {
-  const setAuthed = useAppStore((s) => s.setAuthed);
+export function LoginView({ onLogin }: { onLogin?: () => void }) {
   const [username, setUsername] = React.useState("admin");
   const [password, setPassword] = React.useState("admin123");
   const [loading, setLoading] = React.useState(false);
+  const [error, setError] = React.useState("");
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!username || !password) return;
     setLoading(true);
+    setError("");
     try {
       const res = await fetch("/api/auth/login", {
         method: "POST",
@@ -28,26 +27,23 @@ export function LoginView() {
       });
       const data = await res.json();
       if (!res.ok) {
-        toast.error(data.error ?? "خطا در ورود");
+        setError(data.error || "خطا در ورود");
         return;
       }
       setToken(data.token);
-      setAuthed(true);
-      toast.success("خوش آمدید");
+      onLogin?.();
     } catch (e) {
-      toast.error((e as Error).message);
+      setError((e as Error).message);
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-background to-muted p-4">
+    <div className="flex min-h-screen items-center justify bg-background p-4">
       <Card className="w-full max-w-sm shadow-lg">
         <CardHeader className="space-y-3 text-center">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow">
-            <Boxes className="h-6 w-6" />
-          </div>
+          <img src="/yfg-logo.png" alt="YFG" className="mx-auto h-14 w-auto" />
           <div>
             <CardTitle className="text-lg">YFG AI Software Factory</CardTitle>
             <CardDescription className="mt-1 text-xs">ورود به سامانه</CardDescription>
@@ -75,6 +71,11 @@ export function LoginView() {
                 required
               />
             </div>
+            {error && (
+              <div className="rounded-md bg-destructive/10 px-3 py-2 text-xs text-destructive">
+                {error}
+              </div>
+            )}
             <Button type="submit" disabled={loading} className="w-full gap-2">
               {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <LogIn className="h-4 w-4" />}
               ورود
